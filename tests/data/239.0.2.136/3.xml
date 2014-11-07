@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
+xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
+serviceIDRef="3.imagenio.es" Version="2"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38845124/38845124" /> <InstanceDescription> <Title>Días
+de cine</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>CULTURA/ESPECTÁCULOS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:5"> <mpeg7:Name>Suitable
+for audiences 16 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T01:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T01:30:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38845125/38845125" /> <InstanceDescription> <Title>TVE
+es música</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:96.100"> <Name>MAGAZINE</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T02:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T02:00:00.000Z</EventStartTime>
+<EventDuration>PT2H30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848957/38848957" /> <InstanceDescription> <Title>That's
+English</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48.50"> <Name>EDUCATIVOS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T04:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T04:30:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848958/38848958" /> <InstanceDescription> <Title>Otros
+pueblos</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.130"> <Name>ANTROPOLÓGICOS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2014-08-31T05:00:00.000Z</PublishedStartTime> <PublishedDuration>PT1H</PublishedDuration>
+<ImmediateViewing value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T05:00:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848959/38848959" /> <InstanceDescription> <Title>Los
+conciertos de La 2</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:96.97"> <Name>CLÁSICA</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T06:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T06:00:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848960/38848960" /> <InstanceDescription> <Title>Historias
+de trenes</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>VIAJES
+Y AVENTURAS</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T06:45:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T06:45:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848961/38848961" /> <InstanceDescription> <Title>Islam
+hoy</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48.53"> <Name>RELIGIOSO</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T07:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T07:15:00.000Z</EventStartTime>
+<EventDuration>PT15M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848962/38848962" /> <InstanceDescription> <Title>Buenas
+noticias. TV</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48.53"> <Name>RELIGIOSO</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T07:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T07:30:00.000Z</EventStartTime>
+<EventDuration>PT15M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848963/38848963" /> <InstanceDescription> <Title>Shalom</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:48.53"> <Name>RELIGIOSO</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T07:45:00.000Z</PublishedStartTime>
+<PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T07:45:00.000Z</EventStartTime>
+<EventDuration>PT15M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848964/38848964" /> <InstanceDescription> <Title>Últimas
+preguntas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48.53"> <Name>RELIGIOSO</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T08:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T08:00:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848965/38848965" /> <InstanceDescription> <Title>Testimonio</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:48.53"> <Name>RELIGIOSO</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T08:25:00.000Z</PublishedStartTime>
+<PublishedDuration>PT5M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T08:25:00.000Z</EventStartTime>
+<EventDuration>PT5M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848966/38848966" /> <InstanceDescription> <Title>El
+día del señor</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48.53">
+<Name>RELIGIOSO</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T08:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T08:30:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848967/38848967" /> <InstanceDescription> <Title>Pueblo
+de Dios</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48.53"> <Name>RELIGIOSO</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T09:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T09:30:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848968/38848968" /> <InstanceDescription> <Title>Documental</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:128.129"> <Name>ACTUALIDAD</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T10:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T10:00:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848969/38848969" /> <InstanceDescription> <Title>Documental</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:128.129"> <Name>ACTUALIDAD</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T10:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T10:30:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848970/38848970" /> <InstanceDescription> <Title>El
+escarabajo verde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>NATURALEZA Y ANIMALES</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T11:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T11:00:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848971/38848971" /> <InstanceDescription> <Title>El
+Viaje a la Tradición Mediterránea</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.130"> <Name>ANTROPOLÓGICOS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2014-08-31T11:30:00.000Z</PublishedStartTime> <PublishedDuration>PT45M</PublishedDuration>
+<ImmediateViewing value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T11:30:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848972/38848972" /> <InstanceDescription> <Title>Zoom
+tendencias</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48"> <Name>PROGRAMAS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T12:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T12:15:00.000Z</EventStartTime>
+<EventDuration>PT15M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848973/38848973" /> <InstanceDescription> <Title>Documental</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:128.129"> <Name>ACTUALIDAD</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T12:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T12:30:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848974/38848974" /> <InstanceDescription> <Title>España
+a vela</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>VIAJES
+Y AVENTURAS</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T13:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT35M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T13:00:00.000Z</EventStartTime>
+<EventDuration>PT35M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848975/38848975" /> <InstanceDescription> <Title>Saber
+y ganar fin de semana</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.6"> <Name>CONCURSOS</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T13:35:00.000Z</PublishedStartTime>
+<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T13:35:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848976/38848976" /> <InstanceDescription> <Title>Grandes
+documentales</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48"> <Name>PROGRAMAS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T14:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T14:20:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848977/38848977" /> <InstanceDescription> <Title>Docufilia</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:48"> <Name>PROGRAMAS</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2014-08-31T15:15:00.000Z</PublishedStartTime> <PublishedDuration>PT45M</PublishedDuration>
+<ImmediateViewing value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T15:15:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848978/38848978" /> <InstanceDescription> <Title>¡Cómo
+nos reímos!</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48"> <Name>PROGRAMAS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T16:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T16:00:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848979/38848979" /> <InstanceDescription> <Title>¡Cómo
+nos reímos!</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48"> <Name>PROGRAMAS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T17:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T17:00:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848980/38848980" /> <InstanceDescription> <Title>Con
+mis ojos</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>VIAJES
+Y AVENTURAS</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T18:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T18:00:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848981/38848981" /> <InstanceDescription> <Title>Con
+mis ojos</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>VIAJES
+Y AVENTURAS</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T18:25:00.000Z</PublishedStartTime>
+<PublishedDuration>PT35M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T18:25:00.000Z</EventStartTime>
+<EventDuration>PT35M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848982/38848982" /> <InstanceDescription> <Title>Página
+2</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>CULTURA/ESPECTÁCULOS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T19:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T19:00:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848983/38848983" /> <InstanceDescription> <Title>La
+forja de un rebelde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>DRAMA</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2014-08-31T19:30:00.000Z</PublishedStartTime> <PublishedDuration>PT1H30M</PublishedDuration>
+<ImmediateViewing value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T19:30:00.000Z</EventStartTime>
+<EventDuration>PT1H30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848984/38848984" /> <InstanceDescription> <Title>El
+documental de La 2</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48">
+<Name>PROGRAMAS</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2014-08-31T21:00:00.000Z</PublishedStartTime> <PublishedDuration>PT1H25M</PublishedDuration>
+<ImmediateViewing value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T21:00:00.000Z</EventStartTime>
+<EventDuration>PT1H25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848985/38848985" /> <InstanceDescription> <Title>Documental</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:128.129"> <Name>ACTUALIDAD</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T22:25:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T22:25:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848986/38848986" /> <InstanceDescription> <Title>Metrópolis</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>CULTURA/ESPECTÁCULOS</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:7"> <mpeg7:Name>Suitable
+for audiences 18 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-31T23:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T23:20:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38848987/38848987" /> <InstanceDescription> <Title>El
+documental de La 2</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:48">
+<Name>PROGRAMAS</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2014-08-31T23:50:00.000Z</PublishedStartTime> <PublishedDuration>PT1H</PublishedDuration>
+<ImmediateViewing value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2014-08-31T23:50:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

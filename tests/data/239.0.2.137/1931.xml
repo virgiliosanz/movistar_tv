@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
+xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
+serviceIDRef="1931.imagenio.es" Version="18"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/38822570/38822570" /> <InstanceDescription> <Title>F1
+GP de Bélgica 2014</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.76"> <Name>MOTOR</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2014-08-24T07:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT12H</PublishedDuration> <ImmediateViewing
+value="true" /> <EventStartTime>2014-08-24T07:00:00.000Z</EventStartTime>
+<EventDuration>PT12H</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

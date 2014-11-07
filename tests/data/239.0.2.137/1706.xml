@@ -1,0 +1,23 @@
+ra 4</Name> <ShortName
+Language="ENG">LIDP2</ShortName> <Description Language="ENG">Multicámara
+4</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>ENTRETENIMIENTO</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.125" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2086" logoURI="MAY_1/imSer/2086.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">Multicámara 4 HD</Name> <ShortName
+Language="ENG">MCHD4</ShortName> <Description Language="ENG">Multicámara
+4 HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>ENTRETENIMIENTO</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1925" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.54" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1923" logoURI="MAY_1/imSer/1923.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xmlns="urn:tva:metadata:2007" xml:lang="ENG"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="1706.imagenio.es"
+Version="14" /> </ProgramLocationTable> </ProgramDescription> </TVAMain>
