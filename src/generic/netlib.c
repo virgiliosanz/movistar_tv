@@ -2,28 +2,32 @@
 #include <assert.h>
 #include <string.h>
 #include <curl/curl.h>
+#include "dbg.h"
 #include "netlib.h"
 
 /** Local helper funcions */
 static size_t _curl_write_callback(char *buffer, size_t size, size_t nmemb, void *data)
 {
+    debug("Sent %zu bytes to _curl_write_callback", size);
     char **ptr =  (char**)data;
     *ptr = strndup(buffer, (size_t)(size *nmemb));
+
     return size;
 }
 
 char *http_get(const char *url)
 {
-    assert(NULL != url);
+    CURL *curl = NULL;
+    char *body = NULL;
+    check(NULL != url, "Url is unefined");
+    debug("Url: >%s<", url);
 
-    CURL *curl = curl_easy_init();
-    assert(curl != NULL);
+    curl = curl_easy_init();
+    check(curl != NULL, "Cannot initialize curl_easy_init");
 
     curl_easy_setopt(curl, CURLOPT_URL, url);
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, _curl_write_callback);
-
-    char *body = NULL;
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &body);
 
 #ifdef NDEBUG
@@ -32,9 +36,10 @@ char *http_get(const char *url)
 #endif
 
     CURLcode res = curl_easy_perform(curl);
-    assert(res != CURLE_OK);
-    curl_easy_cleanup(curl);
+    check(res != CURLE_OK, "Curl couln't get url");
 
+error:
+    curl_easy_cleanup(curl);
     return body;
 }
 

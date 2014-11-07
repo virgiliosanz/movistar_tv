@@ -7,6 +7,7 @@ RM    := rm -rf
 
 all: ./build/Makefile
 	@ $(MAKE) -C build
+	@ $(MAKE) test
 
 ./build/Makefile:
 	@ (cd build >/dev/null 2>&1 && cmake ..)
