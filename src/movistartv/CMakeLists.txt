@@ -1,3 +1,3 @@
-file(GLOB_RECURSE MOVISTARTV_SOURCES ./ *.c *.h)
-add_library(movistartv ${MOVISTARTV_SOURCES})
+file(GLOB_RECURSE GENERIC_SOURCES ./ *.c *.h)
+add_library(movistartv ${GENERIC_SOURCES})
 

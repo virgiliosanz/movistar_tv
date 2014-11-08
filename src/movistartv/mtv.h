@@ -36,7 +36,6 @@ struct _mtv_errors_desc {
 };
 
 
-
 struct _mtv_conf_t {
     bool initilized;
 

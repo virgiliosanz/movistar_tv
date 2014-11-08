@@ -1,0 +1,16 @@
+INSTALL
+=======
+
+Ubuntu
+------
+
+Install the following dependencies
+
+- tools:
+$ sudo apt-get install cmake build-essential
+
+- libs:
+$ sudo apt-get install libyajl-dev libcurl4-openssl-dev libpcre3-dev check libxml2-dev
+
+OSX
+---
