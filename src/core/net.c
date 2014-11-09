@@ -5,17 +5,17 @@
 #include "core/net.h"
 #include "bstrlib/bstrlib.h"
 
-static size_t _curl_write_memory_callback(void *ptr, size_t size, size_t nmemb, bstring b)
+static size_t _curl_write_memory_callback(void *ptr, size_t size, size_t nmemb, bstring buffer)
 {
     const char *c = (const char *)ptr;
     /*
     debug("Data: %zu Ptr: %zu", blength(b), strlen(c));
     debug("%s", c);
     */
-    bcatcstr(b, c);
+    bcatcstr(buffer, c);
+
     return size * nmemb;
 }
-
 
 bstring net_http_get(const char *url)
 {
@@ -45,7 +45,7 @@ bstring net_http_get(const char *url)
     curl_easy_cleanup(curl);
     curl_global_cleanup();
 
-    debug("... leidos %zu bytes", blength(buffer));
+    debug("... leidos %d bytes", blength(buffer));
 
     return buffer;
 

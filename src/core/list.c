@@ -6,11 +6,10 @@ list_t *list_create()
     return calloc(1, sizeof(list_t));
 }
 
-void list_destroy(list_t *list, void (*free_value)(void *))
+void list_destroy(list_t *list)
 {
     list_foreach(list, first, next, cur) {
         if (cur->prev) {
-            if (NULL != free_value) free_value(cur->prev->value);
             free(cur->prev);
         }
     }
@@ -31,7 +30,7 @@ void list_clear(list_t *list)
 void list_clear_destroy(list_t *list)
 {
     list_clear(list);
-    list_destroy(list, NULL);
+    list_destroy(list);
 }
 
 

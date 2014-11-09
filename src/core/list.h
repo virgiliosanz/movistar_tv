@@ -18,7 +18,7 @@ typedef struct list_s {
 } list_t;
 
 list_t *list_create();
-void list_destroy(list_t *list, void (*free_value)(void *));
+void list_destroy(list_t *list);
 void list_clear(list_t *list);
 void list_clear_destroy(list_t *list);
 
