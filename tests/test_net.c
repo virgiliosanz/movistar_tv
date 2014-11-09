@@ -1,41 +1,30 @@
-#include <check.h>
+#include "core/minunit.h"
 #include <string.h>
 #include <stdlib.h>
-#include "movistartv/net.h"
-#include "movistartv/dbg.h"
+#include "core/net.h"
 
-START_TEST(test_net_http_get)
+char *test_net_http_get()
 {
-    char *body = net_http_get("http://www.google.com");
-    ck_assert(strlen(body) > 0);
+    bstring body = net_http_get("http://www.google.com");
+    mu_assert(blength(body) > 0, "Tamaño de la respuesta es 0!");
 
-    ck_assert_msg(strstr(body, "<html") != NULL, "body:\n%s", body);
-    ck_assert_msg(strstr(body, "</html>") != NULL, "body:\n%s", body);
-    ck_assert_msg(strstr(body, "<body") != NULL, "body:\n%s", body);
-    ck_assert_msg(strstr(body, "</body>") != NULL, "body:\n%s", body);
+    const char *cbody = bstr2cstr(body, ' ');
+    mu_assert(strlen(cbody) > 0, "Tamaño de la respuesta es 0!");
 
-    free(body);
-}
-END_TEST
+    mu_assert(strstr(cbody, "<html") != NULL, "No encuentro <html");
+    mu_assert(strstr(cbody, "</html>") != NULL, "No encuentro <html");
+    mu_assert(strstr(cbody, "<body") != NULL, "No encuentro <html");
+    mu_assert(strstr(cbody, "</body>") != NULL, "No encuentro <html");
 
-Suite *net_suite(void)
-{
-    TCase *tc_core = tcase_create("Core");
 
-    tcase_add_test(tc_core, test_net_http_get);
-
-    Suite *s = suite_create("Net");
-    suite_add_tcase(s, tc_core);
-    return s;
+    return NULL;
 }
 
-int main(void)
-{
-   Suite *s = net_suite();
-   SRunner *sr = srunner_create(s);
-   srunner_run_all(sr, CK_NORMAL);
-   size_t number_failed = srunner_ntests_failed(sr);
-   srunner_free(sr);
-   return (number_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;
+char *all_tests() {
+    mu_suite_start();
+
+    mu_run_test(test_net_http_get);
+    return NULL;
 }
 
+RUN_TESTS(all_tests)
