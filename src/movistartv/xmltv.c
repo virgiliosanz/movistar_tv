@@ -8,6 +8,9 @@
 #include "bstrlib/bstrlib.h"
 #include "core/dbg.h"
 #include "movistartv/xmltv.h"
+#include "movistartv/xmltv_dtd.h"
+
+/* static functions */
 
 
 /** Programmes **/
@@ -25,6 +28,8 @@ xmltv_programme_t *xmltv_programme_alloc()
     prog->aspect = bfromcstr("");
     prog->rating_value = bfromcstr("");
     prog->actors = list_create();
+    prog->rating_icon = bfromcstr("");
+    prog->star_rating = bfromcstr("");
 
     return prog;
 
@@ -48,6 +53,8 @@ void xmltv_programme_free(xmltv_programme_t* prog)
 
     list_foreach(prog->actors, first, next, cur) bdestroy((bstring)cur->value);
     list_destroy(prog->actors);
+    bdestroy(prog->rating_icon);
+    bdestroy(prog->star_rating);
 }
 
 /** Channels **/
@@ -154,7 +161,7 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
         subnode = xmlNewChild(node, NULL, BAD_CAST "title", BAD_CAST prog->title->data);
         xmlNewProp(subnode, BAD_CAST "lang", BAD_CAST "es");
 
-        subnode = xmlNewChild(node, NULL, BAD_CAST "desc", BAD_CAST prog->title->data);
+        subnode = xmlNewChild(node, NULL, BAD_CAST "desc", BAD_CAST prog->desc->data);
         xmlNewProp(subnode, BAD_CAST "lang", BAD_CAST "es");
 
         subnode = xmlNewChild(node, NULL, BAD_CAST "credits", NULL);
@@ -179,7 +186,7 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
         xmlNewProp(subnode, BAD_CAST "src", BAD_CAST prog->rating_icon->data);
 
         subnode = xmlNewChild(node, NULL, BAD_CAST "start-rating", NULL);
-        xmlNewChild(subnode, NULL, BAD_CAST "value", prog->start_rating->data);
+        xmlNewChild(subnode, NULL, BAD_CAST "value", prog->star_rating->data);
     }
 }
 
@@ -193,7 +200,7 @@ static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
         node = xmlNewChild(root, NULL, BAD_CAST "channel", NULL);
         xmlNewProp(node, BAD_CAST "id", BAD_CAST chan->id->data);
 
-        node = xmlNewChild(root, NULL, BAD_CAST "display-name", chan->display_name->data);
+        xmlNewChild(node, NULL, BAD_CAST "display-name", chan->display_name->data);
         xmlNewProp(node, BAD_CAST "lang", BAD_CAST "es");
     }
 }
@@ -235,11 +242,81 @@ error:
     return NULL;
 }
 
-char *xmltv_validate_dtd(const char *xml)
+int xmltv_validate(const char *xml)
 {
-    xmlDtdPtr dtd;
-    xmlDocPtr doc;
+    int res;
 
+    xmlValidCtxtPtr ctxt = xmlNewValidCtxt();
+    xmlDocPtr doc = xmlParseMemory(xml, strlen(xml));
+    xmlDtdPtr dtd = xmlParseDTD(NULL, BAD_CAST xmltv_dtd);
+
+    res = xmlValidateDtd(ctxt, doc, dtd);
+    return res;
+}
+
+static void _on_start_elementNs(
+    void *ctx,
+    const xmlChar *localname,
+    const xmlChar *prefix,
+    const xmlChar *URI,
+    int nb_namespaces,
+    const xmlChar **namespaces,
+    int nb_attributes,
+    int nb_defaulted,
+    const xmlChar **attributes
+)
+{
+    printf("<%s>\n", localname);
+}
+
+static void _on_end_elementNs(
+    void* ctx,
+    const xmlChar* localname,
+    const xmlChar* prefix,
+    const xmlChar* URI
+)
+{
+    printf("</%s>\n", localname);
+}
+
+static void _on_characters(void *ctx, const xmlChar *ch, int len)
+{
+    char chars[len + 1];
+    strncpy(chars, (const char *)ch, len);
+    chars[len] = (char)NULL;
+    printf("[%s]\n", chars);
+}
+
+char *xml_parse(const char *xml, xmltv_t *xmltv)
+{
+    /*
+    xmlSAXHandler SAXHander;
+
+    memset(&SAXHander, 0, sizeof(xmlSAXHandler));
+
+    SAXHander.initialized = XML_SAX2_MAGIC;
+    SAXHander.startElementNs = OnStartElementNs;
+    SAXHander.endElementNs = OnEndElementNs;
+    SAXHander.characters = OnCharacters;
+
+    xmlParserCtxtPtr ctxt = xmlCreatePushParserCtxt(
+        &SAXHander, NULL, xml, res, NULL
+    );
+
+    while ((res = fread(chars, 1, sizeof(chars), f)) > 0) {
+        check(xmlParseChunk(ctxt, chars, res, 0));
+    }
+
+    xmlFreeParserCtxt(ctxt);
+    xmlCleanupParser();
+
+    return NULL;
+
+error:
+    xmlParserError(ctxt, "xmlParseChunk");
+    xmlFreeParserCtxt(ctxt);
+    xmlCleanupParser();
+    */
     return NULL;
 }
 

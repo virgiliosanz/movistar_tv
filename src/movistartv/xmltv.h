@@ -2,7 +2,6 @@
 #define __xmltv_h__
 
 #include <time.h>
-#include "movistartv/xmltv_dtd.h"
 #include "bstrlib/bstrlib.h"
 #include "core/list.h"
 
@@ -31,7 +30,7 @@ struct xmltv_programme_s {
     bstring aspect;
     bstring rating_value; /* system="MPAA" */
     bstring rating_icon;
-    bstring start_rating;
+    bstring star_rating;
 };
 typedef struct xmltv_programme_s xmltv_programme_t;
 
@@ -52,7 +51,8 @@ void xmltv_free(xmltv_t *xmltv);
 void xmltv_add_channel(xmltv_t *xmltv, const xmltv_channel_t *channel);
 void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme);
 char *xmltv_to_xml(const xmltv_t *xmltv);
-char *xmltv_validate_dtd(const char *xml);
+int xmltv_validate(const char *xml);
+char *xml_parse(const char *xml, xmltv_t *xmltv);
 
 #endif
 
