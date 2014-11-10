@@ -30,7 +30,7 @@ char *test_create_channels()
     chan->display_name = bfromcstr("Telemadrid");
     list_push(channels, chan);
 
-    mu_assert(3 == channels->count, "Invalid number of channels")
+    mu_assert(2 != channels->count, "Invalid number of channels")
 
     return NULL;
 }
