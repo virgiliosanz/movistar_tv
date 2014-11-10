@@ -220,6 +220,10 @@ char *xmltv_to_xml(const xmltv_t *xmltv)
     dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd");
     xmlDocSetRootElement(doc, root);
 
+    xmlNewProp(root,
+            BAD_CAST "generator-info-name",
+            BAD_CAST "movistar_tv - https://github.com/virgiliosanz/movistar_tv");
+
     _channels_to_xml(root, xmltv->channels);
     _programmes_to_xml(root, xmltv->programmes);
 
@@ -253,70 +257,3 @@ int xmltv_validate(const char *xml)
     res = xmlValidateDtd(ctxt, doc, dtd);
     return res;
 }
-
-static void _on_start_elementNs(
-    void *ctx,
-    const xmlChar *localname,
-    const xmlChar *prefix,
-    const xmlChar *URI,
-    int nb_namespaces,
-    const xmlChar **namespaces,
-    int nb_attributes,
-    int nb_defaulted,
-    const xmlChar **attributes
-)
-{
-    printf("<%s>\n", localname);
-}
-
-static void _on_end_elementNs(
-    void* ctx,
-    const xmlChar* localname,
-    const xmlChar* prefix,
-    const xmlChar* URI
-)
-{
-    printf("</%s>\n", localname);
-}
-
-static void _on_characters(void *ctx, const xmlChar *ch, int len)
-{
-    char chars[len + 1];
-    strncpy(chars, (const char *)ch, len);
-    chars[len] = (char)NULL;
-    printf("[%s]\n", chars);
-}
-
-char *xml_parse(const char *xml, xmltv_t *xmltv)
-{
-    /*
-    xmlSAXHandler SAXHander;
-
-    memset(&SAXHander, 0, sizeof(xmlSAXHandler));
-
-    SAXHander.initialized = XML_SAX2_MAGIC;
-    SAXHander.startElementNs = OnStartElementNs;
-    SAXHander.endElementNs = OnEndElementNs;
-    SAXHander.characters = OnCharacters;
-
-    xmlParserCtxtPtr ctxt = xmlCreatePushParserCtxt(
-        &SAXHander, NULL, xml, res, NULL
-    );
-
-    while ((res = fread(chars, 1, sizeof(chars), f)) > 0) {
-        check(xmlParseChunk(ctxt, chars, res, 0));
-    }
-
-    xmlFreeParserCtxt(ctxt);
-    xmlCleanupParser();
-
-    return NULL;
-
-error:
-    xmlParserError(ctxt, "xmlParseChunk");
-    xmlFreeParserCtxt(ctxt);
-    xmlCleanupParser();
-    */
-    return NULL;
-}
-

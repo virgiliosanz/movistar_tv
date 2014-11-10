@@ -52,7 +52,6 @@ void xmltv_add_channel(xmltv_t *xmltv, const xmltv_channel_t *channel);
 void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme);
 char *xmltv_to_xml(const xmltv_t *xmltv);
 int xmltv_validate(const char *xml);
-char *xml_parse(const char *xml, xmltv_t *xmltv);
 
 #endif
 
