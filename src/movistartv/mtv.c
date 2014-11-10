@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "core/dbg.h"
 #include "core/net.h"
 #include "movistartv/mtv.h"

@@ -150,8 +150,9 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
     xmltv_programme_t *prog;
 
     list_foreach(programmes, first, next, cur) {
-
         prog = (xmltv_programme_t *)cur->value;
+
+        debug("Adding program: %s (%s)", prog->title->data, prog->channel->data);
 
         node = xmlNewChild(root, NULL, BAD_CAST "programme", NULL);
         xmlNewProp(node, BAD_CAST "channel", BAD_CAST prog->channel->data);
@@ -208,16 +209,16 @@ static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
 
 char *xmltv_to_xml(const xmltv_t *xmltv)
 {
-    xmlDocPtr  doc;
-    xmlDtdPtr dtd;
-    xmlNodePtr root;
-    xmlNodePtr cur;
+    xmlDocPtr  doc = NULL;
+    xmlDtdPtr dtd = NULL;
+    xmlNodePtr root = NULL;
+    xmlNodePtr cur = NULL;
 
     LIBXML_TEST_VERSION;
 
     doc  = xmlNewDoc((const xmlChar *)"1.0"); check_mem(doc);
     root = xmlNewDocNode(doc, NULL, (const xmlChar *)"tv", NULL); check_mem(root);
-    dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd");
+    dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd"); check_mem(dtd);
     xmlDocSetRootElement(doc, root);
 
     xmlNewProp(root,
