@@ -5,16 +5,13 @@
 
 char *test_net_http_get()
 {
-    bstring body = net_http_get("http://www.google.com");
-    mu_assert(blength(body) > 0, "Tamaño de la respuesta es 0!");
-
-    const char *cbody = bstr2cstr(body, ' ');
-    mu_assert(strlen(cbody) > 0, "Tamaño de la respuesta es 0!");
-
-    mu_assert(strstr(cbody, "<html") != NULL, "No encuentro <html");
-    mu_assert(strstr(cbody, "</html>") != NULL, "No encuentro <html");
-    mu_assert(strstr(cbody, "<body") != NULL, "No encuentro <html");
-    mu_assert(strstr(cbody, "</body>") != NULL, "No encuentro <html");
+    char *body = net_http_get("http://www.google.com");
+    mu_assert(body != NULL, "Error leyendo google.com")
+    mu_assert(strlen(body) > 0, "Tamaño de la respuesta es 0!");
+    mu_assert(strstr(body, "<html") != NULL, "No encuentro <html");
+    mu_assert(strstr(body, "</html>") != NULL, "No encuentro <html");
+    mu_assert(strstr(body, "<body") != NULL, "No encuentro <html");
+    mu_assert(strstr(body, "</body>") != NULL, "No encuentro <html");
 
 
     return NULL;

@@ -17,7 +17,7 @@ static size_t _curl_write_memory_callback(void *ptr, size_t size, size_t nmemb, 
     return size * nmemb;
 }
 
-bstring net_http_get(const char *url)
+char *net_http_get(const char *url)
 {
     CURL *curl = NULL;
     bstring buffer = bfromcstr("");
@@ -47,7 +47,7 @@ bstring net_http_get(const char *url)
 
     debug("... leidos %d bytes", blength(buffer));
 
-    return buffer;
+    return (char *)buffer->data;
 
 error:
     if (curl) curl_easy_cleanup(curl);
