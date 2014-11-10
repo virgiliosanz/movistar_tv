@@ -153,7 +153,9 @@ char *test_create_xmltv()
 char *test_create_xml_and_validate()
 {
     char *xml;
+    debug("Generating xml from struct xmltv");
     xml = xmltv_to_xml(xmltv);
+    debug("Generated xml from struct xmltv");
     mu_assert(xml != NULL, "Error creating xml");
 
     debug("XMLTV:\n%s", xml);

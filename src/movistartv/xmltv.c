@@ -150,8 +150,9 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
     xmltv_programme_t *prog;
 
     list_foreach(programmes, first, next, cur) {
-
         prog = (xmltv_programme_t *)cur->value;
+
+        debug("Adding program: %s (%s)", prog->title->data, prog->channel->data);
 
         node = xmlNewChild(root, NULL, BAD_CAST "programme", NULL);
         xmlNewProp(node, BAD_CAST "channel", BAD_CAST prog->channel->data);
@@ -208,16 +209,16 @@ static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
 
 char *xmltv_to_xml(const xmltv_t *xmltv)
 {
-    xmlDocPtr  doc;
-    xmlDtdPtr dtd;
-    xmlNodePtr root;
-    xmlNodePtr cur;
+    xmlDocPtr  doc = NULL;
+    xmlDtdPtr dtd = NULL;
+    xmlNodePtr root = NULL;
+    xmlNodePtr cur = NULL;
 
     LIBXML_TEST_VERSION;
 
     doc  = xmlNewDoc((const xmlChar *)"1.0"); check_mem(doc);
     root = xmlNewDocNode(doc, NULL, (const xmlChar *)"tv", NULL); check_mem(root);
-    dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd");
+    dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd"); check_mem(dtd);
     xmlDocSetRootElement(doc, root);
 
     _channels_to_xml(root, xmltv->channels);
@@ -253,70 +254,3 @@ int xmltv_validate(const char *xml)
     res = xmlValidateDtd(ctxt, doc, dtd);
     return res;
 }
-
-static void _on_start_elementNs(
-    void *ctx,
-    const xmlChar *localname,
-    const xmlChar *prefix,
-    const xmlChar *URI,
-    int nb_namespaces,
-    const xmlChar **namespaces,
-    int nb_attributes,
-    int nb_defaulted,
-    const xmlChar **attributes
-)
-{
-    printf("<%s>\n", localname);
-}
-
-static void _on_end_elementNs(
-    void* ctx,
-    const xmlChar* localname,
-    const xmlChar* prefix,
-    const xmlChar* URI
-)
-{
-    printf("</%s>\n", localname);
-}
-
-static void _on_characters(void *ctx, const xmlChar *ch, int len)
-{
-    char chars[len + 1];
-    strncpy(chars, (const char *)ch, len);
-    chars[len] = (char)NULL;
-    printf("[%s]\n", chars);
-}
-
-char *xml_parse(const char *xml, xmltv_t *xmltv)
-{
-    /*
-    xmlSAXHandler SAXHander;
-
-    memset(&SAXHander, 0, sizeof(xmlSAXHandler));
-
-    SAXHander.initialized = XML_SAX2_MAGIC;
-    SAXHander.startElementNs = OnStartElementNs;
-    SAXHander.endElementNs = OnEndElementNs;
-    SAXHander.characters = OnCharacters;
-
-    xmlParserCtxtPtr ctxt = xmlCreatePushParserCtxt(
-        &SAXHander, NULL, xml, res, NULL
-    );
-
-    while ((res = fread(chars, 1, sizeof(chars), f)) > 0) {
-        check(xmlParseChunk(ctxt, chars, res, 0));
-    }
-
-    xmlFreeParserCtxt(ctxt);
-    xmlCleanupParser();
-
-    return NULL;
-
-error:
-    xmlParserError(ctxt, "xmlParseChunk");
-    xmlFreeParserCtxt(ctxt);
-    xmlCleanupParser();
-    */
-    return NULL;
-}
-
