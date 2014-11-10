@@ -1,6 +1,11 @@
 #include <libxml2/libxml/parser.h>
 #include <libxml2/libxml/tree.h>
+#include <libxml2/libxml/xmlstring.h>
+#include <libxml2/libxml/valid.h>
+#include <libxml2/libxml/xmlmemory.h>
+#include <time.h>
 
+#include "bstrlib/bstrlib.h"
 #include "core/dbg.h"
 #include "movistartv/xmltv.h"
 
@@ -22,6 +27,7 @@ xmltv_programme_t *xmltv_programme_alloc()
     prog->actors = list_create();
 
     return prog;
+
 error:
     if (prog) xmltv_programme_free(prog);
     return NULL;
@@ -30,6 +36,7 @@ error:
 void xmltv_programme_free(xmltv_programme_t* prog)
 {
     if (!prog) return;
+
     bdestroy(prog->channel);
     bdestroy(prog->title);
     bdestroy(prog->desc);
@@ -39,7 +46,7 @@ void xmltv_programme_free(xmltv_programme_t* prog)
     bdestroy(prog->aspect);
     bdestroy(prog->rating_value);
 
-    list_foreach(prog->actors, first, next, cur) bdestroy((bstring)cur);
+    list_foreach(prog->actors, first, next, cur) bdestroy((bstring)cur->value);
     list_destroy(prog->actors);
 }
 
@@ -80,6 +87,7 @@ xmltv_t *xmltv_alloc()
     check_mem(xmltv->programmes);
 
     return xmltv;
+
 error:
     if(xmltv) xmltv_free(xmltv);
     return NULL;
@@ -87,13 +95,17 @@ error:
 
 static void _free_programmes(xmltv_t *xmltv)
 {
-    list_foreach(xmltv->programmes, first, next, cur) xmltv_programme_free((xmltv_programme_t *)cur);
+    list_foreach(xmltv->programmes, first, next, cur) {
+        xmltv_programme_free((xmltv_programme_t *)cur->value);
+    }
     list_destroy(xmltv->programmes);
 }
 
 static void _free_channels(xmltv_t *xmltv)
 {
-    list_foreach(xmltv->channels, first, next, cur) xmltv_channel_free((xmltv_channel_t *)cur);
+    list_foreach(xmltv->channels, first, next, cur) {
+        xmltv_channel_free((xmltv_channel_t *)cur->value);
+    }
     list_destroy(xmltv->channels);
 }
 
@@ -113,39 +125,112 @@ void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme)
     list_push(xmltv->programmes, (void *)programme);
 }
 
-
-static void _programme_to_xml(const xmltv_programme_t *prog, xmlNodePtr node)
+static void _actors_to_xml(xmlNodePtr node, const list_t *actors)
 {
+    bstring s;
 
+    list_foreach(actors, first, next, cur) {
+        s = (bstring)cur->value;
+        xmlNewChild(node, NULL, BAD_CAST "actor", BAD_CAST s->data);
+    }
 }
 
-static void _channel_to_xml(const xmltv_channel_t *chan, xmlNodePtr node)
+static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
 {
+    xmlNodePtr node, subnode;
+    char start[XMLTV_START_FMT_SIZE];
+    char date[XMLTV_DATE_FMT_SIZE];
+    xmltv_programme_t *prog;
 
+    list_foreach(programmes, first, next, cur) {
+
+        prog = (xmltv_programme_t *)cur->value;
+
+        node = xmlNewChild(root, NULL, BAD_CAST "programme", NULL);
+        xmlNewProp(node, BAD_CAST "channel", BAD_CAST prog->channel->data);
+        strftime(start, XMLTV_START_FMT_SIZE, XMLTV_START_FMT, &prog->start);
+        xmlNewProp(node, BAD_CAST "start", BAD_CAST start);
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "title", BAD_CAST prog->title->data);
+        xmlNewProp(subnode, BAD_CAST "lang", BAD_CAST "es");
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "desc", BAD_CAST prog->title->data);
+        xmlNewProp(subnode, BAD_CAST "lang", BAD_CAST "es");
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "credits", NULL);
+        xmlNewChild(subnode, NULL, BAD_CAST "director", prog->director->data);
+        _actors_to_xml(subnode, prog->actors);
+
+        strftime(date, XMLTV_START_FMT_SIZE, XMLTV_START_FMT, &prog->date);
+        subnode = xmlNewChild(node, NULL, BAD_CAST "date", BAD_CAST date);
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "country", BAD_CAST prog->country->data);
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "episode-num", BAD_CAST prog->episode_num->data);
+        xmlNewProp(subnode, BAD_CAST "system", BAD_CAST "xmltv_ns");
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "video", NULL);
+        xmlNewChild(subnode, NULL, BAD_CAST "aspect", prog->aspect->data);
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "rating", NULL);
+        xmlNewProp(subnode, BAD_CAST "system", BAD_CAST "MPAA");
+        xmlNewChild(subnode, NULL, BAD_CAST "value", prog->rating_value->data);
+        subnode = xmlNewChild(subnode, NULL, BAD_CAST "icon", NULL);
+        xmlNewProp(subnode, BAD_CAST "src", BAD_CAST prog->rating_icon->data);
+
+        subnode = xmlNewChild(node, NULL, BAD_CAST "start-rating", NULL);
+        xmlNewChild(subnode, NULL, BAD_CAST "value", prog->start_rating->data);
+    }
+}
+
+static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
+{
+    xmlNodePtr node;
+    xmltv_channel_t *chan;
+    list_foreach(channels, first, next, cur) {
+        chan = (xmltv_channel_t *)cur->value;
+
+        node = xmlNewChild(root, NULL, BAD_CAST "channel", NULL);
+        xmlNewProp(node, BAD_CAST "id", BAD_CAST chan->id->data);
+
+        node = xmlNewChild(root, NULL, BAD_CAST "display-name", chan->display_name->data);
+        xmlNewProp(node, BAD_CAST "lang", BAD_CAST "es");
+    }
 }
 
 
-bstring xmltv_to_xml(const xmltv_t *xmltv)
+char *xmltv_to_xml(const xmltv_t *xmltv)
 {
-    bstring xml = bfromcstr(""); check_mem(xml);
-    xmlDocPtr doc = xmlNewDoc((const xmlChar *)"1.0"); check_mem(doc);
-    xmlNodePtr root = xmlNewDocNode(doc, NULL, (const xmlChar *)"tv", NULL); check_mem(root);
+    xmlDocPtr  doc;
+    xmlDtdPtr dtd;
+    xmlNodePtr root;
     xmlNodePtr cur;
 
+    LIBXML_TEST_VERSION;
 
+    doc  = xmlNewDoc((const xmlChar *)"1.0"); check_mem(doc);
+    root = xmlNewDocNode(doc, NULL, (const xmlChar *)"tv", NULL); check_mem(root);
+    dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd");
+    xmlDocSetRootElement(doc, root);
 
+    _channels_to_xml(root, xmltv->channels);
+    _programmes_to_xml(root, xmltv->programmes);
 
+    xmlChar *s; int size;
+    /* xmlDocDumpMemory(doc, &s, &size); */
+    xmlDocDumpMemoryEnc(doc, &s, &size, "UTF-8");
 
-    xmlFreeDoc(doc); xmlFreeNode(root); xmlFreeNode(cur);
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
 
-    return xml;
+    return (char *)s;
 
 error:
-
-    if (xml) bdestroy(xml);
     if (doc) xmlFreeDoc(doc);
+    if (dtd) xmlFreeDtd(dtd);
     if (root) xmlFreeNode(root);
     if (cur) xmlFreeNode(cur);
+    xmlCleanupParser();
 
     return NULL;
 }
@@ -156,6 +241,5 @@ char *xmltv_validate_dtd(const char *xml)
     xmlDocPtr doc;
 
     return NULL;
-
 }
 

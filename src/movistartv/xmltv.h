@@ -12,9 +12,15 @@ struct xmltv_channel_s {
 };
 typedef struct xmltv_channel_s xmltv_channel_t;
 
+#define XMLTV_START_FMT "%Y%m%d%H%M%z"
+#define XMLTV_START_FMT_SIZE 18
+
+#define XMLTV_DATE_FMT "%Y%m"
+#define XMLTV_DATE_FMT_SIZE 7
+
 struct xmltv_programme_s {
     struct tm start;
-    struct tm_date;
+    struct tm date;
     bstring channel;
     bstring title;
     bstring desc;
@@ -24,6 +30,8 @@ struct xmltv_programme_s {
     bstring episode_num; /* system="xmltv_ns" */
     bstring aspect;
     bstring rating_value; /* system="MPAA" */
+    bstring rating_icon;
+    bstring start_rating;
 };
 typedef struct xmltv_programme_s xmltv_programme_t;
 
@@ -43,7 +51,7 @@ xmltv_t *xmltv_alloc();
 void xmltv_free(xmltv_t *xmltv);
 void xmltv_add_channel(xmltv_t *xmltv, const xmltv_channel_t *channel);
 void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme);
-bstring xmltv_to_xml(const xmltv_t *xmltv);
+char *xmltv_to_xml(const xmltv_t *xmltv);
 char *xmltv_validate_dtd(const char *xml);
 
 #endif

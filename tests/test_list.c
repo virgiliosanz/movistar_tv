@@ -95,6 +95,29 @@ char *test_shift()
     return NULL;
 }
 
+char *test_foreach()
+{
+    list_t *l;
+    l = list_create();
+    mu_assert(l != NULL, "Cannot create list")
+
+    list_push(l, "Uno");
+    list_push(l, "Dos");
+    list_push(l, "Tres");
+
+    int i = 0;
+    list_foreach(l, first, next, cur) {
+        printf("Valor: %s\n", cur->value);
+        i ++;
+    }
+
+    debug("%d == %d", i, l->count);
+    mu_assert(i == l->count, "Incorrect length");
+
+error:
+    return NULL;
+}
+
 char *all_tests() {
     mu_suite_start();
 
@@ -104,6 +127,7 @@ char *all_tests() {
     mu_run_test(test_remove);
     mu_run_test(test_shift);
     mu_run_test(test_destroy);
+    mu_run_test(test_foreach);
 
     return NULL;
 }
