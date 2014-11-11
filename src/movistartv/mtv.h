@@ -11,6 +11,7 @@ struct mtv_conf_s {
     list_t        *tvpackages;
     bstring        mcast_grp_start;
     unsigned short mcast_port;
+    unsigned short gmt_offset;
 };
 typedef struct mtv_conf_s mtv_conf_t;
 

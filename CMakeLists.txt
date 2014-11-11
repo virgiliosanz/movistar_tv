@@ -23,7 +23,7 @@ include_directories(src)
 
 # Libraries being used
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(THIRDPARTY REQUIRED yajl libxml-2.0 libcurl libpcre)
+pkg_check_modules(THIRDPARTY REQUIRED libxml-2.0 libcurl libpcre yajl)
 include_directories(${THIRDPARTY_INCLUDE_DIRS})
 link_directories(${THIRDPARTY_LIBRARY_DIRS})
 add_definitions(${THIRDPARTY_OTHERS})

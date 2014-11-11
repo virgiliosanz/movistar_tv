@@ -45,7 +45,7 @@ char *net_http_get(const char *url)
     curl_easy_cleanup(curl);
     curl_global_cleanup();
 
-    debug("... leidos %d bytes", blength(buffer));
+    debug("... %d bytes read.", blength(buffer));
 
     return (char *)buffer->data;
 

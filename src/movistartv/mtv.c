@@ -32,11 +32,12 @@ void mtv_conf_destroy(mtv_conf_t *cnf)
 
 void mtv_parse_platform_json(mtv_conf_t *cnf, const char *json)
 {
-    const char *path[] = {"resultData", "dbvConfig", "dvbEntryPoint", (const char *) 0};
+    const char *path[] = {"resultData", "dvbConfig", "dvbEntryPoint", (const char *) 0};
 
     yajl_val node; yajl_val v;
     char err_buf[1024];
     bstring s;
+    struct bstrList *list = NULL;
 
     node = yajl_tree_parse(json, err_buf, sizeof(err_buf));
     check(NULL != node, "Error Parsing json: %s", err_buf);
@@ -45,15 +46,17 @@ void mtv_parse_platform_json(mtv_conf_t *cnf, const char *json)
     check(v != NULL, "Error reading multicast conf");
     s = bfromcstr(YAJL_GET_STRING(v));
     debug("node: %s/%s/%s = %s\n", path[0], path[1], path[2], s->data);
-    struct bstrList *list = bsplit(s, ':');
-    cnf->mcast_grp_start = list->entry[0];
+    list = bsplit(s, ':');
+    cnf->mcast_grp_start =  bstrcpy(list->entry[0]);
     cnf->mcast_port = atoi((const char *)list->entry[1]->data);
 
+    bstrListDestroy(list);
     yajl_tree_free(node);
     return;
 
 error:
     if (node) yajl_tree_free(node);
+    if (list) bstrListDestroy(list);
 
 }
 
@@ -65,6 +68,7 @@ void mtv_parse_client_json(mtv_conf_t *cnf, const char *json)
     yajl_val node; yajl_val v;
     char err_buf[1024];
     bstring s;
+    struct bstrList *list = NULL;
 
     node = yajl_tree_parse(json, err_buf, sizeof(err_buf));
     check(node, "Error Parsing json: %s", err_buf);
@@ -73,7 +77,7 @@ void mtv_parse_client_json(mtv_conf_t *cnf, const char *json)
     check(v != NULL, "Error reading tvPackages (client json)");
     s = bfromcstr(YAJL_GET_STRING(v));
     debug("node: %s/%s = %s\n", path_tvPackages[0], path_tvPackages[1], s->data);
-    struct bstrList *list = bsplit(s, '|');
+    list = bsplit(s, '|');
     for (int i = 0; i < list->qty; i++) {
         list_push(cnf->tvpackages, list->entry[i]->data);
     }
@@ -105,7 +109,7 @@ mtv_conf_t *mtv_load_conf()
 
     json = net_http_get(platform_profile_url);
     check(json, "Error getting %s", platform_profile_url);
-    mtv_parse_client_json(cnf, json);
+    mtv_parse_platform_json(cnf, json);
     free(json);
 
     return cnf;
