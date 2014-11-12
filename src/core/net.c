@@ -34,6 +34,7 @@ char *net_http_get(const char *url)
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, _curl_write_memory_callback);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, buffer);
     curl_easy_setopt(curl, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 5);
 
 #ifndef NDEBUG
     curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 1L);

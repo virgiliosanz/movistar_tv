@@ -7,6 +7,8 @@ RM    := rm -rf
 
 all: ./build/Makefile
 	@ $(MAKE) -C build
+
+tests:
 	@ $(MAKE) test
 
 ./build/Makefile:
