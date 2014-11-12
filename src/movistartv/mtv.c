@@ -26,6 +26,9 @@ error:
 void mtv_conf_destroy(mtv_conf_t *cnf)
 {
    bdestroy(cnf->mcast_grp_start);
+   list_foreach(cnf->tvpackages, first, next, cur) {
+       bdestroy((bstring) cur);
+   }
    list_clear_destroy(cnf->tvpackages);
    free(cnf);
 }
@@ -57,7 +60,6 @@ void mtv_parse_platform_json(mtv_conf_t *cnf, const char *json)
 error:
     if (node) yajl_tree_free(node);
     if (list) bstrListDestroy(list);
-
 }
 
 void mtv_parse_client_json(mtv_conf_t *cnf, const char *json)
@@ -67,7 +69,7 @@ void mtv_parse_client_json(mtv_conf_t *cnf, const char *json)
 
     yajl_val node; yajl_val v;
     char err_buf[1024];
-    bstring s;
+    bstring s = bfromcstr("");
     struct bstrList *list = NULL;
 
     node = yajl_tree_parse(json, err_buf, sizeof(err_buf));
@@ -88,12 +90,15 @@ void mtv_parse_client_json(mtv_conf_t *cnf, const char *json)
     debug("node: %s/%s = %d\n",
           path_demarcation[0], path_demarcation[1], cnf->demarcation);
 
-
+    bstrListDestroy(list);
+    bdestroy(s);
     yajl_tree_free(node);
     return;
 
 error:
     if (node) yajl_tree_free(node);
+    if (list) bstrListDestroy(list);
+    if (s) bdestroy(s);
 }
 
 

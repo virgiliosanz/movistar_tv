@@ -8,10 +8,8 @@
 static size_t _curl_write_memory_callback(void *ptr, size_t size, size_t nmemb, bstring buffer)
 {
     const char *c = (const char *)ptr;
-    /*
-    debug("Data: %zu Ptr: %zu", blength(b), strlen(c));
-    debug("%s", c);
-    */
+    debug("Data: %d Ptr: %zu", blength(buffer), strlen(c));
+    // debug("%s", c);
     bcatcstr(buffer, c);
 
     return size * nmemb;

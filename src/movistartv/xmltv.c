@@ -27,9 +27,10 @@ xmltv_programme_t *xmltv_programme_alloc()
     prog->episode_num = bfromcstr("");
     prog->aspect = bfromcstr("");
     prog->rating_value = bfromcstr("");
-    prog->actors = list_create();
     prog->rating_icon = bfromcstr("");
     prog->star_rating = bfromcstr("");
+
+    prog->actors = list_create();
 
     return prog;
 
@@ -50,11 +51,11 @@ void xmltv_programme_free(xmltv_programme_t* prog)
     bdestroy(prog->episode_num);
     bdestroy(prog->aspect);
     bdestroy(prog->rating_value);
+    bdestroy(prog->rating_icon);
+    bdestroy(prog->star_rating);
 
     list_foreach(prog->actors, first, next, cur) bdestroy((bstring)cur->value);
     list_destroy(prog->actors);
-    bdestroy(prog->rating_icon);
-    bdestroy(prog->star_rating);
 }
 
 /** Channels **/

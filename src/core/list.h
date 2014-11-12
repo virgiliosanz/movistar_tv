@@ -3,8 +3,6 @@
 
 #include <stdlib.h>
 
-struct list_node_s;
-
 typedef struct list_node_s {
     struct list_node_s *next;
     struct list_node_s *prev;
