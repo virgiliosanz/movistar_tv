@@ -8,6 +8,13 @@
 struct xmltv_channel_s {
     bstring id;
     bstring display_name;
+    bstring short_name;
+    bstring icon;
+    bstring url;
+    bstring ip;
+    unsigned short port;
+    bstring tags;
+    unsigned short order;
 };
 typedef struct xmltv_channel_s xmltv_channel_t;
 
@@ -50,8 +57,11 @@ xmltv_t *xmltv_alloc();
 void xmltv_free(xmltv_t *xmltv);
 void xmltv_add_channel(xmltv_t *xmltv, const xmltv_channel_t *channel);
 void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme);
-char *xmltv_to_xml(const xmltv_t *xmltv);
+bstring xmltv_to_xml(const xmltv_t *xmltv);
 int xmltv_validate(const char *xml);
+
+bstring xmltv_channel_to_m3u(const xmltv_channel_t *chan);
+bstring xmltv_channel_to_m3usimple(const xmltv_channel_t *chan);
 
 #endif
 

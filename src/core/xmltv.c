@@ -7,10 +7,73 @@
 
 #include "bstrlib/bstrlib.h"
 #include "core/dbg.h"
-#include "movistartv/xmltv.h"
-#include "movistartv/xmltv_dtd.h"
+#include "core/xmltv.h"
+#include "core/xmltv_dtd.h"
 
-/* static functions */
+static void _channels_to_xml(xmlNodePtr root, const list_t *channels);
+static void _free_programmes(xmltv_t *xmltv);
+static void _free_channels(xmltv_t *xmltv);
+static void _actors_to_xml(xmlNodePtr node, const list_t *actors);
+static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes);
+
+bstring xmltv_to_xml(const xmltv_t *xmltv)
+{
+    xmlDocPtr  doc = NULL;
+    xmlDtdPtr dtd = NULL;
+    xmlNodePtr root = NULL;
+    xmlNodePtr cur = NULL;
+
+    LIBXML_TEST_VERSION;
+
+    doc  = xmlNewDoc((const xmlChar *)"1.0"); check_mem(doc);
+    root = xmlNewDocNode(doc, NULL, (const xmlChar *)"tv", NULL); check_mem(root);
+    dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd"); check_mem(dtd);
+    xmlDocSetRootElement(doc, root);
+
+    xmlNewProp(root,
+            BAD_CAST "generator-info-name",
+            BAD_CAST "movistar_tv - https://github.com/virgiliosanz/movistar_tv");
+
+    _channels_to_xml(root, xmltv->channels);
+    _programmes_to_xml(root, xmltv->programmes);
+
+    xmlChar *s; int size;
+    /* xmlDocDumpMemory(doc, &s, &size); */
+    xmlDocDumpMemoryEnc(doc, &s, &size, "UTF-8");
+
+    xmlCleanupParser();
+
+    bstring b = bfromcstr((char *)s);
+    free(s);
+
+    return b;
+
+error:
+    xmlCleanupParser();
+
+    return NULL;
+}
+
+bstring xmltv_channel_to_m3u(const xmltv_channel_t *chan)
+{
+    debug("Adding m3u: %d - %s", chan->order, chan->display_name->data);
+    bstring b = bformat("#EXTM3U\n#EXINF:-1,%d - %s\n#EXTTV:%s;es;%s;%s\nrtp://@%s:%d\n",
+            chan->order, chan->display_name->data,
+            chan->tags->data, chan->id->data, chan->icon->data,
+            chan->ip->data, chan->port);
+
+    return b;
+
+}
+
+bstring xmltv_channel_to_m3usimple(const xmltv_channel_t *chan)
+{
+    debug("Adding m3usimple: %d - %s", chan->order, chan->display_name->data);
+    bstring b = bformat("#EXTM3U\n#EXTINF:-1 tvg-id=%s tvg-logo=%s, %s\nrtp://@%s:%d\n",
+            chan->short_name->data, chan->icon->data, chan->display_name->data,
+            chan->ip->data, chan->port);
+    return b;
+}
 
 
 /** Programmes **/
@@ -66,6 +129,13 @@ xmltv_channel_t *xmltv_channel_alloc()
 
     chan->id = bfromcstr("");
     chan->display_name = bfromcstr("");
+    chan->short_name = bfromcstr("");
+    chan->url = bfromcstr("");
+    chan->icon = bfromcstr("");
+    chan->ip = bfromcstr("");
+    chan->port = 0;
+    chan->tags = bfromcstr("");
+    chan->order = 0;
 
     return chan;
 
@@ -79,6 +149,9 @@ void xmltv_channel_free(xmltv_channel_t* chan)
     if (!chan) return;
     bdestroy(chan->id);
     bdestroy(chan->display_name);
+    bdestroy(chan->short_name);
+    bdestroy(chan->ip);
+    bdestroy(chan->tags);
     free(chan);
 }
 
@@ -204,49 +277,12 @@ static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
 
         xmlNewChild(node, NULL, BAD_CAST "display-name", chan->display_name->data);
         xmlNewProp(node, BAD_CAST "lang", BAD_CAST "es");
+
+
     }
 }
 
 
-char *xmltv_to_xml(const xmltv_t *xmltv)
-{
-    xmlDocPtr  doc = NULL;
-    xmlDtdPtr dtd = NULL;
-    xmlNodePtr root = NULL;
-    xmlNodePtr cur = NULL;
-
-    LIBXML_TEST_VERSION;
-
-    doc  = xmlNewDoc((const xmlChar *)"1.0"); check_mem(doc);
-    root = xmlNewDocNode(doc, NULL, (const xmlChar *)"tv", NULL); check_mem(root);
-    dtd  = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd"); check_mem(dtd);
-    xmlDocSetRootElement(doc, root);
-
-    xmlNewProp(root,
-            BAD_CAST "generator-info-name",
-            BAD_CAST "movistar_tv - https://github.com/virgiliosanz/movistar_tv");
-
-    _channels_to_xml(root, xmltv->channels);
-    _programmes_to_xml(root, xmltv->programmes);
-
-    xmlChar *s; int size;
-    /* xmlDocDumpMemory(doc, &s, &size); */
-    xmlDocDumpMemoryEnc(doc, &s, &size, "UTF-8");
-
-    xmlFreeDoc(doc);
-    xmlCleanupParser();
-
-    return (char *)s;
-
-error:
-    if (doc) xmlFreeDoc(doc);
-    if (dtd) xmlFreeDtd(dtd);
-    if (root) xmlFreeNode(root);
-    if (cur) xmlFreeNode(cur);
-    xmlCleanupParser();
-
-    return NULL;
-}
 
 int xmltv_validate(const char *xml)
 {

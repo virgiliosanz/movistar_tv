@@ -1,5 +1,5 @@
 #include "core/minunit.h"
-#include "movistartv/xmltv.h"
+#include "core/xmltv.h"
 
 xmltv_t *xmltv;
 list_t *channels;
@@ -16,18 +16,39 @@ char *test_create_channels()
     mu_assert(chan != NULL, "Error building channel")
     chan->id = bfromcstr("La1");
     chan->display_name = bfromcstr("La 1");
+    chan->short_name = bfromcstr("Quitar este y dejar Id");
+    chan->icon = bfromcstr("La1.jpg");
+    chan->url = bfromcstr("http://www.rtve.es/la1");
+    chan->ip = bfromcstr("127.0.0.1");
+    chan->port = 5327;
+    chan->tags = bfromcstr("entetenimiento, noticias");
+    chan->order = 3;
     list_push(channels, chan);
 
     chan = xmltv_channel_alloc();
     mu_assert(chan != NULL, "Error building channel")
     chan->id = bfromcstr("La2");
     chan->display_name = bfromcstr("La 2");
+    chan->short_name = bfromcstr("Quitar este y dejar Id");
+    chan->icon = bfromcstr("La2.jpg");
+    chan->url = bfromcstr("http://www.rtve.es/la2");
+    chan->ip = bfromcstr("127.0.0.2");
+    chan->port = 5327;
+    chan->tags = bfromcstr("entetenimiento, noticias");
+    chan->order = 2;
     list_push(channels, chan);
 
     chan = xmltv_channel_alloc();
     mu_assert(chan != NULL, "Error building channel")
     chan->id = bfromcstr("tmad");
     chan->display_name = bfromcstr("Telemadrid");
+    chan->short_name = bfromcstr("Quitar este y dejar Id");
+    chan->icon = bfromcstr("telemadrid.jpg");
+    chan->url = bfromcstr("http://www.telemadrid.es");
+    chan->ip = bfromcstr("127.0.0.3");
+    chan->port = 5327;
+    chan->tags = bfromcstr("entetenimiento, noticias");
+    chan->order = 1;
     list_push(channels, chan);
 
     mu_assert(2 != channels->count, "Invalid number of channels")
@@ -143,25 +164,54 @@ char *test_create_xmltv()
     mu_assert(NULL != xmltv, "Error building xmltv");
     debug("Adding Channels");
     _add_channels();
+    debug("Channels added");
 
     debug("Adding Programmes");
     _add_programmes();
+    debug("Programmes added");
 
     return NULL;
 }
 
 char *test_create_xml_and_validate()
 {
-    char *xml;
+    bstring xml;
     debug("Generating xml from struct xmltv");
     xml = xmltv_to_xml(xmltv);
-    debug("Generated xml from struct xmltv");
+    debug("XML Generated from struct xmltv");
     mu_assert(xml != NULL, "Error creating xml");
 
-    debug("XMLTV:\n%s", xml);
+    debug("XMLTV:\n%s", xml->data);
 
-    int res = xmltv_validate(xml);
+    int res = xmltv_validate((char *)xml->data);
     mu_assert(res != 1, "Invalid XML")
+
+    return NULL;
+}
+
+char *test_create_m3u()
+{
+    bstring b;
+
+    debug("Generating m3u");
+    list_foreach(channels, first, next, cur) {
+        b = xmltv_channel_to_m3u((xmltv_channel_t *)cur->value);
+        mu_assert(b, "Error generating m3u");
+        debug("Error generando m3u: %s", b->data);
+    }
+    return NULL;
+}
+
+char *test_create_m3usimple()
+{
+    bstring b;
+
+    debug("Generating m3usimple");
+    list_foreach(channels, first, next, cur) {
+        b = xmltv_channel_to_m3usimple((xmltv_channel_t *)cur->value);
+        mu_assert(b, "Error generating m3u");
+        debug("Error generando m3u: %s", b->data);
+    }
 
     return NULL;
 }
@@ -173,6 +223,8 @@ char *all_tests() {
     mu_run_test(test_create_programmes);
     mu_run_test(test_create_xmltv);
     mu_run_test(test_create_xml_and_validate);
+    mu_run_test(test_create_m3u);
+    mu_run_test(test_create_m3usimple);
 
     return NULL;
 }
