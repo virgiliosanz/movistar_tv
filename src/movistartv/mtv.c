@@ -10,12 +10,15 @@
 
 static const char *client_profile_url = "http://172.26.22.23:2001/appserver/mvtv.do?action=getClientProfile";
 static const char *platform_profile_url = "http://172.26.22.23:2001/appserver/mvtv.do?action=getPlatformProfile";
+
 static void _mtv_parse_platform_json(mtv_conf_t *cnf, const char *json);
 static void _mtv_parse_client_json(mtv_conf_t *cnf, const char *json);
+
 static void _mtv_start_element_tva(void * ctx,
     const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI,
     int nb_namespaces, const xmlChar **namespaces,
     int nb_attributes, int nb_defaulted, const xmlChar **attributes);
+static void _mtv_characters_tva(void *ctx, const xmlChar *ch, int len);
 static void _mtv_end_element_tva(void *ctx,
     const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI);
 static void _mtv_error_tva(void *ctx, const char *msg, ... );
@@ -87,6 +90,7 @@ xmltv_t *mtv_parse_tva(const char *s)
     // Using xmlSAXVersion( &hanlder, 2 ) generate crash as it sets plenty of other pointers...
     handler.initialized = XML_SAX2_MAGIC;  // so we do this to force parsing as SAX2.
     handler.startElementNs = _mtv_start_element_tva;
+    handler.characters = _mtv_characters_tva;
     handler.endElementNs = _mtv_end_element_tva;
     handler.warning = _mtv_error_tva;
     handler.error = _mtv_error_tva;
@@ -113,11 +117,11 @@ static void _mtv_start_element_tva(void * ctx,
 {
     xmltv_t *xml = (xmltv_t *) ctx;
 
-    debug("name = '%s' prefix = '%s' uri = (%p)'%s'\n", localname, prefix, URI, URI);
+    debug("name = '%s' prefix = '%s' uri = (%p)'%s'", localname, prefix, URI, URI);
     for (int i= 0; i< nb_namespaces; ++i) {
         const xmlChar *prefix = namespaces[i*2];
         const xmlChar *nsURI = namespaces[i*2+1];
-        debug("  namespace: name='%s' uri=(%p)'%s'\n", prefix, nsURI, nsURI);
+        debug("  namespace: name='%s' uri=(%p)'%s'", prefix, nsURI, nsURI);
     }
 
 
@@ -130,17 +134,22 @@ static void _mtv_start_element_tva(void * ctx,
         const xmlChar *valueEnd = attributes[j+4];
         //std::string value( (const char *)valueBegin, (const char *)valueEnd );
         bstring s = bfromcstr("");
-        debug("  %sattribute: localname='%s', prefix='%s', uri=(%p)'%s', value='%s'\n",
+        debug("  %sattribute: localname='%s', prefix='%s', uri=(%p)'%s', value='%s'",
                 i >= (nb_attributes - nb_defaulted) ? "defaulted " : "",
                 localname, prefix, nsURI, nsURI, s->data);
    }
+}
+
+static void _mtv_characters_tva(void *ctx, const xmlChar *ch, int len)
+{
+    debug("Content: %s", (char *)ch);
 }
 
 static void _mtv_end_element_tva(void *ctx,
     const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI)
 {
     xmltv_t *xml = (xmltv_t *)ctx;
-    debug("name = '%s' prefix = '%s' uri = '%s'\n", localname, prefix, URI);
+    debug("name = '%s' prefix = '%s' uri = '%s'", localname, prefix, URI);
 }
 
 static void _mtv_error_tva(void *ctx, const char *msg, ... )
@@ -232,73 +241,4 @@ error:
     if (list) bstrListDestroy(list);
     if (s) bdestroy(s);
 }
-
-
-
-
-/*
-static void _on_start_element(
-    void *ctx,
-    const xmlChar *localname,
-    const xmlChar *prefix,
-    const xmlChar *URI,
-    int nb_namespaces,
-    const xmlChar **namespaces,
-    int nb_attributes,
-    int nb_defaulted,
-    const xmlChar **attributes
-)
-{
-    printf("<%s>\n", localname);
-}
-
-static void _on_end_element(
-    void* ctx,
-    const xmlChar* localname,
-    const xmlChar* prefix,
-    const xmlChar* URI
-)
-{
-    printf("</%s>\n", localname);
-}
-
-static void _on_characters(void *ctx, const xmlChar *ch, int len)
-{
-    char chars[len + 1];
-    strncpy(chars, (const char *)ch, len);
-    chars[len] = (char)NULL;
-    printf("[%s]\n", chars);
-}
-
-char *xml_parse(const char *xml, xmltv_t *xmltv)
-{
-    xmlSAXHandler SAXHander;
-
-    memset(&SAXHander, 0, sizeof(xmlSAXHandler));
-
-    SAXHander.initialized = XML_SAX2_MAGIC;
-    SAXHander.startElementNs = OnStartElement;
-    SAXHander.endElementNs = OnEndElement;
-    SAXHander.characters = OnCharacters;
-
-    xmlParserCtxtPtr ctxt = xmlCreatePushParserCtxt(
-        &SAXHander, NULL, xml, res, NULL
-    );
-
-    while ((res = fread(chars, 1, sizeof(chars), f)) > 0) {
-        check(xmlParseChunk(ctxt, chars, res, 0));
-    }
-
-    xmlFreeParserCtxt(ctxt);
-    xmlCleanupParser();
-
-    return NULL;
-
-error:
-    xmlParserError(ctxt, "xmlParseChunk");
-    xmlFreeParserCtxt(ctxt);
-    xmlCleanupParser();
-    return NULL;
-}
-*/
 

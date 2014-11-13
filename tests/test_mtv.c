@@ -9,6 +9,7 @@ const char *doc = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n <TVAMain xmlns=\
 char *test_parse()
 {
     xmltv_t *xml = mtv_parse_tva(doc);
+    return NULL;
 }
 
 char *all_tests() {
