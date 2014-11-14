@@ -123,3 +123,89 @@ error:
     return result;
 }
 
+
+static inline void list_node_swap(list_node_t *a, list_node_t *b)
+{
+    void *temp = a->value;
+    a->value = b->value;
+    b->value = temp;
+}
+
+int list_bubble_sort(list_t *list, list_compare cmp)
+{
+    int sorted = 1;
+
+    if(list_count(list) <= 1) {
+        return 0;  // already sorted
+    }
+
+    do {
+        sorted = 1;
+        list_foreach(list, first, next, cur) {
+            if(cur->next) {
+                if(cmp(cur->value, cur->next->value) > 0) {
+                    list_node_swap(cur, cur->next);
+                    sorted = 0;
+                }
+            }
+        }
+    } while(!sorted);
+
+    return 0;
+}
+
+static inline list_t *list_merge(list_t *left, list_t *right, list_compare cmp)
+{
+    list_t *result = list_create();
+    void *val = NULL;
+
+    while(list_count(left) > 0 || list_count(right) > 0) {
+        if(list_count(left) > 0 && list_count(right) > 0) {
+            if(cmp(list_first(left), list_first(right)) <= 0) {
+                val = list_shift(left);
+            } else {
+                val = list_shift(right);
+            }
+
+            list_push(result, val);
+        } else if(list_count(left) > 0) {
+            val = list_shift(left);
+            list_push(result, val);
+        } else if(list_count(right) > 0) {
+            val = list_shift(right);
+            list_push(result, val);
+        }
+    }
+
+    return result;
+}
+
+list_t *list_merge_sort(list_t *list, list_compare cmp)
+{
+    if(list_count(list) <= 1) {
+        return list;
+    }
+
+    list_t *left = list_create();
+    list_t *right = list_create();
+    int middle = list_count(list) / 2;
+
+    list_foreach(list, first, next, cur) {
+        if(middle > 0) {
+            list_push(left, cur->value);
+        } else {
+            list_push(right, cur->value);
+        }
+
+        middle--;
+    }
+
+    list_t *sort_left = list_merge_sort(left, cmp);
+    list_t *sort_right = list_merge_sort(right, cmp);
+
+    if(sort_left != left) list_destroy(left);
+    if(sort_right != right) list_destroy(right);
+
+    return list_merge(sort_left, sort_right, cmp);
+}
+

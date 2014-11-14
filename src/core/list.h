@@ -37,5 +37,11 @@ void *list_remove(list_t *list, list_node_t *node);
     for(V = _node = L->S; _node != NULL; V = _node = _node->M)
 
 
+/* Soting */
+typedef int (*list_compare)(const void *a, const void *b);
+int list_bubble_sort(list_t *list, list_compare cmp);
+list_t *list_merge_sort(list_t *list, list_compare cmp);
+
+
 #endif
 
