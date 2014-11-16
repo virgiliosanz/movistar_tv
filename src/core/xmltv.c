@@ -11,17 +11,15 @@
 #include "core/xmltv_dtd.h"
 
 static void _channels_to_xml(xmlNodePtr root, const list_t *channels);
-static void _free_programmes(xmltv_t *xmltv);
-static void _free_channels(xmltv_t *xmltv);
 static void _actors_to_xml(xmlNodePtr node, const list_t *actors);
 static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes);
 
 bstring xmltv_to_xml(const xmltv_t *xmltv)
 {
-    xmlDocPtr  doc = NULL;
-    xmlDtdPtr dtd = NULL;
+    xmlDocPtr  doc  = NULL;
+    xmlDtdPtr  dtd  = NULL;
     xmlNodePtr root = NULL;
-    xmlNodePtr cur = NULL;
+    xmlNodePtr cur  = NULL;
 
     LIBXML_TEST_VERSION;
 
@@ -38,7 +36,6 @@ bstring xmltv_to_xml(const xmltv_t *xmltv)
     _programmes_to_xml(root, xmltv->programmes);
 
     xmlChar *s; int size;
-    /* xmlDocDumpMemory(doc, &s, &size); */
     xmlDocDumpMemoryEnc(doc, &s, &size, "UTF-8");
 
     xmlCleanupParser();
@@ -50,6 +47,7 @@ bstring xmltv_to_xml(const xmltv_t *xmltv)
 
 error:
     xmlCleanupParser();
+    if (s) free(s);
 
     return NULL;
 }
@@ -174,50 +172,81 @@ error:
     return NULL;
 }
 
-static void _free_programmes(xmltv_t *xmltv)
+void xmltv_programme_list_free(list_t *programmes)
 {
-    list_foreach(xmltv->programmes, first, next, cur) {
+    check(programmes == NULL, "Channels is NULL");
+    list_foreach(programmes, first, next, cur) {
         xmltv_programme_free((xmltv_programme_t *)cur->value);
     }
-    list_destroy(xmltv->programmes);
+    list_destroy(programmes);
+
+error:
+    return;
 }
 
-static void _free_channels(xmltv_t *xmltv)
+void xmltv_channel_list_free(list_t *channels)
 {
-    list_foreach(xmltv->channels, first, next, cur) {
+    check(channels == NULL, "Channels is NULL");
+
+    list_foreach(channels, first, next, cur) {
         xmltv_channel_free((xmltv_channel_t *)cur->value);
     }
-    list_destroy(xmltv->channels);
+    list_destroy(channels);
+
+error:
+    return;
+
 }
 
 void xmltv_free(xmltv_t *xmltv)
 {
-    _free_programmes(xmltv);
-    _free_channels(xmltv);
+    xmltv_programme_list_free(xmltv->programmes);
+    xmltv_channel_list_free(xmltv->channels);
+
+    free(xmltv);
 }
 
 void xmltv_add_channel(xmltv_t *xmltv, const xmltv_channel_t *channel)
 {
+    check(xmltv == NULL, "xmltv is NULL");
+    check(channel == NULL, "channel is NULL");
+
     list_push(xmltv->channels, (void *)channel);
+
+error:
+    return;
 }
 
 void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme)
 {
+    check(xmltv == NULL, "xmltv is NULL");
+    check(programme == NULL, "programme is NULL");
+
     list_push(xmltv->programmes, (void *)programme);
+
+error:
+    return;
 }
 
 static void _actors_to_xml(xmlNodePtr node, const list_t *actors)
 {
+    check(node == NULL, "Node is NULL");
+    check(actors == NULL, "Actors is NULL");
     bstring s;
-
     list_foreach(actors, first, next, cur) {
         s = (bstring)cur->value;
         xmlNewChild(node, NULL, BAD_CAST "actor", BAD_CAST s->data);
     }
+
+error:
+    return;
 }
 
 static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
 {
+    check(root == NULL, "Node is NULL");
+    check(NULL == programmes, "Programmes is NULL");
+
     xmlNodePtr node, subnode;
     char start[XMLTV_START_FMT_SIZE];
     char date[XMLTV_DATE_FMT_SIZE];
@@ -263,10 +292,16 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
         subnode = xmlNewChild(node, NULL, BAD_CAST "start-rating", NULL);
         xmlNewChild(subnode, NULL, BAD_CAST "value", prog->star_rating->data);
     }
+
+error:
+    return;
 }
 
 static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
 {
+    check(root == NULL, "Node is NULL");
+    check(NULL == channels, "Programmes is NULL");
+
     xmlNodePtr node;
     xmltv_channel_t *chan;
     list_foreach(channels, first, next, cur) {
@@ -277,21 +312,25 @@ static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
 
         xmlNewChild(node, NULL, BAD_CAST "display-name", chan->display_name->data);
         xmlNewProp(node, BAD_CAST "lang", BAD_CAST "es");
-
-
     }
+
+error:
+    return;
 }
 
 
 
-int xmltv_validate(const char *xml)
+int xmltv_validate(const bstring xml)
 {
-    int res;
+    int rc;
 
     xmlValidCtxtPtr ctxt = xmlNewValidCtxt();
-    xmlDocPtr doc = xmlParseMemory(xml, strlen(xml));
+    xmlDocPtr doc = xmlParseMemory((char *)xml->data, blength(xml));
     xmlDtdPtr dtd = xmlParseDTD(NULL, BAD_CAST xmltv_dtd);
 
-    res = xmlValidateDtd(ctxt, doc, dtd);
-    return res;
+    rc = xmlValidateDtd(ctxt, doc, dtd);
+
+    xmlCleanupParser();
+
+    return rc;
 }

@@ -49,17 +49,20 @@ typedef struct xmltv_s xmltv_t;
 
 xmltv_programme_t *xmltv_programme_alloc();
 void xmltv_programme_free(xmltv_programme_t* programme);
+void xmltv_programme_list_free(list_t *programmes);
 
 xmltv_channel_t *xmltv_channel_alloc();
 void xmltv_channel_free(xmltv_channel_t* channel);
+void xmltv_channel_list_free(list_t *channels);
 
 xmltv_t *xmltv_alloc();
 void xmltv_free(xmltv_t *xmltv);
 void xmltv_add_channel(xmltv_t *xmltv, const xmltv_channel_t *channel);
 void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme);
-bstring xmltv_to_xml(const xmltv_t *xmltv);
-int xmltv_validate(const char *xml);
 
+int xmltv_validate(const bstring xml);
+
+bstring xmltv_to_xml(const xmltv_t *xmltv);
 bstring xmltv_channel_to_m3u(const xmltv_channel_t *chan);
 bstring xmltv_channel_to_m3usimple(const xmltv_channel_t *chan);
 

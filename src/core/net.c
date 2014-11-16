@@ -15,19 +15,19 @@ static size_t _curl_write_memory_callback(void *ptr, size_t size, size_t nmemb, 
     return size * nmemb;
 }
 
-char *net_http_get(const char *url)
+bstring net_http_get(const bstring url)
 {
     CURL *curl = NULL;
     bstring buffer = bfromcstr("");
 
     check(NULL != url, "Url is undefined");
-    debug("Loading %s ...", url);
+    debug("Loading %s ...", url->data);
 
     curl_global_init(CURL_GLOBAL_ALL);
     curl = curl_easy_init();
     check(curl != NULL, "Cannot initialize curl_easy_init");
 
-    curl_easy_setopt(curl, CURLOPT_URL, url);
+    curl_easy_setopt(curl, CURLOPT_URL, url->data);
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, _curl_write_memory_callback);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, buffer);
@@ -37,6 +37,9 @@ char *net_http_get(const char *url)
 #ifndef NDEBUG
     curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 1L);
     curl_easy_setopt(curl, CURLOPT_VERBOSE, 0L);
+#else
+    curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
+    curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
 #endif
 
     CURLcode res = curl_easy_perform(curl);
@@ -46,7 +49,7 @@ char *net_http_get(const char *url)
 
     debug("... %d bytes read.", blength(buffer));
 
-    return (char *)buffer->data;
+    return buffer;
 
 error:
     if (curl) curl_easy_cleanup(curl);

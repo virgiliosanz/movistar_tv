@@ -162,6 +162,7 @@ char *test_create_xmltv()
 {
     xmltv = xmltv_alloc();
     mu_assert(NULL != xmltv, "Error building xmltv");
+
     debug("Adding Channels");
     _add_channels();
     debug("Channels added");
@@ -176,14 +177,16 @@ char *test_create_xmltv()
 char *test_create_xml_and_validate()
 {
     bstring xml;
+
     debug("Generating xml from struct xmltv");
     xml = xmltv_to_xml(xmltv);
+
     debug("XML Generated from struct xmltv");
     mu_assert(xml != NULL, "Error creating xml");
 
     debug("XMLTV:\n%s", xml->data);
 
-    int res = xmltv_validate((char *)xml->data);
+    int res = xmltv_validate(xml);
     mu_assert(res != 1, "Invalid XML")
 
     return NULL;
