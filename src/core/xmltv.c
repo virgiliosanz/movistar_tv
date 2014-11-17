@@ -16,6 +16,8 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes);
 
 bstring xmltv_to_xml(const xmltv_t *xmltv)
 {
+    check(xmltv != NULL, "xmltv is NULL");
+
     xmlDocPtr  doc  = NULL;
     xmlDtdPtr  dtd  = NULL;
     xmlNodePtr root = NULL;
@@ -54,23 +56,33 @@ error:
 
 bstring xmltv_channel_to_m3u(const xmltv_channel_t *chan)
 {
+    check(chan != NULL, "Chan is null");
     debug("Adding m3u: %d - %s", chan->order, chan->display_name->data);
+
     bstring b = bformat("#EXTM3U\n#EXINF:-1,%d - %s\n#EXTTV:%s;es;%s;%s\nrtp://@%s:%d\n",
             chan->order, chan->display_name->data,
             chan->tags->data, chan->id->data, chan->icon->data,
             chan->ip->data, chan->port);
 
     return b;
+error:
+    return NULL;
 
 }
 
 bstring xmltv_channel_to_m3usimple(const xmltv_channel_t *chan)
 {
+    check(chan != NULL, "Chan is null");
     debug("Adding m3usimple: %d - %s", chan->order, chan->display_name->data);
+
     bstring b = bformat("#EXTM3U\n#EXTINF:-1 tvg-id=%s tvg-logo=%s, %s\nrtp://@%s:%d\n",
             chan->short_name->data, chan->icon->data, chan->display_name->data,
             chan->ip->data, chan->port);
     return b;
+
+error:
+    return NULL;
+
 }
 
 
@@ -145,6 +157,7 @@ error:
 void xmltv_channel_free(xmltv_channel_t* chan)
 {
     if (!chan) return;
+
     bdestroy(chan->id);
     bdestroy(chan->display_name);
     bdestroy(chan->short_name);
@@ -174,7 +187,7 @@ error:
 
 void xmltv_programme_list_free(list_t *programmes)
 {
-    check(programmes == NULL, "Channels is NULL");
+    check(programmes != NULL, "Channels is NULL");
     list_foreach(programmes, first, next, cur) {
         xmltv_programme_free((xmltv_programme_t *)cur->value);
     }
@@ -186,7 +199,7 @@ error:
 
 void xmltv_channel_list_free(list_t *channels)
 {
-    check(channels == NULL, "Channels is NULL");
+    check(channels != NULL, "Channels is NULL");
 
     list_foreach(channels, first, next, cur) {
         xmltv_channel_free((xmltv_channel_t *)cur->value);
@@ -200,16 +213,17 @@ error:
 
 void xmltv_free(xmltv_t *xmltv)
 {
+    if (!xmltv) return;
+
     xmltv_programme_list_free(xmltv->programmes);
     xmltv_channel_list_free(xmltv->channels);
-
     free(xmltv);
 }
 
 void xmltv_add_channel(xmltv_t *xmltv, const xmltv_channel_t *channel)
 {
-    check(xmltv == NULL, "xmltv is NULL");
-    check(channel == NULL, "channel is NULL");
+    check(xmltv != NULL, "xmltv is NULL");
+    check(channel != NULL, "channel is NULL");
 
     list_push(xmltv->channels, (void *)channel);
 
@@ -219,8 +233,8 @@ error:
 
 void xmltv_add_programme(xmltv_t *xmltv, const xmltv_programme_t *programme)
 {
-    check(xmltv == NULL, "xmltv is NULL");
-    check(programme == NULL, "programme is NULL");
+    check(xmltv != NULL, "xmltv is NULL");
+    check(programme != NULL, "programme is NULL");
 
     list_push(xmltv->programmes, (void *)programme);
 
@@ -230,8 +244,8 @@ error:
 
 static void _actors_to_xml(xmlNodePtr node, const list_t *actors)
 {
-    check(node == NULL, "Node is NULL");
-    check(actors == NULL, "Actors is NULL");
+    check(node != NULL, "Node is NULL");
+    check(actors != NULL, "Actors is NULL");
     bstring s;
     list_foreach(actors, first, next, cur) {
         s = (bstring)cur->value;
@@ -244,8 +258,8 @@ error:
 
 static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
 {
-    check(root == NULL, "Node is NULL");
-    check(NULL == programmes, "Programmes is NULL");
+    check(root != NULL, "Node is NULL");
+    check(NULL != programmes, "Programmes is NULL");
 
     xmlNodePtr node, subnode;
     char start[XMLTV_START_FMT_SIZE];
@@ -259,6 +273,7 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
 
         node = xmlNewChild(root, NULL, BAD_CAST "programme", NULL);
         xmlNewProp(node, BAD_CAST "channel", BAD_CAST prog->channel->data);
+
         strftime(start, XMLTV_START_FMT_SIZE, XMLTV_START_FMT, &prog->start);
         xmlNewProp(node, BAD_CAST "start", BAD_CAST start);
 
@@ -299,8 +314,8 @@ error:
 
 static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
 {
-    check(root == NULL, "Node is NULL");
-    check(NULL == channels, "Programmes is NULL");
+    check(root != NULL, "Node is NULL");
+    check(NULL != channels, "Programmes is NULL");
 
     xmlNodePtr node;
     xmltv_channel_t *chan;
@@ -322,6 +337,8 @@ error:
 
 int xmltv_validate(const bstring xml)
 {
+    if (!xml) return -1;
+
     int rc;
 
     xmlValidCtxtPtr ctxt = xmlNewValidCtxt();

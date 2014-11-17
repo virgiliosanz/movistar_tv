@@ -4,9 +4,57 @@
 #include "core/xmltv.h"
 #include "movistartv/tva_parser.h"
 
+/*
+<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005" xml:lang="ENG">
+    <ProgramDescription>
+        <ProgramLocationTable>
+            <Schedule serviceIDRef="1019.imagenio.es" Version="24">
+                <ScheduleEvent>
+                    <Program crid="crid://imagenio.es/0/38815303/38815303"/>
+                    <InstanceDescription>
+                        <Title>Pippi Calzaslargas: Pippi va de compras</Title>
+                        <Genre href="urn:miviewtv:cs:GenreCS:2007:112.116">
+                            <Name>COMEDIA</Name>
+                        </Genre>
+                        <ParentalGuidance>
+                            <mpeg7:ParentalRating href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2">
+                                <mpeg7:Name>Suitable for all audiences</mpeg7:Name>
+                            </mpeg7:ParentalRating>
+                        </ParentalGuidance>
+                    </InstanceDescription>
+                    <PublishedStartTime>2014-08-25T00:05:00.000Z</PublishedStartTime>
+                    <PublishedDuration>PT31M</PublishedDuration>
+                    <ImmediateViewing value="false"/>
+                    <UserActionList>
+                        <mpeg7:ActionType>
+                        <mpeg7:Name>FastForward</mpeg7:Name>
+                        </mpeg7:ActionType>
+                    </UserActionList>
+                    <EventStartTime>2014-08-25T00:05:00.000Z</EventStartTime>
+                    <EventDuration>PT31M</EventDuration>
+                </ScheduleEvent>
+
+                ....
+                ....
+
+            </Schedule>
+        </ProgramLocationTable>
+    </ProgramDescription>
+</TVAMain>
+*/
+
 typedef enum {
-    STATE_START,
-    STATE_UNKNOWN,
+    TVA_STATE_START,
+    TVA_STATE_SCHEDULE_EVENT,
+    TVA_TITLE,
+    TVA_GENRE,
+    TVA_GENRE_NAME,
+    TVA_PARENTAL_GUIDANCE,
+    TVA_START_TIME,
+    TVA_DURATION,
+    TVA_EVENT_START,
+    TVA_EVENT_DURATION,
+    TVA_STATE_UNKNOWN,
 } parser_state;
 
 struct tva_context_s {
@@ -14,6 +62,7 @@ struct tva_context_s {
     parser_state state;
     list_t *programmes;
     xmltv_programme_t *programme;
+    bstring chars;
 };
 typedef struct tva_context_s tva_context_t;
 
@@ -89,12 +138,14 @@ static tva_context_t *tva_ctx_alloc()
 
     ctx->programme = NULL;
     ctx->depth = 0;
-    ctx->state = STATE_UNKNOWN;
+    ctx->state = TVA_STATE_UNKNOWN;
+    ctx->chars = bfromcstr("");
 
     return ctx;
 
 error:
     if (ctx->programmes) xmltv_programme_list_free(ctx->programmes);
+    if (ctx->chars) bdestroy(ctx->chars);
     if (ctx) free(ctx);
     return NULL;
 }
@@ -102,6 +153,7 @@ error:
 static void tva_ctx_free(tva_context_t *ctx)
 {
     if (ctx->programmes) xmltv_programme_list_free(ctx->programmes);
+    if (ctx->chars) bdestroy(ctx->chars);
     if (ctx) free(ctx);
 }
 
@@ -158,4 +210,3 @@ error:
     xmlMemoryDump();
     return NULL;
 }
-
