@@ -8,11 +8,14 @@
 #include "bstrlib/bstrlib.h"
 #include "core/dbg.h"
 #include "core/xmltv.h"
-#include "core/xmltv_dtd.h"
+//#include "core/xmltv_dtd.h"
 
 static void _channels_to_xml(xmlNodePtr root, const list_t *channels);
 static void _actors_to_xml(xmlNodePtr node, const list_t *actors);
 static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes);
+
+const char *xmltv_dtd_url = "http://xmltv.cvs.sourceforge.net/viewvc/xmltv/xmltv/xmltv.dtd";
+const char *xmltv_dtd_file = "/home/vsanz/Code/movistar_tv/misc/xmltv.dtd";
 
 bstring xmltv_to_xml(const xmltv_t *xmltv)
 {
@@ -70,6 +73,31 @@ error:
 
 }
 
+bstring xmltv_channel_list_to_m3u(const list_t *l)
+{
+    check(l != NULL, "Channels list is NULL/Empty");
+
+    bstring b = bfromcstr("");
+    bstring chan = NULL;
+    xmltv_channel_t *channel = NULL;
+
+    list_foreach(l, first, next, cur) {
+        channel = (xmltv_channel_t *)cur->value;
+        debug("Adding m3u: %d - %s",
+                channel->order, channel->display_name->data);
+        chan = xmltv_channel_to_m3u(channel);
+        bconcat(b, chan);
+        bdestroy(chan);
+    }
+
+    return b;
+error:
+    if (b) bdestroy(b);
+    if (chan) bdestroy(chan);
+    return NULL;
+
+}
+
 bstring xmltv_channel_to_m3usimple(const xmltv_channel_t *chan)
 {
     check(chan != NULL, "Chan is null");
@@ -83,6 +111,31 @@ bstring xmltv_channel_to_m3usimple(const xmltv_channel_t *chan)
 error:
     return NULL;
 
+}
+
+bstring xmltv_channel_list_to_m3usimple(const list_t *l)
+{
+
+    check(l != NULL, "Channels list is NULL/Empty");
+
+    bstring b = bfromcstr("");
+    bstring chan = NULL;
+    xmltv_channel_t *channel = NULL;
+
+    list_foreach(l, first, next, cur) {
+        channel = (xmltv_channel_t *)cur->value;
+        debug("Adding m3u: %d - %s",
+                channel->order, channel->display_name->data);
+        chan = xmltv_channel_to_m3usimple(channel);
+        bconcat(b, chan);
+        bdestroy(chan);
+    }
+
+    return b;
+error:
+    if (b) bdestroy(b);
+    if (chan) bdestroy(chan);
+    return NULL;
 }
 
 
@@ -304,7 +357,7 @@ static void _programmes_to_xml(xmlNodePtr root, const list_t *programmes)
         subnode = xmlNewChild(subnode, NULL, BAD_CAST "icon", NULL);
         xmlNewProp(subnode, BAD_CAST "src", BAD_CAST prog->rating_icon->data);
 
-        subnode = xmlNewChild(node, NULL, BAD_CAST "start-rating", NULL);
+        subnode = xmlNewChild(node, NULL, BAD_CAST "star-rating", NULL);
         xmlNewChild(subnode, NULL, BAD_CAST "value", prog->star_rating->data);
     }
 
@@ -325,7 +378,7 @@ static void _channels_to_xml(xmlNodePtr root, const list_t *channels)
         node = xmlNewChild(root, NULL, BAD_CAST "channel", NULL);
         xmlNewProp(node, BAD_CAST "id", BAD_CAST chan->id->data);
 
-        xmlNewChild(node, NULL, BAD_CAST "display-name", chan->display_name->data);
+        node = xmlNewChild(node, NULL, BAD_CAST "display-name", chan->display_name->data);
         xmlNewProp(node, BAD_CAST "lang", BAD_CAST "es");
     }
 
@@ -333,21 +386,39 @@ error:
     return;
 }
 
-
-
+/**
+ * Validate xmltv document in bstring format against dtd
+ */
 int xmltv_validate(const bstring xml)
 {
     if (!xml) return -1;
 
     int rc;
 
-    xmlValidCtxtPtr ctxt = xmlNewValidCtxt();
-    xmlDocPtr doc = xmlParseMemory((char *)xml->data, blength(xml));
-    xmlDtdPtr dtd = xmlParseDTD(NULL, BAD_CAST xmltv_dtd);
+    xmlValidCtxtPtr ctx = xmlNewValidCtxt();
+    check_mem(ctx);
 
-    rc = xmlValidateDtd(ctxt, doc, dtd);
+    xmlDocPtr doc = xmlParseMemory((char *)xml->data, blength(xml));
+    check_mem(doc);
+
+    /* Validate against in memory dtd
+    xmlParserInputBufferPtr buf = xmlParserInputBufferCreateMem(
+            xmltv_dtd, strlen(xmltv_dtd), XML_CHAR_ENCODING_NONE);
+    xmlDtdPtr dtd = xmlIOParseDTD(NULL, buf, XML_CHAR_ENCODING_NONE);
+    xmlFreeParserInputBuffer(buf);
+    */
+
+    xmlDtdPtr dtd = xmlParseDTD(NULL, BAD_CAST xmltv_dtd_file); /* parse the DTD */
+
+    rc = xmlValidateDtd(ctx, doc, dtd);
+    debug("Resultado de validación: %d", rc);
 
     xmlCleanupParser();
 
     return rc;
+
+error:
+    xmlCleanupParser();
+    return -1;
+
 }

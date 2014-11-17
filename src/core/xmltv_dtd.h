@@ -121,13 +121,13 @@ To publicize your wonderful program which generated this file, you can
 use 'generator-info-name' (preferably in the form 'progname/version')
 and 'generator-info-url' (a link to more info about the program).
 */
-"<!ELEMENT tv (channel*, programme*)> \
-<!ATTLIST tv date   CDATA #IMPLIED \
-             source-info-url     CDATA #IMPLIED \
-             source-info-name    CDATA #IMPLIED \
-             source-data-url     CDATA #IMPLIED \
-             generator-info-name CDATA #IMPLIED \
-             generator-info-url  CDATA #IMPLIED >"
+"<!ELEMENT tv (channel*, programme*)> \n \
+<!ATTLIST tv date   CDATA #IMPLIED \n \
+             source-info-url     CDATA #IMPLIED \n \
+             source-info-name    CDATA #IMPLIED \n \
+             source-data-url     CDATA #IMPLIED \n \
+             generator-info-name CDATA #IMPLIED \n \
+             generator-info-url  CDATA #IMPLIED >\n"
 /* channel - details of a channel
 
 Each 'programme' element (see below) should have an attribute
@@ -164,14 +164,14 @@ the file, since they are looked up by id and not by their position.
 However it makes things like diffing easier if you write the channel
 elements sorted by ASCII order of their ids.
 */
-"<!ELEMENT channel (display-name+, icon*, url*) > \
-<!ATTLIST channel id CDATA #REQUIRED > "
+"<!ELEMENT channel (display-name+, icon*, url*) > \n \
+<!ATTLIST channel id CDATA #REQUIRED >\n"
 /* A user-friendly name for the channel - maybe even a channel
 number.  List the most canonical / common ones first and the most
 obscure names last.  The lang attribute follows RFC 1766.
 */
-"<!ELEMENT display-name (#PCDATA)> \
-<!ATTLIST display-name lang CDATA #IMPLIED> "
+"<!ELEMENT display-name (#PCDATA)> \n \
+<!ATTLIST display-name lang CDATA #IMPLIED> \n"
 /* A URL where you can find out more about the element that contains
 it (programme or channel).  This might be the official site, or a fan
 page, whatever you like really.
@@ -179,7 +179,7 @@ page, whatever you like really.
 If multiple url elements are given, the most authoritative or official
 (which might conflict...) sites should be listed first.
 */
-"<!ELEMENT url (#PCDATA)> "
+"<!ELEMENT url (#PCDATA)> \n"
 /* programme - details of a single programme transmission
 
 A show will be exactly the same whether it is broadcast at 18:00 or
@@ -215,29 +215,29 @@ channel.  The 'channel' attribute references the 'id' of a channel
 element, but the DTD doesn't give a way to specify this constraint.
 Perhaps there is some better XML syntax we could use for that.
 */
-"<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?, \
-                     category*, keyword*, language?, orig-language?, \
-                     length?, icon*, url*, country*, episode-num*, \
-                     video?, audio?, previously-shown?, premiere?, \
-                     last-chance?, new?, subtitles*, rating*, \
-                     star-rating*, review* )> \
-<!ATTLIST programme start     CDATA #REQUIRED \
-                    stop      CDATA #IMPLIED \
-                    pdc-start CDATA #IMPLIED \
-                    vps-start CDATA #IMPLIED \
-                    showview  CDATA #IMPLIED \
-                    videoplus CDATA #IMPLIED \
-                    channel   CDATA #REQUIRED \
-                    clumpidx  CDATA \"0/1\" > "
+"<!ELEMENT programme (title+, sub-title*, desc*, credits?, date?, \n \
+                     category*, keyword*, language?, orig-language?, \n \
+                     length?, icon*, url*, country*, episode-num*, \n \
+                     video?, audio?, previously-shown?, premiere?, \n \
+                     last-chance?, new?, subtitles*, rating*, \n \
+                     star-rating*, review* )> \n \
+<!ATTLIST programme start     CDATA #REQUIRED \n \
+                    stop      CDATA #IMPLIED \n \
+                    pdc-start CDATA #IMPLIED \n \
+                    vps-start CDATA #IMPLIED \n \
+                    showview  CDATA #IMPLIED \n \
+                    videoplus CDATA #IMPLIED \n \
+                    channel   CDATA #REQUIRED \n \
+                    clumpidx  CDATA \"0/1\" > \n"
 /* Programme title, eg 'The Simpsons'. */
-"<!ELEMENT title (#PCDATA)> \
-<!ATTLIST title lang CDATA #IMPLIED> "
+"<!ELEMENT title (#PCDATA)> \n \
+<!ATTLIST title lang CDATA #IMPLIED> \n"
 
 /* Sub-title or episode title, eg 'Datalore'.   Should probably be
 called 'secondary title' to avoid confusion with captioning!
 */
-"<!ELEMENT sub-title (#PCDATA)> \
-<!ATTLIST sub-title lang CDATA #IMPLIED> "
+"<!ELEMENT sub-title (#PCDATA)> \n \
+<!ATTLIST sub-title lang CDATA #IMPLIED>\n"
 
 /* Description of the programme or episode.
 
@@ -260,38 +260,38 @@ somebody who did the translation from another language.  Maybe these
 should be separate, but if so how would 'translator' fit in with the
 'language' element?
 */
-"<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*, \
-                   composer*, editor*, presenter*, commentator*, \
-                   guest* )> \
-<!ELEMENT director    (#PCDATA)> \
-<!ELEMENT actor       (#PCDATA)> \
-<!ATTLIST actor role  CDATA #IMPLIED> \
-<!ELEMENT writer      (#PCDATA)> \
-<!ELEMENT adapter     (#PCDATA)> \
-<!ELEMENT producer    (#PCDATA)> \
-<!ELEMENT composer    (#PCDATA)> \
-<!ELEMENT editor      (#PCDATA)> \
-<!ELEMENT presenter   (#PCDATA)> \
-<!ELEMENT commentator (#PCDATA)> \
-<!ELEMENT guest       (#PCDATA)> "
+"<!ELEMENT credits (director*, actor*, writer*, adapter*, producer*, \n \
+                   composer*, editor*, presenter*, commentator*, \n \
+                   guest* )> \n \
+<!ELEMENT director    (#PCDATA)> \n \
+<!ELEMENT actor       (#PCDATA)> \n \
+<!ATTLIST actor role  CDATA #IMPLIED> \n \
+<!ELEMENT writer      (#PCDATA)> \n \
+<!ELEMENT adapter     (#PCDATA)> \n \
+<!ELEMENT producer    (#PCDATA)> \n \
+<!ELEMENT composer    (#PCDATA)> \n \
+<!ELEMENT editor      (#PCDATA)> \n \
+<!ELEMENT presenter   (#PCDATA)> \n \
+<!ELEMENT commentator (#PCDATA)> \n \
+<!ELEMENT guest       (#PCDATA)> \n"
 
 /* The date the programme or film was finished.  This will probably
 be the same as the copyright date.
 */
-"<!ELEMENT date (#PCDATA)> "
+"<!ELEMENT date (#PCDATA)> \n"
 /* Type of programme, eg 'soap', 'comedy' or whatever the
 equivalents are in your language.  There's no predefined set of
 categories and it's okay for a programme to belong to several.
 */
-"<!ELEMENT category (#PCDATA)> \
-<!ATTLIST category lang CDATA #IMPLIED> "
+"<!ELEMENT category (#PCDATA)> \n \
+<!ATTLIST category lang CDATA #IMPLIED>\n"
 /* Keywords for the programme, eg 'prison-drama', 'based-on-novel',
 'super-hero'.  There's no predefined set of keywords and it's likely
 for a programme to have several.  It is recommended that keywords
 containing multiple words are hyphenated.
 */
-"<!ELEMENT keyword (#PCDATA)> \
-<!ATTLIST keyword lang CDATA #IMPLIED> "
+"<!ELEMENT keyword (#PCDATA)> \n \
+<!ATTLIST keyword lang CDATA #IMPLIED>\n"
 
 /* The language the programme will be broadcast in.  This does not
 include the language of any subtitles, but it is affected by dubbing
@@ -305,14 +305,14 @@ two-letter codes such as en or fr, or you can give a name such as
 
 <language lang="fr">Allemand</language>
 */
-"<!ELEMENT language (#PCDATA)> \
-<!ATTLIST language lang CDATA #IMPLIED> "
+"<!ELEMENT language (#PCDATA)> \n \
+<!ATTLIST language lang CDATA #IMPLIED>\n"
 
 /* The original language, before dubbing.  The same remarks as for
 'language' apply.
 */
-"<!ELEMENT orig-language (#PCDATA)> \
-<!ATTLIST orig-language lang CDATA #IMPLIED> "
+"<!ELEMENT orig-language (#PCDATA)> \n \
+<!ATTLIST orig-language lang CDATA #IMPLIED>\n"
 
 /* The true length of the programme, not counting advertisements or
 trailers.  But this does take account of any bits which were cut out
@@ -320,8 +320,8 @@ of the broadcast version - eg if a two hour film is cut to 110 minutes
 and then padded with 20 minutes of advertising, length will be 110
 minutes even though end time minus start time is 130 minutes.
 */
-"<!ELEMENT length (#PCDATA)> \
-<!ATTLIST length units (seconds | minutes | hours) #REQUIRED> "
+"<!ELEMENT length (#PCDATA)> \n \
+<!ATTLIST length units (seconds | minutes | hours) #REQUIRED>\n"
 
 /* An icon associated with the element that contains it.
 src: uri of image
@@ -330,10 +330,10 @@ width, height: (optional) dimensions of image
 These dimensions are pixel dimensions for the time being, eventually
 this will change to be more like HTML's 'img'.
 */
-"<!ELEMENT icon EMPTY> \
-<!ATTLIST icon src         CDATA #REQUIRED \
-               width       CDATA #IMPLIED \
-               height      CDATA #IMPLIED>"
+"<!ELEMENT icon EMPTY> \n \
+<!ATTLIST icon src         CDATA #REQUIRED \n \
+               width       CDATA #IMPLIED \n \
+               height      CDATA #IMPLIED> \n"
 
 /* The value of the element that contains it.  This is for elements
 that can have both a textual 'value' and an icon.  At present there is
@@ -341,7 +341,7 @@ no 'lang' attribute here because things like 'PG' are not translatable
 (although a document explaining what 'PG' actually means would be).
 It happens that 'value' is used only for this sort of thing.
 */
-"<!ELEMENT value (#PCDATA)> "
+"<!ELEMENT value (#PCDATA)> \n"
 
 /* A country where the programme was made or one of the countries in
 a joint production.  You can give the name of a country, in which case
@@ -352,8 +352,8 @@ lang attribute should not be given.  For example,
 <country lang="en">Italy</country>
 <country>GB</country>
 */
-"<!ELEMENT country (#PCDATA)> \
-<!ATTLIST country lang CDATA #IMPLIED> "
+"<!ELEMENT country (#PCDATA)> \n \
+<!ATTLIST country lang CDATA #IMPLIED> \n"
 
 /* Episode number
 
@@ -410,8 +410,8 @@ of a series and 'imdb.com' with the content 'title/tt123455' to refer to
 a movie, series or episode.
 
 */
-"<!ELEMENT episode-num (#PCDATA)> \
-<!ATTLIST episode-num system CDATA \"onscreen\"> "
+"<!ELEMENT episode-num (#PCDATA)> \n \
+<!ATTLIST episode-num system CDATA \"onscreen\"> \n"
 
 /* Video details: the subelements describe the picture quality as
 follows:
@@ -428,11 +428,11 @@ aspect: The horizontal:vertical aspect ratio, eg '4:3' or '16:9'.
 quality: information on the quality, eg 'HDTV', '800x600'.
 
 */
-"<!ELEMENT video (present?, colour?, aspect?, quality?)> \
-<!ELEMENT present (#PCDATA)> \
-<!ELEMENT colour (#PCDATA)> \
-<!ELEMENT aspect (#PCDATA)> \
-<!ELEMENT quality (#PCDATA)> "
+"<!ELEMENT video (present?, colour?, aspect?, quality?)> \n \
+<!ELEMENT present (#PCDATA)> \n \
+<!ELEMENT colour (#PCDATA)> \n \
+<!ELEMENT aspect (#PCDATA)> \n \
+<!ELEMENT quality (#PCDATA)> \n"
 
 /* Audio details, similar to video details above.
 
@@ -445,8 +445,8 @@ stream where the left and right channels contain monophonic audio
 in different languages.  Other values may be added later.
 
 */
-"<!ELEMENT audio (present?, stereo?)> \
-<!ELEMENT stereo (#PCDATA)> "
+"<!ELEMENT audio (present?, stereo?)> \n \
+<!ELEMENT stereo (#PCDATA)> \n"
 
 /* When and where the programme was last shown, if known.  Normally
 in TV listings 'repeat' means 'previously shown on this channel', but
@@ -459,9 +459,9 @@ year, etc.).
 The absence of this element does not say for certain that the
 programme is brand new and has never been screened anywhere before.
 */
-"<!ELEMENT previously-shown EMPTY> \
-<!ATTLIST previously-shown start   CDATA #IMPLIED \
-                           channel CDATA #IMPLIED > "
+"<!ELEMENT previously-shown EMPTY> \n \
+<!ATTLIST previously-shown start   CDATA #IMPLIED \n \
+                           channel CDATA #IMPLIED > \n"
 
 /* 'Premiere'.  Different channels have different meanings for this
 word - sometimes it means a film has never before been seen on TV in
@@ -484,8 +484,8 @@ to give an explanation, just write empty content:
 
 <premiere />
 */
-"<!ELEMENT premiere (#PCDATA)> \
-<!ATTLIST premiere lang CDATA #IMPLIED> "
+"<!ELEMENT premiere (#PCDATA)> \n \
+<!ATTLIST premiere lang CDATA #IMPLIED>\n"
 
 /* Last-chance.  In a way this is the opposite of premiere.  Some
 channels buy the rights to show a movie a certain number of times, and
@@ -497,8 +497,8 @@ last showing ever!  Otherwise, explicitly put empty content:
 
 <last-chance />
 */
-"<!ELEMENT last-chance (#PCDATA)> \
-<!ATTLIST last-chance lang CDATA #IMPLIED> "
+"<!ELEMENT last-chance (#PCDATA)> \n \
+<!ATTLIST last-chance lang CDATA #IMPLIED>\n"
 
 /* New.  This is the first screened programme from a new show that
 has never been shown on television before - if not worldwide then at
@@ -510,7 +510,7 @@ Note that this does not mean 'new season' or 'new episode' of an
 existing show.  You can express part of that using the episode-num
 stuff.
 */
-"<!ELEMENT new EMPTY> "
+"<!ELEMENT new EMPTY>\n"
 
 /* Subtitles.  These can be either 'teletext' (sent digitally, and
 displayed at the viewer's request), 'onscreen' (superimposed on the
@@ -519,8 +519,8 @@ signing for users of sign language). You can have multiple subtitle
 streams to handle different languages.  Language for subtitles is
 specified in the same way as for programmes.
 */
-"<!ELEMENT subtitles (language?)> \
-<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED> "
+"<!ELEMENT subtitles (language?)> \n \
+<!ATTLIST subtitles type (teletext | onscreen | deaf-signed) #IMPLIED>\n"
 
 /* Rating.  Various bodies decide on classifications for films -
 usually a minimum age you must be to see it.  In principle the same
@@ -528,8 +528,8 @@ could be done for ordinary TV programmes.  Because there are many
 systems for doing this, you can also specify the rating system used
 (which in practice is the same as the body which made the rating).
 */
-"<!ELEMENT rating (value, icon*)> \
-<!ATTLIST rating system CDATA #IMPLIED> "
+"<!ELEMENT rating (value, icon*)> \n \
+<!ATTLIST rating system CDATA #IMPLIED>\n"
 
 /* 'Star rating' - many listings guides award a programme a score as
 a quick guide to how good it is.  The value of this element should be
@@ -546,8 +546,8 @@ used, or the provider of the recommendation, with the system attribute.
 Whitespace between the numbers and slash is ignored.
 */
 
-"<!ELEMENT star-rating (value, icon*)> \
-<!ATTLIST star-rating system CDATA #IMPLIED> "
+"<!ELEMENT star-rating (value, icon*)> \n \
+<!ATTLIST star-rating system CDATA #IMPLIED>\n"
 
 /* Review.  Listings guides may provide reviews of programmes in
 addition to, or in place of, standard programme descriptions. They are
@@ -557,11 +557,11 @@ element must be either the text of the review, or a URL that links to it.
 Optional attributes giving the review source and the individual reviewer
 can also be specified.
 */
-"<!ELEMENT review (#PCDATA)> \
-<!ATTLIST review type     (text | url) #REQUIRED \
-                 source   CDATA        #IMPLIED \
-                 reviewer CDATA        #IMPLIED \
-                 lang     CDATA        #IMPLIED> "
+"<!ELEMENT review (#PCDATA)> \n \
+<!ATTLIST review type     (text | url) #REQUIRED \n \
+                 source   CDATA        #IMPLIED \n \
+                 reviewer CDATA        #IMPLIED \n \
+                 lang     CDATA        #IMPLIED>\n"
 
 /* (Why are things like 'stereo', which must be one of a small
 number of values, stored as the contents of elements rather than as

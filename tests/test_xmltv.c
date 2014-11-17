@@ -187,34 +187,48 @@ char *test_create_xml_and_validate()
     debug("XMLTV:\n%s", xml->data);
 
     int res = xmltv_validate(xml);
-    mu_assert(res != 1, "Invalid XML")
+    mu_assert(res == 1, "Invalid XML")
 
     return NULL;
 }
 
 char *test_create_m3u()
 {
-    bstring b;
+    debug("Generating list m3u");
+    bstring s = xmltv_channel_list_to_m3u(channels);
+    debug("m3u:\n%s", s->data);
+    bdestroy(s);
 
-    debug("Generating m3u");
-    list_foreach(channels, first, next, cur) {
-        b = xmltv_channel_to_m3u((xmltv_channel_t *)cur->value);
-        mu_assert(b, "Error generating m3u");
-        debug("Error generando m3u: %s", b->data);
-    }
     return NULL;
 }
 
 char *test_create_m3usimple()
 {
-    bstring b;
-
     debug("Generating m3usimple");
+    bstring b = NULL;
     list_foreach(channels, first, next, cur) {
         b = xmltv_channel_to_m3usimple((xmltv_channel_t *)cur->value);
-        mu_assert(b, "Error generating m3u");
-        debug("Error generando m3u: %s", b->data);
     }
+
+    return NULL;
+}
+
+char *test_create_list_m3usimple()
+{
+    debug("Generating list m3usimple");
+    bstring s = xmltv_channel_list_to_m3usimple(channels);
+    debug("m3u - simpleiptv:\n%s", s->data);
+    bdestroy(s);
+
+    return NULL;
+}
+
+char *test_create_list_m3u()
+{
+    debug("Generating list m3u");
+    bstring s = xmltv_channel_list_to_m3u(channels);
+    debug("m3u:\n%s", s->data);
+    bdestroy(s);
 
     return NULL;
 }
@@ -227,7 +241,9 @@ char *all_tests() {
     mu_run_test(test_create_xmltv);
     mu_run_test(test_create_xml_and_validate);
     mu_run_test(test_create_m3u);
-    mu_run_test(test_create_m3usimple);
+    mu_run_test(test_create_m3usimple)
+    mu_run_test(test_create_list_m3u);
+    mu_run_test(test_create_list_m3usimple);
 
     return NULL;
 }

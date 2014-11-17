@@ -64,7 +64,9 @@ int xmltv_validate(const bstring xml);
 
 bstring xmltv_to_xml(const xmltv_t *xmltv);
 bstring xmltv_channel_to_m3u(const xmltv_channel_t *chan);
+bstring xmltv_channel_list_to_m3u(const list_t *l);
 bstring xmltv_channel_to_m3usimple(const xmltv_channel_t *chan);
+bstring xmltv_channel_list_to_m3usimple(const list_t *l);
 
 #endif
 
