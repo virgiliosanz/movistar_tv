@@ -8,3 +8,6 @@ foreach(T_FILE ${TESTS})
   target_link_libraries(${T_NAME} movistartv core bstrlib ${THIRDPARTY_LIBRARIES} -lpthread)
   add_test(NAME ${T_NAME} COMMAND ${T_NAME})
 endforeach(T_FILE ${TESTS})
+
+configure_file(xmltv.dtd ${CMAKE_CURRENT_BINARY_DIR}/xmltv.dtd COPYONLY)
+

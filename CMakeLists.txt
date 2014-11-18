@@ -13,7 +13,8 @@ message("CMAKE_BUILD_TYPE = ${CMAKE_BUILD_TYPE}")
 
 # Make compaining compiler if gcc
 if(CMAKE_COMPILER_IS_GNUCC)
-    add_definitions(-Wall -Werror -pedantic -std=c99i)
+    #    add_definitions(-Wall -Werror -pedantic -std=c99)
+    add_definitions(-Wall -Werror -ansi -pedantic -std=c99)
 endif(CMAKE_COMPILER_IS_GNUCC)
 
 FIND_PACKAGE(Threads)
