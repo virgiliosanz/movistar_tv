@@ -6,4 +6,3 @@
 bstring net_http_get(const bstring url);
 
 #endif
-

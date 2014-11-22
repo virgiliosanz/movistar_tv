@@ -1,13 +1,12 @@
-#include "core/minunit.h"
-#include <assert.h>
-#include "bstrlib/bstrlib.h"
+#include "config.h"
 
-char *test_to_learn()
+char *
+test_so_learn()
 {
-    bstring s = bfromcstr("HOLA");
-    mu_assert(bstricmp(s, bfromcstr("hola")) == 0, "No es igual a cero");
+	bstring s = bfromcstr("HOLA");
+	mu_assert(bstricmp(s, bfromcstr("hola")) == 0, "No es igual a cero");
 
-    return NULL;
+	return NULL;
 }
 
 /* TODO: Testear estas funciones
@@ -34,14 +33,14 @@ Your test should try out all of these operations, and a few more that you find i
 
 */
 
-char *all_tests()
+char *
+all_tests()
 {
-    mu_suite_start();
+	mu_suite_start();
 
-    mu_run_test(test_to_learn);
+	mu_run_test(test_so_learn);
 
-    return NULL;
+	return NULL;
 }
 
 RUN_TESTS(all_tests)
-
