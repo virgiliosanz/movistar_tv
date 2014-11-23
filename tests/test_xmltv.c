@@ -190,7 +190,7 @@ test_create_xml_and_validate()
 	bstring xml;
 
 	debug("Generating xml from struct xmltv");
-	xml = xmltv_so_xml(xmltv);
+	xml = xmltv_to_xml(xmltv);
 
 	debug("XML Generated from struct xmltv");
 	mu_assert(xml != NULL, "Error creating xml");
@@ -207,7 +207,7 @@ char *
 test_create_m3u()
 {
 	debug("Generating list m3u");
-	bstring s = xmltv_channel_list_so_m3u(channels);
+	bstring s = xmltv_channel_list_to_m3u(channels);
 	debug("m3u:\n%s", s->data);
 	bdestroy(s);
 
@@ -220,7 +220,7 @@ test_create_m3usimple()
 	debug("Generating m3usimple");
 	bstring b = NULL;
 	list_foreach(channels, first, next, cur) {
-		b = xmltv_channel_so_m3usimple((xmltv_channel_s *) cur->value);
+		b = xmltv_channel_to_m3usimple((xmltv_channel_s *) cur->value);
 	}
 
 	return NULL;
@@ -230,7 +230,7 @@ char *
 test_create_list_m3usimple()
 {
 	debug("Generating list m3usimple");
-	bstring s = xmltv_channel_list_so_m3usimple(channels);
+	bstring s = xmltv_channel_list_to_m3usimple(channels);
 	debug("m3u - simpleiptv:\n%s", s->data);
 	bdestroy(s);
 
@@ -241,7 +241,7 @@ char *
 test_create_list_m3u()
 {
 	debug("Generating list m3u");
-	bstring s = xmltv_channel_list_so_m3u(channels);
+	bstring s = xmltv_channel_list_to_m3u(channels);
 	debug("m3u:\n%s", s->data);
 	bdestroy(s);
 

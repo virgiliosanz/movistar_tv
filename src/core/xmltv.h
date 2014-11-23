@@ -62,10 +62,10 @@ void xmltv_add_programme(xmltv_s * xmltv, const xmltv_programme_s * programme);
 
 int xmltv_validate(const bstring xml);
 
-bstring xmltv_so_xml(const xmltv_s * xmltv);
-bstring xmltv_channel_so_m3u(const xmltv_channel_s * chan);
-bstring xmltv_channel_list_so_m3u(const list_s * l);
-bstring xmltv_channel_so_m3usimple(const xmltv_channel_s * chan);
-bstring xmltv_channel_list_so_m3usimple(const list_s * l);
+bstring xmltv_to_xml(const xmltv_s * xmltv);
+bstring xmltv_channel_to_m3u(const xmltv_channel_s * chan);
+bstring xmltv_channel_list_to_m3u(const list_s * l);
+bstring xmltv_channel_to_m3usimple(const xmltv_channel_s * chan);
+bstring xmltv_channel_list_to_m3usimple(const list_s * l);
 
 #endif

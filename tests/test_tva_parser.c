@@ -43,8 +43,18 @@ const char *doc =
 char *
 test_parse()
 {
-	list_s *programmes = tva_parse(bfromcstr(doc));
+	list_s *programmes = tva_parse(bfromcstr(doc), bfromcstr("un canal x"));
 	mu_assert(programmes != NULL, "Error getting list of programmes");
+	debug("%d programmes readed", programmes->count);
+
+	xmltv_s *xmltv = xmltv_alloc();
+	list_foreach(programmes, first, next, cur) {
+		list_push(xmltv->programmes, cur);
+	}
+	debug("%d programmes added", xmltv->programmes->count);
+	bstring s = xmltv_to_xml(xmltv);
+	debug("XMLTV\n:%s\n", bdata(s));
+
 	return NULL;
 }
 
