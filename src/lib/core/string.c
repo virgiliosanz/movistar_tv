@@ -68,7 +68,8 @@ str_split(const char *str, const char delim, char ***tokens)
 		if (*p != delim && *p != '\0') {
 			*t = *p;
 			t++;
-		} else {
+		}
+		else {
 			*t = '\0';
 			i++;
 			t = ((*tokens)[i]);
@@ -78,3 +79,4 @@ str_split(const char *str, const char delim, char ***tokens)
 
 	return count;
 }
+

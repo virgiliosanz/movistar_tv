@@ -9,7 +9,7 @@ const char *xmltv_dtd_file = "xmltv.dtd";
 char *
 xmltv_to_xml(xmltv_s *xmltv)
 {
-	check(xmltv != NULL, "xmltv is NULL");
+	ok_or_goto(xmltv != NULL, error);
 
 	xmlDocPtr doc = NULL;
 	xmlDtdPtr dtd = NULL;
@@ -18,31 +18,36 @@ xmltv_to_xml(xmltv_s *xmltv)
 
 	LIBXML_TEST_VERSION;
 
-	doc = xmlNewDoc((const xmlChar *)"1.0"); check_mem(doc);
-	root = xmlNewDocNode(doc, NULL, BAD_CAST "tv", NULL); check_mem(root);
-	dtd = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd"); check_mem(dtd);
+	doc = xmlNewDoc((const xmlChar *)"1.0");
+	ok_or_goto(doc != NULL, error);
+
+	root = xmlNewDocNode(doc, NULL, BAD_CAST "tv", NULL);
+	ok_or_goto(root != NULL, error;
+
+	dtd = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "xmltv.dtd");
+	ok_or_goto(dtd != NULL, error);
+
 	xmlDocSetRootElement(doc, root);
 	xmlNewProp(root,
 		   BAD_CAST "generator-info-name",
 		   BAD_CAST "tvz_epg - https://github.com/virgiliosanz/movistar_sv");
 
 
-	debug("Addind programmes");
+	trace("%s", "Adding programmes");
 	_programmes_to_xml(root, xmltv->programmes);
-	debug("Addind channels");
+
+	trace("%s", "Adding channels");
 	_channels_to_xml(root, xmltv->channels);
 
-	debug("calling xmlDocDumpMemory chan: %d prog: %d",
+	trace("calling xmlDocDumpMemory chan: %d prog: %d",
 		xmltv->channels->count, xmltv->channels->count);
 
 	xmlChar *s;
 	int size;
 	xmlDocDumpMemoryEnc(doc, &s, &size, "UTF-8");
-	debug("Error generando XML");
-
 	xmlCleanupParser();
 
-	return s;
+	return (char *)s;
 
  error:
 	xmlCleanupParser();
@@ -51,12 +56,13 @@ xmltv_to_xml(xmltv_s *xmltv)
 	return NULL;
 }
 
+// TODO: Unificar la generación de m3u
 char *
 xmltv_channel_to_m3u(xmltv_channel_s *chan)
 {
-	check(chan != NULL, "Chan is null");
-	debug("Adding m3u: %d - %s", chan->order, chan->display_name->data);
+	trace("Adding m3u: %d - %s", chan->order, chan->display_name->data);
 
+	// TODO: Quitar referencias a bstring
 	bstring b = bformat("#EXTM3U\n#EXINF:-1,%d - %s\n#EXTTV:%s;es;%s;%s\nrtp://@%s:%d\n",
 			    chan->order, chan->display_name->data,
 			    chan->tags->data, chan->id->data, chan->icon->data,
@@ -145,7 +151,7 @@ xmltv_programme_s *
 xmltv_programme_alloc()
 {
 	xmltv_programme_s *prog = (xmltv_programme_s *) malloc(sizeof(xmltv_programme_s));
-	check_mem(prog);
+	ok_or_goto(prog != NULL, error);
 
 	prog->channel = NULL;
 	prog->title = NULL;
@@ -185,7 +191,7 @@ xmltv_programme_free(xmltv_programme_s *prog)
 	if (prog->rating_icon)  free(prog->rating_icon);
 	if (prog->star_rating)  free(prog->star_rating);
 
-	list_foreach(prog->actors, first, next, cur) bdestroy((bstring) cur->value);
+	list_foreach(prog->actors, first, next, cur) free(cur->value);
 	list_destroy(prog->actors);
 }
 
@@ -194,17 +200,17 @@ xmltv_channel_s *
 xmltv_channel_alloc()
 {
 	xmltv_channel_s *chan = (xmltv_channel_s *) malloc(sizeof(xmltv_channel_s));
-	check_mem(chan);
+	ok_or_goto(chan != NULL, error);
 
-	chan->id = NULL;
+	chan->id           = NULL;
 	chan->display_name = NULL;
-	chan->short_name = NULL;
-	chan->url = NULL;
-	chan->icon = NULL;
-	chan->ip = NULL;
-	chan->port = 0;
-	chan->tags = NULL;
-	chan->order = 0;
+	chan->short_name   = NULL;
+	chan->url          = NULL;
+	chan->icon         = NULL;
+	chan->ip           = NULL;
+	chan->port         = 0;
+	chan->tags         = NULL;
+	chan->order        = 0;
 
 	return chan;
 
@@ -233,13 +239,13 @@ xmltv_s *
 xmltv_alloc()
 {
 	xmltv_s *xmltv = (xmltv_s *) malloc(sizeof(xmltv_s));
-	check_mem(xmltv);
+	ok_or_goto(xmltv, error);
 
 	xmltv->channels = list_create();
-	check_mem(xmltv->channels);
+	ok_or_goto(xmltv->channels, error);
 
 	xmltv->programmes = list_create();
-	check_mem(xmltv->programmes);
+	ok_or_goto(xmltv->programmes, error);
 
 	return xmltv;
 
@@ -252,7 +258,7 @@ xmltv_alloc()
 void
 xmltv_programme_list_free(list_s *programmes)
 {
-	check(programmes != NULL, "Channels is NULL");
+	ok_or_goto(programmes != NULL, error);
 	list_foreach(programmes, first, next, cur) {
 		xmltv_programme_free((xmltv_programme_s *) cur->value);
 	}
@@ -265,7 +271,7 @@ xmltv_programme_list_free(list_s *programmes)
 void
 xmltv_channel_list_free(list_s *channels)
 {
-	check(channels != NULL, "Channels is NULL");
+	ok_or_goto(channels != NULL, error);
 
 	list_foreach(channels, first, next, cur) {
 		xmltv_channel_free((xmltv_channel_s *) cur->value);
@@ -291,8 +297,8 @@ xmltv_free(xmltv_s *xmltv)
 void
 xmltv_add_channel(xmltv_s *xmltv, xmltv_channel_s *channel)
 {
-	check(xmltv != NULL, "xmltv is NULL");
-	check(channel != NULL, "channel is NULL");
+	ok_or_goto(xmltv != NULL, error);
+	ok_or_goto(channel != NULL, error);
 
 	list_push(xmltv->channels, (void *)channel);
 
@@ -303,8 +309,8 @@ xmltv_add_channel(xmltv_s *xmltv, xmltv_channel_s *channel)
 void
 xmltv_add_programme(xmltv_s *xmltv, xmltv_programme_s *programme)
 {
-	check(xmltv != NULL, "xmltv is NULL");
-	check(programme != NULL, "programme is NULL");
+	ok_or_goto(xmltv != NULL, error);
+	ok_or_goto(programme != NULL, error);
 
 	list_push(xmltv->programmes, (void *)programme);
 
@@ -315,8 +321,8 @@ xmltv_add_programme(xmltv_s *xmltv, xmltv_programme_s *programme)
 static void
 _actors_to_xml(xmlNodePtr node, list_s *actors)
 {
-	check(node != NULL, "Node is NULL");
-	check(actors != NULL, "Actors is NULL");
+	ok_or_goto(node != NULL, error);
+	ok_or_goto(actors != NULL, error);
 	bstring s;
 	list_foreach(actors, first, next, cur) {
 		s = (char *) cur->value;
@@ -330,11 +336,12 @@ _actors_to_xml(xmlNodePtr node, list_s *actors)
 void
 _programmes_to_xml(xmlNodePtr root, list_s *programmes)
 {
-	check(root != NULL, "Node is NULL");
-	check(NULL != programmes, "Programmes is NULL");
-	check(0 < programmes->count, "Programmes list is empty");
+	ok_or_goto(root != NULL, error);
+	ok_or_goto(NULL != programmes, error);
+	ok_or_goto(0 < programmes->count, error);
 
-	xmlNodePtr node, subnode;
+	xmlNodePtr node;
+	xmlNodePtr subnode;
 	char start[XMLTV_START_FMT_SIZE];
 	char progdate[XMLTV_DATE_FMT_SIZE];
 	xmltv_programme_s *prog;
@@ -476,7 +483,7 @@ _programmes_to_xml(xmlNodePtr root, list_s *programmes)
 
 		n_programmes++;
 	}
-	debug("%u programmes added to root xml", n_programmes);
+	trace("%u programmes added to root xml", n_programmes);
 
 error:
 	return;
@@ -485,9 +492,9 @@ error:
 void
 _channels_to_xml(xmlNodePtr root, list_s *channels)
 {
-	check(root != NULL, "Node is NULL");
-	check(NULL != channels, "Channels is NULL");
-	check(0 < channels->count, "Channels list is empty");
+	ok_or_goto(root != NULL, error);
+	ok_or_goto(NULL != channels, error);
+	ok_or_goto(0 < channels->count, error);
 
 	xmlNodePtr node;
 	xmltv_channel_s *chan;
@@ -521,10 +528,10 @@ xmltv_validate(cont char *xml)
 	int rc;
 
 	xmlValidCtxtPtr ctx = xmlNewValidCtxt();
-	check_mem(ctx);
+	ok_or_goto(ctx != NULL, error);
 
 	xmlDocPtr doc = xmlParseMemory((char *)xml, strlen(xml));
-	check_mem(doc);
+	ok_or_goto(doc = NULL, error);
 
 	/* Validate against in memory dtd
 	   xmlParserInputBufferPtr buf = xmlParserInputBufferCreateMem(
@@ -536,7 +543,7 @@ xmltv_validate(cont char *xml)
 	xmlDtdPtr dtd = xmlParseDTD(NULL, BAD_CAST xmltv_dtd_file);
 
 	rc = xmlValidateDtd(ctx, doc, dtd);
-	debug("Resultado de validación: %d", rc);
+	trace("Resultado de validación: %d", rc);
 
 	xmlCleanupParser();
 

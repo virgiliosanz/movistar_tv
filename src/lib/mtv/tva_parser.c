@@ -41,7 +41,7 @@ tva_get_entity(tva_context_s *ctx, const xmlChar *name)
 static void
 tva_start_document(tva_context_s *ctx)
 {
-	debug("Start Document");
+	trace("%s", "Start Document");
 	ctx->state = TVA_STATE_START;
 	sbuf_reset(ctx->buffer);
 	ctx->depth= 0;
@@ -50,7 +50,7 @@ tva_start_document(tva_context_s *ctx)
 static void
 tva_end_document(tva_context_s *ctx)
 {
-	debug("End Document");
+	trace("%s", "End Document");
 	ctx->state = TVA_STATE_UNKNOWN;
 	ctx->depth= 0;
 	sbuf_delete(ctx->buffer);
@@ -92,10 +92,9 @@ static void
 _tva_get_info(tva_context_s *ctx, char *crid)
 {
 	// debug("Getting Advance info for: %s", crid);
-	char *s;
-	char *token;
-	char **tokens;
-	size_t n_tokens;
+	char  *s        = NULL;
+	char **tokens   = NULL;
+	size_t n_tokens = 0;
 
 	n_tokens = str_split(crid, '/', &tokens);
 
@@ -105,9 +104,9 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	sbuf_printf(url, url_fmt, tokens[n_tokens - 1]);
 	str_free_tokens(tokens, n_tokens);
 
-	char *json = net_http_get(sbuf_ptr(url));
-	check_mem(json);
-	debug("json:\n%s", json);
+	char *json = mtv_http_get(sbuf_ptr(url));
+	ok_or_goto(json != NULL, error);
+	trace("json:\n%s", json);
 
 	sbuf_delete(url);
 
@@ -115,7 +114,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	char err_buf[1024];
 
 	node = yajl_tree_parse(json, err_buf, sizeof(err_buf));
-	check(NULL != node, "Error Parsing json: %s", err_buf);
+	ok_or_goto(NULL != node, error);
 	free(json);
 
 	// desc
@@ -184,10 +183,8 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 error:
 	if (url)
 		sbuf_delete(url);
-	if (l)
-		str_free_tokens(l);
-	if (s)
-		free(s);
+	if (tokens)
+		str_free_tokens(tokens, n_tokens);
 	if (json)
 		free(json);
 	return;
@@ -195,7 +192,9 @@ error:
 }
 
 static void
-tva_start_element(tva_context_s *ctx, const xmlChar *xname, const xmlChar **attrs)
+tva_start_element(tva_context_s  *ctx,
+                  const xmlChar  *xname,
+                  const xmlChar **attrs)
 {
 	ctx->depth++;
 
@@ -214,7 +213,7 @@ tva_start_element(tva_context_s *ctx, const xmlChar *xname, const xmlChar **attr
 		ctx->state = TVA_STATE_START_TIME;
 	}
 	else if (0 ==  strcasecmp("Program", name)) {
-		_tva_get_info(ctx, (const char *)attrs[1]);
+		_tva_get_info(ctx, (char *)attrs[1]);
 	}
 	else {
 		ctx->state = TVA_STATE_UNKNOWN;
@@ -225,7 +224,7 @@ tva_start_element(tva_context_s *ctx, const xmlChar *xname, const xmlChar **attr
 static void
 tva_characters(tva_context_s *ctx, const xmlChar *ch, int len)
 {
-	sbuf_appendbytes(ctx->buffer, ch, len);
+	sbuf_appendbytes(ctx->buffer, (char *)ch, len);
 }
 
 static void
@@ -246,8 +245,8 @@ tva_end_element(tva_context_s *ctx, const xmlChar *name)
 			break;
 		default:
 
-			if (0 == strcasecmp("ScheduleEvent", (const char *)name) &&
-			    blength(ctx->programme->title) > 0) {
+			if (0 == strcasecmp("ScheduleEvent", (char *)name) &&
+			    ctx->programme->title) {
 
 				list_push(ctx->programmes, ctx->programme);
 				debug_programme(ctx->programme);
@@ -281,10 +280,10 @@ tva_ctx_alloc()
 {
 	tva_context_s *ctx;
 	ctx = (tva_context_s *) malloc(sizeof(tva_context_s));
-	check_mem(ctx);
+	ok_or_goto(ctx != NULL, error);
 
 	ctx->programmes = list_create();
-	check_mem(ctx->programmes);
+	ok_or_goto(ctx->programmes != NULL, error);
 
 	ctx->programme = NULL;
 	ctx->depth = 0;
@@ -308,7 +307,7 @@ tva_ctx_free(tva_context_s * ctx)
 {
 	if (ctx->programmes)
 		xmltv_programme_list_free(ctx->programmes);
-	if (ctx->chars)
+	if (ctx->buffer)
 		sbuf_delete(ctx->buffer);
 	if (ctx->channel_id)
 		free(ctx->channel_id);
@@ -359,7 +358,8 @@ list_s *
 tva_parse(const char *xml, const char *channel_id)
 {
 	tva_context_s *ctx = tva_ctx_alloc();
-	check_mem(ctx);
+	ok_or_goto(ctx != NULL, error);
+
 	ctx->channel_id = strdup(channel_id);
 
 	LIBXML_TEST_VERSION xmlSAXHandler handler = {
@@ -394,7 +394,7 @@ tva_parse(const char *xml, const char *channel_id)
 					   (char *)xml,
 					   strlen(xml));
 
-	check(0 == result, "Error while parse doc - %d.", result);
+	ok_or_goto(0 == result, error);
 	xmlCleanupParser();
 	xmlMemoryDump();
 

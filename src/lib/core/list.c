@@ -38,7 +38,7 @@ void
 list_push(list_s *list, void *value)
 {
 	list_node_s *node = calloc(1, sizeof(list_node_s));
-	check_mem(node);
+	ok_or_goto(node !=NULL, error);
 
 	node->value = value;
 
@@ -53,7 +53,7 @@ list_push(list_s *list, void *value)
 
 	list->count++;
 
- error:
+error:
 	return;
 }
 
@@ -68,14 +68,15 @@ void
 list_unshift(list_s *list, void *value)
 {
 	list_node_s *node = calloc(1, sizeof(list_node_s));
-	check_mem(node);
+	ok_or_goto(node != NULL, error);
 
 	node->value = value;
 
 	if (list->first == NULL) {
 		list->first = node;
 		list->last = node;
-	} else {
+	}
+	else {
 		node->next = list->first;
 		list->first->prev = node;
 		list->first = node;
@@ -83,7 +84,7 @@ list_unshift(list_s *list, void *value)
 
 	list->count++;
 
- error:
+error:
 	return;
 }
 
@@ -99,21 +100,26 @@ list_remove(list_s *list, list_node_s *node)
 {
 	void *result = NULL;
 
-	check(list->first && list->last, "list is empty.");
-	check(node, "node can't be NULL");
+	ok_or_goto(!(list->first && list->last && "list is empty."), error);
+	ok_or_goto(node != NULL, error);
 
 	if (node == list->first && node == list->last) {
 		list->first = NULL;
 		list->last = NULL;
-	} else if (node == list->first) {
+	}
+	else if (node == list->first) {
 		list->first = node->next;
-		check(list->first != NULL, "Invalid list, somehow got a first that is NULL.");
+		ok_or_goto(list->first != NULL, error);
+
 		list->first->prev = NULL;
-	} else if (node == list->last) {
+	}
+	else if (node == list->last) {
 		list->last = node->prev;
-		check(list->last != NULL, "Invalid list, somehow got a next that is NULL.");
+		ok_or_goto(list->last != NULL, error);
+
 		list->last->next = NULL;
-	} else {
+	}
+	else {
 		list_node_s *after = node->next;
 		list_node_s *before = node->prev;
 		after->prev = before;
@@ -170,15 +176,18 @@ list_merge(list_s * left, list_s *right, list_compare cmp)
 		if (list_count(left) > 0 && list_count(right) > 0) {
 			if (cmp(list_first(left), list_first(right)) <= 0) {
 				val = list_shift(left);
-			} else {
+			}
+			else {
 				val = list_shift(right);
 			}
 
 			list_push(result, val);
-		} else if (list_count(left) > 0) {
+		}
+		else if (list_count(left) > 0) {
 			val = list_shift(left);
 			list_push(result, val);
-		} else if (list_count(right) > 0) {
+		}
+		else if (list_count(right) > 0) {
 			val = list_shift(right);
 			list_push(result, val);
 		}
@@ -201,7 +210,8 @@ list_merge_sort(list_s *list, list_compare cmp)
 	list_foreach(list, first, next, cur) {
 		if (middle > 0) {
 			list_push(left, cur->value);
-		} else {
+		}
+		else {
 			list_push(right, cur->value);
 		}
 
@@ -213,6 +223,7 @@ list_merge_sort(list_s *list, list_compare cmp)
 
 	if (sort_left != left)
 		list_destroy(left);
+
 	if (sort_right != right)
 		list_destroy(right);
 
@@ -234,3 +245,4 @@ list_walk_with_state(list_s *list, list_apply_with_state func, void *state)
 		func(cur->value, state);
 	}
 }
+

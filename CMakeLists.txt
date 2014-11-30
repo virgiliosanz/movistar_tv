@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 2.6)
+
 set(PROJECT_NAME movistart_epg)
 set(PROJ_VERSION 0.0.1)
+
 project(${PROJECT_NAME})
 enable_testing()
-set(CMAKE_VERBOSE_MAKEFILE 0)
+set(CMAKE_VERBOSE_MAKEFILE 1)
 
 # Enabke debug mode if not release is comming
 if (NOT CMAKE_BUILD_TYPE MATCHES release)
@@ -12,12 +14,9 @@ endif()
 message("CMAKE_BUILD_TYPE = ${CMAKE_BUILD_TYPE}")
 
 # Make compaining compiler if gcc
-if(CMAKE_COMPILER_IS_GNUCC)
-    #    add_definitions(-Wall -Werror -pedantic -std=c99)
-    add_definitions(-Wall -Werror -Wextra -ansi -pedantic -std=gnu99)
-endif(CMAKE_COMPILER_IS_GNUCC)
+add_definitions(-Wall -Werror -std=gnu99)
 
-FIND_PACKAGE(Threads)
+find_package(Threads)
 
 # Add Include directories
 include_directories(src/include)

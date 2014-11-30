@@ -12,7 +12,8 @@ sbuf_s *
 sbuf_new()
 {
 	sbuf_s *sb = malloc(sizeof(*sb));
-	check_mem(sb);
+	ok_or_goto(sb != NULL, error);
+
 	sbuf_init(sb);
 
 	return sb;
@@ -156,5 +157,4 @@ sbuf_appendf(sbuf_s *sb, const char *fmt, ...)
 	sbuf_vappendf(sb, fmt, ap);
 	va_end(ap);
 }
-
 

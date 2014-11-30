@@ -1,7 +1,7 @@
 #ifndef __mtv_conf_h__
 #define __mtv_conf_h__
 
-#include "all.h"
+#include <mtv/xmltv.h>
 
 struct _mtv_conf_s {
 	// Excution configuration
@@ -30,7 +30,7 @@ typedef struct _mtv_conf_s mtv_conf_s;
 	      cnf->gmt_offset, cnf->tvpackages);
 
 
-void mtv_conf_destroy(conf_s * cnf);
+void mtv_conf_destroy(mtv_conf_s *cnf);
 mtv_conf_s *mtv_conf_load();
 
 #endif
