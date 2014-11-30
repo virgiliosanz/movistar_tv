@@ -7,12 +7,13 @@ flags = [
 '-Werror',
 '-pedantic',
 '-ansi',
-'-std=c99',
+'-std=gnu99',
 '-x',
 'c',
 '-I', '.',
 '-I', './src',
-'-I', './include',
+'-I', './src/include',
+'-I', './src/3rdparty',
 
 ]
 

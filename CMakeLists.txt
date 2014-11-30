@@ -14,13 +14,13 @@ message("CMAKE_BUILD_TYPE = ${CMAKE_BUILD_TYPE}")
 # Make compaining compiler if gcc
 if(CMAKE_COMPILER_IS_GNUCC)
     #    add_definitions(-Wall -Werror -pedantic -std=c99)
-    add_definitions(-Wall -Werror -ansi -pedantic -std=c99)
+    add_definitions(-Wall -Werror -Wextra -ansi -pedantic -std=gnu99)
 endif(CMAKE_COMPILER_IS_GNUCC)
 
 FIND_PACKAGE(Threads)
 
 # Add Include directories
-include_directories(src)
+include_directories(src/include)
 
 # Libraries being used
 find_package(PkgConfig REQUIRED)
@@ -29,6 +29,14 @@ include_directories(${THIRDPARTY_INCLUDE_DIRS})
 link_directories(${THIRDPARTY_LIBRARY_DIRS})
 add_definitions(${THIRDPARTY_OTHERS})
 
+# Copy (or set path for data)
+
+## Install: http://www.cmake.org/Wiki/CMake:CPackPackageGenerators
+#INSTALL(TARGETS main main DESTINATION distance)
+#SET(CPACK_GENERATOR "DEB")
+#SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Virgilio Sanz")
+#INCLUDE(CPack)
+
+
 # Source code dirs
 add_subdirectory(src)
-add_subdirectory(tests)
