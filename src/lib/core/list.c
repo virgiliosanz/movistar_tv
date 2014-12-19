@@ -38,7 +38,7 @@ void
 list_push(list_s *list, void *value)
 {
 	list_node_s *node = calloc(1, sizeof(list_node_s));
-	ok_or_goto(node !=NULL, error);
+	error_if(node ==NULL, error);
 
 	node->value = value;
 
@@ -68,7 +68,7 @@ void
 list_unshift(list_s *list, void *value)
 {
 	list_node_s *node = calloc(1, sizeof(list_node_s));
-	ok_or_goto(node != NULL, error);
+	error_if(node == NULL, error);
 
 	node->value = value;
 
@@ -100,8 +100,8 @@ list_remove(list_s *list, list_node_s *node)
 {
 	void *result = NULL;
 
-	ok_or_goto(!(list->first && list->last && "list is empty."), error);
-	ok_or_goto(node != NULL, error);
+	error_if(!list->first && !list->last, error);
+	error_if(node == NULL, error);
 
 	if (node == list->first && node == list->last) {
 		list->first = NULL;
@@ -109,13 +109,13 @@ list_remove(list_s *list, list_node_s *node)
 	}
 	else if (node == list->first) {
 		list->first = node->next;
-		ok_or_goto(list->first != NULL, error);
+		error_if(list->first == NULL, error);
 
 		list->first->prev = NULL;
 	}
 	else if (node == list->last) {
 		list->last = node->prev;
-		ok_or_goto(list->last != NULL, error);
+		error_if(list->last == NULL, error);
 
 		list->last->next = NULL;
 	}

@@ -16,21 +16,21 @@ struct _list_s {
 typedef struct _list_s list_s;
 
 list_s *list_create();
-void list_destroy(list_s * list);
-void list_clear(list_s * list);
-void list_clear_destroy(list_s * list);
+void    list_destroy(list_s * list);
+void    list_clear(list_s * list);
+void    list_clear_destroy(list_s * list);
 
 #define list_count(A) ((A)->count)
 #define list_first(A) ((A)->first != NULL ? (A)->first->value : NULL)
 #define list_last(A) ((A)->last != NULL ? (A)->last->value : NULL)
 
-void list_push(list_s * list, void *value);
-void *list_pop(list_s * list);
+void    list_push(list_s * list, void *value);
+void   *list_pop(list_s * list);
 
-void list_unshift(list_s * list, void *value);
-void *list_shift(list_s * list);
+void    list_unshift(list_s * list, void *value);
+void   *list_shift(list_s * list);
 
-void *list_remove(list_s * list, list_node_s * node);
+void   *list_remove(list_s * list, list_node_s * node);
 
 #define list_foreach(L, S, M, V) list_node_s *_node = NULL;\
     list_node_s *V = NULL;\
@@ -45,8 +45,8 @@ void list_walk_with_state(list_s *list, list_apply_with_state func, void *state)
 
 /* Soting */
 typedef int (*list_compare) (const void *a, const void *b);
-int list_bubble_sort(list_s * list, list_compare cmp);
-list_s *list_merge_sort(list_s * list, list_compare cmp);
-
+int     list_bubble_sort(list_s *list, list_compare cmp);
+list_s *list_merge_sort(list_s *list, list_compare cmp);
 
 #endif
+

@@ -11,7 +11,7 @@ test_parse_datetime()
 
 	tva_parse_datetime(&dt, s);
 
-	debug("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", s,
+	trace("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", s,
 		dt.tm_mday, dt.tm_mon + 1, dt.tm_year + 1900,
 		dt.tm_hour, dt.tm_min, dt.tm_sec,
 		dt.tm_wday + 1, dt.tm_isdst);
@@ -21,7 +21,7 @@ test_parse_datetime()
 
 	struct tm dt2;
 	tva_parse_datetime(&dt2, str);
-	debug("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", str,
+	trace("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", str,
 		dt2.tm_mday, dt2.tm_mon + 1, dt2.tm_year + 1900,
 		dt2.tm_hour, dt2.tm_min, dt2.tm_sec,
 		dt2.tm_wday + 1, dt2.tm_isdst);
@@ -44,26 +44,32 @@ char *
 test_parse()
 {
 
-	list_s *programmes = tva_parse(doc, "un canal x");
+	list_s *programmes = tva_parse(doc, "un canal x", false);
 	mu_assert(programmes != NULL, "Error getting list of programmes");
 
-	xmltv_s *xmltv = xmltv_alloc();
-	xmltv_programme_s *prog;
-	int i = 0;
+	epg_s *epg = epg_alloc();
+	/*
+	epg_programme_s *prog;
 	list_foreach(programmes, first, next, cur) {
-		prog = (xmltv_programme_s *)cur->value;
-		xmltv_add_programme(xmltv, prog);
+		prog = (epg_programme_s *)cur->value;
+		epg_add_programme(epg, prog);
+		epg_debug_programme(prog);
 	}
+	*/
+	list_destroy(epg->programmes);
+	epg->programmes = programmes;
+	//list_bubble_sort(epg->programmes, epg_programme_compare_by_date);
 
-	xmltv_channel_s *un_chan = xmltv_channel_alloc();
+	epg_channel_s *un_chan = epg_channel_alloc();
 	un_chan->id = "1";
 	un_chan->display_name = "RTVE - La1";
 	un_chan->short_name = "La1";
-	xmltv_add_channel(xmltv, un_chan);
-	debug("Generating xmltv for %d channels and %d programmes",
-		xmltv->channels->count, xmltv->programmes->count);
-	char *s = xmltv_to_xml(xmltv);
-	debug("XMLTV\n:%s\n", s);
+	epg_add_channel(epg, un_chan);
+	trace("Generating epg for %d channels and %d programmes",
+		epg->channels->count, epg->programmes->count);
+
+	char *s = epg_to_xmltv(epg);
+	trace("XMLTV\n:%s\n", s);
 
 	return NULL;
 }

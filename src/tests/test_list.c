@@ -37,13 +37,13 @@ test_push_pop()
 	mu_assert(list_count(list) == 3, "Wrong count on push.");
 
 	char *val = list_pop(list);
-	mu_assert(val == test3, "Wrong value on pop.");
+	mu_assert(strcmp(val, test3) == 0 , "Wrong value on pop.");
 
 	val = list_pop(list);
-	mu_assert(val == test2, "Wrong value on pop.");
+	mu_assert(strcmp(val, test2) == 0, "Wrong value on pop.");
 
 	val = list_pop(list);
-	mu_assert(val == test1, "Wrong value on pop.");
+	mu_assert(strcmp(val, test1) == 0, "Wrong value on pop.");
 	mu_assert(list_count(list) == 0, "Wrong count after pop.");
 
 	return NULL;
@@ -102,7 +102,7 @@ test_foreach()
 	l = list_create();
 	mu_assert(l != NULL, "Cannot create list")
 
-	    list_push(l, "Uno");
+	list_push(l, "Uno");
 	list_push(l, "Dos");
 	list_push(l, "Tres");
 
@@ -112,10 +112,9 @@ test_foreach()
 		i++;
 	}
 
-	debug("%d == %d", i, l->count);
+	trace("%d == %d", i, l->count);
 	mu_assert(i == l->count, "Incorrect length");
 
- error:
 	return NULL;
 }
 
@@ -141,7 +140,7 @@ is_sorted(list_s *words)
 {
 	list_foreach(words, first, next, cur) {
 		if (cur->next && strcmp(cur->value, cur->next->value) > 0) {
-			debug("%s %s", (char *)cur->value, (char *)cur->next->value);
+			trace("%s %s", (char *)cur->value, (char *)cur->next->value);
 			return 0;
 		}
 	}
@@ -209,6 +208,8 @@ all_tests()
 	mu_run_test(test_foreach);
 	mu_run_test(test_bubble_sort);
 	mu_run_test(test_merge_sort);
+
+// TODO: Test list_walk*
 
 	return NULL;
 }

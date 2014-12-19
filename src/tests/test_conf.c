@@ -3,12 +3,13 @@
 char *
 test_conf()
 {
-	mtv_conf_s *cnf = mtv_conf_load();
+	tva_conf_s *cnf = tva_conf_load();
 	mu_assert(cnf != NULL, "Could'nt read configuration");
-	mtv_conf_debug(cnf);
+	tva_conf_debug(cnf);
 
-	mtv_conf_destroy(cnf);
-	mu_assert(conf != NULL, "Did not destroy memory correctly");
+	mu_assert(cnf->demarcation > 0, "Error reading demarcation");
+	mu_assert(cnf->mcast_port > 0, "Error reading port");
+	mu_assert(cnf->mcast_grp_start != NULL, "Error reading multicast gropu ip");
 
 	return NULL;
 }
@@ -22,4 +23,5 @@ all_tests()
 	return NULL;
 }
 
-RUN_TESTS(all_tests)
+RUN_TESTS(all_tests);
+
