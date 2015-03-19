@@ -21,6 +21,9 @@
 #include <mtv/epg.h>
 #include <mtv/tva_conf.h>
 #include <mtv/tva_parse.h>
+#include <mtv/tva_parse.h>
+#include <mtv/mcast.h>
+#include <mtv/demarcation.h>
 
 #endif
 

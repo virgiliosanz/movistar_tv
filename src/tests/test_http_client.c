@@ -38,7 +38,7 @@ test_http_get()
 	char *rc;
 	while (*url) {
 		rc = test_url(*url);
-		error_if(rc != NULL, error);
+		error_if(rc != NULL, error, "Error testing url");
 		url++;
 
 	}

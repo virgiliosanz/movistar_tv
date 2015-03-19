@@ -33,7 +33,7 @@ str_split(const char *str, const char delim, char ***tokens)
 	char *p;
 	char *t;
 
-	error_if(str == NULL, error);
+	error_if(str == NULL, error, "Param Error");
 
 	p = (char *)str;
 	while (*p != '\0') {
@@ -158,7 +158,7 @@ strdup_from_to(const char *from, const char *to)
 	sbuf_s *s = NULL;
 
 	s = sbuf_new();
-	error_if(NULL == s, error);
+	error_if(NULL == s, error, "Error Allocating Memory");
 
 	for (c = from; c != to; c++) {
 		sbuf_appendchar(s, *c);

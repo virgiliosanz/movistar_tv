@@ -5,18 +5,15 @@ flags = [
 '-Wall',
 '-Wextra',
 '-Werror',
-'-pedantic',
-'-ansi',
 '-std=gnu99',
 '-x',
-'c',
+'-c',
 '-I', '.',
 '-I', './src',
 '-I', './src/include',
 '-I', './src/3rdparty',
 
 ]
-
 
 compilation_database_folder = ''
 

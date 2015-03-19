@@ -24,9 +24,9 @@ if (__global_debug_level >= level) { \
 #define warn(M, ...)  debug(debug_level_warn,  M, ##__VA_ARGS__)
 #define trace(M, ...) debug(debug_level_trace, M, ##__VA_ARGS__)
 
-#define error_if(A, label) \
+#define error_if(A, label, M, ...) \
 if (A) { \
-	error("assert failed: %s", #A); \
+	fprintf(stderr, "[ERROR] %s (%d): " M " - " #A, __FILE__, __LINE__, ##__VA_ARGS__); \
 	goto label; \
 } \
 

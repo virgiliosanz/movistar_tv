@@ -49,7 +49,7 @@ epg_programme_s *epg_programme_alloc();
 void             epg_programme_free(epg_programme_s * programme);
 void             epg_programme_list_free(list_s * programmes);
 int              epg_programme_compare_by_date(const void *l, const void *r);
-#define epg_debug_programme(prog) trace("Programme -> tit: '%s', chan: '%s' dir: '%s' country: '%s' start: '%02d/%02d/%04d %02d:%02d:%02d'\n'%s'", \
+#define epg_debug_programme(prog) trace("Programme -> tit: '%s', chan: '%s' dir: '%s' country: '%s' start: '%02d/%02d/%04d %02d:%02d:%02d' desc: '%s'", \
 	(prog)->title, (prog)->channel, \
 	(prog)->director, (prog)->country, \
 	(prog)->start.tm_mday, (prog)->start.tm_mon + 1, (prog)->start.tm_year + 1900, \

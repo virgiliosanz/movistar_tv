@@ -18,17 +18,17 @@ _conf_parse_platform_json(tva_conf_s *cnf, const char *json)
 	char    *s        = NULL;
 	char     err_buf[1024];
 
-	error_if(cnf == NULL, error);
-	error_if(json == NULL, error);
+	error_if(cnf == NULL, error, "Param Error");
+	error_if(json == NULL, error, "Param Error");
 
 	trace("json:\n%s", json);
 
 	node = yajl_tree_parse(json, err_buf, sizeof(err_buf));
-	error_if(NULL == node, error);
+	error_if(NULL == node, error, "Error Creating Json Parser");
 
 	const char *path[] = {"resultData", "dvbConfig", "dvbEntryPoint", NULL};
 	v = yajl_tree_get(node, path, yajl_t_string);
-	error_if(v == NULL, error);
+	error_if(v == NULL, error, "Cannot find dbvEntryPoint");
 
 	s = YAJL_GET_STRING(v);
 	trace("node: %s/%s/%s = %s\n", path[0], path[1], path[2], s);
@@ -36,7 +36,7 @@ _conf_parse_platform_json(tva_conf_s *cnf, const char *json)
 	cnf->mcast_grp_start = strdup(tokens[0]);
 	cnf->mcast_port      = atoi(tokens[1]);
 	trace("mcast group IP: %s port: %d",
-		cnf->mcast_grp_start, cnf->mcast_port);
+	      cnf->mcast_grp_start, cnf->mcast_port);
 
 	if (s) free(s);
 	str_free_tokens(tokens, n_tokens);
@@ -59,21 +59,21 @@ _conf_parse_client_json(tva_conf_s *cnf, const char *json)
 	char    *s    = NULL;
 	char     err_buf[1024];
 
-	error_if(cnf == NULL, error);
-	error_if(json == NULL, error);
+	error_if(cnf == NULL, error, "Param Error");
+	error_if(json == NULL, error, "Param Error");
 	trace("json:\n%s", json);
 
 	node = yajl_tree_parse((char *)json, err_buf, sizeof(err_buf));
-	error_if(node == NULL, error);
+	error_if(node == NULL, error, "Error Parsing json: %s", err_buf);
 
 	v = yajl_tree_get(node, path_tvPackages, yajl_t_string);
-	error_if(v == NULL, error);
+	error_if(v == NULL, error, "Error getting tvPackages");
 	s = YAJL_GET_STRING(v);
 	trace("node: %s/%s = %s\n", path_tvPackages[0], path_tvPackages[1], s);
 	cnf->tvpackages = strdup(s);
 
 	v = yajl_tree_get(node, path_demarcation, yajl_t_any);
-	error_if(v == NULL, error);
+	error_if(v == NULL, error, "Error geting demarcation");
 	cnf->demarcation = YAJL_GET_INTEGER(v);
 	trace("node: %s/%s = %d\n",
 		path_demarcation[0], path_demarcation[1], cnf->demarcation);
@@ -82,14 +82,14 @@ _conf_parse_client_json(tva_conf_s *cnf, const char *json)
 	return;
 
 error:
-	if (s)    free(s);
+	if (s) free(s);
 }
 
 static tva_conf_s *
 _conf_alloc()
 {
 	tva_conf_s *cnf = (tva_conf_s *) malloc(sizeof(tva_conf_s));
-	error_if(cnf == NULL, error);
+	error_if(cnf == NULL, error, "Error Allocating Memory");
 
 	cnf->mcast_grp_start = NULL;
 	cnf->tvpackages = NULL;
@@ -108,7 +108,6 @@ tva_conf_destroy(tva_conf_s *cnf)
 
 	if (cnf->mcast_grp_start) free(cnf->mcast_grp_start);
 	if (cnf->tvpackages)      free(cnf->tvpackages);
-
 	free(cnf);
 }
 
@@ -120,12 +119,12 @@ tva_conf_load()
 
 	trace("Reading client profile json");
 	json = http_get(client_profile_url);
-	error_if(json == NULL, error);
+	error_if(json == NULL, error, "Error getting profile json");
 	_conf_parse_client_json(cnf, json);
 
 	trace("Reading platform profile json");
 	json = http_get(platform_profile_url);
-	error_if(json == NULL, error);
+	error_if(json == NULL, error, "Error getting platform json");
 	_conf_parse_platform_json(cnf, json);
 
 	return cnf;

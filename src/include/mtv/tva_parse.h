@@ -3,8 +3,8 @@
 
 #include <mtv/all.h>
 
-list_s *tva_parse(const char *xml, const char *channel_id, bool long_descriptions);
-
-void tva_parse_datetime(struct tm *dt, const char *s);
+list_s *tva_parse(const char *xml, const char *channel_id);
+void    tva_parse_datetime(struct tm *dt, const char *s);
+void    tva_complete_programme_info(epg_programme_s *prog, char *crid);
 
 #endif

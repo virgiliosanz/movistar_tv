@@ -43,22 +43,13 @@ const char *doc =
 char *
 test_parse()
 {
-
-	list_s *programmes = tva_parse(doc, "un canal x", false);
+	list_s *programmes = tva_parse(doc, "La1");
 	mu_assert(programmes != NULL, "Error getting list of programmes");
 
 	epg_s *epg = epg_alloc();
-	/*
-	epg_programme_s *prog;
-	list_foreach(programmes, first, next, cur) {
-		prog = (epg_programme_s *)cur->value;
-		epg_add_programme(epg, prog);
-		epg_debug_programme(prog);
-	}
-	*/
 	list_destroy(epg->programmes);
 	epg->programmes = programmes;
-	//list_bubble_sort(epg->programmes, epg_programme_compare_by_date);
+	list_bubble_sort(epg->programmes, epg_programme_compare_by_date);
 
 	epg_channel_s *un_chan = epg_channel_alloc();
 	un_chan->id = "1";
@@ -69,7 +60,7 @@ test_parse()
 		epg->channels->count, epg->programmes->count);
 
 	char *s = epg_to_xmltv(epg);
-	trace("XMLTV\n:%s\n", s);
+	trace("XMLTV:\n%s\n", s);
 
 	return NULL;
 }

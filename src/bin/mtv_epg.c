@@ -20,17 +20,16 @@ static conf_s *
 _conf_alloc()
 {
 	conf_s *cnf = (conf_s *)malloc(sizeof(conf_s));
-	error_if(cnf == NULL, error);
+	error_if(cnf == NULL, error, "Error Allocating Memory");
 
 	//TODO: Meter valores por defecto
 
 	return(cnf);
 
 error:
-	if (cnf)
-		free(cnf);
+	if (cnf) free(cnf);
 
-	return(NULL);
+	return NULL;
 }
 
 static bool
@@ -57,13 +56,13 @@ static conf_s *
 _configure(int argc, char *argv[])
 {
 	conf_s *cnf = _conf_alloc();
-	error_if(cnf == NULL, error);
+	error_if(cnf == NULL, error, "Error Allocating Conf.");
 
 	bool ok = _conf_getopt(argc, argv);
-	error_if (ok != true, error);
+	error_if (ok != true, error, "Error reading command opts");
 
 	cnf->tva_conf = tva_conf_load();
-	error_if(cnf->tva_conf == NULL, error);
+	error_if(cnf->tva_conf == NULL, error, "Erro reading conf");
 
 
 	return cnf;
@@ -85,7 +84,9 @@ int
 main(int argc, char *argv[])
 {
 	conf_s *cnf = _configure(argc, argv);
-	error_if(cnf == NULL, error);
+	error_if(cnf == NULL, error, "Error reading configuration");
+
+	setlocale(LC_ALL, "spanish");
 
 	// Leer canales
 	// Crear un thread por channel y día.

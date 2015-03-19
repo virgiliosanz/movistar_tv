@@ -29,7 +29,6 @@ struct tva_context_s {
 	int              depth;
 	tva_parser_state states[TVA_MAX_DEPTH];
 	char            *channel_id;
-	bool             long_descriptions;
 	list_s          *programmes;
 	epg_programme_s *programme;
 	sbuf_s          *buffer;
@@ -92,8 +91,8 @@ tva_end_document(tva_context_s *ctx)
 
 // TODO: Parsear el json y añdirlo al programme
 
-static void
-_tva_get_info(tva_context_s *ctx, char *crid)
+void
+tva_complete_programme_info(epg_programme_s *prog, char *crid)
 {
 	// debug("Getting Advance info for: %s", crid);
 	char       *s        = NULL;
@@ -107,7 +106,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	str_free_tokens(tokens, n_tokens);
 
 	char *json = http_get(sbuf_ptr(url));
-	error_if(json == NULL, error);
+	error_if(json == NULL, error, "Error getting EpgInfo");
 	trace("json (%zu):\n%s", strlen(json), json);
 	sbuf_delete(url);
 
@@ -115,7 +114,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	char err_buf[1024];
 
 	node = yajl_tree_parse(json, err_buf, sizeof(err_buf));
-	error_if(NULL == node, error);
+	error_if(NULL == node, error, "Error Parsing json");
 	free(json);
 
 	// desc
@@ -123,7 +122,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	v = yajl_tree_get(node, desc_path, yajl_t_string);
 	if (v) {
 		s = YAJL_GET_STRING(v);
-		ctx->programme->desc = strdup(s);
+		prog->desc = strdup(s);
 		free(s);
 	}
 
@@ -134,7 +133,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 		s = YAJL_GET_STRING(v);
 		n_tokens = str_split(s, ',', &tokens);
 		for (size_t i = 0; i < n_tokens; i++) {
-			list_push(ctx->programme->actors, strdup(tokens[i]));
+			list_push(prog->actors, strdup(tokens[i]));
 		}
 		free(s);
 		str_free_tokens(tokens, n_tokens);
@@ -145,7 +144,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	v = yajl_tree_get(node, directors_path, yajl_t_string);
 	if (v) {
 		s = YAJL_GET_STRING(v);
-		ctx->programme->director = strdup(s);
+		prog->director = strdup(s);
 		free(s);
 	}
 /*
@@ -155,7 +154,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	v = yajl_tree_get(node, date_path, yajl_t_array);
 	if (v) {
 		array = (yajl_val)YAJL_GET_ARRAY(v);
-		ctx->programme->date.tm_year = YAJL_GET_INTEGER(array->u.array.values[0]);
+		prog->date.tm_year = YAJL_GET_INTEGER(array->u.array.values[0]);
 	}
 	else {
 		debug("productionDate not found");
@@ -167,7 +166,7 @@ _tva_get_info(tva_context_s *ctx, char *crid)
 	v = yajl_tree_get(node, countries_path, yajl_t_array);
 	if (v) {
 		array = (yajl_val)YAJL_GET_ARRAY(v);
-		bassigncstr(ctx->programme->country,
+		bassigncstr(prog->country,
 			    	YAJL_GET_STRING(array->u.array.values[0]));
 
 	}
@@ -191,8 +190,8 @@ error:
 static void
 tva_start_element(tva_context_s *ctx, const xmlChar *xn, const xmlChar **attrs)
 {
-	error_if(NULL == ctx, error);
-	error_if(NULL == xn, error);
+	error_if(NULL == ctx, error, "Param Error");
+	error_if(NULL == xn, error, "Param Error");
 
 	ctx->depth++;
 
@@ -209,11 +208,6 @@ tva_start_element(tva_context_s *ctx, const xmlChar *xn, const xmlChar **attrs)
 	}
 	else if (0 ==  strcasecmp("PublishedStartTime", name)) {
 		ctx->states[ctx->depth] = TVA_STATE_START_TIME;
-	}
-	else if (0 ==  strcasecmp("Program", name)) {
-		if (ctx->long_descriptions) {
-			_tva_get_info(ctx, (char *)attrs[1]);
-		}
 	}
 	else {
 		ctx->states[ctx->depth] = TVA_STATE_UNKNOWN;
@@ -278,15 +272,26 @@ tva_warning(tva_context_s *ctx, const char *msg, ...)
 	va_end(args);
 }
 
+static void
+tva_ctx_free(tva_context_s * ctx)
+{
+	if (ctx->programmes) epg_programme_list_free(ctx->programmes);
+	if (ctx->buffer)     sbuf_delete(ctx->buffer);
+	if (ctx->channel_id) free(ctx->channel_id);
+	if (ctx->programme)  epg_programme_free(ctx->programme);
+	if (ctx)             free(ctx);
+}
+
+
 static tva_context_s *
 tva_ctx_alloc()
 {
 	tva_context_s *ctx;
 	ctx = (tva_context_s *) malloc(sizeof(tva_context_s));
-	error_if(ctx == NULL, error);
+	error_if(ctx == NULL, error, "Error Allocating Memory");
 
 	ctx->programmes = list_create();
-	error_if(ctx->programmes == NULL, error);
+	error_if(ctx->programmes == NULL, error, "Error Creating List");
 
 	ctx->programme = NULL;
 	ctx->depth = 0;
@@ -296,26 +301,8 @@ tva_ctx_alloc()
 	return ctx;
 
 error:
-	if (ctx->programmes)
-		epg_programme_list_free(ctx->programmes);
-	if (ctx->buffer)
-		sbuf_delete(ctx->buffer);
-	if (ctx)
-		free(ctx);
+	if (ctx)             tva_ctx_free(ctx);
 	return NULL;
-}
-
-static void
-tva_ctx_free(tva_context_s * ctx)
-{
-	if (ctx->programmes)
-		epg_programme_list_free(ctx->programmes);
-	if (ctx->buffer)
-		sbuf_delete(ctx->buffer);
-	if (ctx->channel_id)
-		free(ctx->channel_id);
-	if (ctx)
-		free(ctx);
 }
 
 /**
@@ -358,15 +345,14 @@ tva_ctx_free(tva_context_s * ctx)
  </TVAMain>
  */
 list_s *
-tva_parse(const char *xml, const char *channel_id, bool long_descriptions)
+tva_parse(const char *xml, const char *channel_id)
 {
 	tva_context_s *ctx = tva_ctx_alloc();
-	error_if(ctx == NULL, error);
-	error_if(NULL == xml, error);
-	error_if(NULL == channel_id, error);
+	error_if(ctx == NULL, error, "Error creating context");
+	error_if(NULL == xml, error, "Param Error");
+	error_if(NULL == channel_id, error, "Param Error");
 
 	ctx->channel_id = strdup(channel_id);
-	ctx->long_descriptions = long_descriptions;
 
 	LIBXML_TEST_VERSION;
 
@@ -399,13 +385,12 @@ tva_parse(const char *xml, const char *channel_id, bool long_descriptions)
 
 	int result = xmlSAXUserParseMemory(
 		&handler, ctx, (char *)xml, strlen(xml));
-	error_if(0 != result, error);
+	error_if(0 != result, error, "Error creating SAX Parser");
 
 	xmlCleanupParser();
 	xmlMemoryDump();
 
 	list_s *programmes = ctx->programmes;
-	epg_programme_free(ctx->programme);
 	free(ctx);
 	return programmes;
 

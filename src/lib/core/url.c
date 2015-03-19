@@ -34,7 +34,7 @@ url_parse(const char *url)
 
     	/* Allocate the parsed url storage */
     	purl = malloc(sizeof(url_s));
-	error_if(NULL == purl, error);
+	error_if(NULL == purl, error, "Error Allocating Memory");
 
     	purl->scheme   = NULL;
     	purl->host     = NULL;
@@ -54,17 +54,17 @@ url_parse(const char *url)
      	 */
     	/* Read scheme */
     	tmpstr = strchr(curstr, ':');
-	error_if(NULL == tmpstr, error);
+	error_if(NULL == tmpstr, error, "Cannot find ':' in %s", url);
 
     	/* Get the scheme length */
     	len = tmpstr - curstr;
     	/* Check restrictions */
     	for (i = 0; i < len; i++) {
-        	error_if(!_is_scheme_char(curstr[i]), error);
+        	error_if(!_is_scheme_char(curstr[i]), error, "Not valid character");
     	}
     	/* Copy the scheme to the storage */
     	purl->scheme = malloc(sizeof(char) * (len + 1));
-    	error_if(NULL == purl->scheme, error);
+    	error_if(NULL == purl->scheme, error, "Cannot find scheme in %s", url);
 
 	(void)strncpy(purl->scheme, curstr, len);
     	purl->scheme[len] = '\0';
@@ -82,7 +82,7 @@ url_parse(const char *url)
      	 */
     	/* Eat "//" */
     	for (i = 0; i < 2; i++) {
-        	error_if('/' != *curstr, error);
+        	error_if('/' != *curstr, error, "Cannot find '/' in %s", url);
         	curstr++;
     	}
 
@@ -112,7 +112,8 @@ url_parse(const char *url)
         	}
         	len = tmpstr - curstr;
         	purl->username = malloc(sizeof(char) * (len + 1));
-        	error_if(NULL == purl->username, error);
+        	error_if(NULL == purl->username, error,
+        		 "Cannot find username in %s", url);
 
         	(void)strncpy(purl->username, curstr, len);
         	purl->username[len] = '\0';
@@ -128,14 +129,15 @@ url_parse(const char *url)
             		}
             		len = tmpstr - curstr;
             		purl->password = malloc(sizeof(char) * (len + 1));
-            		error_if(NULL == purl->password, error);
+            		error_if(NULL == purl->password, error,
+            			 "Error Allocating Memory");
 
             		(void)strncpy(purl->password, curstr, len);
             		purl->password[len] = '\0';
             		curstr = tmpstr;
         	}
         	/* Skip '@' */
-        	error_if('@' != *curstr, error);
+        	error_if('@' != *curstr, error, "Cannot find '@' in %s", url);
         	curstr++;
     	}
 
@@ -161,7 +163,8 @@ url_parse(const char *url)
     	}
     	len = tmpstr - curstr;
     	purl->host = malloc(sizeof(char) * (len + 1));
-    	error_if(NULL == purl->host || len <= 0, error);
+    	error_if(NULL == purl->host || len <= 0, error,
+    		 "Cannot find host in %s", url);
 
     	(void)strncpy(purl->host, curstr, len);
     	purl->host[len] = '\0';
@@ -177,7 +180,8 @@ url_parse(const char *url)
         	}
         	len = tmpstr - curstr;
         	purl->port = malloc(sizeof(char) * (len + 1));
-        	error_if(NULL == purl->port ,error);
+        	error_if(NULL == purl->port, error,
+        		 "Cannot find port in %s", url);
 
         	(void)strncpy(purl->port, curstr, len);
         	purl->port[len] = '\0';
@@ -190,7 +194,7 @@ url_parse(const char *url)
     	}
 
     	/* Skip '/' */
-    	error_if('/' != *curstr, error);
+    	error_if('/' != *curstr, error, "Cannot find '/' in %s", url);
 
     	curstr++;
 
@@ -201,7 +205,7 @@ url_parse(const char *url)
     	}
     	len = tmpstr - curstr;
     	purl->path = malloc(sizeof(char) * (len + 1));
-    	error_if(NULL == purl->path, error);
+    	error_if(NULL == purl->path, error, "Error Allocating Memory");
 
     	(void)strncpy(purl->path, curstr, len);
     	purl->path[len] = '\0';
@@ -218,7 +222,8 @@ url_parse(const char *url)
         	}
         	len = tmpstr - curstr;
         	purl->query = malloc(sizeof(char) * (len + 1));
-        	error_if(NULL == purl->query, error);
+        	error_if(NULL == purl->query, error,
+        		 "Cannot find query in %s", url);
 
         	(void)strncpy(purl->query, curstr, len);
         	purl->query[len] = '\0';
@@ -236,7 +241,8 @@ url_parse(const char *url)
         	}
         	len = tmpstr - curstr;
         	purl->fragment = malloc(sizeof(char) * (len + 1));
-        	error_if(NULL == purl->fragment, error);
+        	error_if(NULL == purl->fragment, error,
+        		 "Cannot find fragment in %s", url);
 
         	(void)strncpy(purl->fragment, curstr, len);
         	purl->fragment[len] = '\0';

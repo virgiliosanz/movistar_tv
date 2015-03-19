@@ -12,18 +12,18 @@ epg_to_xmltv(epg_s *epg)
 	xmlNodePtr root = NULL;
 	xmlChar   *s    = NULL;
 
-	error_if(epg == NULL, error);
+	error_if(epg == NULL, error, "Param Error");
 
 	LIBXML_TEST_VERSION;
 
 	doc = xmlNewDoc((const xmlChar *)"1.0");
-	error_if(doc == NULL, error);
+	error_if(doc == NULL, error, "Error Creating xmlDoc");
 
 	root = xmlNewDocNode(doc, NULL, BAD_CAST "tv", NULL);
-	error_if(root == NULL, error);
+	error_if(root == NULL, error, "Error creating root node");
 
 	dtd = xmlCreateIntSubset(doc, BAD_CAST "tv", NULL, BAD_CAST "epg.dtd");
-	error_if(dtd == NULL, error);
+	error_if(dtd == NULL, error, "Error adding DTD to xmlDoc");
 
 	xmlDocSetRootElement(doc, root);
 	xmlNewProp(root,
@@ -60,11 +60,10 @@ char *
 epg_to_m3u(epg_s *epg, epg_m3u_format_e format)
 {
 	sbuf_s *buffer = sbuf_new();
+	error_if(buffer == NULL, error, "Error Allocating sbuf_s");
 
-	error_if(buffer == NULL, error);
-
-	error_if(epg == NULL, error);
-	error_if(epg->channels == NULL, error);
+	error_if(epg == NULL, error, "Params Error");
+	error_if(epg->channels == NULL, error, "Params Error");
 	trace("There are %d channels", epg->channels->count);
 
 	list_apply_with_state func =
@@ -88,7 +87,7 @@ epg_programme_s *
 epg_programme_alloc()
 {
 	epg_programme_s *prog = (epg_programme_s *) malloc(sizeof(epg_programme_s));
-	error_if(prog == NULL, error);
+	error_if(prog == NULL, error, "Error Allocating Memory");
 
 	prog->channel = NULL;
 	prog->title = NULL;
@@ -137,7 +136,7 @@ epg_channel_s *
 epg_channel_alloc()
 {
 	epg_channel_s *chan = (epg_channel_s *) malloc(sizeof(epg_channel_s));
-	error_if(chan == NULL, error);
+	error_if(chan == NULL, error, "Error Allocating Memory");
 
 	chan->id           = NULL;
 	chan->display_name = NULL;
@@ -185,13 +184,13 @@ epg_s *
 epg_alloc()
 {
 	epg_s *epg = (epg_s *) malloc(sizeof(epg_s));
-	error_if(epg == NULL, error);
+	error_if(epg == NULL, error, "Error Allocating Memory");
 
 	epg->channels = list_create();
-	error_if(epg->channels == NULL, error);
+	error_if(epg->channels == NULL, error, "Cannot create list");
 
 	epg->programmes = list_create();
-	error_if(epg->programmes == NULL, error);
+	error_if(epg->programmes == NULL, error, "Cannot create list");
 
 	return epg;
 
@@ -204,7 +203,7 @@ epg_alloc()
 void
 epg_programme_list_free(list_s *programmes)
 {
-	error_if(programmes == NULL, error);
+	error_if(programmes == NULL, error, "Param Error");
 	list_foreach(programmes, first, next, cur) {
 		epg_programme_free((epg_programme_s *) cur->value);
 	}
@@ -217,7 +216,7 @@ epg_programme_list_free(list_s *programmes)
 void
 epg_channel_list_free(list_s *channels)
 {
-	error_if(channels == NULL, error);
+	error_if(channels == NULL, error, "Param error");
 
 	list_foreach(channels, first, next, cur) {
 		epg_channel_free((epg_channel_s *) cur->value);
@@ -243,8 +242,8 @@ epg_free(epg_s *epg)
 void
 epg_add_channel(epg_s *epg, epg_channel_s *channel)
 {
-	error_if(epg == NULL, error);
-	error_if(channel == NULL, error);
+	error_if(epg == NULL, error, "Param Error");
+	error_if(channel == NULL, error, "Param Error");
 
 	list_push(epg->channels, (void *)channel);
 
@@ -255,8 +254,8 @@ epg_add_channel(epg_s *epg, epg_channel_s *channel)
 void
 epg_add_programme(epg_s *epg, epg_programme_s *programme)
 {
-	error_if(epg == NULL, error);
-	error_if(programme == NULL, error);
+	error_if(epg == NULL, error, "Param Error");
+	error_if(programme == NULL, error, "Param Error");
 
 	list_push(epg->programmes, (void *)programme);
 
@@ -267,8 +266,8 @@ epg_add_programme(epg_s *epg, epg_programme_s *programme)
 static void
 _actors_to_xml(xmlNodePtr root, list_s *actors)
 {
-	error_if(root == NULL, error);
-	error_if(actors == NULL, error);
+	error_if(root == NULL, error, "Param Error");
+	error_if(actors == NULL, error, "Param Error");
 	char *s = NULL;
 	list_foreach(actors, first, next, cur) {
 		s = (char *) cur->value;
@@ -293,9 +292,9 @@ epg_programme_compare_by_date(const void *l, const void *r)
 void
 _programmes_to_xml(xmlNodePtr root, list_s *programmes)
 {
-	error_if(NULL == root, error);
-	error_if(NULL == programmes, error);
-	error_if(0 >= programmes->count, error);
+	error_if(NULL == root, error, "Param Error");
+	error_if(NULL == programmes, error, "Param Error");
+	error_if(0 >= programmes->count, error, "Programs list empty");
 
 	xmlNodePtr node;
 	xmlNodePtr subnode;
@@ -307,7 +306,7 @@ _programmes_to_xml(xmlNodePtr root, list_s *programmes)
 	list_foreach(programmes, first, next, cur) {
 		prog = (epg_programme_s *) cur->value;
 
-		epg_debug_programme(prog);
+//		epg_debug_programme(prog);
 
 		if (!prog->title || !prog->channel) {
 			warn("No channel (%s) or title (%s)!!",
@@ -438,9 +437,9 @@ error:
 void
 _channels_to_xml(xmlNodePtr root, list_s *channels)
 {
-	error_if(root == NULL, error);
-	error_if(NULL == channels, error);
-	error_if(0 >= channels->count, error);
+	error_if(root == NULL, error, "Param Error");
+	error_if(NULL == channels, error, "Param Error");
+	error_if(0 >= channels->count, error, "Channel list empty");
 
 	xmlNodePtr node;
 	epg_channel_s *chan;
@@ -476,10 +475,10 @@ epg_validate(const char *xml)
 	int rc;
 
 	xmlValidCtxtPtr ctx = xmlNewValidCtxt();
-	error_if(ctx == NULL, error);
+	error_if(ctx == NULL, error, "Error creating validation context");
 
 	xmlDocPtr doc = xmlParseMemory((char *)xml, strlen(xml));
-	error_if(doc == NULL, error);
+	error_if(doc == NULL, error, "Error creating Parser");
 
 	/* Validate against in memory dtd */
 	xmlParserInputBufferPtr buf = xmlParserInputBufferCreateMem(

@@ -38,7 +38,7 @@ void
 list_push(list_s *list, void *value)
 {
 	list_node_s *node = calloc(1, sizeof(list_node_s));
-	error_if(node ==NULL, error);
+	error_if(node ==NULL, error, "Error allocating memory");
 
 	node->value = value;
 
@@ -68,7 +68,7 @@ void
 list_unshift(list_s *list, void *value)
 {
 	list_node_s *node = calloc(1, sizeof(list_node_s));
-	error_if(node == NULL, error);
+	error_if(node == NULL, error, "Error Allocating memory");
 
 	node->value = value;
 
@@ -100,8 +100,8 @@ list_remove(list_s *list, list_node_s *node)
 {
 	void *result = NULL;
 
-	error_if(!list->first && !list->last, error);
-	error_if(node == NULL, error);
+	error_if(!list->first && !list->last, error, "List is empty");
+	error_if(node == NULL, error, "Param Error!");
 
 	if (node == list->first && node == list->last) {
 		list->first = NULL;
@@ -109,13 +109,13 @@ list_remove(list_s *list, list_node_s *node)
 	}
 	else if (node == list->first) {
 		list->first = node->next;
-		error_if(list->first == NULL, error);
+		error_if(list->first == NULL, error, "Removing first node == NULL");
 
 		list->first->prev = NULL;
 	}
 	else if (node == list->last) {
 		list->last = node->prev;
-		error_if(list->last == NULL, error);
+		error_if(list->last == NULL, error, "Removing first node == NULL");
 
 		list->last->next = NULL;
 	}

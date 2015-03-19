@@ -12,7 +12,7 @@ sbuf_s *
 sbuf_new()
 {
 	sbuf_s *sb = malloc(sizeof(*sb));
-	error_if(sb == NULL, error);
+	error_if(sb == NULL, error, "Error allocating memory");
 
 	sbuf_init(sb);
 
@@ -89,7 +89,7 @@ sbuf_extendby(sbuf_s *sb, size_t len)
 	const size_t min_size = 64;
 	char        *buf      = NULL;
 
-	error_if(NULL == sb, error);
+	error_if(NULL == sb, error, "Param error!");
 
 	len += sb->NUL;
 	if (len <= sb->buflen)
@@ -99,7 +99,7 @@ sbuf_extendby(sbuf_s *sb, size_t len)
 	while (len > sb->buflen)
 		sb->buflen *= 2;
 	buf = realloc(sb->buf, sb->buflen);
-	error_if(!buf, error);
+	error_if(!buf, error, "Error moving memory");
 
 	sb->buf = buf;
 	return;
@@ -135,8 +135,8 @@ sbuf_appendstr(sbuf_s *sb, const char *str)
 static void
 sbuf_vappendf(sbuf_s *sb, const char *fmt, va_list ap)
 {
-	error_if(sb == NULL, error);
-	error_if(fmt == NULL, error);
+	error_if(sb == NULL, error, "Param Error");
+	error_if(fmt == NULL, error, "Param Error");
 
 	size_t  num_required;
         va_list ap_copy;
