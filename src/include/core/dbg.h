@@ -15,9 +15,9 @@ char *level_to_str(debug_level_e level);
 
 #define debug(level, M, ...) \
 if (__global_debug_level >= level) { \
-	fprintf(stderr, "[%s] %s (%d): " M "\n", \
+	fprintf(stderr, "[%s] %s (%d) - %s - : " M "\n", \
 	        level_to_str(level), \
-		__FILE__, __LINE__, ##__VA_ARGS__); \
+		__FILE__, __LINE__, __FUNCTION__, ##__VA_ARGS__); \
 } \
 
 #define error(M, ...) debug(debug_level_error, M, ##__VA_ARGS__)
@@ -26,7 +26,9 @@ if (__global_debug_level >= level) { \
 
 #define error_if(A, label, M, ...) \
 if (A) { \
-	fprintf(stderr, "[ERROR] %s (%d): " M " - " #A, __FILE__, __LINE__, ##__VA_ARGS__); \
+	fprintf(stderr, "[ERROR] %s (%d) - %s - : " M " - " #A, \
+			__FILE__, __LINE__, __FUNCTION__, ##__VA_ARGS__); \
+	fprintf(stderr, "\n"); \
 	goto label; \
 } \
 
@@ -39,6 +41,8 @@ if (A) { \
 if (A) { \
 	trace("assert failed: " #A " - " M , ##__VA_ARGS__); \
 } \
+
+void activity(const char *fmt, ...);
 
 #endif
 
