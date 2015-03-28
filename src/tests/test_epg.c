@@ -51,7 +51,10 @@ test_create_channels()
 	chan->order = 1;
 	list_push(channels, chan);
 
-	mu_assert(2 != channels->count, "Invalid number of channels")
+	mu_assert(2 != channels->count, "Invalid number of channels");
+
+	epg_channel_sort(channels);
+
 
 	return NULL;
 }
@@ -130,6 +133,9 @@ test_create_programmes()
 	prog->rating_icon = strdup("http://www.telemadrid.es/sites/default/files/logo.gif");
 	prog->star_rating = strdup("3/3");
 	list_push(programmes, prog);
+
+
+	epg_programme_sort(programmes);
 
 	return NULL;
 }

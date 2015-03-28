@@ -36,8 +36,8 @@ epg_to_xmltv(epg_s *epg)
 	trace("%s", "Adding channels");
 	_channels_to_xml(root, epg->channels);
 
-	trace("calling xmlDocDumpMemory chan: %d prog: %d",
-		epg->channels->count, epg->channels->count);
+	trace("calling xmlDocDumpMemory chan: %zu prog: %zu",
+		list_count(epg->channels), list_count(epg->channels));
 
 	int size;
 	xmlDocDumpMemoryEnc(doc, &s, &size, "UTF-8");
@@ -64,9 +64,9 @@ epg_to_m3u(epg_s *epg, epg_m3u_format_e format)
 
 	error_if(epg == NULL, error, "Params Error");
 	error_if(epg->channels == NULL, error, "Params Error");
-	trace("There are %d channels", epg->channels->count);
+	trace("There are %zu channels", list_count(epg->channels));
 
-	list_apply_with_state func =
+	list_apply_with_state_cb func =
 		(format == epg_m3u_format_simpletv) ?
 		_gen_m3u_simpletv : _gen_m3u_tvheaded;
 

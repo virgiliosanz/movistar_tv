@@ -134,6 +134,50 @@ error:
 	return result;
 }
 
+void
+list_walk(list_s *list, list_apply_cb func)
+{
+	list_foreach(list, first, next, cur) {
+		func(cur->value);
+	}
+}
+
+void
+list_walk_with_state(list_s *list, list_apply_with_state_cb func, void *state)
+{
+	list_foreach(list, first, next, cur) {
+		func(cur->value, state);
+	}
+}
+
+list_s *
+list_concat(list_s *l, list_s *r)
+{
+	error_if(NULL == l, error, "first list is NULL");
+	error_if(NULL == r, error, "second list is NULL");
+
+	if (list_is_empty(l)) {
+		if (!list_is_empty(r)) {
+			l = r;
+		}
+		else {
+			warn("Both lists are empty");
+		}
+	}
+	else if (!list_is_empty(r)) {
+		r->first->prev = l->last;
+		l->last->next = r->first;
+		l->last = r->last;
+
+		l->count += r->count;
+	}
+
+	return l;
+
+error:
+	return NULL;
+}
+
 static inline void
 list_node_swap(list_node_s *a, list_node_s *b)
 {
@@ -167,7 +211,7 @@ list_bubble_sort(list_s *list, list_compare cmp)
 }
 
 static inline list_s *
-list_merge(list_s * left, list_s *right, list_compare cmp)
+_list_merge(list_s * left, list_s *right, list_compare cmp)
 {
 	list_s *result = list_create();
 	void *val = NULL;
@@ -227,22 +271,6 @@ list_merge_sort(list_s *list, list_compare cmp)
 	if (sort_right != right)
 		list_destroy(right);
 
-	return list_merge(sort_left, sort_right, cmp);
-}
-
-void
-list_walk(list_s *list, list_apply func)
-{
-	list_foreach(list, first, next, cur) {
-		func(cur->value);
-	}
-}
-
-void
-list_walk_with_state(list_s *list, list_apply_with_state func, void *state)
-{
-	list_foreach(list, first, next, cur) {
-		func(cur->value, state);
-	}
+	return _list_merge(sort_left, sort_right, cmp);
 }
 

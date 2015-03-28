@@ -106,33 +106,45 @@ test_foreach()
 	list_push(l, "Dos");
 	list_push(l, "Tres");
 
-	int i = 0;
+	size_t i = 0;
 	list_foreach(l, first, next, cur) {
 		printf("Valor: %s\n", cur->value);
 		i++;
 	}
 
-	trace("%d == %d", i, l->count);
+	trace("%zu == %zu", i, list_count(l));
 	mu_assert(i == l->count, "Incorrect length");
 
 	return NULL;
 }
 
-char *values[] = { "XXXX", "1234", "abcd", "xjvef", "NDSS" };
-
-#define NUM_VALUES 5
-
 list_s *
-create_words()
+_create_word_list(char *values[])
 {
-	int i = 0;
 	list_s *words = list_create();
 
-	for (i = 0; i < NUM_VALUES; i++) {
+	for (size_t i = 0; values[i]; i++) {
 		list_push(words, values[i]);
 	}
 
 	return words;
+
+}
+
+list_s *
+create_words()
+{
+	char *values[] = { "XXXX", "1234", "abcd", "xjvef", "NDSS", NULL };
+	return _create_word_list(values);
+}
+
+
+list_s *
+create_words2()
+{
+
+	char *values[] = { "zSzS", "4321", "dcba", "xjvef", NULL };
+	return _create_word_list(values);
 }
 
 int
@@ -194,6 +206,62 @@ test_merge_sort()
 	return NULL;
 }
 
+void
+_trace_list(list_s *l)
+{
+	sbuf_s *s = sbuf_alloc();
+
+	char *v;
+	list_foreach(l, first, next, cur) {
+		v = (char *)cur->value;
+		sbuf_appendf(s, "'%s', ", v);
+
+	}
+	trace("%s", sbuf_ptr(s));
+	sbuf_free(s);
+}
+
+char *
+test_concat()
+{
+	list_s *l1 = create_words();
+	trace("List 1")
+	_trace_list(l1);
+
+	list_s *l2 = create_words2();
+	trace("List 2")
+	_trace_list(l2);
+
+	size_t total = list_count(l1) + list_count(l2);
+	list_s *l3 = list_concat(l1, l2);
+	trace("List 3 = list 1 + list 2")
+	_trace_list(l3);
+
+	mu_assert(list_count(l3) == total, "List 3 has l1 + l2 elements");
+	mu_assert(list_count(l3) == list_count(l1), "l3 and l2 are same list");
+
+	size_t cnt = 0;
+	list_foreach(l3, first, next, cur) {
+		cnt ++;
+	}
+	mu_assert(total == cnt, "total should be same as counting elements");
+
+	l2 = list_create();
+	l3 = list_concat(l1, l2);
+	mu_assert(list_count(l3) == list_count(l1), "l3 and l2 are same list");
+	mu_assert(list_count(l3) == total, "List 3 has l1 + l2 elements");
+
+	l3 = list_concat(l2, l1);
+	mu_assert(list_count(l3) == list_count(l1), "l3 and l2 are same list");
+	mu_assert(list_count(l3) == total, "List 3 has l1 + l2 elements");
+
+	l3 = list_merge_sort(l3, (list_compare) strcasecmp);
+	trace("Sorted l3");
+	_trace_list(l3);
+
+	return NULL;
+}
+
 char *
 all_tests()
 {
@@ -206,6 +274,7 @@ all_tests()
 	mu_run_test(test_shift);
 	mu_run_test(test_destroy);
 	mu_run_test(test_foreach);
+	mu_run_test(test_concat);
 	mu_run_test(test_bubble_sort);
 	mu_run_test(test_merge_sort);
 

@@ -49,6 +49,9 @@ epg_programme_s *epg_programme_alloc();
 void             epg_programme_free(epg_programme_s * programme);
 void             epg_programme_list_free(list_s * programmes);
 int              epg_programme_compare_by_date(const void *l, const void *r);
+// TODO: Implement comparison by channel order and datetime
+#define epg_programme_sort(programmes) \
+	list_merge_sort(programmes, epg_programme_compare_by_date)
 #define epg_debug_programme(prog) trace("Programme -> tit: '%s', chan: '%s' dir: '%s' country: '%s' start: '%02d/%02d/%04d %02d:%02d:%02d' desc: '%s'", \
 	(prog)->title, (prog)->channel, \
 	(prog)->director, (prog)->country, \
@@ -60,6 +63,8 @@ epg_channel_s *epg_channel_alloc();
 void           epg_channel_free(epg_channel_s * channel);
 void           epg_channel_list_free(list_s * channels);
 int            epg_channel_compare_by_order(const void *l, const void *r);
+#define epg_channel_sort(channels) \
+	list_merge_sort(channels, epg_channel_compare_by_order)
 #define epg_debug_channel(chan) trace("Channel -> id: '%s', name: '%s', short: '%s' icon: '%s' url: '%s' ip: '%s' port: '%d'", \
 	(chan)->id, (chan)->display_name, \
 	(chan)->short_name, (chan)->icon, \

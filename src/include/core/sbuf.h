@@ -17,12 +17,14 @@ struct _sbuf_s {
 
 typedef struct _sbuf_s sbuf_s;
 
-sbuf_s *sbuf_new(void);         // create an mtv_sbuf
-void sbuf_delete(sbuf_s *sb);   // free an mtv_sbuf
-void sbuf_reset(sbuf_s *sb);    // clear mtv_sbuf contents (doesn't free mem)
+sbuf_s *sbuf_new(void);         // create an sbuf_s
+#define sbuf_alloc() sbuf_new()
+void sbuf_delete(sbuf_s *sb);   // free an sbuf_s
+#define sbuf_free(sb) sbuf_delete(sb)
+void sbuf_reset(sbuf_s *sb);    // clear sbuf_s contents (doesn't free mem)
 int sbuf_len(sbuf_s *sb);       // return contents length (excluding NUL)
-char *sbuf_ptr(sbuf_s *sb);     // return pointer to mtv_sbuf contents
-char *sbuf_detach(sbuf_s *sb);  // Detach and return mtv_sbuf contents (you must free)
+char *sbuf_ptr(sbuf_s *sb);     // return pointer to sbuf_s contents
+char *sbuf_detach(sbuf_s *sb);  // Detach and return sbuf_s contents (you must free)
 void sbuf_truncate(sbuf_s *sb, int len);
 void sbuf_move(sbuf_s *src, sbuf_s *dest);
 void sbuf_appendstr(sbuf_s *sb, const char *string);

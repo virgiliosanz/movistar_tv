@@ -222,7 +222,7 @@ _request_to_str(const http_request_s *r)
 	sbuf_appendf(s, " HTTP/%s\r\n", r->version);
 	sbuf_appendf(s, "Host: %s\r\n", r->url->host);
 	list_walk_with_state(
-		r->headers, (list_apply_with_state) _add_headers_to_sbuf, s);
+		r->headers, (list_apply_with_state_cb) _add_headers_to_sbuf, s);
 	sbuf_appendstr(s, "\r\n");
 
 	str = sbuf_detach(s);
@@ -462,7 +462,7 @@ http_request_free(http_request_s *r)
 	if (r->version) free(r->version);
 	if (r->server) free(r->server);
 	if (r->headers) {
-		list_walk(r->headers, (list_apply)http_header_free);
+		list_walk(r->headers, (list_apply_cb) http_header_free);
 		list_destroy(r->headers);
 	}
 
@@ -490,7 +490,7 @@ http_response_free(http_response_s *r)
 	error_if(NULL == r, error, "Param Error");
 	if (r->body) free(r->body);
 	if (r->headers) {
-		list_walk(r->headers, (list_apply) http_header_free);
+		list_walk(r->headers, (list_apply_cb) http_header_free);
 		list_destroy(r->headers);
 	}
 	free(r);
@@ -515,8 +515,8 @@ http_get(const char *url)
 		 "Response code not 200 -> %d", res->response_code);
 
 	// Debug headers
-	trace("There are %d headers", list_count(res->headers));
-	list_walk(res->headers, (list_apply) http_header_debug);
+	trace("There are %zu headers", list_count(res->headers));
+	list_walk(res->headers, (list_apply_cb) http_header_debug);
 
 	char *body = http_response_detach(res);
 	http_request_free(req);

@@ -1,13 +1,14 @@
 #include <mtv/all.h>
 
-#define DOMAIN_LEN (20)
 struct demarcation_context_s {
 	bool     in_demarcation;
-	char     domain[DOMAIN_LEN];
+	char     *domain;
 	mcast_s *mcast;
 
 };
 typedef struct demarcation_context_s demarcation_context_s;
+
+#define _DEMARCATION_DOMAIN_FMT "DEM_%d.imagenio.es"
 
 static xmlEntityPtr
 demarcation_get_entity(demarcation_context_s *ctx, const xmlChar *name)
@@ -78,7 +79,7 @@ demarcation_get_mcast_group_from_xml(const char *xml, const int demarcation)
 	ctx->mcast = mcast_alloc();
 	error_if(NULL == ctx->mcast, error, "Error Allocating Memory");
 
-	snprintf(ctx->domain, DOMAIN_LEN, "DEM_%d.imagenio.es", demarcation);
+	asprintf(&ctx->domain, _DEMARCATION_DOMAIN_FMT, demarcation);
 	ctx->in_demarcation = false;
 
 	LIBXML_TEST_VERSION;
@@ -114,6 +115,8 @@ demarcation_get_mcast_group_from_xml(const char *xml, const int demarcation)
 	error_if(0 != result, error, "Error Parsing xml: \n%s\n", xml);
 
 	mcast_s *mcast = ctx->mcast;
+
+	free(ctx->domain);
 	free(ctx);
 
 //	xmlCleanupParser();
@@ -124,8 +127,10 @@ demarcation_get_mcast_group_from_xml(const char *xml, const int demarcation)
 
 error:
 
-	if (ctx->mcast) mcast_free(ctx->mcast);
-	if (ctx) free(ctx);
+	if (ctx->mcast)  mcast_free(ctx->mcast);
+	if (ctx->domain) free(ctx->domain);
+	if (ctx)         free(ctx);
+
 	xmlCleanupParser();
 	xmlMemoryDump();
 

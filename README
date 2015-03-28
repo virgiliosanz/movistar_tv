@@ -7,8 +7,8 @@ http://c.learncodethehardway.org/book/
 INSTALL
 =======
 
-Ubuntu
-------
+Ubuntu / Linux
+--------------
 
 Install the following dependencies
 
@@ -16,7 +16,45 @@ Install the following dependencies
 $ sudo apt-get install cmake build-essential
 
 - libs:
-$ sudo apt-get install libyajl-dev libcurl4-openssl-dev libpcre3-dev libxml2-dev
+$ sudo apt-get install libyajl-dev libxml2-dev
 
 OSX
 ---
+$ brew install cmake libxml2 yajl
+
+Then exec: make and it would go, executables would go in build/src/bin
+
+You can execute tests:
+$ make test
+
+
+HOW IT WORKS
+============
+
+There are a few executables:
+
+- mtv_get_xmls: Gets the xml from iptv multicasts
+- mtv_get_descriptions: get additional info (it's slow) from provider json urls,
+  	it is able to also get info from imdb.
+- mtv_get_logos: Gets the image logos of tv channels
+- mtv_gen_xmltv: Generate xmltv info drom xml files downloaded by mtv_get_xmls
+and mtv_get_descriptions (if they are any)
+- mtv_gen_m3u: Generate m3u files for xmbc, tvheaded, ... different formats
+
+mtv_get_xmls
+------------
+
+mtv_get_descriptions
+--------------------
+
+mtv_get_logos
+-------------
+
+mtv_gen_xmltv
+-------------
+
+mtv_gen_m3u
+-----------
+
+
+

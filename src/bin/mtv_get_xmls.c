@@ -38,7 +38,7 @@ static void
 _conf_help(int argc, char *argv[])
 {
 	char *msg = "TODO, Escribir ayuda!\n"
-"%s -n <days to get> -o <output path> -i <image path> -t <tmp path>\n\n";
+"%s -n <days to get> -o <output path> -i <image path> -t <tmp path> -v\n\n";
 
 	printf(msg, argv[0]);
 }

@@ -56,8 +56,8 @@ test_parse()
 	un_chan->display_name = "RTVE - La1";
 	un_chan->short_name = "La1";
 	epg_add_channel(epg, un_chan);
-	trace("Generating epg for %d channels and %d programmes",
-		epg->channels->count, epg->programmes->count);
+	trace("Generating epg for %zu channels and %zu programmes",
+		list_count(epg->channels), list_count(epg->programmes));
 
 	char *s = epg_to_xmltv(epg);
 	trace("XMLTV:\n%s\n", s);
