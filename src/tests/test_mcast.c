@@ -1,11 +1,11 @@
 #include "config.h"
 #include <sys/stat.h>
 
-struct _context_t {
+struct _context_s {
 	size_t n;
 	char path[PATH_MAX];
 };
-typedef struct _context_t context_t;
+typedef struct _context_s context_s;
 
 static void
 _mkdir(const char *dir)
@@ -32,12 +32,12 @@ _mkdir(const char *dir)
 }
 
 bool
-mcast_cb(const mcast_file_s *file, void *_ctx)
+mcast_cb(const struct mcast_file *file, void *_ctx)
 {
 	mu_assert(NULL != file, "file is NULL!!");
 	mu_assert(NULL != _ctx,  "context is NULL!!");
 
-	context_t *ctx = (context_t *)_ctx;
+	context_s *ctx = (context_s *)_ctx;
 
 	trace("Creando directorio: %s (%zu)", ctx->path, ctx->n);
 	_mkdir(ctx->path);
@@ -59,8 +59,8 @@ mcast_cb(const mcast_file_s *file, void *_ctx)
 char *
 test_multicast()
 {
-	mcast_s   *mcast = NULL;
-	context_t ctx;
+	struct mcast  *mcast = NULL;
+	context_s ctx;
 
 	ctx.n = 0;
 
@@ -73,7 +73,7 @@ test_multicast()
 	mcast_open(mcast, "239.0.2.129", 3937);
 	mcast_proccess_files(mcast, mcast_cb, &ctx);
 	mcast_close(mcast);
-
+/*
 	// Aquí viene toda la conf de canales (3 ficheros)
 	mcast_open(mcast, "239.0.2.154", 3937);
 	mcast_proccess_files(mcast, mcast_cb, &ctx);
@@ -91,7 +91,7 @@ test_multicast()
 		mcast_proccess_files(mcast, mcast_cb, &ctx);
 		mcast_close(mcast);
 	}
-
+*/
 	mcast_free(mcast);
 
 	return NULL;

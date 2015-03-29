@@ -5,7 +5,7 @@ test_url()
 {
 	struct {
 		char  *str_url;
-		url_s url;
+		struct url url;
 	} urls[] = {
 		{"http://www.midominio.com/", {
 			.scheme   = "http",
@@ -131,7 +131,7 @@ test_url()
 	};
 
 
-	url_s *url = NULL;
+	struct url *url = NULL;
 	for (size_t i = 0; urls[i].str_url != NULL; i++) {
 		trace("\n\nParsing URL: %s", urls[i].str_url);
 		url = url_parse(urls[i].str_url);

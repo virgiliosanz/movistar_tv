@@ -21,10 +21,10 @@ _is_scheme_char(int c)
 /*
  * See RFC 1738, 3986
  */
-url_s *
+struct url *
 url_parse(const char *url)
 {
-    	url_s      *purl;
+    	struct url      *purl;
     	const char *tmpstr;
     	const char *curstr;
     	int         len;
@@ -33,7 +33,7 @@ url_parse(const char *url)
     	int         bracket_flag;
 
     	/* Allocate the parsed url storage */
-    	purl = malloc(sizeof(url_s));
+    	purl = malloc(sizeof(struct url));
 	error_if(NULL == purl, error, "Error Allocating Memory");
 
     	purl->scheme   = NULL;
@@ -261,7 +261,7 @@ error:
  * Free memory of parsed url
  */
 void
-url_free(url_s *purl)
+url_free(struct url *purl)
 {
     	if (NULL != purl) {
         	if (NULL != purl->scheme)   free(purl->scheme);

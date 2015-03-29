@@ -3,11 +3,10 @@
 #include <stdarg.h>
 #include <time.h>
 
-//debug_level_e __global_debug_level = debug_level_error;
-debug_level_e __global_debug_level = debug_level_trace;
+enum debug_level __global_debug_level = debug_level_trace;
 
 char *
-level_to_str(debug_level_e level)
+level_to_str(enum debug_level level)
 {
 	switch (level) {
 		case debug_level_error:

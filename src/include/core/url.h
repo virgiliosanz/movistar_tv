@@ -10,7 +10,7 @@
  *      Virgilio Sanz
  */
 
-struct _url_s {
+struct url {
     char *scheme;               /* mandatory */
     char *host;                 /* mandatory */
     char *port;                 /* optional */
@@ -20,10 +20,9 @@ struct _url_s {
     char *username;             /* optional */
     char *password;             /* optional */
 };
-typedef struct _url_s url_s;
 
-url_s *url_parse(const char *url);
-void url_free(url_s *url);
+struct url *url_parse(const char *url);
+void url_free(struct url *url);
 
 #define url_debug(url) trace("(url) s: %s h: %s p: %s p: %s q: %s f: %s u: %s p: %s", \
 	url->scheme, url->host, url->port, url->path, url->query, \

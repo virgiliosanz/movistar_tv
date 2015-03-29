@@ -3,29 +3,8 @@ NOTES
 
 http://www.embedded.com/design/programming-languages-and-tools/4215552/Seventeen-steps-to-safer-C-code
 http://c.learncodethehardway.org/book/
-
-INSTALL
-=======
-
-Ubuntu / Linux
---------------
-
-Install the following dependencies
-
-- tools:
-$ sudo apt-get install cmake build-essential
-
-- libs:
-$ sudo apt-get install libyajl-dev libxml2-dev
-
-OSX
----
-$ brew install cmake libxml2 yajl
-
-Then exec: make and it would go, executables would go in build/src/bin
-
-You can execute tests:
-$ make test
+http://www.adslzone.net/postt359916.html
+http://ricardforner.blogspot.com.es/2013/02/epg-en-pvr-para-raspberry-pi.html
 
 
 HOW IT WORKS
@@ -43,6 +22,7 @@ and mtv_get_descriptions (if they are any)
 
 mtv_get_xmls
 ------------
+
 
 mtv_get_descriptions
 --------------------

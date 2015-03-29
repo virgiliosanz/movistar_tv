@@ -9,7 +9,7 @@ test_parse_datetime()
 	const char *s = "2014-11-22T19:45:24.000Z";
 	const char *fmt = "%Y-%m-%dT%H:%M:%S.%z";
 
-	tva_parse_datetime(&dt, s);
+	mtv_parse_datetime(&dt, s);
 
 	trace("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", s,
 		dt.tm_mday, dt.tm_mon + 1, dt.tm_year + 1900,
@@ -20,7 +20,7 @@ test_parse_datetime()
 	strftime(str, _MAX_SIZE_FOR_DATE, fmt, &dt);
 
 	struct tm dt2;
-	tva_parse_datetime(&dt2, str);
+	mtv_parse_datetime(&dt2, str);
 	trace("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", str,
 		dt2.tm_mday, dt2.tm_mon + 1, dt2.tm_year + 1900,
 		dt2.tm_hour, dt2.tm_min, dt2.tm_sec,
@@ -43,15 +43,15 @@ const char *doc =
 char *
 test_parse()
 {
-	list_s *programmes = tva_parse(doc, "La1");
+	list_s *programmes = mtv_parse_file_type_241(doc, "La1");
 	mu_assert(programmes != NULL, "Error getting list of programmes");
 
-	epg_s *epg = epg_alloc();
+	struct epg *epg = epg_alloc();
 	list_destroy(epg->programmes);
 	epg->programmes = programmes;
 	list_bubble_sort(epg->programmes, epg_programme_compare_by_date);
 
-	epg_channel_s *un_chan = epg_channel_alloc();
+	struct epg_channel *un_chan = epg_channel_alloc();
 	un_chan->id = "1";
 	un_chan->display_name = "RTVE - La1";
 	un_chan->short_name = "La1";

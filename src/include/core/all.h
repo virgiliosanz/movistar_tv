@@ -18,13 +18,13 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <sys/stat.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <netinet/tcp.h>
 #include <arpa/inet.h>
-#include <openssl/rand.h>
-#include <openssl/ssl.h>
-#include <openssl/err.h>
+
+#include <core/sglib.h>
 
 #include <core/dbg.h>
 #include <core/minunit.h>
@@ -34,7 +34,7 @@
 #include <core/string.h>
 #include <core/url.h>
 #include <core/http_client.h>
-#include <core/radixtree.h>
+#include <core/files.h>
 
 #endif
 

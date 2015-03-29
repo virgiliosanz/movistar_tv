@@ -1,9 +1,9 @@
 #include <core/all.h>
 
-http_request_s *
+struct http_request *
 http_request_create(const char *url)
 {
-	http_request_s *r = malloc(sizeof(http_request_s));
+	struct http_request *r = malloc(sizeof(struct http_request));
 	error_if (NULL == r, error, "Memory Error!");
 
 	r->url = url_parse(url);
@@ -39,7 +39,7 @@ error:
 
 
 void
-http_request_add_auth(http_request_s *r, const char *user, const char *pass)
+http_request_add_auth(struct http_request *r, const char *user, const char *pass)
 {
 	error_if(NULL == r, error, "Param error");
 	error_if(NULL == r->url, error, "Param Error");
@@ -57,7 +57,7 @@ error:
 }
 
 void
-http_request_set_method(http_request_s *r, const char *method)
+http_request_set_method(struct http_request *r, const char *method)
 {
 	error_if(NULL == r, error, "Param Error");
 	error_if(NULL == method, error, "Param Error");
@@ -71,7 +71,7 @@ error:
 }
 
 void
-http_request_set_version(http_request_s *r, const char *version)
+http_request_set_version(struct http_request *r, const char *version)
 {
 	error_if(NULL == r, error, "Param Error");
 	error_if(NULL == version, error, "Param Error");
@@ -83,7 +83,7 @@ error:
 }
 
 void
-http_request_set_server(http_request_s *r, const char *server)
+http_request_set_server(struct http_request *r, const char *server)
 {
 	error_if(NULL == r, error, "Param Error");
 	error_if(NULL == server, error, "Param Error");
@@ -95,7 +95,7 @@ error:
 }
 
 void
-http_request_set_port(http_request_s *r, const int port)
+http_request_set_port(struct http_request *r, const int port)
 {
 	error_if(NULL == r, error, "Param Error");
 	r->port = port;
@@ -104,13 +104,13 @@ error:
 }
 
 static void
-http_header_debug(http_header_s *h)
+http_header_debug(struct http_header *h)
 {
 	trace("Header -> %s: %s", h->name, h->value);
 }
 
 void
-http_header_free(http_header_s *h)
+http_header_free(struct http_header *h)
 {
 	if (!h) {
 		warn("Header vacia");
@@ -123,7 +123,7 @@ http_header_free(http_header_s *h)
 }
 
 void
-http_header_set_name(http_header_s *h, const char *name)
+http_header_set_name(struct http_header *h, const char *name)
 {
 	error_if(h == NULL, error, "Param Error");
 	if (h->name) free(h->name);
@@ -135,7 +135,7 @@ error:
 }
 
 void
-http_header_set_value(http_header_s *h, const char *value)
+http_header_set_value(struct http_header *h, const char *value)
 {
 	error_if(h == NULL, error, "Param Error");
 	if (h->value) free(h->value);
@@ -147,7 +147,7 @@ error:
 }
 
 void
-http_header_set(http_header_s *h, const char *name, const char *value)
+http_header_set(struct http_header *h, const char *name, const char *value)
 {
 	error_if(h == NULL, error, "Param Error");
 	error_if(name == NULL, error, "Param Error");
@@ -160,11 +160,11 @@ error:
 	return;
 }
 
-http_header_s *
+struct http_header *
 http_header_alloc()
 {
-	http_header_s *h = NULL;
-	h = malloc(sizeof(http_header_s));
+	struct http_header *h = NULL;
+	h = malloc(sizeof(struct http_header));
 	error_if (NULL == h, error, "Error Allocating Memory");
 
 	h->name = NULL;
@@ -178,9 +178,9 @@ error:
 }
 
 void
-http_request_add_header(http_request_s *r, const char *name, const char *value)
+http_request_add_header(struct http_request *r, const char *name, const char *value)
 {
-	http_header_s *h = NULL;
+	struct http_header *h = NULL;
 
 	error_if(NULL == r, error, "Param Error");
 	error_if(NULL == name, error, "Param Error");
@@ -197,14 +197,14 @@ error:
 }
 
 static void
-_add_headers_to_sbuf(http_header_s *h, sbuf_s *buf)
+_add_headers_to_sbuf(struct http_header *h, sbuf_s *buf)
 {
 	sbuf_appendf(buf, "%s:%s\r\n", h->name, h->value);
 }
 
 
 static char *
-_request_to_str(const http_request_s *r)
+_request_to_str(const struct http_request *r)
 {
 	sbuf_s *s   = NULL;
 	char   *str = NULL;
@@ -253,7 +253,7 @@ error:
 */
 
 static char *
-_do_http_request(const char *host, const int port, const http_request_s *r)
+_do_http_request(const char *host, const int port, const struct http_request *r)
 {
 	static const size_t BUFFER_SIZE     = 1024;
 	char               *buffer[BUFFER_SIZE];
@@ -293,7 +293,7 @@ _do_http_request(const char *host, const int port, const http_request_s *r)
 	write(sock, str, strlen(str));
 	free(str);
 
-	while((rc = read(sock, buffer, BUFFER_SIZE - 1)) != 0) {
+	while ((rc = read(sock, buffer, BUFFER_SIZE - 1)) != 0) {
 		sbuf_appendbytes(s, (const char *)buffer, rc);
 	}
 
@@ -315,17 +315,17 @@ error:
 }
 
 /*
-static http_request_s *
+static struct http_request *
 _do_https_request(socket, req)
 {
 
 }
 */
 
-static http_response_s *
+static struct http_response *
 _response_alloc()
 {
-	http_response_s *r = malloc(sizeof(http_response_s));
+	struct http_response *r = malloc(sizeof(struct http_response));
 	error_if(r == NULL, error, "Error Allocating Memory");
 	r->headers = list_create();
 	return r;
@@ -349,12 +349,12 @@ error:
  *
  * <HTML>.....</HTML>
  */
-http_response_s *
+struct http_response *
 _parse_response(char *str)
 {
 	const size_t     HEADER_MAX = 1024;
-	http_response_s *r          = _response_alloc();
-	http_header_s   *header     = NULL;
+	struct http_response *r          = _response_alloc();
+	struct http_header   *header     = NULL;
 	sbuf_s          *s          = sbuf_new();
 	char             b[HEADER_MAX];
 
@@ -415,11 +415,11 @@ error:
 	return NULL;
 }
 
-http_response_s *
-http_do_request(const http_request_s *req)
+struct http_response *
+http_do_request(const struct http_request *req)
 {
 	char            *res_str = NULL;
-	http_response_s *res     = NULL;
+	struct http_response *res     = NULL;
 
 	error_if(NULL == req, error, "Param Error");
 
@@ -455,7 +455,7 @@ error:
 }
 
 void
-http_request_free(http_request_s *r)
+http_request_free(struct http_request *r)
 {
 	error_if(NULL == r, error, "Param Error");
 	if (r->url) url_free(r->url);
@@ -472,7 +472,7 @@ error:
 
 
 char *
-http_response_detach(http_response_s *r)
+http_response_detach(struct http_response *r)
 {
 	error_if(NULL == r, error, "Param Error");
 
@@ -485,7 +485,7 @@ error:
 }
 
 void
-http_response_free(http_response_s *r)
+http_response_free(struct http_response *r)
 {
 	error_if(NULL == r, error, "Param Error");
 	if (r->body) free(r->body);
@@ -502,8 +502,8 @@ error:
 char *
 http_get(const char *url)
 {
-	http_request_s  *req = NULL;
-	http_response_s *res = NULL;
+	struct http_request  *req = NULL;
+	struct http_response *res = NULL;
 
 	req = http_request_create(url);
 	error_if(req == NULL, error, "Error Allocating Memory");

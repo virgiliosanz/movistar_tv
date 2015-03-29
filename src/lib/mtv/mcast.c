@@ -17,11 +17,11 @@ struct _mcast_message {
 
 static void _unpack(uint8_t *data, struct _mcast_message *mc);
 
-mcast_s *
+struct mcast *
 mcast_alloc()
 {
-	mcast_s *mcast;
-	mcast = malloc(sizeof(mcast_s));
+	struct mcast *mcast;
+	mcast = malloc(sizeof(struct mcast));
 	error_if(NULL == mcast, error, "Error Allocating Memory");
 
 	memset(&mcast->ip, 0, MCAST_IP_CHARS);
@@ -37,7 +37,7 @@ error:
 }
 
 void
-mcast_free(mcast_s *mcast)
+mcast_free(struct mcast *mcast)
 {
 	if (!mcast) return;
 
@@ -46,7 +46,7 @@ mcast_free(mcast_s *mcast)
 }
 
 void
-mcast_open(mcast_s *mcast, const char *ip, const int port)
+mcast_open(struct mcast *mcast, const char *ip, const int port)
 {
 	error_if(mcast == NULL, error, "Params Error");
 	error_if(ip == NULL, error, "Params Error");
@@ -97,7 +97,7 @@ error:
 
 
 void
-mcast_close(mcast_s *mcast)
+mcast_close(struct mcast *mcast)
 {
 	if (!mcast) return;
 
@@ -106,7 +106,7 @@ mcast_close(mcast_s *mcast)
 
 
 void
-mcast_proccess_files(mcast_s *mcast, mcast_proccess_file_cb cb, void *ctx)
+mcast_proccess_files(struct mcast *mcast, mcast_proccess_file_cb cb, void *ctx)
 {
 	struct _mcast_message msg;
 	uint8_t data[MCAST_MSG_BUFSIZE];
@@ -130,7 +130,7 @@ mcast_proccess_files(mcast_s *mcast, mcast_proccess_file_cb cb, void *ctx)
 
 		if (msg.end) break;
 	}
-	mcast_file_s last         = {
+	struct mcast_file last         = {
 		.type = msg.type,
 		.id   = msg.id,
 		.size = msg.size,
@@ -141,7 +141,7 @@ mcast_proccess_files(mcast_s *mcast, mcast_proccess_file_cb cb, void *ctx)
 	size_t       total_bytes  = 0;
 	size_t       bytes        = 0;
 	bool         keep_reading = false;
-	mcast_file_s file;
+	struct mcast_file file;
 
 	trace("Start reading files");
 	while (1) {

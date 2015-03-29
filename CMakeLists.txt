@@ -14,11 +14,11 @@ endif()
 message("CMAKE_BUILD_TYPE = ${CMAKE_BUILD_TYPE}")
 
 # Make compaining compiler if gcc
-add_definitions(-Wall -Werror -std=gnu99)
+add_definitions(-Wall -Wextra -std=gnu99)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__FILENAME__='\"$(subst ${CMAKE_SOURCE_DIR}/,,$(abspath $<))\"'")
 
 # Add thread support
-find_package(Threads)
+#find_package(Threads)
 
 # Add Include directories
 include_directories(src/include)
@@ -29,6 +29,9 @@ pkg_check_modules(THIRDPARTY REQUIRED libxml-2.0 yajl)
 include_directories(${THIRDPARTY_INCLUDE_DIRS})
 link_directories(${THIRDPARTY_LIBRARY_DIRS})
 add_definitions(${THIRDPARTY_OTHERS})
+
+
+
 
 # Copy (or set path for data)
 

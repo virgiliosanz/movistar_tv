@@ -1,13 +1,13 @@
 #include "config.h"
 
-epg_s *epg;
+struct epg *epg;
 list_s *channels;
 list_s *programmes;
 
 char *
 test_create_channels()
 {
-	epg_channel_s *chan;
+	struct epg_channel *chan;
 
 	channels = list_create();
 	mu_assert(channels != NULL, "Error building channels")
@@ -63,7 +63,7 @@ char *
 test_create_programmes()
 {
 	programmes = list_create();
-	epg_programme_s *prog;
+	struct epg_programme *prog;
 
 	prog = epg_programme_alloc();
 	mu_assert(prog != NULL, "Error building Programme")
@@ -143,9 +143,9 @@ test_create_programmes()
 char *
 _add_channels()
 {
-	epg_channel_s *chan;
+	struct epg_channel *chan;
 	list_foreach(channels, first, next, cur) {
-		chan = (epg_channel_s *) cur->value;
+		chan = (struct epg_channel *) cur->value;
 		trace("Adding chan: %s (%s)", chan->display_name, chan->id);
 		epg_add_channel(epg, chan);
 	}
@@ -156,9 +156,9 @@ _add_channels()
 char *
 _add_programmes()
 {
-	epg_programme_s *prog;
+	struct epg_programme *prog;
 	list_foreach(programmes, first, next, cur) {
-		prog = (epg_programme_s *) cur->value;
+		prog = (struct epg_programme *) cur->value;
 		trace("Adding prog: %s (%s)", prog->title, prog->channel);
 		epg_add_programme(epg, prog);
 	}

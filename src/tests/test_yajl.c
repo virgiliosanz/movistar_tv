@@ -54,9 +54,9 @@ test_parsing()
 	v = yajl_tree_get(node, actors_path, yajl_t_array);
 	mu_assert(!YAJL_IS_NULL(v), "Cannot find mainActors");
 	trace("main Actors is an Array of %zu values", v->u.array.len);
-	for (int i=0; i < v->u.array.len; i++) {
+	for (size_t i=0; i < v->u.array.len; i++) {
 		s = YAJL_GET_STRING(v->u.array.values[i]);
-		trace("Actor %d: %s", i, s);
+		trace("Actor %zu: %s", i, s);
 	}
 
 
@@ -77,9 +77,9 @@ test_parsing()
 	mu_assert(!YAJL_IS_NULL(v), "Cannot find countries");
 	mu_assert(YAJL_IS_ARRAY(v), "countries is not an array");
 	trace("main Countries is an Array of %zu values", v->u.array.len);
-	for (int i=0; i < v->u.array.len; i++) {
+	for (size_t i=0; i < v->u.array.len; i++) {
 		s = YAJL_GET_STRING(v->u.array.values[i]);
-		trace("Country %d: %s", i, s);
+		trace("Country %zu: %s", i, s);
 	}
 
 	return NULL;

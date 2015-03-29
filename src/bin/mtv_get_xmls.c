@@ -11,7 +11,7 @@ struct _conf_s {
         char            *tmp_path;
 
 	// json conf
-	tva_conf_s *tva_conf;
+	struct tva_conf *tva_conf;
 };
 typedef struct _conf_s conf_s;
 
@@ -37,10 +37,10 @@ error:
 static void
 _conf_help(int argc, char *argv[])
 {
-	char *msg = "TODO, Escribir ayuda!\n"
+	char *msg = "TODO, Escribir ayuda! (%d)\n"
 "%s -n <days to get> -o <output path> -i <image path> -t <tmp path> -v\n\n";
 
-	printf(msg, argv[0]);
+	printf(msg, argc, argv[0]);
 }
 
 static bool

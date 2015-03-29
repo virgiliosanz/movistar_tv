@@ -1,16 +1,15 @@
 #ifndef __debug_h__
 #define __debug_h__
 
-enum _debug_level_e {
+enum debug_level {
 	debug_level_error,
 	debug_level_warn,
 	debug_level_trace,
 	debug_level_all
 };
-typedef enum _debug_level_e debug_level_e;
-debug_level_e __global_debug_level;
+enum debug_level __global_debug_level;
 
-char *level_to_str(debug_level_e level);
+char *level_to_str(enum debug_level level);
 #define debug_set_level(level) do {__global_debug_level = level;} while (0)
 
 #define debug(level, M, ...) \

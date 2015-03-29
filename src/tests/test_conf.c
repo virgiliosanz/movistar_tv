@@ -3,7 +3,7 @@
 char *
 test_conf()
 {
-	tva_conf_s *cnf = tva_conf_load();
+	struct tva_conf *cnf = tva_conf_load();
 	mu_assert(cnf != NULL, "Could'nt read configuration");
 	tva_conf_debug(cnf);
 

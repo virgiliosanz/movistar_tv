@@ -5,7 +5,7 @@ static void _channels_to_xml(xmlNodePtr root, list_s * channels);
 static void _programmes_to_xml(xmlNodePtr root, list_s * programmes);
 
 char *
-epg_to_xmltv(epg_s *epg)
+epg_to_xmltv(struct epg *epg)
 {
 	xmlDocPtr  doc  = NULL;
 	xmlDtdPtr  dtd  = NULL;
@@ -57,7 +57,7 @@ void _gen_m3u_simpletv(void *value, void *state);
 void _gen_m3u_tvheaded(void *value, void *state);
 
 char *
-epg_to_m3u(epg_s *epg, epg_m3u_format_e format)
+epg_to_m3u(struct epg *epg, enum epg_m3u_format format)
 {
 	sbuf_s *buffer = sbuf_new();
 	error_if(buffer == NULL, error, "Error Allocating sbuf_s");
@@ -83,10 +83,10 @@ error:
 }
 
 /** Programmes **/
-epg_programme_s *
+struct epg_programme *
 epg_programme_alloc()
 {
-	epg_programme_s *prog = (epg_programme_s *) malloc(sizeof(epg_programme_s));
+	struct epg_programme *prog = (struct epg_programme *) malloc(sizeof(struct epg_programme));
 	error_if(prog == NULL, error, "Error Allocating Memory");
 
 	prog->channel = NULL;
@@ -111,7 +111,7 @@ epg_programme_alloc()
 }
 
 void
-epg_programme_free(epg_programme_s *prog)
+epg_programme_free(struct epg_programme *prog)
 {
 	if (!prog)
 		return;
@@ -132,10 +132,10 @@ epg_programme_free(epg_programme_s *prog)
 }
 
 /** Channels **/
-epg_channel_s *
+struct epg_channel *
 epg_channel_alloc()
 {
-	epg_channel_s *chan = (epg_channel_s *) malloc(sizeof(epg_channel_s));
+	struct epg_channel *chan = (struct epg_channel *) malloc(sizeof(struct epg_channel));
 	error_if(chan == NULL, error, "Error Allocating Memory");
 
 	chan->id           = NULL;
@@ -157,7 +157,7 @@ epg_channel_alloc()
 }
 
 void
-epg_channel_free(epg_channel_s *chan)
+epg_channel_free(struct epg_channel *chan)
 {
 	if (!chan)
 		return;
@@ -173,17 +173,17 @@ epg_channel_free(epg_channel_s *chan)
 int
 epg_channel_compare_by_order(const void *l, const void *r)
 {
-	epg_channel_s *cl = (epg_channel_s *)l;
-	epg_channel_s *cr = (epg_channel_s *)r;
+	struct epg_channel *cl = (struct epg_channel *)l;
+	struct epg_channel *cr = (struct epg_channel *)r;
 
 	return (cl->order - cr->order);
 }
 
 /** epg **/
-epg_s *
+struct epg *
 epg_alloc()
 {
-	epg_s *epg = (epg_s *) malloc(sizeof(epg_s));
+	struct epg *epg = (struct epg *) malloc(sizeof(struct epg));
 	error_if(epg == NULL, error, "Error Allocating Memory");
 
 	epg->channels = list_create();
@@ -205,7 +205,7 @@ epg_programme_list_free(list_s *programmes)
 {
 	error_if(programmes == NULL, error, "Param Error");
 	list_foreach(programmes, first, next, cur) {
-		epg_programme_free((epg_programme_s *) cur->value);
+		epg_programme_free((struct epg_programme *) cur->value);
 	}
 	list_destroy(programmes);
 
@@ -219,7 +219,7 @@ epg_channel_list_free(list_s *channels)
 	error_if(channels == NULL, error, "Param error");
 
 	list_foreach(channels, first, next, cur) {
-		epg_channel_free((epg_channel_s *) cur->value);
+		epg_channel_free((struct epg_channel *) cur->value);
 	}
 	list_destroy(channels);
 
@@ -229,7 +229,7 @@ epg_channel_list_free(list_s *channels)
 }
 
 void
-epg_free(epg_s *epg)
+epg_free(struct epg *epg)
 {
 	if (!epg)
 		return;
@@ -240,7 +240,7 @@ epg_free(epg_s *epg)
 }
 
 void
-epg_add_channel(epg_s *epg, epg_channel_s *channel)
+epg_add_channel(struct epg *epg, struct epg_channel *channel)
 {
 	error_if(epg == NULL, error, "Param Error");
 	error_if(channel == NULL, error, "Param Error");
@@ -252,7 +252,7 @@ epg_add_channel(epg_s *epg, epg_channel_s *channel)
 }
 
 void
-epg_add_programme(epg_s *epg, epg_programme_s *programme)
+epg_add_programme(struct epg *epg, struct epg_programme *programme)
 {
 	error_if(epg == NULL, error, "Param Error");
 	error_if(programme == NULL, error, "Param Error");
@@ -282,8 +282,8 @@ _actors_to_xml(xmlNodePtr root, list_s *actors)
 int
 epg_programme_compare_by_date(const void *l, const void *r)
 {
-	epg_programme_s *pl = (epg_programme_s *)l;
-	epg_programme_s *pr = (epg_programme_s *)r;
+	struct epg_programme *pl = (struct epg_programme *)l;
+	struct epg_programme *pr = (struct epg_programme *)r;
 
 	return (mktime(&pl->start) - mktime(&pr->start));
 }
@@ -300,11 +300,11 @@ _programmes_to_xml(xmlNodePtr root, list_s *programmes)
 	xmlNodePtr subnode;
 	char start[EPG_START_FMT_SIZE];
 	char progdate[EPG_DATE_FMT_SIZE];
-	epg_programme_s *prog;
+	struct epg_programme *prog;
 	size_t n_programmes = 0;
 
 	list_foreach(programmes, first, next, cur) {
-		prog = (epg_programme_s *) cur->value;
+		prog = (struct epg_programme *) cur->value;
 
 //		epg_debug_programme(prog);
 
@@ -442,9 +442,9 @@ _channels_to_xml(xmlNodePtr root, list_s *channels)
 	error_if(0 >= channels->count, error, "Channel list empty");
 
 	xmlNodePtr node;
-	epg_channel_s *chan;
+	struct epg_channel *chan;
 	list_foreach(channels, first, next, cur) {
-		chan = (epg_channel_s *) cur->value;
+		chan = (struct epg_channel *) cur->value;
 
 		node = xmlNewChild(root, NULL, BAD_CAST "channel", NULL);
 		xmlNewProp(node, BAD_CAST "id", BAD_CAST chan->id);
@@ -505,7 +505,7 @@ epg_validate(const char *xml)
 void
 _gen_m3u_simpletv(void *value, void *state)
 {
-	epg_channel_s *chan = (epg_channel_s *)value;
+	struct epg_channel *chan = (struct epg_channel *)value;
 	sbuf_s        *buf  = (sbuf_s *)state;
 
 	trace("Adding channel: %s", chan->display_name);
@@ -521,7 +521,7 @@ _gen_m3u_simpletv(void *value, void *state)
 void
 _gen_m3u_tvheaded(void *value, void *state)
 {
-	epg_channel_s *chan = (epg_channel_s *)value;
+	struct epg_channel *chan = (struct epg_channel *)value;
 	sbuf_s        *buf  = (sbuf_s *)state;
 
 	trace("Adding channel: %s", chan->display_name);

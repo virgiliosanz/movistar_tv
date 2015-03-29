@@ -1,5 +1,5 @@
-#ifndef __List_h__
-#define __List_h__
+#ifndef __list_h__
+#define __list_h__
 
 struct _list_node_s {
 	struct _list_node_s *next;

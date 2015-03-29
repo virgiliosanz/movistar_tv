@@ -9,7 +9,7 @@ static const char *platform_profile_url =
  * Helper functions for parsing json conf
  */
 static void
-_conf_parse_platform_json(tva_conf_s *cnf, const char *json)
+_conf_parse_platform_json(struct tva_conf *cnf, const char *json)
 {
 	yajl_val node     = NULL;
 	yajl_val v        = NULL;
@@ -49,7 +49,7 @@ error:
 }
 
 static void
-_conf_parse_client_json(tva_conf_s *cnf, const char *json)
+_conf_parse_client_json(struct tva_conf *cnf, const char *json)
 {
 	const char *path_demarcation[] = {"resultData", "demarcation", NULL};
 	const char *path_tvPackages[] = {"resultData", "tvPackages", NULL};
@@ -85,10 +85,10 @@ error:
 	if (s) free(s);
 }
 
-static tva_conf_s *
+static struct tva_conf *
 _conf_alloc()
 {
-	tva_conf_s *cnf = (tva_conf_s *) malloc(sizeof(tva_conf_s));
+	struct tva_conf *cnf = (struct tva_conf *) malloc(sizeof(struct tva_conf));
 	error_if(cnf == NULL, error, "Error Allocating Memory");
 
 	cnf->mcast_grp_start = NULL;
@@ -102,7 +102,7 @@ error:
 }
 
 void
-tva_conf_destroy(tva_conf_s *cnf)
+tva_conf_destroy(struct tva_conf *cnf)
 {
 	if (!cnf) return;
 
@@ -111,11 +111,11 @@ tva_conf_destroy(tva_conf_s *cnf)
 	free(cnf);
 }
 
-tva_conf_s *
+struct tva_conf *
 tva_conf_load()
 {
 	char *json = NULL;
-	tva_conf_s *cnf = _conf_alloc();
+	struct tva_conf *cnf = _conf_alloc();
 
 	trace("Reading client profile json");
 	json = http_get(client_profile_url);

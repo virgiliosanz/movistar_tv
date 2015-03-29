@@ -3,14 +3,13 @@
 
 #include <mtv/epg.h>
 
-struct _tva_conf_s {
-	int              demarcation;
-	char            *tvpackages;
-	char            *mcast_grp_start;
-	int              mcast_port;
-	int              gmt_offset;
+struct tva_conf {
+	int   demarcation;
+	char *tvpackages;
+	char *mcast_grp_start;
+	int   mcast_port;
+	int   gmt_offset;
 };
-typedef struct _tva_conf_s tva_conf_s;
 
 #define tva_conf_debug(cnf) \
 	trace("demarcation: %d, mcast_grp_start: %s mcast_port: %d, " \
@@ -19,7 +18,7 @@ typedef struct _tva_conf_s tva_conf_s;
 	      cnf->gmt_offset, cnf->tvpackages);
 
 
-void tva_conf_destroy(tva_conf_s *cnf);
-tva_conf_s *tva_conf_load();
+void             tva_conf_destroy(struct tva_conf *cnf);
+struct tva_conf *tva_conf_load();
 
 #endif
