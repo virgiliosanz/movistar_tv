@@ -37,3 +37,36 @@ mkpath(char *file_path, mode_t mode)
 error:
 	return -1;
 }
+
+/*
+ * Reads an entire file to char * using mmap
+ */
+char *
+read_file(const char *fname)
+{
+	FILE *fp   = NULL;
+	char *data = NULL;
+
+	error_if(!fname, error, "fname is NULL");
+
+	fp = fopen(fname, "rb");
+	error_if(!fp, error, "Error reading %s: %s", fname, strerror(errno));
+	fseek(fp, 0, SEEK_END);
+	size_t fsize = ftell(fp);
+	fseek(fp, 0, SEEK_SET);
+
+	data = malloc(fsize + 1);
+	error_if(!data, error, "Not enought memory: %s", strerror(errno));
+
+	fread(data, fsize, 1, fp);
+	data[fsize] = 0;
+
+	fclose(fp);
+
+	return data;
+
+error:
+	if (fp) fclose(fp);
+	if (data) free(data);
+	return NULL;
+}
