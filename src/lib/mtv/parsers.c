@@ -39,17 +39,16 @@ mtv_parse_datetime(struct tm *dt, const char *date_time)
 */
 // TODO: Parsear el json y añdirlo al programme
 void
-mtv_complete_programme_info(struct epg_programme *prog, char *crid)
+mtv_programme_info(struct epg_programme *prog, char *crid)
 {
 	// debug("Getting Advance info for: %s", crid);
 	char       *s        = NULL;
 	char      **tokens   = NULL;
 	size_t      n_tokens = 0;
-	const char *url_fmt  = "http://www-60.svc.imagenio.telefonica.net:2001/appserver/mvtv.do?action=getEpgInfo&extInfoID=%s&tvWholesaler=1";
 	sbuf_s     *url      = sbuf_new();
 
 	n_tokens = str_split(crid, '/', &tokens);
-	sbuf_printf(url, url_fmt, tokens[n_tokens - 1]);
+	sbuf_printf(url, EPG_INFO_URL_FMT, tokens[n_tokens - 1]);
 	str_free_tokens(tokens, n_tokens);
 
 	char *json = http_get(sbuf_ptr(url));

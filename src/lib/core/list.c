@@ -115,7 +115,7 @@ list_remove(list_s *list, list_node_s *node)
 	}
 	else if (node == list->last) {
 		list->last = node->prev;
-		error_if(list->last == NULL, error, "Removing first node == NULL");
+		error_if(list->last == NULL, error, "Removing last node == NULL");
 
 		list->last->next = NULL;
 	}
@@ -274,3 +274,14 @@ list_merge_sort(list_s *list, list_compare cmp)
 	return _list_merge(sort_left, sort_right, cmp);
 }
 
+list_node_s *
+list_search(list_s *list, void *to_search, list_compare cmp)
+{
+	list_foreach(list, first, next, curr) {
+		if (0 == cmp(to_search, curr->value)) {
+			return curr;
+		}
+	}
+
+	return NULL;
+}

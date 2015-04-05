@@ -33,9 +33,10 @@ void   *list_shift(list_s *list);
 
 void   *list_remove(list_s *list, list_node_s *node);
 
-#define list_foreach(L, S, M, V) list_node_s *_node = NULL;\
+/* list_foreach(programmes, first, next, cur) {} */
+#define list_foreach(L, S, M, V) list_node_s *_node##__LINE__ = NULL;\
     list_node_s *V = NULL;\
-    for(V = _node = L->S; _node != NULL; V = _node = _node->M)
+    for(V = _node##__LINE__ = L->S; _node##__LINE__ != NULL; V = _node##__LINE__ = _node##__LINE__->M)
 
 typedef void (*list_apply_cb) (void *value);
 void list_walk(list_s *list, list_apply_cb func);
@@ -47,10 +48,13 @@ list_s *list_concat(list_s *l, list_s *r);
 
 #define list_is_empty(list) (!list->first)
 
-/* Soting */
+/* Sorting */
 typedef int (*list_compare) (const void *a, const void *b);
 int     list_bubble_sort(list_s *list, list_compare cmp);
 list_s *list_merge_sort(list_s *list, list_compare cmp);
+
+/* search */
+list_node_s *list_search(list_s *list, void *to_search, list_compare cmp);
 
 #endif
 

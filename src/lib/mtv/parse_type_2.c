@@ -1,27 +1,26 @@
 #include <mtv/all.h>
 
 ///////// Data /////////
-typedef enum {
+enum type_2_parser_state {
 	TYPE_2_PARSER_STATE_START,
 	TYPE_2_PARSER_STATE_NAME,
 	TYPE_2_PARSER_STATE_SHORT_NAME,
 
 	TYPE_2_PARSER_STATE_UNKNOWN,
-} type_2_parser_state_e;
-
-#define PARSER_TYPE_2_MAX_DEPTH (10)
-struct type_2_parser_context_s {
-	list_s               *channels;
-	struct epg_channel        *channel;
-	int                   depth;
-	type_2_parser_state_e states[PARSER_TYPE_2_MAX_DEPTH];
-	sbuf_s               *buffer;
 };
-typedef struct type_2_parser_context_s type_2_parser_context_s;
+
+#define PARSER_TYPE_2_MAX_DEPTH (20)
+struct type_2_parser_context {
+	list_s                  *channels;
+	struct epg_channel      *channel;
+	int                      depth;
+	enum type_2_parser_state states[PARSER_TYPE_2_MAX_DEPTH];
+	sbuf_s                  *buffer;
+};
 
 ///////// Static functions /////////
 static void
-_ctx_free(type_2_parser_context_s *ctx)
+_ctx_free(struct type_2_parser_context *ctx)
 {
 	if (!ctx) return;
 	if (ctx->channels) list_free(ctx->channels);
@@ -31,10 +30,10 @@ _ctx_free(type_2_parser_context_s *ctx)
 	free(ctx);
 }
 
-static type_2_parser_context_s *
+static struct type_2_parser_context *
 _ctx_alloc() {
-	type_2_parser_context_s *ctx;
-	ctx = malloc(sizeof(type_2_parser_context_s));
+	struct type_2_parser_context *ctx;
+	ctx = malloc(sizeof(struct type_2_parser_context));
 	error_if(NULL == ctx, error, "Error Allocating Memory");
 
 	ctx->channels = list_create();
@@ -53,14 +52,14 @@ error:
 }
 
 static xmlEntityPtr
-_get_entity(type_2_parser_context_s *ctx, const xmlChar *name)
+_get_entity(struct type_2_parser_context *ctx, const xmlChar *name)
 {
 	warn_if(!ctx, "ctx is NULL");
 	return xmlGetPredefinedEntity(name);
 }
 
 static void
-_start_document(type_2_parser_context_s *ctx)
+_start_document(struct type_2_parser_context *ctx)
 {
 	warn_if(!ctx, "ctx is NULL");
 	trace("%s", "Start Document");
@@ -70,7 +69,7 @@ _start_document(type_2_parser_context_s *ctx)
 }
 
 static void
-_end_document(type_2_parser_context_s *ctx)
+_end_document(struct type_2_parser_context *ctx)
 {
 	warn_if(!ctx, "ctx is NULL");
 	trace("%s", "End Document");
@@ -79,52 +78,81 @@ _end_document(type_2_parser_context_s *ctx)
 }
 
 static void
-_start_element(type_2_parser_context_s *ctx,
+_start_element(struct type_2_parser_context *ctx,
 	       const xmlChar           *xn,
-	       const xmlChar          **attrs)
+	       const xmlChar          **_attrs)
 {
-	const xmlChar **_attrs; _attrs = attrs; // Avoid not using warning
-
 	error_if(NULL == ctx, error, "Param Error");
 	error_if(NULL == xn, error, "Param Error");
 
+	const char **attrs = (const char **) _attrs;
 	const char *name = (const char *)xn;
 
-	if (0 == strcasecmp("ServiceProvider", name)) {
-	} else if (0 ==  strcasecmp("Push", name)) {
+	trace("%s", name);
+	if (0 == strcasecmp("SingleService", name)) {
+		ctx->channel = epg_channel_alloc();
+		error_if(ctx->channel == NULL, error, "Memmory error %s", strerror(errno));
 
+	} else if (0 == strcasecmp("Name", name)) {
+		ctx->states[ctx->depth] = TYPE_2_PARSER_STATE_NAME;
+
+	} else if (0 == strcasecmp("ShortName", name)) {
+		ctx->states[ctx->depth] = TYPE_2_PARSER_STATE_SHORT_NAME;
+
+	} else if (0 ==  strcasecmp("IPMultcastAddress", name)) {
+		trace("<IPMulticastAddress %s=%s %s=%s/>", attrs[0], attrs[1], attrs[2], attrs[3]);
+
+		ctx->channel->port = atoi(attrs[1]);
+		ctx->channel->ip   = strdup(attrs[3]);
+
+	} else if (0 ==  strcasecmp("TextualIdentiier", name)) {
+		trace("<textualIdentifier %s=%s %s=%s/>", attrs[0], attrs[1], attrs[2], attrs[3]);
+
+		ctx->channel->id   = strdup(attrs[1]);
+		ctx->channel->icon = strdup(attrs[3]);
 	}
 
 error:
+	ctx->depth ++;
 	return;
 
 }
 
 static void
-_characters(type_2_parser_context_s *ctx, const xmlChar *ch, int len)
+_characters(struct type_2_parser_context *ctx, const xmlChar *ch, int len)
 {
-	sbuf_appendbytes(ctx->buffer, (char *)ch, len);
+	sbuf_appendbytes(ctx->buffer, (const char *)ch, len);
 }
 
 static void
-_end_element(type_2_parser_context_s *ctx, const xmlChar *name)
+_end_element(struct type_2_parser_context *ctx, const xmlChar *name)
 {
 	warn_if(!name, "Name is NULL");
-	switch (ctx->states[ctx->depth]) {
+	if (0 == strcasecmp((char *)name, "SingleService")) {
+		list_push(ctx->channels, ctx->channel);
+		ctx->channel = epg_channel_alloc();
+	} else {
+		switch (ctx->states[ctx->depth]) {
+
 		case TYPE_2_PARSER_STATE_NAME:
+			ctx->channel->display_name = sbuf_detach(ctx->buffer);
+		break;
+
+		case TYPE_2_PARSER_STATE_SHORT_NAME:
+			ctx->channel->short_name = sbuf_detach(ctx->buffer);
 		break;
 
 		default:
 //			trace("Don't know what to do with: %s (%s)", name, sbuf_ptr(ctx->buffer));
 		break;
-
+		}
 	}
 
 	ctx->depth--;
 }
 
 static void
-_error(type_2_parser_context_s *ctx, const char *msg, ...)
+_error(struct type_2_parser_context *ctx, const char *msg, ...)
 {
 	warn_if(!ctx, "Name is NULL");
 
@@ -135,7 +163,7 @@ _error(type_2_parser_context_s *ctx, const char *msg, ...)
 }
 
 static void
-_warning(type_2_parser_context_s *ctx, const char *msg, ...)
+_warning(struct type_2_parser_context *ctx, const char *msg, ...)
 {
 	warn_if(!ctx, "Name is NULL");
 
@@ -149,7 +177,7 @@ _warning(type_2_parser_context_s *ctx, const char *msg, ...)
 list_s *
 mtv_parse_file_type_2(const char *xml)
 {
-	type_2_parser_context_s *ctx = NULL;
+	struct type_2_parser_context *ctx = NULL;
 
 	error_if(NULL == xml, error, "Param Error");
 
@@ -184,7 +212,7 @@ mtv_parse_file_type_2(const char *xml)
 		(warningSAXFunc)       _warning,        /* warning */
 		(errorSAXFunc)         _error,          /* error */
 		(fatalErrorSAXFunc)    _error,          /* fatalError */
-		0,  /* fatalError //: unused error() get all the errors */
+		0,  /* fatalError */
 		0,  /* getParameterEntity */
 		0,  /* cdataBlock */
 		0,  /* externalSubset */
@@ -196,14 +224,18 @@ mtv_parse_file_type_2(const char *xml)
 
 	int result = xmlSAXUserParseMemory(&handler, ctx, (char *)xml, strlen(xml));
 	error_if(0 != result, error, "Error Parsing xml: \n%s\n", xml);
+	error_if(ctx->channels == NULL, error, "list of channels is NULL!!");
+	error_if(list_count(ctx->channels) == 0, error, "Empty list of channels");
 
+	list_s *channels = ctx->channels;
+
+	ctx->channels = NULL;
 	_ctx_free(ctx);
 
 //	xmlCleanupParser();
 //	xmlMemoryDump();
 
-
-	return NULL;
+	return channels;
 
 error:
 	if (ctx) _ctx_free(ctx);

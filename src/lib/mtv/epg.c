@@ -89,16 +89,16 @@ epg_programme_alloc()
 	struct epg_programme *prog = (struct epg_programme *) malloc(sizeof(struct epg_programme));
 	error_if(prog == NULL, error, "Error Allocating Memory");
 
-	prog->channel = NULL;
-	prog->title = NULL;
-	prog->desc = NULL;
-	prog->director = NULL;
-	prog->country = NULL;
-	prog->episode_num = NULL;
-	prog->aspect = NULL;
+	prog->channel      = NULL;
+	prog->title        = NULL;
+	prog->desc         = NULL;
+	prog->director     = NULL;
+	prog->country      = NULL;
+	prog->episode_num  = NULL;
+	prog->aspect       = NULL;
 	prog->rating_value = NULL;
-	prog->rating_icon = NULL;
-	prog->star_rating = NULL;
+	prog->rating_icon  = NULL;
+	prog->star_rating  = NULL;
 
 	prog->actors = list_create();
 

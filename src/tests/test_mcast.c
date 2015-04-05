@@ -60,38 +60,43 @@ char *
 test_multicast()
 {
 	struct mcast  *mcast = NULL;
-	context_s ctx;
-
-	ctx.n = 0;
+	context_s ctx = {0, {0}};
 
 	mcast = mcast_alloc();
 	mu_assert(NULL != mcast, "mcast is NULL!!");
 
-	// De aquí se lee cual es el grupo de nuestro area (sale del json de conf)
-	snprintf(ctx.path, PATH_MAX, "misc/xmls/");
-	trace("CTX -> %s / %zu (%d)", ctx.path, ctx.n, PATH_MAX);
-	mcast_open(mcast, "239.0.2.129", 3937);
-	mcast_proccess_files(mcast, mcast_cb, &ctx);
-	mcast_close(mcast);
-/*
-	// Aquí viene toda la conf de canales (3 ficheros)
-	mcast_open(mcast, "239.0.2.154", 3937);
-	mcast_proccess_files(mcast, mcast_cb, &ctx);
-	mcast_close(mcast);
+	char *hosts[] = {
+		// De aquí se lee cual es el grupo de nuestro area (sale del json de conf)
+		 "239.0.2.129"
 
-	// Programación de mañana?
-	char host[16];
-	for (int i = 130; i < 138; i++) {
-		snprintf(host, 16, "239.0.2.%d", i);
+		/* Channels info */
+		,"239.0.2.154"
+		//,"239.0.2.155"
+
+		/* EPG 7 days */
+		/*
+		,"239.0.2.130"
+		,"239.0.2.131"
+		,"239.0.2.132"
+		,"239.0.2.133"
+		,"239.0.2.134"
+		,"239.0.2.135"
+		,"239.0.2.136"
+		,"239.0.2.137"
+		*/
+		,NULL
+	};
+
+	char *host;
+	for (int i = 0; hosts[i]; i++) {
+		host = hosts[i];
 		snprintf(ctx.path, PATH_MAX, "misc/xmls/%s", host);
-
-		trace("Getting EPG data from %s", host);
-
+		trace("CTX -> %s / %zu (%d)", ctx.path, ctx.n, PATH_MAX);
 		mcast_open(mcast, host, 3937);
 		mcast_proccess_files(mcast, mcast_cb, &ctx);
 		mcast_close(mcast);
 	}
-*/
+
 	mcast_free(mcast);
 
 	return NULL;

@@ -1,8 +1,8 @@
 #include <mtv/all.h>
 
 struct type_1_parser_context_s {
-	bool     in_demarcation;
-	char     *domain;
+	bool          in_demarcation;
+	char         *domain;
 	struct mcast *mcast;
 
 };
