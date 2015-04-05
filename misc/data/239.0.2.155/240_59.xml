@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="59.imagenio.es"
+Version="74"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39950819/39950819" /> <InstanceDescription> <Title>Madrid
+desde el aire: Del rincón a la rampa</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:09:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:09:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39926137/39926137" /> <InstanceDescription> <Title>Animalandia</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:38:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:38:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39950820/39950820" /> <InstanceDescription> <Title>Instinto
+animal: Señores del cielo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T18:05:00.000Z</PublishedStartTime>
+<PublishedDuration>PT35M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T18:05:00.000Z</EventStartTime>
+<EventDuration>PT35M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

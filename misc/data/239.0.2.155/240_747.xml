@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="747.imagenio.es"
+Version="11"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/11024/39957437/39957437" /> <InstanceDescription>
+<Title>Camera Café</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>305</Episode> <Season>1</Season>
+<Year>2005</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T16:35:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/11024/0/0"> <Title>Camera
+Café</Title> </EpisodeOf> <EventStartTime>2015-04-01T16:35:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/11024/39957438/39957438" /> <InstanceDescription>
+<Title>Camera Café</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>332</Episode> <Season>1</Season>
+<Year>2005</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/11024/0/0"> <Title>Camera
+Café</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:30:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/13068/39938388/39938388" /> <InstanceDescription>
+<Title>Aída T6 Cap. 24 - Mal Adentro</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>24</Episode> <Season>6</Season>
+<Year>2008</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T18:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H20M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/13068/0/0"> <Title>Aída</Title>
+</EpisodeOf> <EventStartTime>2015-04-01T18:00:00.000Z</EventStartTime> <EventDuration>PT1H20M</EventDuration>
+</ScheduleEvent></Schedule> </ProgramLocationTable> </ProgramDescription>
+</TVAMain>

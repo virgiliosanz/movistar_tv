@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="2279.imagenio.es"
+Version="146"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39929321/39929321" /> <InstanceDescription> <Title>Cecilia
+Bartoli Chante Otello De Rossini À L\'Opéra De Zurich</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:96.97"> <Name>Ópera y música clásica</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T15:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H35M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default</NetworkRecordOperator> <UserActionList>
+<mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T15:00:00.000Z</EventStartTime>
+<EventDuration>PT2H35M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39929322/39929322" /> <InstanceDescription> <Title>Intermezzo</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:96.97"> <Name>Ópera y música clásica</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:35:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default</NetworkRecordOperator> <UserActionList>
+<mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:35:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39929323/39929323" /> <InstanceDescription> <Title>Paavo
+Järvi dirige Dvorak et Saint-Saëns avec l'Orchestre de Paris</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:96.97"> <Name>Ópera y música clásica</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-01T18:30:00.000Z</PublishedStartTime> <PublishedDuration>PT1H30M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T18:30:00.000Z</EventStartTime>
+<EventDuration>PT1H30M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="846.imagenio.es"
+Version="25"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39927310/39927310" /> <InstanceDescription> <Title>News
+Live</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:00:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39927311/39927311" /> <InstanceDescription> <Title>Inside
+Story</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:30:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39927312/39927312" /> <InstanceDescription> <Title>News</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.33"> <Name>Internacional</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T18:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T18:00:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

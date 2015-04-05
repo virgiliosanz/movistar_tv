@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
+xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
+serviceIDRef="198.imagenio.es" Version="2"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39885060/39885060" /> <InstanceDescription> <Title>Le
+Point</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.42"> <Name>Reportajes</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T00:48:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T00:48:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39885061/39885061" /> <InstanceDescription> <Title>TV5Monde
+Le journal</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T01:43:00.000Z</PublishedStartTime>
+<PublishedDuration>PT21M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T01:43:00.000Z</EventStartTime>
+<EventDuration>PT21M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39885058/39885058" /> <InstanceDescription> <Title>Météo</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.44"> <Name>Tiempo</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T02:04:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T02:04:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39914037/39914037" /> <InstanceDescription> <Title>Le
+sexe autour du monde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.135"> <Name>Otros</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T02:08:00.000Z</PublishedStartTime> <PublishedDuration>PT48M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T02:08:00.000Z</EventStartTime>
+<EventDuration>PT48M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39885064/39885064" /> <InstanceDescription> <Title>Shamengo,
+les pionniers du nouveau monde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T02:56:00.000Z</PublishedStartTime> <PublishedDuration>PT4M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T02:56:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39885065/39885065" /> <InstanceDescription> <Title>TV5Monde
+Le journal</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T03:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT20M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T03:00:00.000Z</EventStartTime>
+<EventDuration>PT20M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39885062/39885062" /> <InstanceDescription> <Title>Météo</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.44"> <Name>Tiempo</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T03:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T03:20:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890157/39890157" /> <InstanceDescription> <Title>Shamengo,
+les pionniers du nouveau monde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T03:23:00.000Z</PublishedStartTime> <PublishedDuration>PT3M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T03:23:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890158/39890158" /> <InstanceDescription> <Title>Chroniques
+d'en Haut</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T03:26:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T03:26:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890159/39890159" /> <InstanceDescription> <Title>Un
+livre, un jour</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>Ocio
+y cultura</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T03:52:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T03:52:00.000Z</EventStartTime>
+<EventDuration>PT2M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890160/39890160" /> <InstanceDescription> <Title>C
+Dans L'Air</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T03:54:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H6M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T03:54:00.000Z</EventStartTime>
+<EventDuration>PT1H6M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890161/39890161" /> <InstanceDescription> <Title>TV5Monde
+Le journal</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT10M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:00:00.000Z</EventStartTime>
+<EventDuration>PT10M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890162/39890162" /> <InstanceDescription> <Title>L'invité</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:10:00.000Z</PublishedStartTime>
+<PublishedDuration>PT9M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:10:00.000Z</EventStartTime>
+<EventDuration>PT9M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890163/39890163" /> <InstanceDescription> <Title>Le
+journal de l'eco</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.38">
+<Name>Economía</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:19:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:19:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890156/39890156" /> <InstanceDescription> <Title>Météo</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.44"> <Name>Tiempo</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:23:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:23:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890165/39890165" /> <InstanceDescription> <Title>Merci
+professeur</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>Ocio
+y cultura</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:26:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:26:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890166/39890166" /> <InstanceDescription> <Title>Télématin</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis de la actualidad</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT22M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:30:00.000Z</EventStartTime>
+<EventDuration>PT22M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890167/39890167" /> <InstanceDescription> <Title>Passé
+Présent</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>Ocio
+y cultura</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:52:00.000Z</PublishedStartTime>
+<PublishedDuration>PT5M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:52:00.000Z</EventStartTime>
+<EventDuration>PT5M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890168/39890168" /> <InstanceDescription> <Title>Maisons
+d'ici et d'ailleurs</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.135"> <Name>Otros</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T05:57:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T05:57:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890169/39890169" /> <InstanceDescription> <Title>Télématin</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis de la actualidad</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T06:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T06:00:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890170/39890170" /> <InstanceDescription> <Title>Un
+livre, un jour</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>Ocio
+y cultura</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T06:27:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T06:27:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890171/39890171" /> <InstanceDescription> <Title>Télématin</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis de la actualidad</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T06:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT16M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T06:30:00.000Z</EventStartTime>
+<EventDuration>PT16M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890172/39890172" /> <InstanceDescription> <Title>Shamengo,
+les pionniers du nouveau monde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T06:46:00.000Z</PublishedStartTime> <PublishedDuration>PT4M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T06:46:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890173/39890173" /> <InstanceDescription> <Title>Télématin</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis de la actualidad</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T06:50:00.000Z</PublishedStartTime>
+<PublishedDuration>PT10M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T06:50:00.000Z</EventStartTime>
+<EventDuration>PT10M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890174/39890174" /> <InstanceDescription> <Title>JT
+Radio Canada</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T07:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T07:00:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890175/39890175" /> <InstanceDescription> <Title>TV5Monde
+Le journal</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T07:26:00.000Z</PublishedStartTime>
+<PublishedDuration>PT13M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T07:26:00.000Z</EventStartTime>
+<EventDuration>PT13M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890176/39890176" /> <InstanceDescription> <Title>Wari</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.38"> <Name>Economía</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T07:39:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T07:39:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890177/39890177" /> <InstanceDescription> <Title>Flash
+info</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T08:06:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T08:06:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890178/39890178" /> <InstanceDescription> <Title>Pique-assiette
+invite les chefs</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T08:09:00.000Z</PublishedStartTime> <PublishedDuration>PT25M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T08:09:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890179/39890179" /> <InstanceDescription> <Title>Une
+brique dans le ventre</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.2"> <Name>Hogar</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T08:34:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T08:34:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890180/39890180" /> <InstanceDescription> <Title>Flash
+info</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T09:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T09:00:00.000Z</EventStartTime>
+<EventDuration>PT2M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890181/39890181" /> <InstanceDescription> <Title>Littoral</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T09:02:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T09:02:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890183/39890183" /> <InstanceDescription> <Title>Épicerie
+fine</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T09:29:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T09:29:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919562/39919562" /> <InstanceDescription> <Title>Les
+peuples des montagnes</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T09:56:00.000Z</PublishedStartTime> <PublishedDuration>PT3M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T09:56:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890185/39890185" /> <InstanceDescription> <Title>Cut</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T09:59:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T09:59:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890186/39890186" /> <InstanceDescription> <Title>Kaamelott</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T10:25:00.000Z</PublishedStartTime>
+<PublishedDuration>PT8M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T10:25:00.000Z</EventStartTime>
+<EventDuration>PT8M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890187/39890187" /> <InstanceDescription> <Title>Plus
+belle la vie</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T10:33:00.000Z</PublishedStartTime>
+<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T10:33:00.000Z</EventStartTime>
+<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890188/39890188" /> <InstanceDescription> <Title>Merci
+professeur</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>Ocio
+y cultura</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T10:57:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T10:57:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890189/39890189" /> <InstanceDescription> <Title>Flash
+info</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T11:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T11:00:00.000Z</EventStartTime>
+<EventDuration>PT2M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890190/39890190" /> <InstanceDescription> <Title>Le
+design est partout</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.4">
+<Name>Otros</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T11:02:00.000Z</PublishedStartTime>
+<PublishedDuration>PT22M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T11:02:00.000Z</EventStartTime>
+<EventDuration>PT22M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919563/39919563" /> <InstanceDescription> <Title>Passé
+Présent</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>Ocio
+y cultura</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T11:24:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T11:24:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919564/39919564" /> <InstanceDescription> <Title>Documentaire:
+Le vaccin selon Bill Gates</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.130"> <Name>Sociedad</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T11:28:00.000Z</PublishedStartTime> <PublishedDuration>PT54M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T11:28:00.000Z</EventStartTime>
+<EventDuration>PT54M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919565/39919565" /> <InstanceDescription> <Title>Reves
+d'hotels</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T12:22:00.000Z</PublishedStartTime>
+<PublishedDuration>PT8M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T12:22:00.000Z</EventStartTime>
+<EventDuration>PT8M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890194/39890194" /> <InstanceDescription> <Title>Journal
+RTBF</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T12:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T12:30:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919566/39919566" /> <InstanceDescription> <Title>Renaissance
+de la Route de la Soie</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.130"> <Name>Sociedad</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T12:59:00.000Z</PublishedStartTime> <PublishedDuration>PT5M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T12:59:00.000Z</EventStartTime>
+<EventDuration>PT5M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919567/39919567" /> <InstanceDescription> <Title>Le
+nouveau voyage d'Ulysse</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.133"> <Name>Ciencia y tecnología</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T13:04:00.000Z</PublishedStartTime> <PublishedDuration>PT53M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T13:04:00.000Z</EventStartTime>
+<EventDuration>PT53M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919568/39919568" /> <InstanceDescription> <Title>La
+dernière Harde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.130"> <Name>Sociedad</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T13:57:00.000Z</PublishedStartTime> <PublishedDuration>PT49M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T13:57:00.000Z</EventStartTime>
+<EventDuration>PT49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919569/39919569" /> <InstanceDescription> <Title>Shamengo,
+les pionniers du nouveau monde</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T14:46:00.000Z</PublishedStartTime> <PublishedDuration>PT3M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T14:46:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890199/39890199" /> <InstanceDescription> <Title>Un
+gars, un chef!</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T14:49:00.000Z</PublishedStartTime> <PublishedDuration>PT39M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T14:49:00.000Z</EventStartTime>
+<EventDuration>PT39M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890200/39890200" /> <InstanceDescription> <Title>Questions
+pour un champion</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T15:28:00.000Z</PublishedStartTime>
+<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T15:28:00.000Z</EventStartTime>
+<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890201/39890201" /> <InstanceDescription> <Title>Flash
+info</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T16:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T16:00:00.000Z</EventStartTime>
+<EventDuration>PT2M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890202/39890202" /> <InstanceDescription> <Title>Mon
+envoyé spécial</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.42">
+<Name>Reportajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T16:02:00.000Z</PublishedStartTime> <PublishedDuration>PT34M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T16:02:00.000Z</EventStartTime>
+<EventDuration>PT34M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890203/39890203" /> <InstanceDescription> <Title>Geopolitis</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <Name>Ocio y cultura</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T16:36:00.000Z</PublishedStartTime>
+<PublishedDuration>PT16M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T16:36:00.000Z</EventStartTime>
+<EventDuration>PT16M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919570/39919570" /> <InstanceDescription> <Title>Villes
+et métiers d'art</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.4">
+<Name>Otros</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T16:52:00.000Z</PublishedStartTime> <PublishedDuration>PT8M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T16:52:00.000Z</EventStartTime>
+<EventDuration>PT8M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890206/39890206" /> <InstanceDescription> <Title>64'le
+monde en français</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis de la actualidad</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T17:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT23M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T17:00:00.000Z</EventStartTime>
+<EventDuration>PT23M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890207/39890207" /> <InstanceDescription> <Title>Le
+journal de l'eco</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.38">
+<Name>Economía</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T17:23:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T17:23:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890208/39890208" /> <InstanceDescription> <Title>Météo</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.44"> <Name>Tiempo</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T17:27:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T17:27:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890209/39890209" /> <InstanceDescription> <Title>L'invité</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T17:31:00.000Z</PublishedStartTime>
+<PublishedDuration>PT9M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T17:31:00.000Z</EventStartTime>
+<EventDuration>PT9M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919571/39919571" /> <InstanceDescription> <Title>Fiction:
+Des frères et des soeurs</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T17:40:00.000Z</PublishedStartTime> <PublishedDuration>PT1H28M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T17:40:00.000Z</EventStartTime>
+<EventDuration>PT1H28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919572/39919572" /> <InstanceDescription> <Title>Reves
+d'hotels</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T19:08:00.000Z</PublishedStartTime>
+<P3"> <Name>Internacional</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T19:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T19:30:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919573/39919573" /> <InstanceDescription> <Title>Rallye
+Aïcha des Gazelles du Maroc</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.75"> <Name>Programas</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T19:56:00.000Z</PublishedStartTime> <PublishedDuration>PT4M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T19:56:00.000Z</EventStartTime>
+<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919557/39919557" /> <InstanceDescription> <Title>Météo</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.44"> <Name>Tiempo</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T20:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T20:00:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919574/39919574" /> <InstanceDescription> <Title>Des
+racines et des ailes</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T20:03:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H52M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T20:03:00.000Z</EventStartTime>
+<EventDuration>PT1H52M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919575/39919575" /> <InstanceDescription> <Title>Le
+meilleur d'acoustic</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:96.104"> <Name>Actual</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T21:55:00.000Z</PublishedStartTime>
+<PublishedDuration>PT5M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T21:55:00.000Z</EventStartTime>
+<EventDuration>PT5M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890216/39890216" /> <InstanceDescription> <Title>Journal
+TSR</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis
+de la actualidad</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T22:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T22:00:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890217/39890217" /> <InstanceDescription> <Title>TV5Monde
+Le journal Afrique</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis de la actualidad</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T22:26:00.000Z</PublishedStartTime>
+<PublishedDuration>PT19M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T22:26:00.000Z</EventStartTime>
+<EventDuration>PT19M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890218/39890218" /> <InstanceDescription> <Title>L'invité</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T22:45:00.000Z</PublishedStartTime>
+<PublishedDuration>PT9M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T22:45:00.000Z</EventStartTime>
+<EventDuration>PT9M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39890219/39890219" /> <InstanceDescription> <Title>Météo</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:32.44"> <Name>Tiempo</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-03-25T22:54:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T22:54:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919576/39919576" /> <InstanceDescription> <Title>Détectives</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.113"> <Name>Acción y suspense</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T22:57:00.000Z</PublishedStartTime> <PublishedDuration>PT43M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T22:57:00.000Z</EventStartTime>
+<EventDuration>PT43M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919577/39919577" /> <InstanceDescription> <Title>Détectives</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.113"> <Name>Acción y suspense</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-25T23:40:00.000Z</PublishedStartTime> <PublishedDuration>PT45M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-25T23:40:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

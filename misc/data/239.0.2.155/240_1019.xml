@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="1019.imagenio.es"
+Version="114"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39928373/39928373" /> <InstanceDescription> <Title>Heidi:
+Atrapados en la mansión</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.82"> <Name>Series preescolar</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:02:00.000Z</PublishedStartTime>
+<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:02:00.000Z</EventStartTime>
+<EventDuration>PT24M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39928374/39928374" /> <InstanceDescription> <Title>Heidi:
+Cuidado con el lobo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.82"> <Name>Series preescolar</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:26:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:26:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39928375/39928375" /> <InstanceDescription> <Title>Mia
+and me: Lágrimas de alegría</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.86"> <Name>Series niños 4-12</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:51:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:51:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

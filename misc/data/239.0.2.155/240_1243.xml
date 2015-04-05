@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="1243.imagenio.es"
+Version="191"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949123/39949123" /> <InstanceDescription> <Title>Champions
+League: Oporto-Basilea</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T16:30:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H45M</PublishedDuration> <ImmediateViewing
+value="true" /> <EventStartTime>2015-04-01T16:30:00.000Z</EventStartTime>
+<EventDuration>PT1H45M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949124/39949124" /> <InstanceDescription> <Title>Champions
+League: Bayern Múnich-Shakhtar</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T18:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H45M</PublishedDuration> <ImmediateViewing
+value="true" /> <EventStartTime>2015-04-01T18:15:00.000Z</EventStartTime>
+<EventDuration>PT1H45M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949125/39949125" /> <InstanceDescription> <Title>Champions
+League: Real Madrid-Schalke</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T20:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H5M</PublishedDuration> <ImmediateViewing
+value="true" /> <EventStartTime>2015-04-01T20:00:00.000Z</EventStartTime>
+<EventDuration>PT1H5M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

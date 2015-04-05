@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="578.imagenio.es"
+Version="243"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39941333/39941333" /> <InstanceDescription> <Title>Doctor
+dimensional: Papá es un villano. ¿Preparado para engorrinarte?</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.86"> <Name>Series niños 4-12</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T16:50:00.000Z</PublishedStartTime>
+<PublishedDuration>PT20M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T16:50:00.000Z</EventStartTime>
+<EventDuration>PT20M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39941334/39941334" /> <InstanceDescription> <Title>Barbie
+Life in the Dreamhouse: Con las manos en la masa</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.86"> <Name>Series niños 4-12</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:10:00.000Z</PublishedStartTime>
+<PublishedDuration>PT5M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:10:00.000Z</EventStartTime>
+<EventDuration>PT5M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39941335/39941335" /> <InstanceDescription> <Title>Historias
+corrientes: Mordecai y los Rigby</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.86"> <Name>Series niños 4-12</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT10M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:15:00.000Z</EventStartTime>
+<EventDuration>PT10M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39941336/39941336" /> <InstanceDescription> <Title>Historias
+corrientes: ¿Qué hay jefe?</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.86"> <Name>Series niños 4-12</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:25:00.000Z</PublishedStartTime>
+<PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:25:00.000Z</EventStartTime>
+<EventDuration>PT15M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="3.imagenio.es"
+Version="41"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/29295/39925472/39925472" /> <InstanceDescription>
+<Title>Teresa de Jesús T1 Cap. 7 - Vida</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ReleaseInformation>
+<ReleaseDate> <Episode>7</Episode> <Season>1</Season> <Year>1984</Year> </ReleaseDate>
+</ReleaseInformation> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:05:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/29295/0/0"> <Title>Teresa
+de Jesús</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:05:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/29295/39950766/39950766" /> <InstanceDescription>
+<Title>Teresa de Jesús T1 Cap. 8 - Hija de la Iglesia</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ReleaseInformation>
+<ReleaseDate> <Episode>8</Episode> <Season>1</Season> <Year>1984</Year> </ReleaseDate>
+</ReleaseInformation> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T18:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/29295/0/0"> <Title>Teresa
+de Jesús</Title> </EpisodeOf> <EventStartTime>2015-04-01T18:00:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39935370/39935370" /> <InstanceDescription> <Title>Documental:
+La Joya y los Guerreros de la niebla</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.130"> <Name>Sociedad</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T19:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T19:00:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

@@ -1,0 +1,1564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceDiscovery xmlns="urn:dvb:ipisdns:2006"
+xmlns:urn="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"> <BroadcastDiscovery
+DomainName="imagenio.es" Version="193"> <ServiceList> <SingleService> <ServiceLocation>
+<IPMulticastAddress Port="8208" Address="239.0.0.25" /> </ServiceLocation>
+<TextualIdentifier ServiceName="58" logoURI="MAY_1/imSer/58.jpg" /> <SI
+ServiceType="1" ServiceInfo="16385"> <Name Language="ENG">Telemadrid</Name>
+<ShortName Language="ENG">TMAD</ShortName> <Description Language="ENG">TELEMADRID</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.26" /> </ServiceLocation> <TextualIdentifier
+ServiceName="59" logoURI="MAY_1/imSer/59.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">La Otra</Name> <ShortName
+Language="ENG">OTRA</ShortName> <Description Language="ENG">LA OTRA</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.1" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2275" logoURI="MAY_1/imSer/2275.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Canal Sur Andalucía</Name> <ShortName
+Language="ENG">ANDSA</ShortName> <Description Language="ENG">Canal Sur Andalucía</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.37" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2273" logoURI="MAY_1/imSer/2273.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Galicia TV Europa</Name> <ShortName
+Language="ENG">TVGEU</ShortName> <Description Language="ENG">Galicia TV Europa</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.36" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2271" logoURI="MAY_1/imSer/2271.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">TV3CAT</Name> <ShortName
+Language="ENG">TV3SA</ShortName> <Description Language="ENG">TV3CAT</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.60" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2269" logoURI="MAY_1/imSer/2269.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">ETB Sat.</Name> <ShortName
+Language="ENG">ETBSA</ShortName> <Description Language="ENG">ETB Sat</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.77" /> </ServiceLocation> <TextualIdentifier
+ServiceName="597" logoURI="MAY_1/imSer/597.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">Movistar TV</Name> <ShortName
+Language="ENG">CPROM</ShortName> <Description Language="ENG">Movistar TV</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Address="239.0.0.76" Port="8208" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1" logoURI="MAY_1/imSer/1.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">La 1</Name> <ShortName
+Language="ENG">TVE</ShortName> <Description Language="ENG">TVE</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.2" /> </ServiceLocation> <TextualIdentifier
+ServiceName="3" logoURI="MAY_1/imSer/3.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">La 2</Name> <ShortName
+Language="ENG">La 2</ShortName> <Description Language="ENG">La 2</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.186" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2524" logoURI="MAY_1/imSer/2524.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Antena 3 HD</Name> <ShortName
+Language="ENG">A3HD</ShortName> <Description Language="ENG">Antena 3 HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="4" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.3" /> </ServiceLocation> <TextualIdentifier
+ServiceName="4" logoURI="MAY_1/imSer/4.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Antena 3</Name> <ShortName
+Language="ENG">A3</ShortName> <Description Language="ENG">ANTENA 3</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.177" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1825" logoURI="MAY_1/imSer/1825.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Cuatro HD</Name> <ShortName
+Language="ENG">4HD</ShortName> <Description Language="ENG">Cuatro HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.13"> <urn:Name>Toros</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="5" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.4" /> </ServiceLocation> <TextualIdentifier
+ServiceName="5" logoURI="MAY_1/imSer/5.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Cuatro</Name> <ShortName
+Language="ENG">CUATR</ShortName> <Description Language="ENG">Cuatro</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.13"> <urn:Name>Toros</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.176" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1826" logoURI="MAY_1/imSer/1826.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Tele 5 HD</Name> <ShortName
+Language="ENG">T5HD</ShortName> <Description Language="ENG">Tele 5 HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="6" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.5" /> </ServiceLocation> <TextualIdentifier
+ServiceName="6" logoURI="MAY_1/imSer/6.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Tele 5</Name> <ShortName
+Language="ENG">T5</ShortName> <Description Language="ENG">TELE 5</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.187" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2526" logoURI="MAY_1/imSer/2526.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">laSexta HD</Name> <ShortName
+Language="ENG">LSXHD</ShortName> <Description Language="ENG">laSexta HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="717" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.58" /> </ServiceLocation> <TextualIdentifier
+ServiceName="717" logoURI="MAY_1/imSer/717.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">laSexta</Name> <ShortName
+Language="ENG">Sexta</ShortName> <Description Language="ENG">La Sexta</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.184" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2383" logoURI="MAY_1/imSer/2383.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">Movistar Series</Name> <ShortName
+Language="ENG">SERHD</ShortName> <Description Language="ENG">Movistar Series
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:80.81"> <urn:Name>Series
+juveniles</urn:Name> </Genre> <ReplacementService> <TextualIdentifier
+ServiceName="1040" /> </ReplacementService> </SI> </SingleService> <SingleService>
+<ServiceLocation> <IPMulticastAddress Port="8208" Address="239.0.0.99" />
+</ServiceLocation> <TextualIdentifier ServiceName="1040"
+logoURI="MAY_1/imSer/1040.jpg" /> <SI ServiceType="22" ServiceInfo="0"> <Name
+Language="ENG">Movistar Series</Name> <ShortName Language="ENG">SERIE</ShortName>
+<Description Language="ENG">Movistar Series</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.81"> <urn:Name>Series juveniles</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.74" /> </ServiceLocation> <TextualIdentifier
+ServiceName="737" logoURI="MAY_1/imSer/737.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">FOX</Name> <ShortName
+Language="ENG">FOX</ShortName> <Description Language="ENG">FOX</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.134" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1607" logoURI="MAY_1/imSer/1607.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">FOX HD</Name> <ShortName
+Language="ENG">FOXHD</ShortName> <Description Language="ENG">FOX HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="737" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.14" /> </ServiceLocation> <TextualIdentifier
+ServiceName="14" logoURI="MAY_1/imSer/14.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">AXN</Name> <ShortName
+Language="ENG">AXN</ShortName> <Description Language="ENG">AXN</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.131" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1608" logoURI="MAY_1/imSer/1608.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">AXN HD</Name> <ShortName
+Language="ENG">AXNHD</ShortName> <Description Language="ENG">AXN HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="14" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.180" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2607" logoURI="MAY_1/imSer/2607.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">Deportes</Name> <ShortName
+Language="ENG">DEPHD</ShortName> <Description Language="ENG">Movistar Deportes
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="2603" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.33" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2603" logoURI="MAY_1/imSer/2603.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">Deportes</Name> <ShortName
+Language="ENG">MDEP</ShortName> <Description Language="ENG">Movistar Deportes</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.13" /> </ServiceLocation> <TextualIdentifier
+ServiceName="13" logoURI="MAY_1/imSer/13.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Calle 13</Name> <ShortName
+Language="ENG">CA13</ShortName> <Description Language="ENG">CALLE 13</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.74" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1705" logoURI="MAY_1/imSer/1705.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Calle 13HD</Name> <ShortName
+Language="ENG">C13HD</ShortName> <Description Language="ENG">Calle 13HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="13" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.44" /> </ServiceLocation> <TextualIdentifier
+ServiceName="457" logoURI="MAY_1/imSer/457.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">TNT</Name> <ShortName
+Language="ENG">TNT</ShortName> <Description Language="ENG">TNT</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.87" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1609" logoURI="MAY_1/imSer/1609.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">TNT HD</Name> <ShortName
+Language="ENG">TNTHD</ShortName> <Description Language="ENG">TNT HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="457" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.112" /> </ServiceLocation> <TextualIdentifier
+ServiceName="960" logoURI="MAY_1/imSer/960.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">FOX life</Name> <ShortName
+Language="ENG">FOXLF</ShortName> <Description Language="ENG">FOX life</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.86" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2203" logoURI="MAY_1/imSer/2203.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">FOX life HD</Name> <ShortName
+Language="ENG">FXLHD</ShortName> <Description Language="ENG">FOX life HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="960" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.178" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2608" /> <SI ServiceType="25" ServiceInfo="0"> <Name
+Language="ENG">Movistar Cine</Name> <ShortName Language="ENG">CINHD</ShortName>
+<Description Language="ENG">Movistar Cine HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2604" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.30" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2604" /> <SI ServiceType="1" ServiceInfo="0"> <Name
+Language="ENG">Movistar Cine</Name> <ShortName Language="ENG">MCINE</ShortName>
+<Description Language="ENG">Movistar Cine</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.15" /> </ServiceLocation> <TextualIdentifier
+ServiceName="21" logoURI="MAY_1/imSer/21.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">COSMO</Name> <ShortName
+Language="ENG">COSM</ShortName> <Description Language="ENG">COSMOPOLITAN</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.71" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1610" logoURI="MAY_1/imSer/1610.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">COSMO HD</Name> <ShortName
+Language="ENG">CosHD</ShortName> <Description Language="ENG">Cosmopolitan
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="21" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.62" /> </ServiceLocation> <TextualIdentifier
+ServiceName="751" logoURI="MAY_1/imSer/751.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">AXN White</Name> <ShortName
+Language="ENG">AXNWH</ShortName> <Description Language="ENG">AXN White</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.79" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1611" logoURI="MAY_1/imSer/1611.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">AXN W. HD</Name> <ShortName
+Language="ENG">FCRHD</ShortName> <Description Language="ENG">AXN WHITE HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="751" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.111" /> </ServiceLocation> <TextualIdentifier
+ServiceName="777" logoURI="MAY_1/imSer/777.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">SyFy</Name> <ShortName
+Language="ENG">SYFY</ShortName> <Description Language="ENG">Syfy</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.75" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1703" logoURI="MAY_1/imSer/1703.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">SyFyHD</Name> <ShortName
+Language="ENG">SYFHD</ShortName> <Description Language="ENG">SyFyHD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="777" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.174" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2224" logoURI="MAY_1/imSer/2224.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Comedy Central HD</Name> <ShortName
+Language="ENG">COCHD</ShortName> <Description Language="ENG">Comedy Central
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="577" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.68" /> </ServiceLocation> <TextualIdentifier
+ServiceName="577" logoURI="MAY_1/imSer/577.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Comedy Central</Name> <ShortName
+Language="ENG">PCOME</ShortName> <Description Language="ENG">Comedy Central</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.211" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2533" logoURI="MAY_1/imSer/2533.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">MTV España</Name> <ShortName
+Language="ENG">MTVES</ShortName> <Description Language="ENG">MTV España</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.57" /> </ServiceLocation> <TextualIdentifier
+ServiceName="697" logoURI="MAY_1/imSer/697.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Crimen e Inv.</Name> <ShortName
+Language="ENG">CREIN</ShortName> <Description Language="ENG">Crimen e Investigacion</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.84" /> </ServiceLocation> <TextualIdentifier
+ServiceName="747" logoURI="MAY_1/imSer/747.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">FDF</Name> <ShortName
+Language="ENG">FDFT5</ShortName> <Description Language="ENG">FDF</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.107" /> </ServiceLocation> <TextualIdentifier
+ServiceName="934" logoURI="MAY_1/imSer/934.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Neox</Name> <ShortName
+Language="ENG">NEOX</ShortName> <Description Language="ENG">Antena Neox</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.59" /> </ServiceLocation> <TextualIdentifier
+ServiceName="884" logoURI="MAY_1/imSer/884.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Energy</Name> <ShortName
+Language="ENG">energ</ShortName> <Description Language="ENG">Energy</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.13"> <urn:Name>Toros</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.48" /> </ServiceLocation> <TextualIdentifier
+ServiceName="663" logoURI="MAY_1/imSer/663.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Divinity</Name> <ShortName
+Language="ENG">DIVIN</ShortName> <Description Language="ENG">Divinity</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.117"> <urn:Name>Drama</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.106" /> </ServiceLocation> <TextualIdentifier
+ServiceName="935" logoURI="MAY_1/imSer/935.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Nova</Name> <ShortName
+Language="ENG">NOVA</ShortName> <Description Language="ENG">Antena Nova</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.102" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1039" logoURI="MAY_1/imSer/1039.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Sundance</Name> <ShortName
+Language="ENG">SUNDA</ShortName> <Description Language="ENG">Sundance Channel</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.72" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1615" logoURI="MAY_1/imSer/1615.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Sundance HD</Name> <ShortName
+Language="ENG">SunHD</ShortName> <Description Language="ENG">Sundance Channel
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1039" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.146" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1604" logoURI="MAY_1/imSer/1604.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+1Loc.Pub.</Name> <ShortName
+Language="ENG">C+1LP</ShortName> <Description Language="ENG">C+1Loc.Pub.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1081" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.4.129" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1081" logoURI="MAY_1/imSer/1081.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">CANAL+ 1</Name> <ShortName
+Language="ENG">CAN+1</ShortName> <Description Language="ENG">CANAL+ 1</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.137" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2423" logoURI="MAY_1/imSer/2423.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">C+1 HD Loc.Pub.</Name> <ShortName
+Language="ENG">CHDLP</ShortName> <Description Language="ENG">C+1 HD Loc.Pub.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1081" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.84" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2465" logoURI="MAY_1/imSer/2465.jpg" /> <SI ServiceType="25"
+ServiceInfo="1"> <Name Language="ENG">CANAL+1 HD</Name> <ShortName
+Language="ENG">C+1HD</ShortName> <Description Language="ENG">CANAL+1 HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1081" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.16" /> </ServiceLocation> <TextualIdentifier
+ServiceName="15" logoURI="MAY_1/imSer/15.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">HWD</Name> <ShortName
+Language="ENG">HOLL</ShortName> <Description Language="ENG">HOLLYWOOD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.76" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1612" logoURI="MAY_1/imSer/1612.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">HWD HD</Name> <ShortName
+Language="ENG">HOLHD</ShortName> <Description Language="ENG">Hollywood HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="15" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.8" /> </ServiceLocation> <TextualIdentifier
+ServiceName="939" logoURI="MAY_1/imSer/939.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">AMC</Name> <ShortName
+Language="ENG">MGM</ShortName> <Description Language="ENG">AMC</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.132" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1613" logoURI="MAY_1/imSer/1613.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">AMC HD</Name> <ShortName
+Language="ENG">MGMHD</ShortName> <Description Language="ENG">AMC HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="939" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.89" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2204" logoURI="MAY_1/imSer/2204.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">TCM HD</Name> <ShortName
+Language="ENG">TCMHD</ShortName> <Description Language="ENG">TCM HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="738" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.6.5" /> </ServiceLocation> <TextualIdentifier
+ServiceName="738" logoURI="MAY_1/imSer/738.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">TCM</Name> <ShortName
+Language="ENG">TCM</ShortName> <Description Language="ENG">TCM</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.6.1" /> </ServiceLocation> <TextualIdentifier
+ServiceName="770" logoURI="MAY_1/imSer/770.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Extreme</Name> <ShortName
+Language="ENG">SHEXT</ShortName> <Description Language="ENG">Extreme teuve</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.6.4" /> </ServiceLocation> <TextualIdentifier
+ServiceName="772" logoURI="MAY_1/imSer/772.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Somos</Name> <ShortName
+Language="ENG">SOMOS</ShortName> <Description Language="ENG">Somos teuve</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.90" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1221" logoURI="MAY_1/imSer/1221.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Paramount C.</Name> <ShortName
+Language="ENG">PARCH</ShortName> <Description Language="ENG">Paramount Channel</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:16.19"> <urn:Name>Cine clásico</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.18" /> </ServiceLocation> <TextualIdentifier
+ServiceName="118" logoURI="MAY_1/imSer/118.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Eurosport</Name> <ShortName
+Language="ENG">Eursp</ShortName> <Description Language="ENG">Eurosport</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.135" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1623" logoURI="MAY_1/imSer/1623.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">EurosportHD</Name> <ShortName
+Language="ENG">EURHD</ShortName> <Description Language="ENG">EurosportHD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="118" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.37" /> </ServiceLocation> <TextualIdentifier
+ServiceName="338" logoURI="MAY_1/imSer/338.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Eurosport 2</Name> <ShortName
+Language="ENG">EUSP2</ShortName> <Description Language="ENG">Eurosport 2</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.17" /> </ServiceLocation> <TextualIdentifier
+ServiceName="16" logoURI="MAY_1/imSer/16.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Sportmania</Name> <ShortName
+Language="ENG">SPMA</ShortName> <Description Language="ENG">SPORTMANIA</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.79" /> </ServiceLocation> <TextualIdentifier
+ServiceName="744" logoURI="MAY_1/imSer/744.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Teledeporte</Name> <ShortName
+Language="ENG">TDEP</ShortName> <Description Language="ENG">Teledeporte</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.6" /> </ServiceLocation> <TextualIdentifier
+ServiceName="936" logoURI="MAY_1/imSer/936.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Iberalia</Name> <ShortName
+Language="ENG">IBER</ShortName> <Description Language="ENG">Iberalia</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.3.65" /> </ServiceLocation> <TextualIdentifier
+ServiceName="757" logoURI="MAY_1/imSer/757.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Barça TV</Name> <ShortName
+Language="ENG">BARSA</ShortName> <Description Language="ENG">Barça TV</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.210" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1907" logoURI="MAY_1/imSer/1907.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Movistar F1</Name> <ShortName
+Language="ENG">DEP1</ShortName> <Description Language="ENG">Movistar F1</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.90" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2064" logoURI="MAY_1/imSer/2064.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">MovistarF1 HD</Name> <ShortName
+Language="ENG">MF1HD</ShortName> <Description Language="ENG">MovistarF1 HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1907" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.38" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1964" logoURI="MAY_1/imSer/1964.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Movistar MotoGP</Name> <ShortName
+Language="ENG">TOROS</ShortName> <Description Language="ENG">Movistar MotoGP</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.107" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2065" logoURI="MAY_1/imSer/2065.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Movistar MotoGP HD</Name> <ShortName
+Language="ENG">MGPHD</ShortName> <Description Language="ENG">Movistar MotoGP
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1964" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.42" /> </ServiceLocation> <TextualIdentifier
+ServiceName="339" logoURI="MAY_1/imSer/339.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">C+Liga</Name> <ShortName
+Language="ENG">GOLTV</ShortName> <Description Language="ENG">Canal+ Liga</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <urn:Name>Fútbol</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.3.8" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1605" logoURI="MAY_1/imSer/1605.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+Liga L.Pub.</Name> <ShortName
+Language="ENG">C+LLP</ShortName> <Description Language="ENG">C+Liga L.Pub.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <urn:Name>Fútbol</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="339" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.129" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1622" logoURI="MAY_1/imSer/1622.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">C+LigaHD</Name> <ShortName
+Language="ENG">GOLHD</ShortName> <Description Language="ENG">Canal+ Liga HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <urn:Name>Fútbol</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="339" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.1.185" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2267" logoURI="MAY_1/imSer/2267.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Movistar Fútbol</Name> <ShortName
+Language="ENG">QUAY1</ShortName> <Description Language="ENG">Movistar Fútbol</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.185" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2268" logoURI="MAY_1/imSer/2268.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Movistar Fútbol HD</Name> <ShortName
+Language="ENG">QU1HD</ShortName> <Description Language="ENG">Movistar Fútbol
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="2267" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.118" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1061" logoURI="MAY_1/imSer/1061.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+L.Camp</Name> <ShortName
+Language="ENG">FUT12</ShortName> <Description Language="ENG">Canal + Liga
+Campeones</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.3.9" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1606" logoURI="MAY_1/imSer/1606.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+L.Camp.L.Pub.</Name> <ShortName
+Language="ENG">CLCLP</ShortName> <Description Language="ENG">C+L.Camp.L.Pub.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1061" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.138" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1621" logoURI="MAY_1/imSer/1621.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">C+L.CampHD</Name> <ShortName
+Language="ENG">CP3D</ShortName> <Description Language="ENG">Canal+ Liga de
+Campeones HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1061" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.251" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1343" logoURI="MAY_1/imSer/1343.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Gol 2 Int.</Name> <ShortName
+Language="ENG">G2INT</ShortName> <Description Language="ENG">Gol 2 Int.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.146" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1667" logoURI="MAY_1/imSer/1667.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Gol 2 IntHD</Name> <ShortName
+Language="ENG">G2INT</ShortName> <Description Language="ENG">Gol 2 IntHD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1343" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.97" /> </ServiceLocation> <TextualIdentifier
+ServiceName="12" logoURI="MAY_1/imSer/12.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Futbol R.</Name> <ShortName
+Language="ENG">fut</ShortName> <Description Language="ENG">Futbol Replay</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <urn:Name>Fútbol</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.103" /> </ServiceLocation> <TextualIdentifier
+ServiceName="740" logoURI="MAY_1/imSer/740.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">NAT GEO</Name> <ShortName
+Language="ENG">NGC</ShortName> <Description Language="ENG">Nat. Geographic</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.78" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1643" logoURI="MAY_1/imSer/1643.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">NAT GEO HD</Name> <ShortName
+Language="ENG">NATHD</ShortName> <Description Language="ENG">National Geographic
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="740" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.89" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1563" logoURI="MAY_1/imSer/1563.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">NG Wild</Name> <ShortName
+Language="ENG">NGWIL</ShortName> <Description Language="ENG">NG Wild</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.136" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1619" logoURI="MAY_1/imSer/1619.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">NG Wild HD</Name> <ShortName
+Language="ENG">NGEHD</ShortName> <Description Language="ENG">Nat.Geo. Wild
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1563" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.21" /> </ServiceLocation> <TextualIdentifier
+ServiceName="19" logoURI="MAY_1/imSer/19.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Discovery C.</Name> <ShortName
+Language="ENG">DCHA</ShortName> <Description Language="ENG">DISCOVERY CHANNEL</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.77" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2205" logoURI="MAY_1/imSer/2205.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">DSC HD</Name> <ShortName
+Language="ENG">DSCHD</ShortName> <Description Language="ENG">DSC HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="19" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.22" /> </ServiceLocation> <TextualIdentifier
+ServiceName="20" logoURI="MAY_1/imSer/20.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Odisea</Name> <ShortName
+Language="ENG">ODIS</ShortName> <Description Language="ENG">ODISEA</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.82" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1618" logoURI="MAY_1/imSer/1618.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">ODISEA HD</Name> <ShortName
+Language="ENG">FHD2</ShortName> <Description Language="ENG">ODISEA HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="20" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.19" /> </ServiceLocation> <TextualIdentifier
+ServiceName="17" logoURI="MAY_1/imSer/17.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Historia</Name> <ShortName
+Language="ENG">HIST</ShortName> <Description Language="ENG">CANAL HISTORIA</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.38" /> </ServiceLocation> <TextualIdentifier
+ServiceName="340" logoURI="MAY_1/imSer/340.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">A&amp;E</Name> <ShortName
+Language="ENG">A&amp;E</ShortName> <Description Language="ENG">A&amp;E</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.27" /> </ServiceLocation> <TextualIdentifier
+ServiceName="22" logoURI="MAY_1/imSer/22.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Cocina</Name> <ShortName
+Language="ENG">COCI</ShortName> <Description Language="ENG">COCINA</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.71" /> </ServiceLocation> <TextualIdentifier
+ServiceName="850" logoURI="MAY_1/imSer/850.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Decasa</Name> <ShortName
+Language="ENG">DCASA</ShortName> <Description Language="ENG">DECASA</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.32" /> </ServiceLocation> <TextualIdentifier
+ServiceName="657" logoURI="MAY_1/imSer/657.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Discov.Max</Name> <ShortName
+Language="ENG">TVCi</ShortName> <Description Language="ENG">Discovery Max</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.113" /> </ServiceLocation> <TextualIdentifier
+ServiceName="778" logoURI="MAY_1/imSer/778.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Baby TV</Name> <ShortName
+Language="ENG">BABTV</ShortName> <Description Language="ENG">Baby TV</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.10" /> </ServiceLocation> <TextualIdentifier
+ServiceName="10" logoURI="MAY_1/imSer/10.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Disney Junior</Name> <ShortName
+Language="ENG">PLAY</ShortName> <Description Language="ENG">DISNEY JUNIOR</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.117" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1019" logoURI="MAY_1/imSer/1019.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Canal Panda</Name> <ShortName
+Language="ENG">PANDA</ShortName> <Description Language="ENG">Canal Panda</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.115" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2532" /> <SI ServiceType="1" ServiceInfo="16385"> <Name
+Language="ENG">Nick Jr</Name> <ShortName Language="ENG">NIKJR</ShortName>
+<Description Language="ENG">Nick Jr</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.86"> <urn:Name>Series niños 4-12</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.69" /> </ServiceLocation> <TextualIdentifier
+ServiceName="579" logoURI="MAY_1/imSer/579.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Nickelodeon</Name> <ShortName
+Language="ENG">NICKE</ShortName> <Description Language="ENG">Nick</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.11" /> </ServiceLocation> <TextualIdentifier
+ServiceName="11" logoURI="MAY_1/imSer/11.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Disney XD</Name> <ShortName
+Language="ENG">DISXD</ShortName> <Description Language="ENG">Disney XD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.173" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1616" logoURI="MAY_1/imSer/1616.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Disney HD</Name> <ShortName
+Language="ENG">DISHD</ShortName> <Description Language="ENG">Disney Channel
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="2" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.64" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2" logoURI="MAY_1/imSer/2.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Disney Ch.</Name> <ShortName
+Language="ENG">DISN</ShortName> <Description Language="ENG">DISNEY CHANNEL</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.66" /> </ServiceLocation> <TextualIdentifier
+ServiceName="578" logoURI="MAY_1/imSer/578.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Boing</Name> <ShortName
+Language="ENG">ARSAT</ShortName> <Description Language="ENG">Boing</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.80" /> </ServiceLocation> <TextualIdentifier
+ServiceName="745" logoURI="MAY_1/imSer/745.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Clan TVE</Name> <ShortName
+Language="ENG">CLAN</ShortName> <Description Language="ENG">Clan TVE</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.39" /> </ServiceLocation> <TextualIdentifier
+ServiceName="341" logoURI="MAY_1/imSer/341.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Sol Música</Name> <ShortName
+Language="ENG">SOLM</ShortName> <Description Language="ENG">Sol Música</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.12" /> </ServiceLocation> <TextualIdentifier
+ServiceName="741" logoURI="MAY_1/imSer/741.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">40 TV</Name> <ShortName
+Language="ENG">40TV</ShortName> <Description Language="ENG">40 TV</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.75" /> </ServiceLocation> <TextualIdentifier
+ServiceName="581" logoURI="MAY_1/imSer/581.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">VH1</Name> <ShortName
+Language="ENG">VH1</ShortName> <Description Language="ENG">VH1</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.3.193" /> </ServiceLocation> <TextualIdentifier
+ServiceName="779" logoURI="MAY_1/imSer/779.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Classica</Name> <ShortName
+Language="ENG">CLASS</ShortName> <Description Language="ENG">Unitel Classica</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.137" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1683" logoURI="MAY_1/imSer/1683.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Classica HD</Name> <ShortName
+Language="ENG">CLASS</ShortName> <Description Language="ENG">Unitel Classica
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="779" /> </ReplacementService>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.250" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2280" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Mezzo HD</Name> <ShortName Language="ENG">MEZHD</ShortName>
+<Description Language="ENG">Mezzo HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:96.97"> <urn:Name>Ópera y música clásica</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="2279" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.4" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2279" logoURI="MAY_1/imSer/2279.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Mezzo</Name> <ShortName
+Language="ENG">MEZZO</ShortName> <Description Language="ENG">Mezzo</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:96.97"> <urn:Name>Ópera y música
+clásica</urn:Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.5" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1905" logoURI="MAY_1/imSer/1905.jpg" /> <SI ServiceType="1"
+ServiceInfo="2048"> <Name Language="ENG">Playboy</Name> <ShortName
+Language="ENG">PLAYB</ShortName> <Description Language="ENG">Playboy</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:11"> <mpeg7:Name>Adult content</mpeg7:Name>
+</mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService> <SingleService>
+<ServiceLocation> <IPMulticastAddress Port="8208" Address="239.0.7.65" />
+</ServiceLocation> <TextualIdentifier ServiceName="845"
+logoURI="MAY_1/imSer/845.jpg" /> <SI ServiceType="1" ServiceInfo="16385">
+<Name Language="ENG">Fox News</Name> <ShortName Language="ENG">FOXNW</ShortName>
+<Description Language="ENG">FOX NEWS</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.30" /> </ServiceLocation> <TextualIdentifier
+ServiceName="197" logoURI="MAY_1/imSer/197.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">BBC World</Name> <ShortName
+Language="ENG">BBCW</ShortName> <Description Language="ENG">BBC World News</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.40" /> </ServiceLocation> <TextualIdentifier
+ServiceName="342" logoURI="MAY_1/imSer/342.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">CNN Int.</Name> <ShortName
+Language="ENG">CNNI</ShortName> <Description Language="ENG">CNN i</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.28" /> </ServiceLocation> <TextualIdentifier
+ServiceName="119" logoURI="MAY_1/imSer/119.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Euronews</Name> <ShortName
+Language="ENG">Eurnw</ShortName> <Description Language="ENG">Euronews</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.78" /> </ServiceLocation> <TextualIdentifier
+ServiceName="743" logoURI="MAY_1/imSer/743.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Canal 24 H.</Name> <ShortName
+Language="ENG">C24H</ShortName> <Description Language="ENG">Canal 24 Horas</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.66" /> </ServiceLocation> <TextualIdentifier
+ServiceName="846" logoURI="MAY_1/imSer/846.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Al Jazeera</Name> <ShortName
+Language="ENG">ALJAZ</ShortName> <Description Language="ENG">AL JAZEERA (INGLES)</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.67" /> </ServiceLocation> <TextualIdentifier
+ServiceName="847" logoURI="MAY_1/imSer/847.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">France 24</Name> <ShortName
+Language="ENG">FRA24</ShortName> <Description Language="ENG">FRANCE 24</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.68" /> </ServiceLocation> <TextualIdentifier
+ServiceName="848" logoURI="MAY_1/imSer/848.jpg" />
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.31" /> </ServiceLocation> <TextualIdentifier
+ServiceName="198" logoURI="MAY_1/imSer/198.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">TV5 Monde</Name> <ShortName
+Language="ENG">TV5eu</ShortName> <Description Language="ENG">TV5 Monde Europe</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.29" /> </ServiceLocation> <TextualIdentifier
+ServiceName="120" logoURI="MAY_1/imSer/120.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Bloomberg</Name> <ShortName
+Language="ENG">Bloom</ShortName> <Description Language="ENG">Bloomberg</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.63" /> </ServiceLocation> <TextualIdentifier
+ServiceName="582" logoURI="MAY_1/imSer/582.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Intereconomía</Name> <ShortName
+Language="ENG">INTTV</ShortName> <Description Language="ENG">Intereconomía
+TV</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.91" /> </ServiceLocation> <TextualIdentifier
+ServiceName="844" logoURI="MAY_1/imSer/844.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">13 TV</Name> <ShortName
+Language="ENG">13TV</ShortName> <Description Language="ENG">13 TV</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.220" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1807" logoURI="MAY_1/imSer/1807.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">I 24 News</Name> <ShortName
+Language="ENG">I24NW</ShortName> <Description Language="ENG">I 24 News</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.221" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1805" logoURI="MAY_1/imSer/1805.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">CNC World</Name> <ShortName
+Language="ENG">CNCWD</ShortName> <Description Language="ENG">CNC World</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.45" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2463" logoURI="MAY_1/imSer/2463.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Canal Orbe 21</Name> <ShortName
+Language="ENG">COR21</ShortName> <Description Language="ENG">Canal Orbe 21</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.8.3" /> </ServiceLocation> <TextualIdentifier
+ServiceName="862" logoURI="MAY_1/imSer/862.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Telefe</Name> <ShortName
+Language="ENG">ELEFE</ShortName> <Description Language="ENG">Telefe Internacional</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.8.193" /> </ServiceLocation> <TextualIdentifier
+ServiceName="872" logoURI="MAY_1/imSer/872.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">C. Estrellas</Name> <ShortName
+Language="ENG">CANES</ShortName> <Description Language="ENG">Canal Estrellas</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.129" /> </ServiceLocation> <TextualIdentifier
+ServiceName="863" logoURI="MAY_1/imSer/863.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Caracol TV</Name> <ShortName
+Language="ENG">CARAC</ShortName> <Description Language="ENG">Caracol TV Int.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.8.2" /> </ServiceLocation> <TextualIdentifier
+ServiceName="861" logoURI="MAY_1/imSer/861.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">TV Record</Name> <ShortName
+Language="ENG">TVREC</ShortName> <Description Language="ENG">TV Record</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.8.1" /> </ServiceLocation> <TextualIdentifier
+ServiceName="860" logoURI="MAY_1/imSer/860.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">TV Chile</Name> <ShortName
+Language="ENG">TVCHI</ShortName> <Description Language="ENG">TV Chile Intern.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.131" /> </ServiceLocation> <TextualIdentifier
+ServiceName="865" logoURI="MAY_1/imSer/865.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">TV Colombia</Name> <ShortName
+Language="ENG">TELCO</ShortName> <Description Language="ENG">TV Colombia</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.8.68" /> </ServiceLocation> <TextualIdentifier
+ServiceName="871" logoURI="MAY_1/imSer/871.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">AZ Mundo</Name> <ShortName
+Language="ENG">TVAZT</ShortName> <Description Language="ENG">Azteca Intern.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.8.67" /> </ServiceLocation> <TextualIdentifier
+ServiceName="870" logoURI="MAY_1/imSer/870.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Cubavisión</Name> <ShortName
+Language="ENG">CUBAV</ShortName> <Description Language="ENG">Cubavisión</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.8.69" /> </ServiceLocation> <TextualIdentifier
+ServiceName="891" logoURI="MAY_1/imSer/891.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">teleSUR</Name> <ShortName
+Language="ENG">TSUR</ShortName> <Description Language="ENG">Telesur</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.193" /> </ServiceLocation> <TextualIdentifier
+ServiceName="874" logoURI="MAY_1/imSer/874.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Phoenix CNE</Name> <ShortName
+Language="ENG">PHOEN</ShortName> <Description Language="ENG">Phoenix CNE</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.194" /> </ServiceLocation> <TextualIdentifier
+ServiceName="875" logoURI="MAY_1/imSer/875.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">InfoNews Ch</Name> <ShortName
+Language="ENG">INFOC</ShortName> <Description Language="ENG">InfoNews Channel</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.98" /> </ServiceLocation> <TextualIdentifier
+ServiceName="886" logoURI="MAY_1/imSer/886.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">LTC</Name> <ShortName
+Language="ENG">TIEND</ShortName> <Description Language="ENG">La Tienda en
+Casa</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.8.131" /> </ServiceLocation> <TextualIdentifier
+ServiceName="877" logoURI="MAY_1/imSer/877.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Generalista CU</Name> <ShortName
+Language="ENG">CINFA</ShortName> <Description Language="ENG">Cosmopolitan
+Mayordomo</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.1" /> </ServiceLocation> <TextualIdentifier
+ServiceName="821" logoURI="MAY_1/imSer/821.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Series CU</Name> <ShortName
+Language="ENG">ARTCH</ShortName> <Description Language="ENG">Art Television</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.130" /> </ServiceLocation> <TextualIdentifier
+ServiceName="864" logoURI="MAY_1/imSer/864.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">Deportes CU</Name> <ShortName
+Language="ENG">PERUM</ShortName> <Description Language="ENG">Tele 5 Mayordomo</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.146" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1504" /> <SI ServiceType="1" ServiceInfo="0"> <Name
+Language="ENG">C+1Loc.Pub.</Name> <ShortName Language="ENG">C+1LP</ShortName>
+<Description Language="ENG">C+1Loc.Pub.</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.8" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1281" logoURI="MAY_1/imSer/1281.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+Liga L.Pub.</Name> <ShortName
+Language="ENG">EURO7</ShortName> <Description Language="ENG">C+Liga L.Pub.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <urn:Name>Fútbol</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.9" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1403" logoURI="MAY_1/imSer/1403.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+L.Camp.L.Pub.</Name> <ShortName
+Language="ENG">EURO8</ShortName> <Description Language="ENG">C+L.Camp.L.Pub.</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.3.129" /> </ServiceLocation> <TextualIdentifier
+ServiceName="566" logoURI="MAY_1/imSer/566.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">Canal T</Name> <ShortName
+Language="ENG">CT</ShortName> <Description Language="ENG">Canal T</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.150" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2256" logoURI="MAY_1/imSer/2256.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">Multicámara5 HD MotoGP</Name> <ShortName
+Language="ENG">M5HDF</ShortName> <Description Language="ENG">Multicámara5
+HD MotoGP</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.76">
+<urn:Name>Automovilismo</urn:Name> </Genre> <ReplacementService> <TextualIdentifier
+ServiceName="2244" /> </ReplacementService> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.152" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2258" logoURI="MAY_1/imSer/2258.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">Multicámara3 HD MotoGP</Name> <ShortName
+Language="ENG">M3HDF</ShortName> <Description Language="ENG">Multicámara3
+HD MotoGP</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.76">
+<urn:Name>Automovilismo</urn:Name> </Genre> <ReplacementService> <TextualIdentifier
+ServiceName="2246" /> </ReplacementService> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.154" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2260" logoURI="MAY_1/imSer/2260.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">Multicámara1 HD MotoGP</Name> <ShortName
+Language="ENG">M1HDF</ShortName> <Description Language="ENG">Multicámara1
+HD MotoGP</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.76">
+<urn:Name>Automovilismo</urn:Name> </Genre> <ReplacementService> <TextualIdentifier
+ServiceName="2248" /> </ReplacementService> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.157" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2263" logoURI="MAY_1/imSer/2263.jpg" /> <SI ServiceType="25"
+ServiceInfo="1"> <Name Language="ENG">Multi3 HD MotoGP</Name> <ShortName
+Language="ENG">ML3HF</ShortName> <Description Language="ENG">Multi3 HD MotoGP</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.76"> <urn:Name>Automovilismo</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="2251" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.5.186" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2527" /> <SI ServiceType="25" ServiceInfo="16385"> <Name
+Language="ENG">TV3 HD</Name> <ShortName Language="ENG">PRU3</ShortName> <Description
+Language="ENG">TV3 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.185" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2545" /> <SI ServiceType="25" ServiceInfo="16385"> <Name
+Language="ENG">La 1 HD</Name> <ShortName Language="ENG">L1HD</ShortName> <Description
+Language="ENG">La 1 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16"> <urn:Name>Cine</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.188" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2546" /> <SI ServiceType="25" ServiceInfo="16385"> <Name
+Language="ENG">Teledeporte HD</Name> <ShortName Language="ENG">TDHD</ShortName>
+<Description Language="ENG">Teledeporte HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16"> <urn:Name>Cine</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.137" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2443" /> <SI ServiceType="25" ServiceInfo="0"> <Name
+Language="ENG">C+1 HD. Loc. Pub.</Name> <ShortName Language="ENG">C+1HD</ShortName>
+<Description Language="ENG">C+1 HD. Loc. Pub.</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.170" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2343" /> <SI ServiceType="25" ServiceInfo="0"> <Name
+Language="ENG">Pruebas Movistar Fútbol HD</Name> <ShortName
+Language="ENG">MFHD</ShortName> <Description Language="ENG">Movistar Fútbol
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.1.192" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2281" /> <SI ServiceType="1" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 8</Name> <ShortName Language="ENG">QUA8</ShortName>
+<Description Language="ENG">Qualifier 8</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.192" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2282" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 8 HD</Name> <ShortName Language="ENG">QU8HD</ShortName>
+<Description Language="ENG">Qualifier 8 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2281" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.1.193" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2283" /> <SI ServiceType="1" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 9</Name> <ShortName Language="ENG">QUA9</ShortName>
+<Description Language="ENG">Qualifier 9</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.193" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2284" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 9 HD</Name> <ShortName Language="ENG">QU9HD</ShortName>
+<Description Language="ENG">Qualifier 9 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2283" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.1.194" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2285" /> <SI ServiceType="1" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 10</Name> <ShortName Language="ENG">QUA10</ShortName>
+<Description Language="ENG">Qualifier 10</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.194" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2286" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 10 HD</Name> <ShortName Language="ENG">QU10H</ShortName>
+<Description Language="ENG">Qualifier 10 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2285" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.1.195" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2287" /> <SI ServiceType="1" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 11</Name> <ShortName Language="ENG">QUA11</ShortName>
+<Description Language="ENG">Qualifier 11</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.195" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2288" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 11 HD</Name> <ShortName Language="ENG">QU11H</ShortName>
+<Description Language="ENG">Qualifier 11 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2287" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.1.196" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2289" /> <SI ServiceType="1" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 12</Name> <ShortName Language="ENG">QUA12</ShortName>
+<Description Language="ENG">Qualifier 12</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.196" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2290" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 12 HD</Name> <ShortName Language="ENG">QUA12</ShortName>
+<Description Language="ENG">Qualifier 12 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2289" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.190" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2278" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Qualifier 6 HD</Name> <ShortName Language="ENG">QU6HD</ShortName>
+<Description Language="ENG">Qualifier 6 HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2277" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.2" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2277" logoURI="MAY_1/imSer/2277.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">Canal Distribuidores</Name> <ShortName
+Language="ENG">DISTR</ShortName> <Description Language="ENG">Canal Distribuidores</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.177" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1823" logoURI="MAY_1/imSer/1823.jpg" /> <SI ServiceType="25"
+ServiceInfo="1"> <Name Language="ENG">Cuatro HD</Name> <ShortName
+Language="ENG">4HD</ShortName> <Description Language="ENG">Cuatro HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.13"> <urn:Name>Toros</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.4" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1843" logoURI="MAY_1/imSer/1843.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">Cuatro</Name> <ShortName
+Language="ENG">CUATR</ShortName> <Description Language="ENG">Cuatro</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.13"> <urn:Name>Toros</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1823" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.176" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1824" logoURI="MAY_1/imSer/1824.jpg" /> <SI ServiceType="25"
+ServiceInfo="1"> <Name Language="ENG">Tele 5 HD</Name> <ShortName
+Language="ENG">T5HD</ShortName> <Description Language="ENG">Tele 5 HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.5" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1844" logoURI="MAY_1/imSer/1844.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">Tele 5</Name> <ShortName
+Language="ENG">TELE5</ShortName> <Description Language="ENG">Tele 5</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1824" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.134" /> </ServiceLocation> <TextualIdentifier
+ServiceName="999" logoURI="MAY_1/imSer/999.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">FOX HD</Name> <ShortName
+Language="ENG">FOXHD</ShortName> <Description Language="ENG">FOX HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.9.131" /> </ServiceLocation> <TextualIdentifier
+ServiceName="904" logoURI="MAY_1/imSer/904.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">AXN HD</Name> <ShortName
+Language="ENG">AXNHD</ShortName> <Description Language="ENG">AXN HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.13" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1706" logoURI="MAY_1/imSer/1706.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">Calle 13</Name> <ShortName
+Language="ENG">CA13</ShortName> <Description Language="ENG">CALLE 13</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1663" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.74" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1663" logoURI="MAY_1/imSer/1663.jpg" /> <SI ServiceType="25"
+ServiceInfo="1"> <Name Language="ENG">Calle 13HD</Name> <ShortName
+Language="ENG">C13HD</ShortName> <Description Language="ENG">Calle 13HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.132" /> </ServiceLocation> <TextualIdentifier
+ServiceName="927" logoURI="MAY_1/imSer/927.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">AMC HD</Name> <ShortName
+Language="ENG">MGMHD</ShortName> <Description Language="ENG">AMC HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.52" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1763" logoURI="MAY_1/imSer/1763.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">Gol2 Int</Name> <ShortName
+Language="ENG">G2INT</ShortName> <Description Language="ENG">Gol2 Int</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1664" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.146" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1664" logoURI="MAY_1/imSer/1664.jpg" /> <SI ServiceType="25"
+ServiceInfo="1"> <Name Language="ENG">Gol2 IntHD</Name> <ShortName
+Language="ENG">G2INT</ShortName> <Description Language="ENG">Gol2 IntHD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.136" /> </ServiceLocation> <TextualIdentifier
+ServiceName="983" logoURI="MAY_1/imSer/983.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">NG Wild HD</Name> <ShortName
+Language="ENG">NGEHD</ShortName> <Description Language="ENG">Nat.Geo. Wild
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.184" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1363" logoURI="MAY_1/imSer/1363.jpg" /> <SI ServiceType="25"
+ServiceInfo="0"> <Name Language="ENG">Series HD Pruebas</Name> <ShortName
+Language="ENG">LCHD1</ShortName> <Description Language="ENG">Series HD Pruebas</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.118" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1597" logoURI="MAY_1/imSer/1597.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+L.Camp</Name> <ShortName
+Language="ENG">CLSD</ShortName> <Description Language="ENG">Canal + Liga Campeones</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="1243" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.138" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1243" logoURI="MAY_1/imSer/1243.jpg" /> <SI ServiceType="1"
+ServiceInfo="0"> <Name Language="ENG">C+L.CampHD</Name> <ShortName
+Language="ENG">CP3D</ShortName> <Description Language="ENG">Canal+ Liga de
+Campeones HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.42" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1603" logoURI="MAY_1/imSer/1603.jpg" /> <SI ServiceType="1"
+ServiceInfo="1"> <Name Language="ENG">C+Liga</Name> <ShortName
+Language="ENG">CLISD</ShortName> <Description Language="ENG">Canal+ Liga</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <urn:Name>Fútbol</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="898" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.129" /> </ServiceLocation> <TextualIdentifier
+ServiceName="898" logoURI="MAY_1/imSer/898.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">C+LigaHD</Name> <ShortName
+Language="ENG">GOLHD</ShortName> <Description Language="ENG">Canal+ Liga HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <urn:Name>Fútbol</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.135" /> </ServiceLocation> <TextualIdentifier
+ServiceName="982" logoURI="MAY_1/imSer/982.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">EurosportHD</Name> <ShortName
+Language="ENG">EURHD</ShortName> <Description Language="ENG">EurosportHD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.9.137" /> </ServiceLocation> <TextualIdentifier
+ServiceName="984" logoURI="MAY_1/imSer/984.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Classica HD</Name> <ShortName
+Language="ENG">UCHD</ShortName> <Description Language="ENG">Unitel Classica
+HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:96.97"> <urn:Name>Ópera
+y música clásica</urn:Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.178" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2606" /> <SI ServiceType="25" ServiceInfo="16385"> <Name
+Language="ENG">Movistar Cine HD</Name> <ShortName Language="ENG">MCIHD</ShortName>
+<Description Language="ENG">Movistar Cine HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16"> <urn:Name>Cine</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.248"> <MetaStream Address="239.0.5.248" Port="8208"
+Type="EMM_NDS" /> </IPMulticastAddress> </ServiceLocation> <TextualIdentifier
+ServiceName="2663" /> <SI ServiceType="25" ServiceInfo="129"> <Name
+Language="ENG">PRUEBAS DRM HD</Name> <ShortName Language="ENG">PRDRH</ShortName>
+<Description Language="ENG">PREUBAS DRM HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ReplacementService> <TextualIdentifier ServiceName="2466" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.3"> <MetaStream Address="239.0.5.3" Port="8208"
+Type="EMM_NDS" /> </IPMulticastAddress> </ServiceLocation> <TextualIdentifier
+ServiceName="2466" /> <SI ServiceType="1" ServiceInfo="129"> <Name
+Language="ENG">PRUEBAS DRM SD</Name> <ShortName Language="ENG">DRMSD</ShortName>
+<Description Language="ENG">PRUEBAS DRM SD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.249" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2467" /> <SI ServiceType="25" ServiceInfo="1"> <Name
+Language="ENG">Pruebas HD</Name> <ShortName Language="ENG">PRUHD</ShortName>
+<Description Language="ENG">Pruebas HD</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.8" /> </ServiceLocation> <TextualIdentifier
+ServiceName="2503" /> <SI ServiceType="1" ServiceInfo="0"> <Name
+Language="ENG">Canal Invitado</Name> <ShortName Language="ENG">CINVI</ShortName>
+<Description Language="ENG">Canal Invitado</Description> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+</ServiceList> </BroadcastDiscovery> </ServiceDiscovery>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="2.imagenio.es"
+Version="255"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/13493/39925432/39925432" /> <InstanceDescription>
+<Title>A.N.T. Farm. Escuela de talentos T2 Cap. 4</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>4</Episode> <Season>2</Season>
+<Year>2011</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T16:50:00.000Z</PublishedStartTime>
+<PublishedDuration>PT22M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/13493/0/0"> <Title>A.N.T.
+Farm. Escuela de talentos</Title> </EpisodeOf> <EventStartTime>2015-04-01T16:50:00.000Z</EventStartTime>
+<EventDuration>PT22M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39925433/39925433" /> <InstanceDescription> <Title>Videoclip
+Disney</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:96.104"> <Name>Actual</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:12:00.000Z</PublishedStartTime>
+<PublishedDuration>PT8M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:12:00.000Z</EventStartTime>
+<EventDuration>PT8M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39925434/39925434" /> <InstanceDescription> <Title>Mi
+perro tiene un blog: El chucho y el magnate</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:80.86"> <Name>Series niños 4-12</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-01T17:20:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/16856/39925435/39925435" /> <InstanceDescription>
+<Title>Austin y Ally T2 Cap. 19 - Vídeos contagiosos y malas coreografías</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>19</Episode> <Season>2</Season>
+<Year>2011</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:45:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/16856/0/0"> <Title>Austin
+y Ally</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:45:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

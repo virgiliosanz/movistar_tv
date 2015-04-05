@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
+xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
+serviceIDRef="2267.imagenio.es" Version="2"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39919028/39919028" /> <InstanceDescription> <Title>Portugal
+- Serbia</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-03-29T18:35:00.000Z</PublishedStartTime> <PublishedDuration>PT2H5M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-03-29T18:35:00.000Z</EventStartTime>
+<EventDuration>PT2H5M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

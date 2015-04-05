@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xml:lang="eng" xmlns="urn:tva:metadata:2005"
+xmlns:mpeg7="urn:tva:mpeg7:2005"
+xmlns:howRel="urn:tva:metadata:cs:HowRelatedCS:2002"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:urn="urn:tva:metadata:2007"
+xmlns:urn1="urn:tva:metadata:extended:2007"
+xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="457.imagenio.es"
+Version="162"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/21971/39928137/39928137" /> <InstanceDescription>
+<Title>Black Sails T1 Cap. 3 - III</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.113"> <Name>Acción y suspense</Name>
+</Genre> <ReleaseInformation> <ReleaseDate> <Episode>3</Episode> <Season>1</Season>
+<Year>2014</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:5"> <mpeg7:Name>Suitable
+for audiences 16 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T17:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H5M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/21971/0/0"> <Title>Black
+Sails</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:00:00.000Z</EventStartTime>
+<EventDuration>PT1H5M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/18376/39928138/39928138" /> <InstanceDescription>
+<Title>Dos hombres y medio T7 Cap. 16 - Hacía pipí como una princesa</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>16</Episode> <Season>7</Season>
+<Year>2009</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T18:05:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/18376/0/0"> <Title>Dos
+hombres y medio</Title> </EpisodeOf> <EventStartTime>2015-04-01T18:05:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/18376/39928139/39928139" /> <InstanceDescription>
+<Title>Dos hombres y medio T7 Cap. 17 - Aquí está tu bigote</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>17</Episode> <Season>7</Season>
+<Year>2009</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-01T18:35:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/18376/0/0"> <Title>Dos
+hombres y medio</Title> </EpisodeOf> <EventStartTime>2015-04-01T18:35:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>
