@@ -1,543 +1,517 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
 xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="18.imagenio.es" Version="2"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39894482/39894482" /> <InstanceDescription> <Title>A
+serviceIDRef="18.imagenio.es" Version="4"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39925875/39925875" /> <InstanceDescription> <Title>En
+tren por el viejo continente: De Praga a Munich</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T00:45:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T00:45:00.000Z</EventStartTime>
+<EventDuration>PT3M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39925876/39925876" /> <InstanceDescription> <Title>A
+través de sus ojos: El País de los cátaros</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T00:48:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T00:48:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931014/39931014" /> <InstanceDescription> <Title>A
+través de sus ojos: La región de Auvernia</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T01:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T01:15:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931015/39931015" /> <InstanceDescription> <Title>A
+través de sus ojos: Lisboa</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T01:42:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T01:42:00.000Z</EventStartTime>
+<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931016/39931016" /> <InstanceDescription> <Title>A
+través de sus ojos: Croacia: Una historia Mediterranea</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T02:10:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T02:10:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931017/39931017" /> <InstanceDescription> <Title>A
+través de sus ojos: Sienna</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T02:37:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T02:37:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931018/39931018" /> <InstanceDescription> <Title>A
+través de sus ojos: Noruega-Spitzberg</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T03:04:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T03:04:00.000Z</EventStartTime>
+<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931019/39931019" /> <InstanceDescription> <Title>A
+través de sus ojos: Mexico-Chiapas</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T03:32:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T03:32:00.000Z</EventStartTime>
+<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39956470/39956470" /> <InstanceDescription> <Title>A
+través de sus ojos: Mexico? Cuetzalan - Puebla</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T04:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T04:00:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39956471/39956471" /> <InstanceDescription> <Title>A
+través de sus ojos: Canada Québec</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T04:25:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T04:25:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931023/39931023" /> <InstanceDescription> <Title>A
+través de sus ojos: Wyoming</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T04:51:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T04:51:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931024/39931024" /> <InstanceDescription> <Title>A
+través de sus ojos: Nepal - Katmandou</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T05:18:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T05:18:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931025/39931025" /> <InstanceDescription> <Title>A
+través de sus ojos: Nepal - Himalaya</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T05:44:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T05:44:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931026/39931026" /> <InstanceDescription> <Title>A
 través de sus ojos: Martinique</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T00:18:00.000Z</PublishedStartTime>
-<PublishedDuration>PT4M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T00:18:00.000Z</EventStartTime>
-<EventDuration>PT4M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39894483/39894483" /> <InstanceDescription> <Title>En
-tren por el viejo continente: De Madrid a Gibraltar</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T00:22:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T00:22:00.000Z</EventStartTime>
-<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39894484/39894484" /> <InstanceDescription> <Title>Viajar
-con niños: Alaska ? Fairbanks y Anchorage</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T01:22:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStart </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T02:21:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T02:21:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39894487/39894487" /> <InstanceDescription> <Title>Viajar
-con niños: Perú - La selva</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T02:51:00.000Z</PublishedStartTime>
-<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T02:51:00.000Z</EventStartTime>
-<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901040/39901040" /> <InstanceDescription> <Title>Viajar
-con niños: Las Bahamas - Cat Island y Gran Bahama</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T03:20:00.000Z</PublishedStartTime>
-<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T03:20:00.000Z</EventStartTime>
-<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901041/39901041" /> <InstanceDescription> <Title>Viajar
-con niños: Alaska - Península de Kenai</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T03:49:00.000Z</PublishedStartTime>
-<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T03:49:00.000Z</EventStartTime>
-<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901042/39901042" /> <InstanceDescription> <Title>Viajar
-con niños: Jamaica ?La costa dorada del norte</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T04:17:00.000Z</PublishedStartTime>
-<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T04:17:00.000Z</EventStartTime>
-<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925017/39925017" /> <InstanceDescription> <Title>Búscame
-en el pueblo: Grajera</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T04:46:00.000Z</PublishedStartTime>
-<PublishedDuration>PT14M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T04:46:00.000Z</EventStartTime>
-<EventDuration>PT14M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901044/39901044" /> <InstanceDescription> <Title>Viajar
-con niños: Perú - El mundo inca - Machu Picchu y Cu</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T05:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T05:00:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901045/39901045" /> <InstanceDescription> <Title>Viajar
-con niños: Costa Rica - San José y la costa del Pac</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T05:30:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T05:30:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901046/39901046" /> <InstanceDescription> <Title>Viajar
-con niños: Irlanda - En busca de los antepasados en</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T06:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T06:00:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901047/39901047" /> <InstanceDescription> <Title>Viajar
-con niños: Escocia - La ciudad de Edimburgo</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T06:30:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T06:30:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901048/39901048" /> <InstanceDescription> <Title>Viajar
-con niños: Irlanda del Norte - Belfast</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T07:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T07:00:00.000Z</EventStartTime>
-<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901049/39901049" /> <InstanceDescription> <Title>Viajar
-con niños: California: San Diego, sol y surf</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T07:28:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T07:28:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901050/39901050" /> <InstanceDescription> <Title>Viajar
-con niños: Cuzco, Perú</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T07:58:00.000Z</PublishedStartTime>
-<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T07:58:00.000Z</EventStartTime>
-<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901051/39901051" /> <InstanceDescription> <Title>Mujeres
-de lugares remotos: Filipinas-Vida en la tumba</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T08:27:00.000Z</PublishedStartTime>
-<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T08:27:00.000Z</EventStartTime>
-<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901052/39901052" /> <InstanceDescription> <Title>Mujeres
-de lugares remotos: Sudán del Sur-Una nueva vida</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T08:52:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-02T06:11:00.000Z</PublishedStartTime>
 <PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T08:52:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-02T06:11:00.000Z</EventStartTime>
 <EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925018/39925018" /> <InstanceDescription> <Title>Trenes,
-rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
-<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
-available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-03-27T09:18:00.000Z</PublishedStartTime> <PublishedDuration>PT46M</PublishedDuration>
-<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T09:18:00.000Z</EventStartTime>
-<EventDuration>PT46M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901055/39901055" /> <InstanceDescription> <Title>En
-tren por el viejo continente: De Turín a Venecia</Title> <Genre
+crid="crid://imagenio.es/0/39931027/39931027" /> <InstanceDescription> <Title>A
+través de sus ojos: Florida: territorio salvaje</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T06:37:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T06:37:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931028/39931028" /> <InstanceDescription> <Title>Hoteles
+a examen: El Grimscote Manor Hotel, Coleshill, Birmingham</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T10:04:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H1M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T07:04:00.000Z</PublishedStartTime>
+<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T10:04:00.000Z</EventStartTime>
-<EventDuration>PT1H1M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901056/39901056" /> <InstanceDescription> <Title>Mujeres
-de lugares remotos: Filipinas-Vida en la tumba</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+</UserActionList> <EventStartTime>2015-04-02T07:04:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931029/39931029" /> <InstanceDescription> <Title>Hoteles
+a examen: Number Nine</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T11:05:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T07:49:00.000Z</PublishedStartTime>
+<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T11:05:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901057/39901057" /> <InstanceDescription> <Title>Mujeres
-de lugares remotos: Sudán del Sur-Una nueva vida</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T11:29:00.000Z</PublishedStartTime>
-<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T11:29:00.000Z</EventStartTime>
-<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925019/39925019" /> <InstanceDescription> <Title>Trenes,
-rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
-<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
-available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-03-27T11:55:00.000Z</PublishedStartTime> <PublishedDuration>PT46M</PublishedDuration>
-<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T11:55:00.000Z</EventStartTime>
-<EventDuration>PT46M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925020/39925020" /> <InstanceDescription> <Title>Europa
-desde el tren: De Viena a Trieste</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
-available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-03-27T12:41:00.000Z</PublishedStartTime> <PublishedDuration>PT26M</PublishedDuration>
-<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T12:41:00.000Z</EventStartTime>
-<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901060/39901060" /> <InstanceDescription> <Title>Cruceros
-de ensueño: MSC Lirica</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T13:07:00.000Z</PublishedStartTime>
-<PublishedDuration>PT49M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T13:07:00.000Z</EventStartTime>
-<EventDuration>PT49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925021/39925021" /> <InstanceDescription> <Title>El
-Turista: El Turista, 23</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T13:56:00.000Z</PublishedStartTime>
-<PublishedDuration>PT49M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T13:56:00.000Z</EventStartTime>
-<EventDuration>PT49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925022/39925022" /> <InstanceDescription> <Title>Trenes,
-rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
-<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
-available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-03-27T14:45:00.000Z</PublishedStartTime> <PublishedDuration>PT49M</PublishedDuration>
-<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T14:45:00.000Z</EventStartTime>
-<EventDuration>PT49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901065/39901065" /> <InstanceDescription> <Title>Ciudades
-del mundo: Argentina</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T15:34:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T15:34:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901066/39901066" /> <InstanceDescription> <Title>Ciudades
-del mundo: Colombia</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T16:05:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T16:05:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901067/39901067" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Playas, castillos y el lugar más alegre del
-planeta</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
+</UserActionList> <EventStartTime>2015-04-02T07:49:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931030/39931030" /> <InstanceDescription> <Title>Bazaar:
+Buenos Aires</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
 </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T16:36:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T16:36:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901068/39901068" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Las ruinas más cool</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T17:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T17:00:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901069/39901069" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Aventura australiana</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T17:24:00.000Z</PublishedStartTime>
-<PublishedDuration>PT20M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T17:24:00.000Z</EventStartTime>
-<EventDuration>PT20M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901070/39901070" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Nueva Zelanda: la capital mundial de la aventura</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T17:44:00.000Z</PublishedStartTime>
-<PublishedDuration>PT23M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T17:44:00.000Z</EventStartTime>
-<EventDuration>PT23M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901071/39901071" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Los edificios emblemáticos más cool</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T18:07:00.000Z</PublishedStartTime>
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T08:34:00.000Z</PublishedStartTime>
 <PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T18:07:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-02T08:34:00.000Z</EventStartTime>
 <EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925023/39925023" /> <InstanceDescription> <Title>Ciudades
-del mundo: Puerto Rico</Title> <Genre
+crid="crid://imagenio.es/0/39931031/39931031" /> <InstanceDescription> <Title>Bazaar:
+Estambul</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T08:59:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T08:59:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931032/39931032" /> <InstanceDescription> <Title>Hoteles
+a examen: El Grimscote Manor Hotel, Coleshill, Birmingham</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T09:28:00.000Z</PublishedStartTime>
+<PublishedDuration>PT44M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T09:28:00.000Z</EventStartTime>
+<EventDuration>PT44M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931033/39931033" /> <InstanceDescription> <Title>Hoteles
+a examen: Number Nine</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T10:12:00.000Z</PublishedStartTime>
+<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T10:12:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931034/39931034" /> <InstanceDescription> <Title>Diarios
+del trasatlántico: Inspectores a bordo</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T18:32:00.000Z</PublishedStartTime>
-<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T10:57:00.000Z</PublishedStartTime>
+<PublishedDuration>PT49M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T18:32:00.000Z</EventStartTime>
-<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925024/39925024" /> <InstanceDescription> <Title>Ciudades
-del mundo: Hungría</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-02T10:57:00.000Z</EventStartTime>
+<EventDuration>PT49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931035/39931035" /> <InstanceDescription> <Title>Hoteles
+a examen: El Grimscote Manor Hotel, Coleshill, Birmingham</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T11:46:00.000Z</PublishedStartTime>
+<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T11:46:00.000Z</EventStartTime>
+<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39955982/39955982" /> <InstanceDescription> <Title>Hoteles
+a examen: Number Nine</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T12:31:00.000Z</PublishedStartTime>
+<PublishedDuration>PT48M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T12:31:00.000Z</EventStartTime>
+<EventDuration>PT48M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39955983/39955983" /> <InstanceDescription> <Title>El
+viajero empedernido: Tahití</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T19:04:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T13:19:00.000Z</PublishedStartTime>
+<PublishedDuration>PT47M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T19:04:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901073/39901073" /> <InstanceDescription> <Title>Ciudades
-del mundo: Escocia</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-02T13:19:00.000Z</EventStartTime>
+<EventDuration>PT47M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931037/39931037" /> <InstanceDescription> <Title>Ciudades
+del mundo: Suiza</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T19:35:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T14:06:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T19:35:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901074/39901074" /> <InstanceDescription> <Title>Ciudades
-del mundo: Argentina</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-02T14:06:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39950779/39950779" /> <InstanceDescription> <Title>Bazaar:
+Buenos Aires</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T14:35:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T14:35:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931039/39931039" /> <InstanceDescription> <Title>Bazaar:
+Estambul</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T15:04:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T15:04:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39955984/39955984" /> <InstanceDescription> <Title>Bazaar:
+Tesoros del mundo islámico</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T20:06:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T15:33:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T20:06:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925025/39925025" /> <InstanceDescription> <Title>Ciudades
-del mundo: Estados Unidos</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-02T15:33:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39950780/39950780" /> <InstanceDescription> <Title>Mujeres
+de lugares remotos: Tailandia-Boxeadora</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T20:37:00.000Z</PublishedStartTime>
-<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T16:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T20:37:00.000Z</EventStartTime>
-<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901075/39901075" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Nueva Zelanda: la capital mundial de la aventura</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T21:10:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T21:10:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901076/39901076" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Los edificios emblemáticos más cool</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T21:34:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T21:34:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901077/39901077" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Las ruinas más cool</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T21:58:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T21:58:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901078/39901078" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Aventura australiana</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T22:22:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T22:22:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901079/39901079" /> <InstanceDescription> <Title>Ciudades
-del mundo: Holanda</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-02T16:00:00.000Z</EventStartTime>
+<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39955985/39955985" /> <InstanceDescription> <Title>Mujeres
+de lugares remotos: Así se hizo</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T22:46:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-02T16:28:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T22:46:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901080/39901080" /> <InstanceDescription> <Title>Ciudades
-del mundo: Noruega</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-02T16:28:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931042/39931042" /> <InstanceDescription> <Title>Trenes,
+rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
+<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-02T16:57:00.000Z</PublishedStartTime> <PublishedDuration>PT52M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T16:57:00.000Z</EventStartTime>
+<EventDuration>PT52M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931043/39931043" /> <InstanceDescription> <Title>Ciudades
+del mundo: Inglaterra 1</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T23:17:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-02T17:49:00.000Z</PublishedStartTime>
 <PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T23:17:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-02T17:49:00.000Z</EventStartTime>
 <EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39901081/39901081" /> <InstanceDescription> <Title>Los
-lugares más cool del planeta: Nueva Zelanda: la capital mundial de la aventura</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+crid="crid://imagenio.es/0/39931044/39931044" /> <InstanceDescription> <Title>Ciudades
+del mundo: Marruecos</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T23:47:00.000Z</PublishedStartTime>
-<PublishedDuration>PT20M</PublishedDuration> <ImmediateViewing
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T18:19:00.000Z</PublishedStartTime>
+<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T23:47:00.000Z</EventStartTime>
-<EventDuration>PT20M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-02T18:19:00.000Z</EventStartTime>
+<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931040/39931040" /> <InstanceDescription> <Title>Mujeres
+de lugares remotos: Tailandia-Boxeadora</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T18:50:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T18:50:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39955986/39955986" /> <InstanceDescription> <Title>Mujeres
+de lugares remotos: Así se hizo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T19:19:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T19:19:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931047/39931047" /> <InstanceDescription> <Title>Trenes,
+rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
+<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-02T19:48:00.000Z</PublishedStartTime> <PublishedDuration>PT31M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T19:48:00.000Z</EventStartTime>
+<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931046/39931046" /> <InstanceDescription> <Title>Mujeres
+de lugares remotos: Así se hizo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T20:19:00.000Z</PublishedStartTime>
+<PublishedDuration>PT19M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T20:19:00.000Z</EventStartTime>
+<EventDuration>PT19M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931048/39931048" /> <InstanceDescription> <Title>Trenes,
+rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
+<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-02T20:38:00.000Z</PublishedStartTime> <PublishedDuration>PT55M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T20:38:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931045/39931045" /> <InstanceDescription> <Title>Mujeres
+de lugares remotos: Tailandia-Boxeadora</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T21:33:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T21:33:00.000Z</EventStartTime>
+<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39955987/39955987" /> <InstanceDescription> <Title>Mujeres
+de lugares remotos: Así se hizo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.138"> <Name>Viajes</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-02T22:01:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T22:01:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39955988/39955988" /> <InstanceDescription> <Title>Trenes,
+rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
+<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-02T22:30:00.000Z</PublishedStartTime> <PublishedDuration>PT50M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T22:30:00.000Z</EventStartTime>
+<EventDuration>PT50M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39950781/39950781" /> <InstanceDescription> <Title>Trenes,
+rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
+<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-02T23:20:00.000Z</PublishedStartTime> <PublishedDuration>PT29M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T23:20:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39931051/39931051" /> <InstanceDescription> <Title>Trenes,
+rutas extremas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.138">
+<Name>Viajes</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-02T23:49:00.000Z</PublishedStartTime> <PublishedDuration>PT16M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-02T23:49:00.000Z</EventStartTime>
+<EventDuration>PT16M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

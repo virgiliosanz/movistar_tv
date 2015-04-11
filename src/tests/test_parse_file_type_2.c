@@ -1,6 +1,6 @@
 #include "config.h"
 
-#define XML_TEST_FILE "misc/xmls/239.0.2.154/2_0.xml"
+#define XML_TEST_FILE "misc/data/239.0.2.154/2_0.xml"
 
 char *
 test_parse()

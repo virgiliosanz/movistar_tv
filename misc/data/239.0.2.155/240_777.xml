@@ -7,50 +7,42 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="777.imagenio.es"
-Version="32"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/25838/39927210/39927210" /> <InstanceDescription>
-<Title>Smallville T5 Cap. 7 - Astilla</Title> <Genre
+Version="133"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/24819/39947675/39947675" /> <InstanceDescription>
+<Title>Bella y bestia T2 Cap. 4 - A sangre y fuego</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:112.121"> <Name>Fantástico y terror</Name>
-</Genre> <ReleaseInformation> <ReleaseDate> <Episode>7</Episode> <Season>5</Season>
-<Year>2005</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+</Genre> <ReleaseInformation> <ReleaseDate> <Episode>4</Episode> <Season>2</Season>
+<Year>2013</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:44:00.000Z</PublishedStartTime>
-<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:09:00.000Z</PublishedStartTime>
+<PublishedDuration>PT52M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/25838/0/0"> <Title>Smallville</Title>
-</EpisodeOf> <EventStartTime>2015-04-01T16:44:00.000Z</EventStartTime> <EventDuration>PT55M</EventDuration>
-</ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/16059/39927211/39927211" /> <InstanceDescription>
-<Title>Bella y bestia T1 Cap. 18 - El corazon de las tinieblas</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.121"> <Name>Fantástico y terror</Name>
-</Genre> <ReleaseInformation> <ReleaseDate> <Episode>18</Episode> <Season>1</Season>
-<Year>2012</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/24819/0/0"> <Title>Bella
+y bestia</Title> </EpisodeOf> <EventStartTime>2015-04-05T19:09:00.000Z</EventStartTime>
+<EventDuration>PT52M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39947676/39947676" /> <InstanceDescription> <Title>Corazón
+de tinta</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:80.85"> <Name>Cine
+infantil</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:39:00.000Z</PublishedStartTime>
-<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:01:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H48M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/16059/0/0"> <Title>Bella
-y bestia</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:39:00.000Z</EventStartTime>
-<EventDuration>PT55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/19880/39927212/39927212" /> <InstanceDescription>
-<Title>Embrujadas T6 Cap. 15 - Sueño con Phoebe</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.121"> <Name>Fantástico y terror</Name>
-</Genre> <ReleaseInformation> <ReleaseDate> <Episode>15</Episode> <Season>6</Season>
-<Year>2003</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:34:00.000Z</PublishedStartTime>
-<PublishedDuration>PT56M</PublishedDuration> <ImmediateViewing
+</UserActionList> <EventStartTime>2015-04-05T20:01:00.000Z</EventStartTime>
+<EventDuration>PT1H48M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39947677/39947677" /> <InstanceDescription> <Title>Pánico
+en Rock Island</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción
+y suspense</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:7"> <mpeg7:Name>Suitable
+for audiences 18 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T21:49:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H35M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19880/0/0"> <Title>Embrujadas</Title>
-</EpisodeOf> <EventStartTime>2015-04-01T18:34:00.000Z</EventStartTime> <EventDuration>PT56M</EventDuration>
-</ScheduleEvent></Schedule> </ProgramLocationTable> </ProgramDescription>
-</TVAMain>
+</UserActionList> <EventStartTime>2015-04-05T21:49:00.000Z</EventStartTime>
+<EventDuration>PT1H35M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

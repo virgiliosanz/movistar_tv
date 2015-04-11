@@ -1,178 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
 xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="744.imagenio.es" Version="1"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935870/39935870" /> <InstanceDescription> <Title>Ciclismo:
-Criterium Internacional de Francia 2015</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.78"> <Name>Multideporte</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T04:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T04:00:00.000Z</EventStartTime>
-<EventDuration>PT1H30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935891/39935891" /> <InstanceDescription> <Title>Liga
-Nacional de fútbol sala: Barcelona-Jaén</Title> <Genre
+serviceIDRef="744.imagenio.es" Version="0"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963743/39963743" /> <InstanceDescription> <Title>Fútbol:
+Copa Internacional Mediterránea</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T05:30:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H30M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T00:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T05:30:00.000Z</EventStartTime>
-<EventDuration>PT1H30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935892/39935892" /> <InstanceDescription> <Title>Tenis:
-WTA Tour: Miami</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.79">
-<Name>Tenis</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+</UserActionList> <EventStartTime>2015-04-06T00:15:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963744/39963744" /> <InstanceDescription> <Title>Fútbol:
+Copa Internacional Mediterránea</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T07:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H55M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T01:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T07:00:00.000Z</EventStartTime>
-<EventDuration>PT1H55M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935893/39935893" /> <InstanceDescription> <Title>Fútbol:
-Trofeo Ford</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+</UserActionList> <EventStartTime>2015-04-06T01:15:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963745/39963745" /> <InstanceDescription> <Title>Fútbol:
+Copa Internacional Mediterránea</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T08:55:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H40M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T02:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T08:55:00.000Z</EventStartTime>
-<EventDuration>PT1H40M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935871/39935871" /> <InstanceDescription> <Title>Mountain
-Bike</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.78"> <Name>Multideporte</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T10:35:00.000Z</PublishedStartTime>
-<PublishedDuration>PT10M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T10:35:00.000Z</EventStartTime>
-<EventDuration>PT10M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935894/39935894" /> <InstanceDescription> <Title>Evasión</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:64.75"> <Name>Programas</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T10:45:00.000Z</PublishedStartTime>
-<PublishedDuration>PT10M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T10:45:00.000Z</EventStartTime>
-<EventDuration>PT10M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935895/39935895" /> <InstanceDescription> <Title>Fútbol:
-Trofeo Ford</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T10:55:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H40M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T10:55:00.000Z</EventStartTime>
-<EventDuration>PT1H40M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935896/39935896" /> <InstanceDescription> <Title>Tenis:
-WTA Tour: Miami</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.79">
-<Name>Tenis</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T12:35:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H35M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T12:35:00.000Z</EventStartTime>
-<EventDuration>PT1H35M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935897/39935897" /> <InstanceDescription> <Title>Natación:
-Open de primavera 2015</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-06T02:15:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963746/39963746" /> <InstanceDescription> <Title>Mountain
+Bike: Vuelta a Ibiza</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.78"> <Name>Multideporte</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T14:10:00.000Z</PublishedStartTime>
-<PublishedDuration>PT2H5M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T14:10:00.000Z</EventStartTime>
-<EventDuration>PT2H5M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935872/39935872" /> <InstanceDescription> <Title>Campeonato
-de España de motocross</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.65"> <Name>Motociclismo</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T16:15:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T03:15:00.000Z</PublishedStartTime>
 <PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T16:15:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-06T03:15:00.000Z</EventStartTime>
 <EventDuration>PT15M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935898/39935898" /> <InstanceDescription> <Title>Magazine
-Champions League</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.75">
-<Name>Programas</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+crid="crid://imagenio.es/0/39963747/39963747" /> <InstanceDescription> <Title>Vela:
+Barcelona World Race</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.72"> <Name>Deportes náuticos</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T16:30:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T03:30:00.000Z</PublishedStartTime>
 <PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T16:30:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-06T03:30:00.000Z</EventStartTime>
 <EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935899/39935899" /> <InstanceDescription> <Title>Tenis:
-WTA Tour: Miami</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.79">
-<Name>Tenis</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+crid="crid://imagenio.es/0/39963748/39963748" /> <InstanceDescription> <Title>Mundial
+de patinaje artístico 2015: Programa libre parejas</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.78"> <Name>Multideporte</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T17:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H30M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T04:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H35M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T17:00:00.000Z</EventStartTime>
-<EventDuration>PT1H30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935900/39935900" /> <InstanceDescription> <Title>Conexión
-TDP</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.75"> <Name>Programas</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+</UserActionList> <EventStartTime>2015-04-06T04:00:00.000Z</EventStartTime>
+<EventDuration>PT2H35M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963749/39963749" /> <InstanceDescription> <Title>ACB:
+UCAM Murcia-Barcelona</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.66"> <Name>Baloncesto</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T18:30:00.000Z</Publis:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T20:25:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T06:35:00.000Z</PublishedStartTime>
 <PublishedDuration>PT1H25M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T20:25:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-06T06:35:00.000Z</EventStartTime>
 <EventDuration>PT1H25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935903/39935903" /> <InstanceDescription> <Title>Ciclismo:
-Gante-Wevelgem</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.78"> <Name>Multideporte</Name>
+crid="crid://imagenio.es/0/39963750/39963750" /> <InstanceDescription> <Title>Estudio
+estadio</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.75"> <Name>Programas</Name>
 </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T21:50:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H40M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T21:50:00.000Z</EventStartTime>
-<EventDuration>PT1H40M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39935904/39935904" /> <InstanceDescription> <Title>Tenis:
-WTA Tour: Miami</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.79">
-<Name>Tenis</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T23:30:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T08:00:00.000Z</PublishedStartTime>
 <PublishedDuration>PT2H</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T23:30:00.000Z</EventStartTime>
-<EventDuration>PT2H</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-06T08:00:00.000Z</EventStartTime>
+<EventDuration>PT2H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963751/39963751" /> <InstanceDescription> <Title>Tenis:
+ATP Tour: Casablanca</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.79"> <Name>Tenis</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T10:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4H</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T10:00:00.000Z</EventStartTime>
+<EventDuration>PT4H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963752/39963752" /> <InstanceDescription> <Title>Tenis:
+WTA Tour: Charleston</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.79"> <Name>Tenis</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T14:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT4H</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T14:00:00.000Z</EventStartTime>
+<EventDuration>PT4H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963753/39963753" /> <InstanceDescription> <Title>Mundial
+de patinaje artístico 2015: Programa libre masculino</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.78"> <Name>Multideporte</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T18:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3H</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T18:00:00.000Z</EventStartTime>
+<EventDuration>PT3H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963754/39963754" /> <InstanceDescription> <Title>Tenis:
+ATP Tour: Casablanca</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.79"> <Name>Tenis</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T21:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT6H30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T21:00:00.000Z</EventStartTime>
+<EventDuration>PT6H30M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

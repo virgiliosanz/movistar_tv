@@ -7,39 +7,40 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="582.imagenio.es"
-Version="133"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39926837/39926837" /> <InstanceDescription> <Title>Noticias
-Intereconomía</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:32.41"> <Name>Nacional</Name>
+Version="228"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963634/39963634" /> <InstanceDescription> <Title>La
+Partytura</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:96.104"> <Name>Actual</Name>
 </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:19:00.000Z</PublishedStartTime>
+<PublishedDuration>PT52M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:00:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39957297/39957297" /> <InstanceDescription> <Title>Reportaje:
-¿Qué es la Semana Santa?</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:32.42"> <Name>Reportajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
-available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-04-01T17:30:00.000Z</PublishedStartTime> <PublishedDuration>PT25M</PublishedDuration>
-<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:30:00.000Z</EventStartTime>
-<EventDuration>PT25M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39957298/39957298" /> <InstanceDescription> <Title>Especial:
-Los secretos de la Semana Santa</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:32.42"> <Name>Reportajes</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:55:00.000Z</PublishedStartTime>
-<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+</UserActionList> <EventStartTime>2015-04-05T19:19:00.000Z</EventStartTime>
+<EventDuration>PT52M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963635/39963635" /> <InstanceDescription> <Title>Cine:
+La decisión de Sara</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.24"> <Name>Drama</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:11:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:55:00.000Z</EventStartTime>
-<EventDuration>PT26M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-05T20:11:00.000Z</EventStartTime>
+<EventDuration>PT1H30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39947248/39947248" /> <InstanceDescription> <Title>No
+es bueno que Dios esté solo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:32.36"> <Name>Análisis de la actualidad</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T21:41:00.000Z</PublishedStartTime>
+<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-05T21:41:00.000Z</EventStartTime>
+<EventDuration>PT24M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

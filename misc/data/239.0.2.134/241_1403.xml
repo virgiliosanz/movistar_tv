@@ -1,44 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
-xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="1403.imagenio.es" Version="1"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39950249/39950249" /> <InstanceDescription> <Title>Emigrantes</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:64.75"> <Name>Programas</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-02T00:45:00.000Z</PublishedStartTime>
-<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-02T00:45:00.000Z</EventStartTime>
-<EventDuration>PT45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39950250/39950250" /> <InstanceDescription> <Title>Champions
-League: Malmoe-Atlético de Madrid</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-02T01:30:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H45M</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-02T01:30:00.000Z</EventStartTime>
-<EventDuration>PT1H45M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39950251/39950251" /> <InstanceDescription> <Title>Champions
-League: Real Madrid-Liverpool</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-02T03:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-02T03:15:00.000Z</EventStartTime>
-<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39950252/39950252" /> <InstanceDescription> <Title>Champions
-League: Basilea-Real Madrid</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-02T04:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT45M</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-02T04:15:00.000Z</EventStartTime>
-<EventDuration>PT45M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
-</ProgramDescription> </TVAMain>
+<TVAMain xmlns="urn:tva:metadata:2007" xml:lang="ENG"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="1403.imagenio.es"
+Version="0" /> </ProgramLocationTable> </ProgramDescription> </TVAMain>

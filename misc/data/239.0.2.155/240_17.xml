@@ -7,41 +7,40 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="17.imagenio.es"
-Version="208"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925818/39925818" /> <InstanceDescription> <Title>La
-Biblia: Esperanza</Title> <Genre
+Version="119"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39946227/39946227" /> <InstanceDescription> <Title>El
+precio de la historia Luisiana: De mal en peor</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.136"> <Name>Historia</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:40:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H40M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T16:40:00.000Z</EventStartTime>
-<EventDuration>PT1H40M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925819/39925819" /> <InstanceDescription> <Title>El
-precio de la historia: Truco o trato</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.136"> <Name>Historia</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:20:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:10:00.000Z</PublishedStartTime>
 <PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T18:20:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-05T19:10:00.000Z</EventStartTime>
 <EventDuration>PT25M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925820/39925820" /> <InstanceDescription> <Title>El
-precio de la historia: Se busca personal</Title> <Genre
+crid="crid://imagenio.es/0/39946228/39946228" /> <InstanceDescription> <Title>El
+precio de la historia: Listos para la pelea</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.136"> <Name>Historia</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:45:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:35:00.000Z</PublishedStartTime>
 <PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T18:45:00.000Z</EventStartTime>
-<EventDuration>PT25M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-05T19:35:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39946229/39946229" /> <InstanceDescription> <Title>Historia
+Perdida: Las cintas de la llegada a la Luna</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.136"> <Name>Historia</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-05T20:00:00.000Z</PublishedStartTime> <PublishedDuration>PT55M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-05T20:00:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

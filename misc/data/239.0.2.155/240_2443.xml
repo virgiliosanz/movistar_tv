@@ -7,34 +7,34 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="2443.imagenio.es"
-Version="108"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39962434/39962434" /> <InstanceDescription> <Title>Cine
-3D: Monstruos University</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:80.85"> <Name>Cine infantil</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
+Version="196"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39962522/39962522" /> <InstanceDescription> <Title>La
+Liga: Celta-Barcelona</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:30:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H45M</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-01T16:30:00.000Z</EventStartTime>
-<EventDuration>PT1H45M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39962435/39962435" /> <InstanceDescription> <Title>Generación
-NBA+</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.75"> <Name>Programas</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H5M</PublishedDuration> <ImmediateViewing
+value="true" /> <EventStartTime>2015-04-05T19:00:00.000Z</EventStartTime>
+<EventDuration>PT2H5M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39962523/39962523" /> <InstanceDescription> <Title>El
+día del fútbol</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.75">
+<Name>Programas</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-01T18:15:00.000Z</EventStartTime>
-<EventDuration>PT1H</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39962436/39962436" /> <InstanceDescription> <Title>Desde
-dentro: Cenicienta</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.26"> <Name>Programas</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T19:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-01T19:15:00.000Z</EventStartTime>
-<EventDuration>PT15M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</InstanceDescription> <PublishedStartTime>2015-04-05T21:05:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H30M</PublishedDuration> <ImmediateViewing
+value="true" /> <EventStartTime>2015-04-05T21:05:00.000Z</EventStartTime>
+<EventDuration>PT2H30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39962524/39962524" /> <InstanceDescription> <Title>Mad
+Men: Los fugitivos</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T23:35:00.000Z</PublishedStartTime>
+<PublishedDuration>PT50M</PublishedDuration> <ImmediateViewing
+value="true" /> <EventStartTime>2015-04-05T23:35:00.000Z</EventStartTime>
+<EventDuration>PT50M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

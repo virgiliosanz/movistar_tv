@@ -1,6 +1,6 @@
 #include "config.h"
 
-#define XML_TEST_FILE "misc/xmls/239.0.2.154/5_0.xml"
+#define XML_TEST_FILE "misc/data/239.0.2.154/5_0.xml"
 #define TVPACKAGES "UTX00|UTX2E"
 char *
 test_parse()

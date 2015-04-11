@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
-xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="2246.imagenio.es" Version="1"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39919081/39919081" /> <InstanceDescription> <Title>GP
-de Qatar 2015</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.65"> <Name>Motociclismo</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-28T13:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT10H</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-03-28T13:00:00.000Z</EventStartTime>
-<EventDuration>PT10H</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
-</ProgramDescription> </TVAMain>
+<TVAMain xmlns="urn:tva:metadata:2007" xml:lang="ENG"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="2246.imagenio.es"
+Version="0" /> </ProgramLocationTable> </ProgramDescription> </TVAMain>

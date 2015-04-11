@@ -1,39 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
-xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="1278.imagenio.es" Version="1"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39913837/39913837" /> <InstanceDescription> <Title>Montenegro
-- Rusia</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T19:40:00.000Z</PublishedStartTime>
-<PublishedDuration>PT2H20M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default</NetworkRecordOperator> <UserActionList>
-<mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T19:40:00.000Z</EventStartTime>
-<EventDuration>PT2H20M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39913838/39913838" /> <InstanceDescription> <Title>Próximo
-partido 28 marzo</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.71">
-<Name>Fútbol</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T22:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default</NetworkRecordOperator> <UserActionList>
-<mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T22:00:00.000Z</EventStartTime>
-<EventDuration>PT1H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39913839/39913839" /> <InstanceDescription> <Title>Próximo
-partido a las 18:00</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-27T23:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT17H50M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default</NetworkRecordOperator> <UserActionList>
-<mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-27T23:00:00.000Z</EventStartTime>
-<EventDuration>PT17H50M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
-</ProgramDescription> </TVAMain>
+<TVAMain xmlns="urn:tva:metadata:2007" xml:lang="ENG"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="1278.imagenio.es"
+Version="0" /> </ProgramLocationTable> </ProgramDescription> </TVAMain>

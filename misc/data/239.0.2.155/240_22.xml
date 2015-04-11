@@ -7,41 +7,41 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="22.imagenio.es"
-Version="171"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39926009/39926009" /> <InstanceDescription> <Title>Cocinamos
-contigo: Episodio 106</Title> <Genre
+Version="106"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39946399/39946399" /> <InstanceDescription> <Title>El
+toque de Samantha: Episodio 38</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:00:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:30:00.000Z</PublishedStartTime>
 <PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:00:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-05T19:30:00.000Z</EventStartTime>
 <EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39926010/39926010" /> <InstanceDescription> <Title>Cocina
-oriental: Episodio 1</Title> <Genre
+crid="crid://imagenio.es/0/39946400/39946400" /> <InstanceDescription> <Title>La
+cocina de Nicola: Episodio 10</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:30:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:00:00.000Z</PublishedStartTime>
 <PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:30:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-05T20:00:00.000Z</EventStartTime>
 <EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39926011/39926011" /> <InstanceDescription> <Title>El
-toque de Samantha: Episodio 39</Title> <Genre
+crid="crid://imagenio.es/0/39946401/39946401" /> <InstanceDescription> <Title>Canal
+cocina de puerto en puerto: Episodio 2</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:00:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:30:00.000Z</PublishedStartTime>
 <PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T18:00:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-05T20:30:00.000Z</EventStartTime>
 <EventDuration>PT30M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

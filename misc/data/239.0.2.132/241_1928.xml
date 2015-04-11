@@ -1,15 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
-xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="1928.imagenio.es" Version="0"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39919481/39919481" /> <InstanceDescription> <Title>F1
-GP de Malasia 2015</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.76"> <Name>Automovilismo</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T01:05:00.000Z</PublishedStartTime>
-<PublishedDuration>PT11H55M</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-03-29T01:05:00.000Z</EventStartTime>
-<EventDuration>PT11H55M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
-</ProgramDescription> </TVAMain>
+<TVAMain xmlns="urn:tva:metadata:2007" xml:lang="ENG"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="1928.imagenio.es"
+Version="0" /> </ProgramLocationTable> </ProgramDescription> </TVAMain>

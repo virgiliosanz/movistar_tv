@@ -7,41 +7,40 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="1563.imagenio.es"
-Version="41"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928759/39928759" /> <InstanceDescription> <Title>Peces
-monstruosos: Tiburón de río</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:34:00.000Z</PublishedStartTime>
-<PublishedDuration>PT51M</PublishedDuration> <ImmediateViewing
+Version="168"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949247/39949247" /> <InstanceDescription> <Title>Infancia
+de oso</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:21:00.000Z</PublishedStartTime>
+<PublishedDuration>PT54M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T16:34:00.000Z</EventStartTime>
-<EventDuration>PT51M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928760/39928760" /> <InstanceDescription> <Title>Top
-10 animal: Temerarios</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-05T19:21:00.000Z</EventStartTime>
+<EventDuration>PT54M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949248/39949248" /> <InstanceDescription> <Title>Los
+animales más raros del mundo: Los animales se portan mal</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:25:00.000Z</PublishedStartTime>
-<PublishedDuration>PT53M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:25:00.000Z</EventStartTime>
-<EventDuration>PT53M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928761/39928761" /> <InstanceDescription> <Title>La
-jungla urbana: El centro</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.130"> <Name>Sociedad</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:18:00.000Z</PublishedStartTime>
-<PublishedDuration>PT56M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT54M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T18:18:00.000Z</EventStartTime>
-<EventDuration>PT56M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-05T20:15:00.000Z</EventStartTime>
+<EventDuration>PT54M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949249/39949249" /> <InstanceDescription> <Title>Peces
+monstruosos: El pez eléctrico del Amazonas</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T21:09:00.000Z</PublishedStartTime>
+<PublishedDuration>PT53M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-05T21:09:00.000Z</EventStartTime>
+<EventDuration>PT53M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

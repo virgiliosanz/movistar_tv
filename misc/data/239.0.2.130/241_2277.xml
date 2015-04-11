@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
 xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="2277.imagenio.es" Version="1"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39913253/39913253" /> <InstanceDescription> <Title>La
+serviceIDRef="2277.imagenio.es" Version="0"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39950027/39950027" /> <InstanceDescription> <Title>La
 TV como nunca la habías visto</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:0"> <Name>Programas</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
 available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-03-30T10:00:00.000Z</PublishedStartTime> <PublishedDuration>PT12H</PublishedDuration>
-<ImmediateViewing value="true" /> <EventStartTime>2015-03-30T10:00:00.000Z</EventStartTime>
+<PublishedStartTime>2015-04-05T10:00:00.000Z</PublishedStartTime> <PublishedDuration>PT12H</PublishedDuration>
+<ImmediateViewing value="true" /> <EventStartTime>2015-04-05T10:00:00.000Z</EventStartTime>
 <EventDuration>PT12H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39950016/39950016" /> <InstanceDescription> <Title>La
+crid="crid://imagenio.es/0/39950028/39950028" /> <InstanceDescription> <Title>La
 TV como nunca la habías visto</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:0"> <Name>Programas</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
 available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-03-30T22:00:00.000Z</PublishedStartTime> <PublishedDuration>PT12H</PublishedDuration>
-<ImmediateViewing value="true" /> <EventStartTime>2015-03-30T22:00:00.000Z</EventStartTime>
+<PublishedStartTime>2015-04-05T22:00:00.000Z</PublishedStartTime> <PublishedDuration>PT12H</PublishedDuration>
+<ImmediateViewing value="true" /> <EventStartTime>2015-04-05T22:00:00.000Z</EventStartTime>
 <EventDuration>PT12H</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

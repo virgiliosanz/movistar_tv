@@ -7,42 +7,41 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="927.imagenio.es"
-Version="165"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928238/39928238" /> <InstanceDescription> <Title>El
-aviador</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción
-y suspense</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T15:35:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H40M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T15:35:00.000Z</EventStartTime>
-<EventDuration>PT1H40M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928239/39928239" /> <InstanceDescription> <Title>El
-único superviviente</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción y suspense</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:5"> <mpeg7:Name>Suitable
-for audiences 16 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT2H5M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:15:00.000Z</EventStartTime>
-<EventDuration>PT2H5M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/25369/39928240/39928240" /> <InstanceDescription>
-<Title>Halt and Catch Fire T1 Cap. 6 - Derrumbe</Title> <Genre
+Version="225"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/25369/39948639/39948639" /> <InstanceDescription>
+<Title>Halt and Catch Fire T1 Cap. 10 - 1984</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ReleaseInformation>
-<ReleaseDate> <Episode>6</Episode> <Season>1</Season> <Year>2014</Year> </ReleaseDate>
+<ReleaseDate> <Episode>10</Episode> <Season>1</Season> <Year>2014</Year> </ReleaseDate>
 </ReleaseInformation> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:5"> <mpeg7:Name>Suitable
 for audiences 16 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T19:20:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:20:00.000Z</PublishedStartTime>
 <PublishedDuration>PT50M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
 </UserActionList> <EpisodeOf crid="crid://imagenio.es/25369/0/0"> <Title>Halt
-and Catch Fire</Title> </EpisodeOf> <EventStartTime>2015-04-01T19:20:00.000Z</EventStartTime>
-<EventDuration>PT50M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+and Catch Fire</Title> </EpisodeOf> <EventStartTime>2015-04-05T19:20:00.000Z</EventStartTime>
+<EventDuration>PT50M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39948640/39948640" /> <InstanceDescription> <Title>Appaloosa</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción y suspense</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:10:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-05T20:10:00.000Z</EventStartTime>
+<EventDuration>PT1H55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39948641/39948641" /> <InstanceDescription> <Title>Plan
+de escape</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción
+y suspense</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:5"> <mpeg7:Name>Suitable
+for audiences 16 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T22:05:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-05T22:05:00.000Z</EventStartTime>
+<EventDuration>PT1H55M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

@@ -700,7 +700,26 @@ Language="ENG">NGEHD</ShortName> <Description Language="ENG">Nat.Geo. Wild
 HD</Description> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <urn:Name>Programas</urn:Name>
 </Genre> <ReplacementService> <TextualIdentifier ServiceName="1563" /> </ReplacementService>
 <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanCS:2007:1"> <mpeg7:Name>No rating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.0.20" /> </ServiceLocation> <TextualIdentifier
+ServiceName="18" logoURI="MAY_1/imSer/18.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Viajar</Name> <ShortName
+Language="ENG">VJAR</ShortName> <Description Language="ENG">VIAJAR</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
+<SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
+Address="239.0.5.73" /> </ServiceLocation> <TextualIdentifier
+ServiceName="1617" logoURI="MAY_1/imSer/1617.jpg" /> <SI ServiceType="25"
+ServiceInfo="16385"> <Name Language="ENG">Viajar HD</Name> <ShortName
+Language="ENG">ViaHD</ShortName> <Description Language="ENG">Viajar HD</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> <ReplacementService> <TextualIdentifier ServiceName="18" /> </ReplacementService>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
 available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
 <SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
 Address="239.0.0.21" /> </ServiceLocation> <TextualIdentifier
@@ -956,9 +975,27 @@ ServiceName="847" logoURI="MAY_1/imSer/847.jpg" /> <SI ServiceType="1"
 ServiceInfo="16385"> <Name Language="ENG">France 24</Name> <ShortName
 Language="ENG">FRA24</ShortName> <Description Language="ENG">FRANCE 24</Description>
 <Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
-</Genre> </SI> </SingleService> <ServiceLocation> <IPMulticastAddress
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
 Port="8208" Address="239.0.7.68" /> </ServiceLocation> <TextualIdentifier
-ServiceName="848" logoURI="MAY_1/imSer/848.jpg" />
+ServiceName="848" logoURI="MAY_1/imSer/848.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">Russia T.</Name> <ShortName
+Language="ENG">RUSSI</ShortName> <Description Language="ENG">RUSSIA TODAY</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.7.69" /> </ServiceLocation> <TextualIdentifier
+ServiceName="849" logoURI="MAY_1/imSer/849.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">CNBC Eur.</Name> <ShortName
+Language="ENG">CNBC</ShortName> <Description Language="ENG">CNBC</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.122"> <urn:Name>Policíacas</urn:Name>
+</Genre> </SI> </SingleService> <SingleService> <ServiceLocation> <IPMulticastAddress
+Port="8208" Address="239.0.0.65" /> </ServiceLocation> <TextualIdentifier
+ServiceName="752" logoURI="MAY_1/imSer/752.jpg" /> <SI ServiceType="1"
+ServiceInfo="16385"> <Name Language="ENG">CCTV E</Name> <ShortName
+Language="ENG">CCTVE</ShortName> <Description Language="ENG">CCTV-E</Description>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.1"> <urn:Name>Ocio y cultura</urn:Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </SI> </SingleService>
 <SingleService> <ServiceLocation> <IPMulticastAddress Port="8208"
 Address="239.0.0.31" /> </ServiceLocation> <TextualIdentifier
 ServiceName="198" logoURI="MAY_1/imSer/198.jpg" /> <SI ServiceType="1"

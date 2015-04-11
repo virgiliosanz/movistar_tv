@@ -7,37 +7,39 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="1081.imagenio.es"
-Version="25"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928452/39928452" /> <InstanceDescription> <Title>Cine
-3D: Monstruos University</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:80.85"> <Name>Cine infantil</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
+Version="115"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39948944/39948944" /> <InstanceDescription> <Title>La
+Liga: Celta-Barcelona</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.71"> <Name>Fútbol</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:30:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H45M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H5M</PublishedDuration> <ImmediateViewing
 value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
-</mpeg7:ActionType> </UserActionList> <EventStartTime>2015-04-01T16:30:00.000Z</EventStartTime>
-<EventDuration>PT1H45M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928453/39928453" /> <InstanceDescription> <Title>Generación
-NBA+</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.75"> <Name>Programas</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2015-04-05T19:00:00.000Z</EventStartTime>
+<EventDuration>PT2H5M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39948945/39948945" /> <InstanceDescription> <Title>El
+día del fútbol</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.75">
+<Name>Programas</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T21:05:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H30M</PublishedDuration> <ImmediateViewing
 value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
-</mpeg7:ActionType> </UserActionList> <EventStartTime>2015-04-01T18:15:00.000Z</EventStartTime>
-<EventDuration>PT1H</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39928454/39928454" /> <InstanceDescription> <Title>Desde
-dentro: Cenicienta</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.26"> <Name>Programas</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T19:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT15M</PublishedDuration> <ImmediateViewing
+</mpeg7:ActionType> </UserActionList> <EventStartTime>2015-04-05T21:05:00.000Z</EventStartTime>
+<EventDuration>PT2H30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/22309/39948946/39948946" /> <InstanceDescription>
+<Title>Mad Men T7 Cap. 5 - Los fugitivos</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ReleaseInformation>
+<ReleaseDate> <Episode>5</Episode> <Season>7</Season> <Year>2014</Year> </ReleaseDate>
+</ReleaseInformation> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T23:35:00.000Z</PublishedStartTime>
+<PublishedDuration>PT50M</PublishedDuration> <ImmediateViewing
 value="false" /> <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name>
-</mpeg7:ActionType> </UserActionList> <EventStartTime>2015-04-01T19:15:00.000Z</EventStartTime>
-<EventDuration>PT15M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</mpeg7:ActionType> </UserActionList> <EpisodeOf
+crid="crid://imagenio.es/22309/0/0"> <Title>Mad Men</Title> </EpisodeOf> <EventStartTime>2015-04-05T23:35:00.000Z</EventStartTime>
+<EventDuration>PT50M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

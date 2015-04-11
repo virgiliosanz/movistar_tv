@@ -7,41 +7,47 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="21.imagenio.es"
-Version="86"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/15784/39925971/39925971" /> <InstanceDescription>
-<Title>Anatomía de Grey T7 Cap. 5 - Casi adultos</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ReleaseInformation>
-<ReleaseDate> <Episode>5</Episode> <Season>7</Season> <Year>2010</Year> </ReleaseDate>
-</ReleaseInformation> <ParentalGuidance> <mpeg7:ParentalRating
+Version="203"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/28391/39946358/39946358" /> <InstanceDescription>
+<Title>Cougar Town T6 Cap. 9</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>9</Episode> <Season>6</Season>
+<Year>2015</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:29:00.000Z</PublishedStartTime>
-<PublishedDuration>PT57M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:18:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/15784/0/0"> <Title>Anatomía
-de Grey</Title> </EpisodeOf> <EventStartTime>2015-04-01T16:29:00.000Z</EventStartTime>
-<EventDuration>PT57M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925972/39925972" /> <InstanceDescription> <Title>Cocina
-en el infierno: Hell\'s Kitchen</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name> </Genre> <ParentalGuidance>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/28391/0/0"> <Title>Cougar
+Town</Title> </EpisodeOf> <EventStartTime>2015-04-05T19:18:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/28391/39963069/39963069" /> <InstanceDescription>
+<Title>Cougar Town T6 Cap. 10</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>10</Episode> <Season>6</Season>
+<Year>2015</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
 <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
-available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-04-01T17:26:00.000Z</PublishedStartTime> <PublishedDuration>PT50M</PublishedDuration>
-<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:48:00.000Z</PublishedStartTime>
+<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T17:26:00.000Z</EventStartTime>
-<EventDuration>PT50M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39925973/39925973" /> <InstanceDescription> <Title>Cocina
-en el infierno: Hell\'s Kitchen</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:0.3"> <Name>Cocina</Name> </Genre> <ParentalGuidance>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/28391/0/0"> <Title>Cougar
+Town</Title> </EpisodeOf> <EventStartTime>2015-04-05T19:48:00.000Z</EventStartTime>
+<EventDuration>PT32M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39946360/39946360" /> <InstanceDescription> <Title>Cine:
+Dicen por ahí...</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
-available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
-<PublishedStartTime>2015-04-01T18:16:00.000Z</PublishedStartTime> <PublishedDuration>PT55M</PublishedDuration>
-<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H37M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-04-01T18:16:00.000Z</EventStartTime>
-<EventDuration>PT55M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-05T20:20:00.000Z</EventStartTime>
+<EventDuration>PT1H37M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

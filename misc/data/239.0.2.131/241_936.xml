@@ -1,286 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
 xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="936.imagenio.es" Version="1"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922824/39922824" /> <InstanceDescription> <Title>La
-berrea entre sierras</Title> <Genre
+serviceIDRef="936.imagenio.es" Version="0"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954552/39954552" /> <InstanceDescription> <Title>Spinning</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T10:02:00.000Z</PublishedStartTime>
+<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T10:02:00.000Z</EventStartTime>
+<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954553/39954553" /> <InstanceDescription> <Title>Montería
+en la Solana</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
+y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T10:33:00.000Z</PublishedStartTime>
+<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T10:33:00.000Z</EventStartTime>
+<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954554/39954554" /> <InstanceDescription> <Title>Perdiz
+con reclamo, lances y consejos de un experto</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T10:02:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T11:06:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T11:06:00.000Z</EventStartTime>
+<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954555/39954555" /> <InstanceDescription> <Title>Alfarras
+un grande en peligro</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T11:34:00.000Z</PublishedStartTime>
+<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T11:34:00.000Z</EventStartTime>
+<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954556/39954556" /> <InstanceDescription> <Title>Liona,
+secretros de una galga campeona</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T12:07:00.000Z</PublishedStartTime>
 <PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T10:02:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-06T12:07:00.000Z</EventStartTime>
 <EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922825/39922825" /> <InstanceDescription> <Title>Carpfishing
-en río revuelto</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70">
-<Name>Caza y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+crid="crid://imagenio.es/0/39954557/39954557" /> <InstanceDescription> <Title>The
+Six Bowland Routes: jabalí con Javier Martínez</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T10:34:00.000Z</PublishedStartTime>
-<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T12:39:00.000Z</PublishedStartTime>
+<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T10:34:00.000Z</EventStartTime>
-<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922826/39922826" /> <InstanceDescription> <Title>Recechando
-con Juanmita</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
-y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+</UserActionList> <EventStartTime>2015-04-06T12:39:00.000Z</EventStartTime>
+<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954558/39954558" /> <InstanceDescription> <Title>Pescando
+calamares en familia</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T11:03:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T13:11:00.000Z</PublishedStartTime>
+<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T11:03:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922827/39922827" /> <InstanceDescription> <Title>Goliat
-grouper</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
-y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T11:34:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T11:34:00.000Z</EventStartTime>
-<EventDuration>PT24M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922828/39922828" /> <InstanceDescription> <Title>Cota
+</UserActionList> <EventStartTime>2015-04-06T13:11:00.000Z</EventStartTime>
+<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954559/39954559" /> <InstanceDescription> <Title>Cota
 Ibex: Macho montés en Tortosa Beceite con Benibex</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T11:58:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T13:44:00.000Z</PublishedStartTime>
 <PublishedDuration>PT41M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T11:58:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-06T13:44:00.000Z</EventStartTime>
 <EventDuration>PT41M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922829/39922829" /> <InstanceDescription> <Title>Las
-acuáticas en Valencia</Title> <Genre
+crid="crid://imagenio.es/0/39954560/39954560" /> <InstanceDescription> <Title>Cazando
+con podencos en Los Monegros</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T12:39:00.000Z</PublishedStartTime>
-<PublishedDuration>PT38M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T14:25:00.000Z</PublishedStartTime>
+<PublishedDuration>PT47M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T12:39:00.000Z</EventStartTime>
-<EventDuration>PT38M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922830/39922830" /> <InstanceDescription> <Title>Pescando
-con Emilio Periañez</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-06T14:25:00.000Z</EventStartTime>
+<EventDuration>PT47M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954561/39954561" /> <InstanceDescription> <Title>Black
+bass en Al-Andalus</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T13:17:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T15:12:00.000Z</PublishedStartTime>
 <PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T13:17:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-06T15:12:00.000Z</EventStartTime>
 <EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922831/39922831" /> <InstanceDescription> <Title>Lances
-de antaño</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
-y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T13:49:00.000Z</PublishedStartTime>
-<PublishedDuration>PT34M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T13:49:00.000Z</EventStartTime>
-<EventDuration>PT34M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922832/39922832" /> <InstanceDescription> <Title>Corzos,
-la debilidad del recechista</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T14:23:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T14:23:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922833/39922833" /> <InstanceDescription> <Title>Entre
-truchas y reos</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
-y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T14:54:00.000Z</PublishedStartTime>
-<PublishedDuration>PT49M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T14:54:00.000Z</EventStartTime>
-<EventDuration>PT49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922834/39922834" /> <InstanceDescription> <Title>Gran
-tirada de torcaces</Title> <Genre
+crid="crid://imagenio.es/0/39954562/39954562" /> <InstanceDescription> <Title>Nos
+vamos de montería: Montería en el Valle de la Zarza</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T15:43:00.000Z</PublishedStartTime>
-<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T15:43:00.000Z</EventStartTime>
-<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922835/39922835" /> <InstanceDescription> <Title>Perdiz
-al salto en Madroñera</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T16:12:00.000Z</PublishedStartTime>
-<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T16:12:00.000Z</EventStartTime>
-<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922836/39922836" /> <InstanceDescription> <Title>Asturias,
-pasión por la Fario</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T16:44:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T16:44:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922837/39922837" /> <InstanceDescription> <Title>Reclamo
-de perdices en Sierra Morena</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T17:15:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T17:15:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922838/39922838" /> <InstanceDescription> <Title>Lances
-de caza: Galgos en acción</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T17:46:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T15:44:00.000Z</PublishedStartTime>
+<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T17:46:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922839/39922839" /> <InstanceDescription> <Title>Black
-Bass en Andalucía</Title> <Genre
+</UserActionList> <EventStartTime>2015-04-06T15:44:00.000Z</EventStartTime>
+<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954563/39954563" /> <InstanceDescription> <Title>Codornices
+llega la media veda</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
 <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T18:17:00.000Z</PublishedStartTime>
-<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T16:17:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T18:17:00.000Z</EventStartTime>
-<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922840/39922840" /> <InstanceDescription> <Title>Caza
-en mano</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
+</UserActionList> <EventStartTime>2015-04-06T16:17:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954564/39954564" /> <InstanceDescription> <Title>Pesca
+del siluro a pellet en Zaragoza</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T16:42:00.000Z</PublishedStartTime>
+<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T16:42:00.000Z</EventStartTime>
+<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954565/39954565" /> <InstanceDescription> <Title>Acuáticas
+a principio de temporada</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T17:13:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T17:13:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954566/39954566" /> <InstanceDescription> <Title>Liebres
+y jabalíes con perro de rastro</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T17:42:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T17:42:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954567/39954567" /> <InstanceDescription> <Title>Embarcados
+con Walter Tanero</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T18:11:00.000Z</PublishedStartTime>
+<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T18:11:00.000Z</EventStartTime>
+<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954568/39954568" /> <InstanceDescription> <Title>Codorniz
+en la media veda de Palencia</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T18:42:00.000Z</PublishedStartTime>
+<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T18:42:00.000Z</EventStartTime>
+<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954569/39954569" /> <InstanceDescription> <Title>Perdiz
+con reclamo, lances y consejos de un experto</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T19:13:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T19:13:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954570/39954570" /> <InstanceDescription> <Title>Pachanga
+en la Breña</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
 y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T18:50:00.000Z</PublishedStartTime>
-<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T19:43:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T18:50:00.000Z</EventStartTime>
-<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922841/39922841" /> <InstanceDescription> <Title>El
-gran ciervo ibérico</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
+</UserActionList> <EventStartTime>2015-04-06T19:43:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954571/39954571" /> <InstanceDescription> <Title>Mujeres
+galgueras</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
+y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T19:22:00.000Z</PublishedStartTime>
-<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T20:13:00.000Z</PublishedStartTime>
+<PublishedDuration>PT35M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T19:22:00.000Z</EventStartTime>
-<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922842/39922842" /> <InstanceDescription> <Title>La
-escarpada costa portuguesa</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
+</UserActionList> <EventStartTime>2015-04-06T20:13:00.000Z</EventStartTime>
+<EventDuration>PT35M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954572/39954572" /> <InstanceDescription> <Title>Spinning
+en Matalascañas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70">
+<Name>Caza y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T19:55:00.000Z</PublishedStartTime>
-<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T19:55:00.000Z</EventStartTime>
-<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922843/39922843" /> <InstanceDescription> <Title>Safari
-de ñus en namibia</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T20:27:00.000Z</PublishedStartTime>
-<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T20:27:00.000Z</EventStartTime>
-<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922844/39922844" /> <InstanceDescription> <Title>Perros
-para la caza del conejo</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T20:59:00.000Z</PublishedStartTime>
-<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T20:59:00.000Z</EventStartTime>
-<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922845/39922845" /> <InstanceDescription> <Title>Entre
-árboles hundidos</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T21:27:00.000Z</PublishedStartTime>
-<PublishedDuration>PT33M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T21:27:00.000Z</EventStartTime>
-<EventDuration>PT33M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922846/39922846" /> <InstanceDescription> <Title>Pícara,
-un setter con espíritu de podenco</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza y pesca</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T22:00:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-06T20:48:00.000Z</PublishedStartTime>
 <PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T22:00:00.000Z</EventStartTime>
+</UserActionList> <EventStartTime>2015-04-06T20:48:00.000Z</EventStartTime>
 <EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39922847/39922847" /> <InstanceDescription> <Title>Emisión
+crid="crid://imagenio.es/0/39954573/39954573" /> <InstanceDescription> <Title>Un
+ojeo diferente</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:64.70"> <Name>Caza
+y pesca</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T21:19:00.000Z</PublishedStartTime>
+<PublishedDuration>PT32M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T21:19:00.000Z</EventStartTime>
+<EventDuration>PT32M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954574/39954574" /> <InstanceDescription> <Title>Historias
+de fauna salvaje</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:128.137"> <Name>Naturaleza</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-06T21:51:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-06T21:51:00.000Z</EventStartTime>
+<EventDuration>PT29M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39954575/39954575" /> <InstanceDescription> <Title>Emisión
 promo</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name>
 </Genre> <ParentalGuidance> <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
 for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-31T22:31:00.000Z</PublishedStartTime>
-<PublishedDuration>PT11H31M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-06T22:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT11H42M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-31T22:31:00.000Z</EventStartTime>
-<EventDuration>PT11H31M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-06T22:20:00.000Z</EventStartTime>
+<EventDuration>PT11H42M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

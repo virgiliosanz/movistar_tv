@@ -7,50 +7,43 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="14.imagenio.es"
-Version="85"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/17761/39925773/39925773" /> <InstanceDescription>
-<Title>Navy: Investigación Criminal T10 Cap. 13 - Impacto y fuga</Title>
+Version="183"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/28098/39946175/39946175" /> <InstanceDescription>
+<Title>Navy: Investigación Criminal T11 Cap. 7 - Ángeles mejores</Title>
 <Genre href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>13</Episode> <Season>10</Season>
-<Year>2012</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:36:00.000Z</PublishedStartTime>
-<PublishedDuration>PT53M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/17761/0/0"> <Title>Navy:
-Investigación Criminal</Title> </EpisodeOf> <EventStartTime>2015-04-01T16:36:00.000Z</EventStartTime>
-<EventDuration>PT53M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/28098/39925774/39925774" /> <InstanceDescription>
-<Title>Navy: Investigación Criminal T11 Cap. 15 - A prueba de balas</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>15</Episode> <Season>11</Season>
+<ReleaseInformation> <ReleaseDate> <Episode>7</Episode> <Season>11</Season>
 <Year>2013</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:29:00.000Z</PublishedStartTime>
-<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T19:07:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
 </UserActionList> <EpisodeOf crid="crid://imagenio.es/28098/0/0"> <Title>Navy:
-Investigación Criminal</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:29:00.000Z</EventStartTime>
-<EventDuration>PT55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/28098/39925775/39925775" /> <InstanceDescription>
-<Title>Navy: Investigación Criminal T11 Cap. 16 - Vestido para matar</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>16</Episode> <Season>11</Season>
-<Year>2013</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:24:00.000Z</PublishedStartTime>
-<PublishedDuration>PT54M</PublishedDuration> <ImmediateViewing
+Investigación Criminal</Title> </EpisodeOf> <EventStartTime>2015-04-05T19:07:00.000Z</EventStartTime>
+<EventDuration>PT1H</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39946176/39946176" /> <InstanceDescription> <Title>El
+Castigador 2</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción
+y suspense</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:7"> <mpeg7:Name>Suitable
+for audiences 18 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:07:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H46M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/28098/0/0"> <Title>Navy:
-Investigación Criminal</Title> </EpisodeOf> <EventStartTime>2015-04-01T18:24:00.000Z</EventStartTime>
-<EventDuration>PT54M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-05T20:07:00.000Z</EventStartTime>
+<EventDuration>PT1H46M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39946177/39946177" /> <InstanceDescription> <Title>Resident
+Evil 3: Extinción</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.21"> <Name>Fantástico y ciencia ficción</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:7"> <mpeg7:Name>Suitable
+for audiences 18 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T21:53:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H34M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-05T21:53:00.000Z</EventStartTime>
+<EventDuration>PT1H34M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

@@ -1,379 +1,401 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
 xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="577.imagenio.es" Version="2"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39906363/39906363" /> <InstanceDescription> <Title>La
-boda de mi mejor amiga</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
+serviceIDRef="577.imagenio.es" Version="3"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/22524/39957242/39957242" /> <InstanceDescription>
+<Title>Aquí no hay quien viva T3 Cap. 16 - Érase unos estatutos</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>16</Episode> <Season>3</Season>
+<Year>2004</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T00:03:00.000Z</PublishedStartTime>
-<PublishedDuration>PT57M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-04T00:15:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H25M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T00:03:00.000Z</EventStartTime>
-<EventDuration>PT57M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39913040/39913040" /> <InstanceDescription> <Title>Una
-de zombis: Una de Zombies</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:7"> <mpeg7:Name>Suitable
-for audiences 18 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T01:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H28M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T01:00:00.000Z</EventStartTime>
-<EventDuration>PT1H28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39910326/39910326" /> <InstanceDescription> <Title>Central
-de Cómicos Express</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T02:28:00.000Z</PublishedStartTime>
-<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T02:28:00.000Z</EventStartTime>
-<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39930065/39930065" /> <InstanceDescription> <Title>Central
-de Cómicos Express</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T02:53:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T02:53:00.000Z</EventStartTime>
-<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/20195/39934673/39934673" /> <InstanceDescription>
-<Title>La que se avecina T7 Cap. 12 - Un oso amoroso, unos mellizos postizos
-y una bajada a los infiernos</Title> <Genre
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/22524/0/0"> <Title>Aquí
+no hay quien viva</Title> </EpisodeOf> <EventStartTime>2015-04-04T00:15:00.000Z</EventStartTime>
+<EventDuration>PT1H25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/25596/39957243/39957243" /> <InstanceDescription>
+<Title>Mike &amp; Molly T1 Cap. 12 - Primera Navidad</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>12</Episode> <Season>7</Season>
-<Year>2013</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T03:24:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H35M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/20195/0/0"> <Title>La
-que se avecina</Title> </EpisodeOf> <EventStartTime>2015-03-29T03:24:00.000Z</EventStartTime>
-<EventDuration>PT1H35M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/13098/39930066/39930066" /> <InstanceDescription>
-<Title>Aída T8 Cap. 2 - Furgo</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>2</Episode> <Season>8</Season>
+<ReleaseInformation> <ReleaseDate> <Episode>12</Episode> <Season>1</Season>
 <Year>2010</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T04:59:00.000Z</PublishedStartTime>
-<PublishedDuration>PT2H1M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-04T01:40:00.000Z</PublishedStartTime>
+<PublishedDuration>PT21M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/13098/0/0"> <Title>Aída</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T04:59:00.000Z</EventStartTime> <EventDuration>PT2H1M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910328/39910328" /> <InstanceDescription>
-<Title>Friends T6 Cap. 1 - El de después de Las Vegas</Title> <Genre
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/25596/0/0"> <Title>Mike
+&amp; Molly</Title> </EpisodeOf> <EventStartTime>2015-04-04T01:40:00.000Z</EventStartTime>
+<EventDuration>PT21M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/25596/39957244/39957244" /> <InstanceDescription>
+<Title>Mike &amp; Molly T1 Cap. 13 - Mike va a la ópera</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>1</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<ReleaseInformation> <ReleaseDate> <Episode>13</Episode> <Season>1</Season>
+<Year>2010</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T07:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-04T02:01:00.000Z</PublishedStartTime>
+<PublishedDuration>PT19M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T07:00:00.000Z</EventStartTime> <EventDuration>PT24M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910329/39910329" /> <InstanceDescription>
-<Title>Friends T6 Cap. 2 - En el que Ross abraza a Rachel</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>2</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T07:24:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T07:24:00.000Z</EventStartTime> <EventDuration>PT24M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910330/39910330" /> <InstanceDescription>
-<Title>Friends T6 Cap. 3 - El de la negativa de Ross</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>3</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T07:48:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T07:48:00.000Z</EventStartTime> <EventDuration>PT24M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910331/39910331" /> <InstanceDescription>
-<Title>Friends T6 Cap. 4 - En el que Joey pierde su seguro</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>4</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T08:12:00.000Z</PublishedStartTime>
-<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T08:12:00.000Z</EventStartTime> <EventDuration>PT25M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910332/39910332" /> <InstanceDescription>
-<Title>Friends T6 Cap. 5 - El del Porsche de Joey</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>5</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T08:37:00.000Z</PublishedStartTime>
-<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T08:37:00.000Z</EventStartTime> <EventDuration>PT25M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39910333/39910333" /> <InstanceDescription> <Title>Top
-20 Funniest</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T09:02:00.000Z</PublishedStartTime>
-<PublishedDuration>PT50M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T09:02:00.000Z</EventStartTime>
-<EventDuration>PT50M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/20195/39910334/39910334" /> <InstanceDescription>
-<Title>La que se avecina T7 Cap. 13 - Una limpieza de karma, una familia a
-la fuga y ojalá que llueva café en el campo</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>13</Episode> <Season>7</Season>
-<Year>2013</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T09:52:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H41M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/20195/0/0"> <Title>La
-que se avecina</Title> </EpisodeOf> <EventStartTime>2015-03-29T09:52:00.000Z</EventStartTime>
-<EventDuration>PT1H41M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910336/39910336" /> <InstanceDescription>
-<Title>Friends T6 Cap. 6 - El de la última noche</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>6</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T11:33:00.000Z</PublishedStartTime>
-<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T11:33:00.000Z</EventStartTime> <EventDuration>PT25M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910337/39910337" /> <InstanceDescription>
-<Title>Friends T6 Cap. 7 - En el que Phoebe huye</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>7</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T11:58:00.000Z</PublishedStartTime>
-<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T11:58:00.000Z</EventStartTime> <EventDuration>PT29M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39910338/39910338" /> <InstanceDescription>
-<Title>Friends T6 Cap. 8 - El de los dientes de Ross</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>8</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T12:27:00.000Z</PublishedStartTime>
-<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T12:27:00.000Z</EventStartTime> <EventDuration>PT25M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39930067/39930067" /> <InstanceDescription>
-<Title>Friends T6 Cap. 8 - El de los dientes de Ross</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>8</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T12:52:00.000Z</PublishedStartTime>
-<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-03-29T12:52:00.000Z</EventStartTime> <EventDuration>PT31M</EventDuration>
-</ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39910339/39910339" /> <InstanceDescription> <Title>Dos
-rubias de pelo en pecho</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T13:23:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H47M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T13:23:00.000Z</EventStartTime>
-<EventDuration>PT1H47M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39910340/39910340" /> <InstanceDescription> <Title>La
-vuelta al mundo en 80 días</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción y suspense</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T15:10:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H49M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T15:10:00.000Z</EventStartTime>
-<EventDuration>PT1H49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39910341/39910341" /> <InstanceDescription> <Title>YuTubers</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T16:59:00.000Z</PublishedStartTime>
-<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T16:59:00.000Z</EventStartTime>
-<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39930068/39930068" /> <InstanceDescription> <Title>Nathan
-al rescate</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T17:25:00.000Z</PublishedStartTime>
-<PublishedDuration>PT38M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T17:25:00.000Z</EventStartTime>
-<EventDuration>PT38M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/28595/39910343/39910343" /> <InstanceDescription>
-<Title>The Wrong Mans T2 Cap. 3 - Hombres de acción</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>3</Episode> <Season>2</Season>
-<Year>2014</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T18:03:00.000Z</PublishedStartTime>
-<PublishedDuration>PT37M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/28595/0/0"> <Title>The
-Wrong Mans</Title> </EpisodeOf> <EventStartTime>2015-03-29T18:03:00.000Z</EventStartTime>
-<EventDuration>PT37M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/28595/39930069/39930069" /> <InstanceDescription>
-<Title>The Wrong Mans T2 Cap. 4 - Hombres de sabios</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>4</Episode> <Season>2</Season>
-<Year>2014</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T18:40:00.000Z</PublishedStartTime>
-<PublishedDuration>PT42M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/28595/0/0"> <Title>The
-Wrong Mans</Title> </EpisodeOf> <EventStartTime>2015-03-29T18:40:00.000Z</EventStartTime>
-<EventDuration>PT42M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39930070/39930070" /> <InstanceDescription> <Title>Top
-20 Funniest</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name>
-</Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T19:22:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H2M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T19:22:00.000Z</EventStartTime>
-<EventDuration>PT1H2M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39930071/39930071" /> <InstanceDescription> <Title>El
-hombre que no sabía nada</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T20:24:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H31M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T20:24:00.000Z</EventStartTime>
-<EventDuration>PT1H31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39930072/39930072" /> <InstanceDescription> <Title>Central
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/25596/0/0"> <Title>Mike
+&amp; Molly</Title> </EpisodeOf> <EventStartTime>2015-04-04T02:01:00.000Z</EventStartTime>
+<EventDuration>PT19M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39962303/39962303" /> <InstanceDescription> <Title>Central
 de Cómicos Express</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
 for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T21:55:00.000Z</PublishedStartTime>
+</InstanceDescription> <PublishedStartTime>2015-04-04T02:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT3H12M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T02:20:00.000Z</EventStartTime>
+<EventDuration>PT3H12M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39957245/39957245" /> <InstanceDescription> <Title>Top
+20 Funniest</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T05:32:00.000Z</PublishedStartTime>
+<PublishedDuration>PT44M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T05:32:00.000Z</EventStartTime>
+<EventDuration>PT44M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39957246/39957246" /> <InstanceDescription> <Title>Top
+20 Funniest</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T06:16:00.000Z</PublishedStartTime>
+<PublishedDuration>PT44M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T06:16:00.000Z</EventStartTime>
+<EventDuration>PT44M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963482/39963482" /> <InstanceDescription> <Title>Top
+20 Funniest: Episodio 13</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T07:00:00.000Z</PublishedStartTime>
+<PublishedDuration>PT51M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T07:00:00.000Z</EventStartTime>
+<EventDuration>PT51M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963483/39963483" /> <InstanceDescription> <Title>Top
+20 Funniest</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T07:51:00.000Z</PublishedStartTime>
+<PublishedDuration>PT49M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T07:51:00.000Z</EventStartTime>
+<EventDuration>PT49M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963484/39963484" /> <InstanceDescription> <Title>Top
+20 Funniest</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T08:40:00.000Z</PublishedStartTime>
+<PublishedDuration>PT47M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T08:40:00.000Z</EventStartTime>
+<EventDuration>PT47M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963485/39963485" /> <InstanceDescription> <Title>YuTubers</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T09:27:00.000Z</PublishedStartTime>
+<PublishedDuration>PT31M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T09:27:00.000Z</EventStartTime>
+<EventDuration>PT31M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39942976/39942976" /> <InstanceDescription>
+<Title>Friends T6 Cap. 9 - En el que Ross es genial</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>9</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T09:58:00.000Z</PublishedStartTime>
 <PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T21:55:00.000Z</EventStartTime>
-<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39910349/39910349" /> <InstanceDescription> <Title>Starsky
-&amp; Hutch</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.17"> <Name>Acción
-y suspense</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
-for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T22:20:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H34M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T22:20:00.000Z</EventStartTime>
-<EventDuration>PT1H34M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39910350/39910350" /> <InstanceDescription> <Title>Maderos</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre>
-<ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:7"> <mpeg7:Name>Suitable
-for audiences 18 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-03-29T23:54:00.000Z</PublishedStartTime>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T09:58:00.000Z</EventStartTime> <EventDuration>PT25M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39942977/39942977" /> <InstanceDescription>
+<Title>Friends T6 Cap. 10 - El de la rutina</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>10</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T10:23:00.000Z</PublishedStartTime>
 <PublishedDuration>PT23M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EventStartTime>2015-03-29T23:54:00.000Z</EventStartTime>
-<EventDuration>PT23M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T10:23:00.000Z</EventStartTime> <EventDuration>PT23M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39942978/39942978" /> <InstanceDescription>
+<Title>Friends T6 Cap. 11 - El de la mesa</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>11</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T10:46:00.000Z</PublishedStartTime>
+<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T10:46:00.000Z</EventStartTime> <EventDuration>PT24M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39963486/39963486" /> <InstanceDescription>
+<Title>Friends T6 Cap. 12 - El del chiste</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>12</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T11:10:00.000Z</PublishedStartTime>
+<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T11:10:00.000Z</EventStartTime> <EventDuration>PT24M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39963487/39963487" /> <InstanceDescription>
+<Title>Friends T6 Cap. 13 - El de la hermana de Rachel</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>13</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T11:34:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T11:34:00.000Z</EventStartTime> <EventDuration>PT28M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39963488/39963488" /> <InstanceDescription>
+<Title>Friends T6 Cap. 14 - En el que Chandler no puede llorar</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>14</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T12:02:00.000Z</PublishedStartTime>
+<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T12:02:00.000Z</EventStartTime> <EventDuration>PT24M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39963489/39963489" /> <InstanceDescription>
+<Title>Friends T6 Cap. 15 - El de lo que pudo ser (1)</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>15</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T12:26:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T12:26:00.000Z</EventStartTime> <EventDuration>PT26M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/19460/39963490/39963490" /> <InstanceDescription>
+<Title>Friends T6 Cap. 16 - El de lo que pudo ser (2)</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
+<ReleaseInformation> <ReleaseDate> <Episode>16</Episode> <Season>6</Season>
+<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T12:52:00.000Z</PublishedStartTime>
+<PublishedDuration>PT29M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
+</EpisodeOf> <EventStartTime>2015-04-04T12:52:00.000Z</EventStartTime> <EventDuration>PT29M</EventDuration>
+</ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963491/39963491" /> <InstanceDescription> <Title>Hitch,
+especialista en ligues</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T13:21:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H56M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T13:21:00.000Z</EventStartTime>
+<EventDuration>PT1H56M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963492/39963492" /> <InstanceDescription> <Title>Los
+visitantes no nacieron ayer</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T15:17:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H57M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T15:17:00.000Z</EventStartTime>
+<EventDuration>PT1H57M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963493/39963493" /> <InstanceDescription> <Title>Key
+&amp; Peele: Episodio 1</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T17:14:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T17:14:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963494/39963494" /> <InstanceDescription> <Title>Key
+&amp; Peele: Episodio 2</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T17:39:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T17:39:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963495/39963495" /> <InstanceDescription> <Title>Key
+&amp; Peele: Episodio 3</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T18:04:00.000Z</PublishedStartTime>
+<PublishedDuration>PT22M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T18:04:00.000Z</EventStartTime>
+<EventDuration>PT22M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963496/39963496" /> <InstanceDescription> <Title>Key
+&amp; Peele: Episodio 4</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T18:26:00.000Z</PublishedStartTime>
+<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T18:26:00.000Z</EventStartTime>
+<EventDuration>PT30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963497/39963497" /> <InstanceDescription> <Title>Nathan
+al rescate</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0.8"> <Name>Entretenimiento</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T18:56:00.000Z</PublishedStartTime>
+<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T18:56:00.000Z</EventStartTime>
+<EventDuration>PT27M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963498/39963498" /> <InstanceDescription> <Title>Central
+de Cómicos: Pasión por la comedia: Central de Cómicos: Pasión por la comedia</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-04T19:23:00.000Z</PublishedStartTime> <PublishedDuration>PT57M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T19:23:00.000Z</EventStartTime>
+<EventDuration>PT57M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963499/39963499" /> <InstanceDescription> <Title>Esta
+abuela es un peligro</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
+for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T20:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H30M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T20:20:00.000Z</EventStartTime>
+<EventDuration>PT1H30M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963500/39963500" /> <InstanceDescription> <Title>YuTubers</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.4"> <Name>Otros</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:3"> <mpeg7:Name>Suitable
+for audiences 7 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T21:50:00.000Z</PublishedStartTime>
+<PublishedDuration>PT28M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T21:50:00.000Z</EventStartTime>
+<EventDuration>PT28M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963501/39963501" /> <InstanceDescription> <Title>Key
+&amp; Peele: Episodio 5</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T22:18:00.000Z</PublishedStartTime>
+<PublishedDuration>PT25M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T22:18:00.000Z</EventStartTime>
+<EventDuration>PT25M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963502/39963502" /> <InstanceDescription> <Title>Key
+&amp; Peele: Episodio 6</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
+<mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T22:43:00.000Z</PublishedStartTime>
+<PublishedDuration>PT26M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T22:43:00.000Z</EventStartTime>
+<EventDuration>PT26M</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963503/39963503" /> <InstanceDescription> <Title>El
+cambiazo</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-04T23:09:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H42M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-04T23:09:00.000Z</EventStartTime>
+<EventDuration>PT1H42M</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

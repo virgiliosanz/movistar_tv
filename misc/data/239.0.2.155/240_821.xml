@@ -7,50 +7,39 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="821.imagenio.es"
-Version="68"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/29302/39929047/39929047" /> <InstanceDescription>
-<Title>Black Sails T1 Cap. 3 - III</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.113"> <Name>Acción y suspense</Name>
-</Genre> <ReleaseInformation> <ReleaseDate> <Episode>3</Episode> <Season>1</Season>
-<Year>2014</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:5"> <mpeg7:Name>Suitable
-for audiences 16 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H5M</PublishedDuration> <ImmediateViewing
+Version="195"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949532/39949532" /> <InstanceDescription> <Title>Cine:
+Chicas malas</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T18:40:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H40M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/29302/0/0"> <Title>Black
-Sails</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:00:00.000Z</EventStartTime>
-<EventDuration>PT1H5M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/18378/39929048/39929048" /> <InstanceDescription>
-<Title>Dos hombres y medio T7 Cap. 16 - Hacía pipí como una princesa</Title>
-<Genre href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>16</Episode> <Season>7</Season>
-<Year>2009</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+</UserActionList> <EventStartTime>2015-04-05T18:40:00.000Z</EventStartTime>
+<EventDuration>PT1H40M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949533/39949533" /> <InstanceDescription> <Title>Cine:
+Tres metros sobre el cielo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.24"> <Name>Drama</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:05:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/18378/0/0"> <Title>Dos
-hombres y medio</Title> </EpisodeOf> <EventStartTime>2015-04-01T18:05:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/18378/39929049/39929049" /> <InstanceDescription>
-<Title>Dos hombres y medio T7 Cap. 17 - Aquí está tu bigote</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>17</Episode> <Season>7</Season>
-<Year>2009</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:35:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
+</UserActionList> <EventStartTime>2015-04-05T20:20:00.000Z</EventStartTime>
+<EventDuration>PT2H</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949534/39949534" /> <InstanceDescription> <Title>Cine:
+Infierno blanco</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:16.17">
+<Name>Acción y suspense</Name> </Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T22:20:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H50M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/18378/0/0"> <Title>Dos
-hombres y medio</Title> </EpisodeOf> <EventStartTime>2015-04-01T18:35:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</UserActionList> <EventStartTime>2015-04-05T22:20:00.000Z</EventStartTime>
+<EventDuration>PT1H50M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

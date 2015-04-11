@@ -1,31 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
-xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
-serviceIDRef="1040.imagenio.es" Version="2"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39949956/39949956" /> <InstanceDescription> <Title>Destacados
-de Movistar Series</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <Name>Programas</Name>
-</Genre> <RelatedMaterial> <StartTime>2015-04-03T10:00:00.000Z</StartTime>
-<Duration>PT12H</Duration> <AppParameters Type="IC"> <Parameter
-Name="PromotionalText">Pulse OK para ver más</Parameter> <Parameter
-Name="BannerType">Web</Parameter> <Parameter Name="WebLocator">internal:magazine?nodeID=525924</Parameter>
-</AppParameters> </RelatedMaterial> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-03T10:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT12H</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-03T10:00:00.000Z</EventStartTime>
-<EventDuration>PT12H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
-crid="crid://imagenio.es/0/39949957/39949957" /> <InstanceDescription> <Title>Destacados
-de Movistar Series</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <Name>Programas</Name>
-</Genre> <RelatedMaterial> <StartTime>2015-04-03T22:00:00.000Z</StartTime>
-<Duration>PT12H</Duration> <AppParameters Type="IC"> <Parameter
-Name="PromotionalText">Pulse OK para ver más</Parameter> <Parameter
-Name="BannerType">Web</Parameter> <Parameter Name="WebLocator">internal:magazine?nodeID=525924</Parameter>
-</AppParameters> </RelatedMaterial> <ParentalGuidance> <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-03T22:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT12H</PublishedDuration> <ImmediateViewing
-value="true" /> <EventStartTime>2015-04-03T22:00:00.000Z</EventStartTime>
-<EventDuration>PT12H</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
-</ProgramDescription> </TVAMain>
+<TVAMain xmlns="urn:tva:metadata:2007" xml:lang="ENG"> <ProgramDescription>
+<ProgramLocationTable> <Schedule serviceIDRef="1040.imagenio.es"
+Version="0" /> </ProgramLocationTable> </ProgramDescription> </TVAMain>

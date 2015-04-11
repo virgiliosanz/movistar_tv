@@ -71,10 +71,9 @@ test_multicast()
 
 		/* Channels info */
 		,"239.0.2.154"
-		//,"239.0.2.155"
+		,"239.0.2.155"
 
 		/* EPG 7 days */
-		/*
 		,"239.0.2.130"
 		,"239.0.2.131"
 		,"239.0.2.132"
@@ -83,14 +82,13 @@ test_multicast()
 		,"239.0.2.135"
 		,"239.0.2.136"
 		,"239.0.2.137"
-		*/
 		,NULL
 	};
 
 	char *host;
 	for (int i = 0; hosts[i]; i++) {
 		host = hosts[i];
-		snprintf(ctx.path, PATH_MAX, "misc/xmls/%s", host);
+		snprintf(ctx.path, PATH_MAX, "misc/data/%s", host);
 		trace("CTX -> %s / %zu (%d)", ctx.path, ctx.n, PATH_MAX);
 		mcast_open(mcast, host, 3937);
 		mcast_proccess_files(mcast, mcast_cb, &ctx);

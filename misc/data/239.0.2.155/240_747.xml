@@ -7,50 +7,49 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="747.imagenio.es"
-Version="11"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/11024/39957437/39957437" /> <InstanceDescription>
-<Title>Camera Café</Title> <Genre
+Version="104"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/25182/39963797/39963797" /> <InstanceDescription>
+<Title>La que se avecina T8 Cap. 6 - Un amor de instituto, un burro sin zanahoria
+y una profanación de capilla</Title> <Genre
 href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>305</Episode> <Season>1</Season>
-<Year>2005</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T16:35:00.000Z</PublishedStartTime>
-<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/11024/0/0"> <Title>Camera
-Café</Title> </EpisodeOf> <EventStartTime>2015-04-01T16:35:00.000Z</EventStartTime>
-<EventDuration>PT55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/11024/39957438/39957438" /> <InstanceDescription>
-<Title>Camera Café</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>332</Episode> <Season>1</Season>
-<Year>2005</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:2"> <mpeg7:Name>Suitable
-for all audiences</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:30:00.000Z</PublishedStartTime>
-<PublishedDuration>PT30M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/11024/0/0"> <Title>Camera
-Café</Title> </EpisodeOf> <EventStartTime>2015-04-01T17:30:00.000Z</EventStartTime>
-<EventDuration>PT30M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/13068/39938388/39938388" /> <InstanceDescription>
-<Title>Aída T6 Cap. 24 - Mal Adentro</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>24</Episode> <Season>6</Season>
-<Year>2008</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+<ReleaseInformation> <ReleaseDate> <Episode>6</Episode> <Season>8</Season>
+<Year>2014</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T18:00:00.000Z</PublishedStartTime>
-<PublishedDuration>PT1H20M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T18:50:00.000Z</PublishedStartTime>
+<PublishedDuration>PT2H</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/13068/0/0"> <Title>Aída</Title>
-</EpisodeOf> <EventStartTime>2015-04-01T18:00:00.000Z</EventStartTime> <EventDuration>PT1H20M</EventDuration>
-</ScheduleEvent></Schedule> </ProgramLocationTable> </ProgramDescription>
-</TVAMain>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/25182/0/0"> <Title>La
+que se avecina</Title> </EpisodeOf> <EventStartTime>2015-04-05T18:50:00.000Z</EventStartTime>
+<EventDuration>PT2H</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/29382/39947540/39947540" /> <InstanceDescription>
+<Title>Mentes criminales T10 Cap. 4 - El picor</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ReleaseInformation>
+<ReleaseDate> <Episode>4</Episode> <Season>10</Season> <Year>2014</Year> </ReleaseDate>
+</ReleaseInformation> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:50:00.000Z</PublishedStartTime>
+<PublishedDuration>PT55M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/29382/0/0"> <Title>Mentes
+criminales</Title> </EpisodeOf> <EventStartTime>2015-04-05T20:50:00.000Z</EventStartTime>
+<EventDuration>PT55M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/18864/39963798/39963798" /> <InstanceDescription>
+<Title>Mentes criminales T9 Cap. 3 - Disparo final</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:112.117"> <Name>Drama</Name> </Genre> <ReleaseInformation>
+<ReleaseDate> <Episode>3</Episode> <Season>9</Season> <Year>2013</Year> </ReleaseDate>
+</ReleaseInformation> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
+for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
+</InstanceDescription> <PublishedStartTime>2015-04-05T21:45:00.000Z</PublishedStartTime>
+<PublishedDuration>PT50M</PublishedDuration> <ImmediateViewing
+value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EpisodeOf crid="crid://imagenio.es/18864/0/0"> <Title>Mentes
+criminales</Title> </EpisodeOf> <EventStartTime>2015-04-05T21:45:00.000Z</EventStartTime>
+<EventDuration>PT50M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>

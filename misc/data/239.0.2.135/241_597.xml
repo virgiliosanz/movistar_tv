@@ -1,4 +1,21 @@
-me> <PublishedDuration>PT12H</PublishedDuration>
-<ImmediateViewing value="true" /> <EventStartTime>2015-03-28T23:00:00.000Z</EventStartTime>
+<?xml version="1.0" encoding="UTF-8"?>
+<TVAMain xmlns="urn:tva:metadata:2007" xmlns:mpeg7="urn:tva:mpeg7:2005"
+xml:lang="ENG"> <ProgramDescription> <ProgramLocationTable> <Schedule
+serviceIDRef="597.imagenio.es" Version="1"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949940/39949940" /> <InstanceDescription> <Title>Destacados
+de Movistar TV</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <Name>Programas</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-03T10:00:00.000Z</PublishedStartTime> <PublishedDuration>PT12H</PublishedDuration>
+<ImmediateViewing value="true" /> <EventStartTime>2015-04-03T10:00:00.000Z</EventStartTime>
+<EventDuration>PT12H</EventDuration> </ScheduleEvent> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39949941/39949941" /> <InstanceDescription> <Title>Destacados
+de Movistar TV</Title> <Genre href="urn:miviewtv:cs:GenreCS:2007:0"> <Name>Programas</Name>
+</Genre> <ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-03T22:00:00.000Z</PublishedStartTime> <PublishedDuration>PT12H</PublishedDuration>
+<ImmediateViewing value="true" /> <EventStartTime>2015-04-03T22:00:00.000Z</EventStartTime>
 <EventDuration>PT12H</EventDuration> </ScheduleEvent> </Schedule> </ProgramLocationTable>
 </ProgramDescription> </TVAMain>

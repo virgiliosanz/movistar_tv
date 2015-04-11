@@ -7,50 +7,39 @@ xmlns:urn="urn:tva:metadata:2007"
 xmlns:urn1="urn:tva:metadata:extended:2007"
 xsi:type="urn1:ExtendedPurchaseItemType" xmlns:urn2="urn:tva:rmpi:2007"> <ProgramDescription>
 <ProgramLocationTable> <Schedule serviceIDRef="577.imagenio.es"
-Version="145"> <ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39957183/39957183" /> <InstanceDescription>
-<Title>Friends T6 Cap. 15 - El de lo que pudo ser (1)</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>15</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+Version="17"> <ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963522/39963522" /> <InstanceDescription> <Title>Central
+de Cómicos: Pasión por la comedia: Central de Cómicos: Pasión por la comedia</Title>
+<Genre href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre>
+<ParentalGuidance> <mpeg7:ParentalRating
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-05T19:10:00.000Z</PublishedStartTime> <PublishedDuration>PT1H11M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
+</UserActionList> <EventStartTime>2015-04-05T19:10:00.000Z</EventStartTime>
+<EventDuration>PT1H11M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963479/39963479" /> <InstanceDescription> <Title>El
+asombroso mundo de Borjamari y Pocholo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:16.23"> <Name>Comedia</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
 href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
 for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:07:00.000Z</PublishedStartTime>
-<PublishedDuration>PT24M</PublishedDuration> <ImmediateViewing
+</InstanceDescription> <PublishedStartTime>2015-04-05T20:21:00.000Z</PublishedStartTime>
+<PublishedDuration>PT1H34M</PublishedDuration> <ImmediateViewing
 value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-04-01T17:07:00.000Z</EventStartTime> <EventDuration>PT24M</EventDuration>
-</ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39926727/39926727" /> <InstanceDescription>
-<Title>Friends T6 Cap. 16 - El de lo que pudo ser (2)</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>16</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
+</UserActionList> <EventStartTime>2015-04-05T20:21:00.000Z</EventStartTime>
+<EventDuration>PT1H34M</EventDuration> </ScheduleEvent><ScheduleEvent> <Program
+crid="crid://imagenio.es/0/39963523/39963523" /> <InstanceDescription> <Title>Las
+Noches de Comedy Central desde Vigo</Title> <Genre
+href="urn:miviewtv:cs:GenreCS:2007:0.7"> <Name>Humor</Name> </Genre> <ParentalGuidance>
 <mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:31:00.000Z</PublishedStartTime>
-<PublishedDuration>PT27M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
+href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:1"> <mpeg7:Name>No rating
+available</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance> </InstanceDescription>
+<PublishedStartTime>2015-04-05T21:55:00.000Z</PublishedStartTime> <PublishedDuration>PT1H28M</PublishedDuration>
+<ImmediateViewing value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
 <UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-04-01T17:31:00.000Z</EventStartTime> <EventDuration>PT27M</EventDuration>
-</ScheduleEvent><ScheduleEvent> <Program
-crid="crid://imagenio.es/19460/39957184/39957184" /> <InstanceDescription>
-<Title>Friends T6 Cap. 17 - El del Unagi</Title> <Genre
-href="urn:miviewtv:cs:GenreCS:2007:112.116"> <Name>Comedia</Name> </Genre>
-<ReleaseInformation> <ReleaseDate> <Episode>17</Episode> <Season>6</Season>
-<Year>2000</Year> </ReleaseDate> </ReleaseInformation> <ParentalGuidance>
-<mpeg7:ParentalRating
-href="urn:dvb:metadata:cs:ParentalGuidanceCS:2007:4"> <mpeg7:Name>Suitable
-for audiences 12 and over</mpeg7:Name> </mpeg7:ParentalRating> </ParentalGuidance>
-</InstanceDescription> <PublishedStartTime>2015-04-01T17:58:00.000Z</PublishedStartTime>
-<PublishedDuration>PT21M</PublishedDuration> <ImmediateViewing
-value="false" /> <NetworkRecordOperator>default|STOVER</NetworkRecordOperator>
-<UserActionList> <mpeg7:ActionType> <mpeg7:Name>FastForward</mpeg7:Name> </mpeg7:ActionType>
-</UserActionList> <EpisodeOf crid="crid://imagenio.es/19460/0/0"> <Title>Friends</Title>
-</EpisodeOf> <EventStartTime>2015-04-01T17:58:00.000Z</EventStartTime> <EventDuration>PT21M</EventDuration>
-</ScheduleEvent></Schedule> </ProgramLocationTable> </ProgramDescription>
-</TVAMain>
+</UserActionList> <EventStartTime>2015-04-05T21:55:00.000Z</EventStartTime>
+<EventDuration>PT1H28M</EventDuration> </ScheduleEvent></Schedule> </ProgramLocationTable>
+</ProgramDescription> </TVAMain>
