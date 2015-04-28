@@ -14,7 +14,7 @@ endif()
 message("CMAKE_BUILD_TYPE = ${CMAKE_BUILD_TYPE}")
 
 # Make compaining compiler if gcc
-add_definitions(-Wall -Wextra -std=gnu99)
+add_definitions(-Wall -Wextra -std=gnu99 -D_GNU_SOURCE)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__FILENAME__='\"$(subst ${CMAKE_SOURCE_DIR}/,,$(abspath $<))\"'")
 
 # Add thread support
@@ -30,9 +30,6 @@ include_directories(${THIRDPARTY_INCLUDE_DIRS})
 link_directories(${THIRDPARTY_LIBRARY_DIRS})
 add_definitions(${THIRDPARTY_OTHERS})
 
-
-
-
 # Copy (or set path for data)
 
 ## Install: http://www.cmake.org/Wiki/CMake:CPackPackageGenerators
@@ -40,7 +37,6 @@ add_definitions(${THIRDPARTY_OTHERS})
 #SET(CPACK_GENERATOR "DEB")
 #SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Virgilio Sanz")
 #INCLUDE(CPack)
-
 
 # Source code dirs
 add_subdirectory(src)

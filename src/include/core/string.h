@@ -19,5 +19,10 @@ char *strdup_from_to(const char *from, const char *to);
 char *strdup(const char *s);
 #endif
 
+
+char *ltrim(char *s);
+char *rtrim(char *s);
+#define trim(s) rtrim(ltrim(s))
+
 #endif
 

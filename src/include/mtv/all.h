@@ -5,8 +5,6 @@
 #include <mtv/defaults.h>
 #include <core/all.h>
 
-#include <curl/curl.h>
-
 #include <libxml2/libxml/xmlversion.h>
 #include <libxml2/libxml/parser.h>
 #include <libxml2/libxml/tree.h>

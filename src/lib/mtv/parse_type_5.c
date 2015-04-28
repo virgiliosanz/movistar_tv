@@ -1,30 +1,12 @@
 #include <mtv/all.h>
 
-enum type_2_parser_state {
-	TYPE_2_PARSER_STATE_START,
-	TYPE_2_PARSER_STATE_VALID_PACKAGE,
-	TYPE_2_PARSER_STATE_SHORT_NAME,
-	TYPE_2_PARSER_STATE_UNKNOWN,
-};
-
 struct type_5_parser_context {
 	bool                      in_valid_package;
 	char                     *tvpackages;
 	list_s                   *channels;
 	struct mtv_channel_order *current_channel;
 	sbuf_s                   *buffer;
-
 };
-
-static void
-_ctx_free(struct type_5_parser_context *ctx)
-{
-	if (!ctx) return;
-
-	if (ctx->channels) list_free(ctx->channels);
-	if (ctx->buffer) sbuf_free(ctx->buffer);
-	free(ctx);
-}
 
 static struct mtv_channel_order *
 _channel_order_alloc()
@@ -33,11 +15,33 @@ _channel_order_alloc()
 	mco = malloc(sizeof(struct mtv_channel_order));
 	error_if(NULL == mco, error, "malloc error: %s", strerror(errno));
 
+	mco->id = NULL;
+
 	return mco;
 
 error:
 	if (mco) free(mco);
 	return NULL;
+}
+
+static void
+_channel_order_free(struct mtv_channel_order *c)
+{
+	if (!c) return;
+	if (c->id != NULL) free(c->id);
+	free(c);
+}
+
+static void
+_ctx_free(struct type_5_parser_context *ctx)
+{
+	if (!ctx) return;
+
+	if (ctx->channels) list_free(ctx->channels);
+	if (ctx->buffer) sbuf_free(ctx->buffer);
+	if (ctx->current_channel) _channel_order_free(ctx->current_channel);
+
+	free(ctx);
 }
 
 static struct type_5_parser_context *
@@ -50,12 +54,23 @@ _ctx_alloc()
 	ctx->current_channel = _channel_order_alloc();
 	error_if(NULL == ctx->current_channel, error, "malloc error: %s", strerror(errno));
 
+	ctx->buffer = sbuf_new();
+	error_if(NULL == ctx->buffer, error, "malloc error: %s", strerror(errno));
+
+	ctx->channels = list_create();
+	error_if(NULL == ctx->channels, error, "malloc error: %s", strerror(errno));
+
+	ctx->in_valid_package = false;
+
+
 	return ctx;
 
 error:
 	if (ctx) _ctx_free(ctx);
 	return NULL;
 }
+
+
 
 static xmlEntityPtr
 _get_entity(struct type_5_parser_context *ctx, const xmlChar *name)
@@ -76,14 +91,8 @@ _start_element(
 	const char *name   = (const char *)xn;
 	const char **attrs = (const char **)_attrs;
 
-	if (0 == strcasecmp("PackageName", name)) {
-		if (NULL != strcasestr(ctx->tvpackages, name)) {
-			ctx->in_valid_package = true;
-		} else {
-			ctx->in_valid_package = false;
-		}
-
-	} else if (0 ==  strcasecmp("TextualID", name)) {
+	if (0 ==  strcasecmp("TextualID", name)) {
+//		trace("TextualID: %s (valid: %d)", attrs[1], ctx->in_valid_package);
 		if (ctx->in_valid_package) {
 			ctx->current_channel->id = strdup(attrs[1]);
 		}
@@ -94,22 +103,42 @@ error:
 
 }
 
+
+static void
+_characters(struct type_5_parser_context *ctx, const xmlChar *ch, int len)
+{
+        sbuf_appendbytes(ctx->buffer, (char *)ch, len);
+}
+
 static void
 _end_element(struct type_5_parser_context *ctx, const xmlChar *xn)
 {
 	error_if(NULL == ctx, error, "Param Error");
 	error_if(NULL == xn, error, "Param Error");
 
-	const char *name   = (const char *)xn;
+	const char *name       = (const char *)xn;
+	const char *characters = (const char *)trim(sbuf_ptr(ctx->buffer));
 
-	if (0 == strcasecmp("LogicalChannelNumber", name)) {
-		ctx->current_channel->order = (unsigned) atoi(sbuf_ptr(ctx->buffer));
+//	trace("name: %s (%d) chars: (%s)", name, ctx->in_valid_package, characters);
+
+	if (0 == strcasecmp("LogicalChannelNumber", name) && ctx->in_valid_package) {
+//		trace("LogicalChannelNumber: %s", characters);
+		ctx->current_channel->order = (unsigned) atoi(characters);
 		list_push(ctx->channels, ctx->current_channel);
 		ctx->current_channel = _channel_order_alloc();
-		sbuf_reset(ctx->buffer);
+	}
+	else if (0 == strcasecmp("PackageName", name)) {
+		if (NULL != strcasestr(ctx->tvpackages, characters)) {
+			ctx->in_valid_package = true;
+//			trace("changing valid to true");
+		} else {
+			ctx->in_valid_package = false;
+//			trace("changing valid to false");
+		}
 	}
 
 error:
+	sbuf_reset(ctx->buffer);
 	return;
 }
 
@@ -174,7 +203,7 @@ mtv_parse_file_type_5(const char *xml, const char *tvpackages)
 		0,  /* hasInternalSubset */
 		0,  /* hasExternalSubset */
 		0,  /* resolveEntity */
-		(getEntitySAXFunc)    _get_entity, /* getEntity */
+		(getEntitySAXFunc)    _get_entity,   /* getEntity */
 		0,  /* entityDecl */
 		0,  /* notationDecl */
 		0,  /* attributeDecl */
@@ -184,9 +213,9 @@ mtv_parse_file_type_5(const char *xml, const char *tvpackages)
 		0,  /* startDocument */
 		0,  /* endDocument */
 		(startElementSAXFunc) _start_element, /* startElement */
-		(endElementSAXFunc) _end_element, /* startElement */
+		(endElementSAXFunc)   _end_element,   /* startElement */
 		0,  /* reference */
-		0,  /* characters */
+		(charactersSAXFunc)   _characters,    /* characters */
 		0,  /* ignorableWhitespace */
 		0,  /* processingInstruction */
 		0,  /* comment */
@@ -205,6 +234,7 @@ mtv_parse_file_type_5(const char *xml, const char *tvpackages)
 
 	int result = xmlSAXUserParseMemory(&handler, ctx, (char *)xml, strlen(xml));
 	error_if(0 != result, error, "Error Parsing xml: \n%s\n", xml);
+	trace("Hay %zu channels after parsing", list_count(ctx->channels));
 
 	error_if (!ctx->channels, error, "Error reading channels order");
 	error_if (list_count(ctx->channels) == 0, error, "Error reading channels order");
@@ -212,8 +242,7 @@ mtv_parse_file_type_5(const char *xml, const char *tvpackages)
 	list_s *channels = ctx->channels;
 	ctx->channels = NULL;
 
-	free(ctx);
-
+	_ctx_free(ctx);
 
 //	xmlCleanupParser();
 //	xmlMemoryDump();
@@ -228,5 +257,13 @@ error:
 	xmlMemoryDump();
 
 	return NULL;
+}
+
+void
+mtv_channel_order_free_list(list_s *s)
+{
+	list_walk(s, (list_apply_cb)_channel_order_free);
+	list_destroy(s);
+	s = NULL;
 }
 

@@ -23,7 +23,8 @@ void
 list_clear(list_s *list)
 {
 	list_foreach(list, first, next, cur) {
-		free(cur->value);
+		if (cur->value)
+			free(cur->value);
 	}
 }
 

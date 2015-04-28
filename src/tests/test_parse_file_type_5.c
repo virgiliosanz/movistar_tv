@@ -2,6 +2,7 @@
 
 #define XML_TEST_FILE "misc/data/239.0.2.154/5_0.xml"
 #define TVPACKAGES "UTX00|UTX2E"
+
 char *
 test_parse()
 {
@@ -11,14 +12,20 @@ test_parse()
 
 	xml = read_file(XML_TEST_FILE);
 	mu_assert(NULL != xml, "Error reading file: %s: %s", XML_TEST_FILE, strerror(errno));
+	trace("%s readed", XML_TEST_FILE);
 
 	channels = mtv_parse_file_type_5(xml, TVPACKAGES);
 	mu_assert(NULL != channels, "Error parsing file");
+	trace("Hay %zu channels in %s", list_count(channels), XML_TEST_FILE);
 
 	list_foreach(channels, first, next, cur) {
 		chann = (struct mtv_channel_order *)cur->value;
 		trace("%s -> %u", chann->id, chann->order);
 	}
+
+	trace("Borrando lista de canales");
+	mtv_channel_order_free_list(channels);
+	mu_assert(NULL != channels, "Channels should be null after freed");
 
 	return NULL;
 

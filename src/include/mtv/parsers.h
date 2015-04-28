@@ -56,6 +56,7 @@ struct mtv_channel_order {
 	unsigned order;
 };
 list_s *mtv_parse_file_type_5(const char *xml, const char *tvpackages);
+void    mtv_channel_order_free_list(list_s *l);
 
 #endif
 
