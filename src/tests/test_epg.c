@@ -207,13 +207,13 @@ test_create_m3us()
 {
 	char *m3u;
 
-	m3u = epg_to_m3u(epg, epg_m3u_format_simpletv);
+	m3u = epg_to_m3u(epg->channels, epg_m3u_format_simpletv);
 	mu_assert(m3u != NULL, "Error generating m3u simple");
 	trace("SimpleTV M3U: %s", m3u);
 	free(m3u);
 
-	m3u = epg_to_m3u(epg, epg_m3u_format_tvheaded);
-	mu_assert(m3u != NULL, "Error generating m3u tvheaded");
+	m3u = epg_to_m3u(epg->channels, epg_m3u_format_tvheadend);
+	mu_assert(m3u != NULL, "Error generating m3u tvheadend");
 	trace("TVHeaded M3U: %s", m3u);
 	free(m3u);
 

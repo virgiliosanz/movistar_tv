@@ -106,14 +106,10 @@ mcast_close(struct mcast *mcast)
 
 
 void
-mcast_proccess_files(struct mcast *mcast, mcast_proccess_file_cb cb, void *ctx)
+mcast_proccess_files(struct mcast *mcast, mcast_proccess_file_cb proccess_cb, void *ctx)
 {
 	struct _mcast_message msg;
-	uint8_t data[MCAST_MSG_BUFSIZE];
-	sbuf_s *sbuf;
-
-	sbuf = sbuf_new();
-	error_if(NULL == sbuf, error, "Memory error");
+	uint8_t               data[MCAST_MSG_BUFSIZE];
 
 	// Read til first file from begining
 	trace("Reading socket for first complete file...");
@@ -130,18 +126,23 @@ mcast_proccess_files(struct mcast *mcast, mcast_proccess_file_cb cb, void *ctx)
 
 		if (msg.end) break;
 	}
-	struct mcast_file last         = {
+	trace("Last file - Type: %u Id: %u", msg.type, msg.id);
+
+	size_t  cnt          = 0;
+	size_t  total_bytes  = 0;
+	size_t  bytes        = 0;
+	bool    keep_reading = false;
+	sbuf_s *sbuf         = NULL;
+
+	struct mcast_file file;
+	struct mcast_file last = {
 		.type = msg.type,
 		.id   = msg.id,
 		.size = msg.size,
 		.data = NULL};
-	trace("Last file type is %u - %u", last.type, last.id);
 
-	size_t       cnt          = 0;
-	size_t       total_bytes  = 0;
-	size_t       bytes        = 0;
-	bool         keep_reading = false;
-	struct mcast_file file;
+	sbuf = sbuf_new();
+	error_if(NULL == sbuf, error, "Memory error");
 
 	trace("Start reading files");
 	while (1) {
@@ -157,21 +158,23 @@ mcast_proccess_files(struct mcast *mcast, mcast_proccess_file_cb cb, void *ctx)
 			warn("0 bytes read from socket!!!! finishing reading");
 	        	break;
 	        }
-		total_bytes += bytes;
+		warn_if(bytes != msg.size, "Bytes (%zu) and msg.size (%u) different in %u_%u chunk num %u of %u",
+				bytes, msg.size, msg.type, msg.id, msg.chunk_num, msg.total_chunks);
 
+		total_bytes += bytes;
 
 		_unpack(data, &msg);
 		sbuf_appendstr(sbuf, msg.data);
 		if (msg.end) {
-        		trace("end: %u size: %u type: %u id: %u chunk_num: %u total_chunks= %u sep: %u",
+        		trace("End Of File: %u size: %u type: %u id: %u chunk_num: %u total_chunks: %u sep: %u",
               		      msg.end, msg.size, msg.type, msg.id, msg.chunk_num, msg.total_chunks, msg.sep);
 
-			file.type = msg.type;
-			file.id   = msg.id;
-			file.size = msg.size;
-			file.data = sbuf_ptr(sbuf);
-			keep_reading = cb(&file, ctx);
+			file.type    = msg.type;
+			file.id      = msg.id;
+			file.size    = msg.size;
+			file.data    = sbuf_ptr(sbuf);
 
+			keep_reading = proccess_cb(&file, ctx);
 			if (!keep_reading) break;
 
 			sbuf_reset(sbuf);
@@ -209,13 +212,14 @@ chunk["data"] = data[12:]
 static void
 _unpack(uint8_t *data, struct _mcast_message *mc)
 {
-        mc->end = (data[0] << 0);
-        mc->size = (data[3] << 0) | (data[2] << 8) | (data[1] << 16);
-        mc->type = (data[4] << 0);
-        mc->id = ((data[6] << 0) | (data[5] << 8)) & 0x0fff;
-        mc->chunk_num = ((data[9] << 0) | (data[8] << 8)) & 0x10;
+        mc->end          = (data[0] << 0);
+        mc->size         = (data[3] << 0) | (data[2] << 8) | (data[1] << 16);
+        mc->type         = (data[4] << 0);
+        mc->id           = ((data[6] << 0) | (data[5] << 8)) & 0x0fff;
+        mc->chunk_num    = ((data[9] << 0) | (data[8] << 8)) & 0x10;
         mc->total_chunks = (data[10] << 0);
-        mc->data = (char *)&data[12];
+        mc->data         = (char *)&data[12];
+
         // Last chunk has 4 non data bytes
         if (mc->end)
         	mc->data[strlen(mc->data) - 5] = 0;

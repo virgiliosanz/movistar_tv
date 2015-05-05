@@ -18,6 +18,13 @@ test_parse()
 		epg_debug_channel((struct epg_channel *)cur->value);
 	}
 
+	char *m3u = NULL;
+	m3u = epg_to_m3u(channels, epg_m3u_format_simpletv);
+	printf("m3u in simpletv format: \n%s\n", m3u);
+
+	m3u = epg_to_m3u(channels, epg_m3u_format_tvheadend);
+	printf("m3u in tvheadend format: \n%s\n", m3u);
+
 	return NULL;
 }
 

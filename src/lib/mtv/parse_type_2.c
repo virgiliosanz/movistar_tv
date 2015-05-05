@@ -1,20 +1,10 @@
 #include <mtv/all.h>
 
-///////// Data /////////
-enum type_2_parser_state {
-	TYPE_2_PARSER_STATE_START,
-	TYPE_2_PARSER_STATE_NAME,
-	TYPE_2_PARSER_STATE_SHORT_NAME,
-
-	TYPE_2_PARSER_STATE_UNKNOWN,
-};
-
 #define PARSER_TYPE_2_MAX_DEPTH (20)
 struct type_2_parser_context {
 	list_s                  *channels;
 	struct epg_channel      *channel;
 	int                      depth;
-	enum type_2_parser_state states[PARSER_TYPE_2_MAX_DEPTH];
 	sbuf_s                  *buffer;
 };
 
@@ -65,7 +55,6 @@ _start_document(struct type_2_parser_context *ctx)
 	trace("%s", "Start Document");
 	sbuf_reset(ctx->buffer);
 	ctx->depth= 0;
-	ctx->states[ctx->depth] = TYPE_2_PARSER_STATE_START;
 }
 
 static void
@@ -74,7 +63,6 @@ _end_document(struct type_2_parser_context *ctx)
 	warn_if(!ctx, "ctx is NULL");
 	trace("%s", "End Document");
 	ctx->depth= 0;
-	ctx->states[ctx->depth] = TYPE_2_PARSER_STATE_UNKNOWN;
 }
 
 static void
@@ -88,28 +76,22 @@ _start_element(struct type_2_parser_context *ctx,
 	const char **attrs = (const char **) _attrs;
 	const char *name = (const char *)xn;
 
-	trace("%s", name);
+//	trace("%s", name);
 	if (0 == strcasecmp("SingleService", name)) {
 		ctx->channel = epg_channel_alloc();
 		error_if(ctx->channel == NULL, error, "Memmory error %s", strerror(errno));
 
-	} else if (0 == strcasecmp("Name", name)) {
-		ctx->states[ctx->depth] = TYPE_2_PARSER_STATE_NAME;
-
-	} else if (0 == strcasecmp("ShortName", name)) {
-		ctx->states[ctx->depth] = TYPE_2_PARSER_STATE_SHORT_NAME;
-
-	} else if (0 ==  strcasecmp("IPMultcastAddress", name)) {
-		trace("<IPMulticastAddress %s=%s %s=%s/>", attrs[0], attrs[1], attrs[2], attrs[3]);
+	} else if (0 == strcasecmp("IPMulticastAddress", name)) {
+//		trace("<IPMulticastAddress %s=%s %s=%s/>", attrs[0], attrs[1], attrs[2], attrs[3]);
 
 		ctx->channel->port = atoi(attrs[1]);
 		ctx->channel->ip   = strdup(attrs[3]);
 
-	} else if (0 ==  strcasecmp("TextualIdentiier", name)) {
-		trace("<textualIdentifier %s=%s %s=%s/>", attrs[0], attrs[1], attrs[2], attrs[3]);
+	} else if (0 ==  strcasecmp("TextualIdentifier", name)) {
+//		trace("<textualIdentifier %s=%s %s=%s/>", attrs[0], attrs[1], attrs[2], attrs[3]);
 
-		ctx->channel->id   = strdup(attrs[1]);
-		ctx->channel->icon = strdup(attrs[3]);
+		if (attrs[1] != NULL) ctx->channel->id   = strdup(attrs[1]);
+		if (attrs[3] != NULL) ctx->channel->icon = strdup(attrs[3]);
 	}
 
 error:
@@ -125,29 +107,22 @@ _characters(struct type_2_parser_context *ctx, const xmlChar *ch, int len)
 }
 
 static void
-_end_element(struct type_2_parser_context *ctx, const xmlChar *name)
+_end_element(struct type_2_parser_context *ctx, const xmlChar *_name)
 {
+	char *name = (char *)_name;
+
+//	trace("%s", name);
 	warn_if(!name, "Name is NULL");
-	if (0 == strcasecmp((char *)name, "SingleService")) {
+	if (0 == strcasecmp(name, "SingleService")) {
 		list_push(ctx->channels, ctx->channel);
 		ctx->channel = epg_channel_alloc();
-	} else {
-		switch (ctx->states[ctx->depth]) {
-
-		case TYPE_2_PARSER_STATE_NAME:
-			ctx->channel->display_name = sbuf_detach(ctx->buffer);
-		break;
-
-		case TYPE_2_PARSER_STATE_SHORT_NAME:
-			ctx->channel->short_name = sbuf_detach(ctx->buffer);
-		break;
-
-		default:
-//			trace("Don't know what to do with: %s (%s)", name, sbuf_ptr(ctx->buffer));
-		break;
-		}
+	} else if (0 == strcasecmp(name, "Name")) {
+		ctx->channel->display_name = trim(sbuf_detach(ctx->buffer));
+	} else if (0 == strcasecmp(name, "ShortName")) {
+		ctx->channel->short_name = trim(sbuf_detach(ctx->buffer));
 	}
 
+	sbuf_reset(ctx->buffer);
 	ctx->depth--;
 }
 

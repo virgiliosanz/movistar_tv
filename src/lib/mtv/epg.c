@@ -5,7 +5,7 @@ static void _channels_to_xml(xmlNodePtr root, list_s * channels);
 static void _programmes_to_xml(xmlNodePtr root, list_s * programmes);
 
 char *
-epg_to_xmltv(struct epg *epg)
+epg_to_xmltv(const struct epg *epg)
 {
 	xmlDocPtr  doc  = NULL;
 	xmlDtdPtr  dtd  = NULL;
@@ -54,23 +54,22 @@ epg_to_xmltv(struct epg *epg)
 
 
 void _gen_m3u_simpletv(void *value, void *state);
-void _gen_m3u_tvheaded(void *value, void *state);
+void _gen_m3u_tvheadend(void *value, void *state);
 
 char *
-epg_to_m3u(struct epg *epg, enum epg_m3u_format format)
+epg_to_m3u(const list_s *channels, enum epg_m3u_format format)
 {
 	sbuf_s *buffer = sbuf_new();
 	error_if(buffer == NULL, error, "Error Allocating sbuf_s");
 
-	error_if(epg == NULL, error, "Params Error");
-	error_if(epg->channels == NULL, error, "Params Error");
-	trace("There are %zu channels", list_count(epg->channels));
+	error_if(channels == NULL, error, "Params Error");
+	trace("There are %zu channels", list_count(channels));
 
 	list_apply_with_state_cb func =
 		(format == epg_m3u_format_simpletv) ?
-		_gen_m3u_simpletv : _gen_m3u_tvheaded;
+		_gen_m3u_simpletv : _gen_m3u_tvheadend;
 
-	list_walk_with_state(epg->channels, func, (void *)buffer);
+	list_walk_with_state((list_s *)channels, func, (void *)buffer);
 
 	char *s = sbuf_detach(buffer);
 	sbuf_delete(buffer);
@@ -508,28 +507,28 @@ _gen_m3u_simpletv(void *value, void *state)
 	struct epg_channel *chan = (struct epg_channel *)value;
 	sbuf_s        *buf  = (sbuf_s *)state;
 
-	trace("Adding channel: %s", chan->display_name);
+//	trace("Adding channel: %s", chan->display_name);
 
 	sbuf_appendf(
 		buf,
 		"#EXTM3U\n#EXTINF:-1 tvg-id=%s tvg-logo=%s, %s\nrtp://@%s:%d\n",
-		chan->short_name, chan->icon, chan->display_name,
+		chan->id, chan->icon, chan->display_name,
 		chan->ip, chan->port);
 }
 
 
 void
-_gen_m3u_tvheaded(void *value, void *state)
+_gen_m3u_tvheadend(void *value, void *state)
 {
 	struct epg_channel *chan = (struct epg_channel *)value;
 	sbuf_s        *buf  = (sbuf_s *)state;
 
-	trace("Adding channel: %s", chan->display_name);
+//	trace("Adding channel: %s", chan->display_name);
 
 	sbuf_appendf(
 		buf,
 		"#EXTM3U\n#EXTINF:-1 tvg-id=%s tvg-logo=%s, %s\nrtp://@%s:%d\n",
-		chan->short_name, chan->icon, chan->display_name,
+		chan->id, chan->icon, chan->display_name,
 		chan->ip, chan->port);
 }
 

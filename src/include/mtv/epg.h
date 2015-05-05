@@ -75,11 +75,11 @@ int         epg_validate(const char *xml);
 
 enum epg_m3u_format {
 	epg_m3u_format_simpletv,
-	epg_m3u_format_tvheaded,
+	epg_m3u_format_tvheadend,
 	epg_m3u_format_unknown
 };
 
-char *epg_to_xmltv(struct epg *epg);
-char *epg_to_m3u(struct epg *epg, enum epg_m3u_format format);
+char *epg_to_xmltv(const struct epg *epg);
+char *epg_to_m3u(const list_s *channels, enum epg_m3u_format format);
 
 #endif
