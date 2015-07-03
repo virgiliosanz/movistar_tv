@@ -27,123 +27,123 @@
 size_t
 str_split(const char *str, const char delim, char ***tokens)
 {
-	int count = 1;
-	int token_len = 1;
-	int i = 0;
-	char *p;
-	char *t;
+    int count = 1;
+    int token_len = 1;
+    int i = 0;
+    char *p;
+    char *t;
 
-	error_if(str == NULL, error, "Param Error");
+    error_if(str == NULL, error, "Param Error");
 
-	p = (char *)str;
-	while (*p != '\0') {
-		if (*p == delim)
-			count++;
-		p++;
-	}
+    p = (char *)str;
+    while (*p != '\0') {
+        if (*p == delim)
+            count++;
+        p++;
+    }
 
-	*tokens = (char**) malloc(sizeof(char*) * count);
-	if (*tokens == NULL)
-		exit(1);
+    *tokens = (char**) malloc(sizeof(char*) * count);
+    if (*tokens == NULL)
+        exit(1);
 
-	p = (char *)str;
-	while (*p != '\0') {
-		if (*p == delim) {
-			(*tokens)[i] = (char*) malloc(sizeof(char) * token_len);
-			if ((*tokens)[i] == NULL)
-				exit(1);
+    p = (char *)str;
+    while (*p != '\0') {
+        if (*p == delim) {
+            (*tokens)[i] = (char*) malloc(sizeof(char) * token_len);
+            if ((*tokens)[i] == NULL)
+                exit(1);
 
-			token_len = 0;
-			i++;
-		}
-		p++;
-		token_len++;
-	}
-	(*tokens)[i] = (char*) malloc(sizeof(char) * token_len);
-	if ((*tokens)[i] == NULL)
-		exit(1);
+            token_len = 0;
+            i++;
+        }
+        p++;
+        token_len++;
+    }
+    (*tokens)[i] = (char*) malloc(sizeof(char) * token_len);
+    if ((*tokens)[i] == NULL)
+        exit(1);
 
-	i = 0;
-	p = (char *)str;
-	t = ((*tokens)[i]);
-	while (*p != '\0') {
-		if (*p != delim && *p != '\0') {
-			*t = *p;
-			t++;
-		}
-		else {
-			*t = '\0';
-			i++;
-			t = ((*tokens)[i]);
-		}
-		p++;
-	}
+    i = 0;
+    p = (char *)str;
+    t = ((*tokens)[i]);
+    while (*p != '\0') {
+        if (*p != delim && *p != '\0') {
+            *t = *p;
+            t++;
+        }
+        else {
+            *t = '\0';
+            i++;
+            t = ((*tokens)[i]);
+        }
+        p++;
+    }
 
-	return count;
+    return count;
 
 error:
-	return 0;
+    return 0;
 }
 
 char *
 strtolower(char *s)
 {
-	if (NULL == s) return NULL;
+    if (NULL == s) return NULL;
 
-	char *p = s;
-  	while (*p != '\0') {
-    		*p = tolower(*p);
-    		p++;
-  	}
+    char *p = s;
+    while (*p != '\0') {
+            *p = tolower(*p);
+            p++;
+    }
 
-  	return s;
+    return s;
 }
 
 char *
 strntolower(char *s, size_t n)
 {
-	if (NULL == s) return NULL;
-  	if (n == 0) return s;
+    if (NULL == s) return NULL;
+    if (n == 0) return s;
 
-  	char *p = s;
-  	while (n > 0 && *p != '\0') {
-    		*p = tolower(*p);
-    		p++;
-    		n--;
-  	}
+    char *p = s;
+    while (n > 0 && *p != '\0') {
+            *p = tolower(*p);
+            p++;
+            n--;
+    }
 
-  	return s;
+    return s;
 }
 
 char *
 strtoupper(char *s)
 {
-	if (NULL == s) return NULL;
+    if (NULL == s) return NULL;
 
-  	char *p = s;
-  	while (*p != '\0') {
-    		*p = (char) toupper((int) *p);
-    		p++;
-  	}
+    char *p = s;
+    while (*p != '\0') {
+            *p = (char) toupper((int) *p);
+            p++;
+    }
 
-  	return s;
+    return s;
 }
 
 
 char *
 strntoupper(char *s, size_t n)
 {
-	if (NULL == s) return NULL;
-  	if (n == 0) return s;
+    if (NULL == s) return NULL;
+    if (n == 0) return s;
 
-  	char *p = s;
-  	while (n > 0 && *p != '\0') {
-    		*p = (char) toupper((int) *p);
-    		p++;
-    		n--;
-  	}
+    char *p = s;
+    while (n > 0 && *p != '\0') {
+            *p = (char) toupper((int) *p);
+            p++;
+            n--;
+    }
 
-  	return s;
+    return s;
 }
 
 
@@ -151,56 +151,55 @@ strntoupper(char *s, size_t n)
 char *
 strdup_from_to(const char *from, const char *to)
 {
-	if (NULL == from) return NULL;
-	if (NULL == to) return NULL;
+    if (NULL == from) return NULL;
+    if (NULL == to) return NULL;
 
-	const char *c;
-	sbuf_s *s = NULL;
+    const char *c;
+    sbuf_s *s = NULL;
 
-	s = sbuf_new();
-	error_if(NULL == s, error, "Error Allocating Memory");
+    s = sbuf_new();
+    error_if(NULL == s, error, "Error Allocating Memory");
 
-	for (c = from; c != to; c++) {
-		sbuf_appendchar(s, *c);
-	}
-	sbuf_appendchar(s, *to);
+    for (c = from; c != to; c++) {
+        sbuf_appendchar(s, *c);
+    }
+    sbuf_appendchar(s, *to);
 
-	char *rc = sbuf_detach(s);
-	sbuf_delete(s);
+    char *rc = sbuf_detach(s);
+    sbuf_delete(s);
 
-	return rc;
+    return rc;
 
 error:
-	if (s) free(s);
-	return NULL;
+    if (s) free(s);
+    return NULL;
 }
 
 #ifndef _GNU_SOURCE
 char *
 strdup(const char *s)
 {
-	char *d = malloc(strlen(s) + 1);
-	if (d == NULL)
-		return NULL;
+    char *d = malloc(strlen(s) + 1);
+    if (d == NULL)
+        return NULL;
 
-	strcpy(d,s);
-	return d;
+    strcpy(d,s);
+    return d;
 }
 #endif
 
 char *
 ltrim(char *s)
 {
-	while(isspace(*s)) s++;
-		return s;
-
+    while(isspace(*s)) s++;
+        return s;
 }
 
 char *
 rtrim(char *s)
 {
-	char* back = s + strlen(s);
-	while(isspace(*--back));
-	*(back+1) = '\0';
-	return s;
+    char* back = s + strlen(s);
+    while(isspace(*--back));
+    *(back+1) = '\0';
+    return s;
 }
