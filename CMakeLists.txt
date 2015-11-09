@@ -5,7 +5,7 @@ set(PROJ_VERSION 0.0.1)
 
 project(${PROJECT_NAME})
 enable_testing()
-set(CMAKE_VERBOSE_MAKEFILE 0)
+set(CMAKE_VERBOSE_MAKEFILE 1)
 
 # Enabke debug mode if not release is comming
 if (NOT CMAKE_BUILD_TYPE MATCHES release)
