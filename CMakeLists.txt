@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.6)
 
-set(PROJECT_NAME movistart_epg)
+set(PROJECT_NAME movistar_epg)
 set(PROJ_VERSION 0.0.1)
 
 project(${PROJECT_NAME})
 enable_testing()
-set(CMAKE_VERBOSE_MAKEFILE 1)
+set(CMAKE_VERBOSE_MAKEFILE 0)
 
 # Enabke debug mode if not release is comming
 if (NOT CMAKE_BUILD_TYPE MATCHES release)
@@ -14,7 +14,8 @@ endif()
 message("CMAKE_BUILD_TYPE = ${CMAKE_BUILD_TYPE}")
 
 # Make compaining compiler if gcc
-add_definitions(-Wall -Wextra -std=gnu99 -D_GNU_SOURCE)
+#add_definitions(-Wall -Wextra -fsanitize=address -fno-omit-frame-pointer -std=gnu11 -D_GNU_SOURCE)
+add_definitions(-Wall -Wextra -std=gnu11 -D_GNU_SOURCE)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__FILENAME__='\"$(subst ${CMAKE_SOURCE_DIR}/,,$(abspath $<))\"'")
 
 # Add thread support
