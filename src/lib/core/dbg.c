@@ -1,12 +1,27 @@
 #include <core/dbg.h>
-#include <stdio.h>
-#include <stdarg.h>
-#include <time.h>
 
-enum debug_level __global_debug_level = debug_level_trace;
+static enum debug_level __global_debug_level = debug_level_trace;
+
+void
+debug_level_set(enum debug_level level)
+{
+	__global_debug_level = level;
+}
+
+enum debug_level
+debug_level_get()
+{
+	return __global_debug_level;
+}
+
+bool
+debug_level_is_visible(enum debug_level level)
+{
+	return (__global_debug_level >= level);
+}
 
 char *
-level_to_str(enum debug_level level)
+debug_level_str(enum debug_level level)
 {
 	switch (level) {
 		case debug_level_error:

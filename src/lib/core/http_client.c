@@ -15,12 +15,15 @@ http_request_create(const char *url)
 
 	if (r->url->port) {
 		r->port =  atoi(r->url->port);
-	} else if (strcasecmp(r->url->scheme, "http") == 0) {
+	}
+	else if (strcasecmp(r->url->scheme, "http") == 0) {
 		r->port = 80;
 
-	} else if (strcasecmp(r->url->scheme, "https") == 0) {
+	}
+	else if (strcasecmp(r->url->scheme, "https") == 0) {
 		r->port = 443;
-	} else {
+	}
+	else {
 		warn("Don't know the port number for %s", r->url->scheme);
 		goto error;
 	}
@@ -128,7 +131,7 @@ http_header_set_name(struct http_header *h, const char *name)
 	error_if(h == NULL, error, "Param Error");
 	if (h->name) free(h->name);
 	h->name = strdup(name);
-	return;
+
 error:
 	return;
 
@@ -140,7 +143,7 @@ http_header_set_value(struct http_header *h, const char *value)
 	error_if(h == NULL, error, "Param Error");
 	if (h->value) free(h->value);
 	h->value = strdup(value);
-	return;
+
 error:
 	return;
 
@@ -199,7 +202,13 @@ error:
 static void
 _add_headers_to_sbuf(struct http_header *h, sbuf_s *buf)
 {
+	error_if(NULL == h, error, "Param Error");
+	error_if(NULL == buf, error, "Param Error");
+
 	sbuf_appendf(buf, "%s:%s\r\n", h->name, h->value);
+
+error:
+	return;
 }
 
 
@@ -222,7 +231,7 @@ _request_to_str(const struct http_request *r)
 	sbuf_appendf(s, " HTTP/%s\r\n", r->version);
 	sbuf_appendf(s, "Host: %s\r\n", r->url->host);
 	list_walk_with_state(
-		r->headers, (list_apply_with_state_cb) _add_headers_to_sbuf, s);
+	    r->headers, (list_apply_with_state_cb) _add_headers_to_sbuf, s);
 	sbuf_appendstr(s, "\r\n");
 
 	str = sbuf_detach(s);
@@ -240,15 +249,15 @@ error:
 static int
 nonblock(int fd)
 {
-	int flags = fcntl(fd, F_GETFL, 0);
-	error_if(flags >= 0, error)
+    int flags = fcntl(fd, F_GETFL, 0);
+    error_if(flags >= 0, error)
 
-	int rc = fcntl(fd, F_SETFL, flags | O_NONBLOCK);
-	error_if(rc == 0, error);
-	return 0;
+    int rc = fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+    error_if(rc == 0, error);
+    return 0;
 
 error:
-	return -1;
+    return -1;
 }
 */
 
@@ -258,7 +267,6 @@ _do_http_request(const char *host, const int port, const struct http_request *r)
 	static const size_t BUFFER_SIZE     = 1024;
 	char               *buffer[BUFFER_SIZE];
 	sbuf_s             *s               = sbuf_new();
-
 	int                 sock            = 0;
 	int                 rc              = 0;
 	struct sockaddr_in  addr;
@@ -270,7 +278,7 @@ _do_http_request(const char *host, const int port, const struct http_request *r)
 
 	int i = 0;
 	while (ip->h_addr_list[i] != NULL ) {
-       		trace( "%s ", inet_ntoa(*(struct in_addr*)(ip->h_addr_list[i])));
+		trace( "%s ", inet_ntoa(*(struct in_addr*)(ip->h_addr_list[i])));
 		i++;
 	}
 
@@ -352,11 +360,11 @@ error:
 struct http_response *
 _parse_response(char *str)
 {
-	const size_t     HEADER_MAX = 1024;
+	const size_t          HEADER_MAX = 1024;
 	struct http_response *r          = _response_alloc();
 	struct http_header   *header     = NULL;
-	sbuf_s          *s          = sbuf_new();
-	char             b[HEADER_MAX];
+	sbuf_s               *s          = sbuf_new();
+	char                  b[HEADER_MAX];
 
 	error_if(r == NULL, error, "Memory Allocation Error");
 	error_if(str == NULL, error, "Param Error");
@@ -371,8 +379,8 @@ _parse_response(char *str)
 	}
 
 	// move to next line
-	size_t     cnt            = 0;
-	size_t     last_pos       = 0;
+	size_t cnt      = 0;
+	size_t last_pos = 0;
 
 	// Move to second line
 	for (cnt = 9; str[cnt] != '\n'; cnt ++) {}
@@ -396,7 +404,8 @@ _parse_response(char *str)
 				break;
 			}
 
-		} else if (':' == str[cnt]){
+		}
+		else if (':' == str[cnt]) {
 			header = http_header_alloc();
 			str[cnt] = '\0';
 			http_header_set_name(header, &str[last_pos]);
@@ -405,6 +414,8 @@ _parse_response(char *str)
 		}
 		cnt++;
 	}
+
+	sbuf_delete(s);
 
 	return r;
 
@@ -418,7 +429,7 @@ error:
 struct http_response *
 http_do_request(const struct http_request *req)
 {
-	char            *res_str = NULL;
+	char                 *res_str = NULL;
 	struct http_response *res     = NULL;
 
 	error_if(NULL == req, error, "Param Error");
@@ -433,7 +444,7 @@ http_do_request(const struct http_request *req)
 	}
 	/*
 	else if (strcasecmp(req->url->scheme, "https" ) == 0) {
-		req_str = _do_https_request(socket, req);
+	    req_str = _do_https_request(socket, req);
 
 	}
 	*/
@@ -444,6 +455,7 @@ http_do_request(const struct http_request *req)
 
 	res = _parse_response(res_str);
 	error_if(NULL == res, error, "Errot Parsing respose:\n%s\n", res_str);
+
 	free(res_str);
 
 	return res;
@@ -489,7 +501,8 @@ http_response_free(struct http_response *r)
 {
 	error_if(NULL == r, error, "Param Error");
 	if (r->body) free(r->body);
-	if (r->headers) {
+	if (r->headers)
+	{
 		list_walk(r->headers, (list_apply_cb) http_header_free);
 		list_destroy(r->headers);
 	}
@@ -512,7 +525,7 @@ http_get(const char *url)
 	error_if(res == NULL, error, "Error doing http request");
 
 	error_if(res->response_code != 200, error,
-		 "Response code not 200 -> %d", res->response_code);
+	         "Response code not 200 -> %d", res->response_code);
 
 	// Debug headers
 	trace("There are %zu headers", list_count(res->headers));

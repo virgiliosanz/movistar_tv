@@ -53,10 +53,9 @@ _end_document(type_241_parser_context_s *ctx)
 static void
 _start_element(type_241_parser_context_s *ctx, const xmlChar *xn, const xmlChar **attrs)
 {
+	UNUSED(attrs);
 	error_if(NULL == ctx, error, "Param Error");
 	error_if(NULL == xn, error, "Param Error");
-
-	const xmlChar **_attrs; _attrs = attrs; // Avoid not using warning
 
 	ctx->depth++;
 
