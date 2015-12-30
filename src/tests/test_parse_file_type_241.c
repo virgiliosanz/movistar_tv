@@ -6,15 +6,15 @@ char *
 test_parse_datetime()
 {
 	struct tm dt;
-	const char *s = "2014-11-22T19:45:24.000Z";
+	const char *s   = "2014-11-22T19:45:24.000Z";
 	const char *fmt = "%Y-%m-%dT%H:%M:%S.%z";
 
 	mtv_parse_datetime(&dt, s);
 
 	trace("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", s,
-		dt.tm_mday, dt.tm_mon + 1, dt.tm_year + 1900,
-		dt.tm_hour, dt.tm_min, dt.tm_sec,
-		dt.tm_wday + 1, dt.tm_isdst);
+	      dt.tm_mday, dt.tm_mon + 1, dt.tm_year + 1900,
+	      dt.tm_hour, dt.tm_min, dt.tm_sec,
+	      dt.tm_wday + 1, dt.tm_isdst);
 
 	char str[_MAX_SIZE_FOR_DATE];
 	strftime(str, _MAX_SIZE_FOR_DATE, fmt, &dt);
@@ -22,16 +22,16 @@ test_parse_datetime()
 	struct tm dt2;
 	mtv_parse_datetime(&dt2, str);
 	trace("%s -> %d/%d/%d %d:%d:%d (%d, %d)\n", str,
-		dt2.tm_mday, dt2.tm_mon + 1, dt2.tm_year + 1900,
-		dt2.tm_hour, dt2.tm_min, dt2.tm_sec,
-		dt2.tm_wday + 1, dt2.tm_isdst);
+	      dt2.tm_mday, dt2.tm_mon + 1, dt2.tm_year + 1900,
+	      dt2.tm_hour, dt2.tm_min, dt2.tm_sec,
+	      dt2.tm_wday + 1, dt2.tm_isdst);
 
 	mu_assert(dt.tm_year == dt2.tm_year, "Different year");
-	mu_assert(dt.tm_mon == dt2.tm_mon, "Different mon");
+	mu_assert(dt.tm_mon  == dt2.tm_mon, "Different mon");
 	mu_assert(dt.tm_mday == dt2.tm_mday, "Different mday");
 	mu_assert(dt.tm_hour == dt2.tm_hour, "Different hour");
-	mu_assert(dt.tm_min == dt2.tm_min, "Different min");
-	mu_assert(dt.tm_sec == dt2.tm_sec, "Different sec");
+	mu_assert(dt.tm_min  == dt2.tm_min, "Different min");
+	mu_assert(dt.tm_sec  == dt2.tm_sec, "Different sec");
 
 
 	return NULL;
@@ -58,7 +58,7 @@ test_parse()
 	un_chan->short_name = "La1";
 	epg_add_channel(epg, un_chan);
 	trace("Generating epg for %zu channels and %zu programmes",
-		list_count(epg->channels), list_count(epg->programmes));
+	      list_count(epg->channels), list_count(epg->programmes));
 
 	char *s = epg_to_xmltv(epg);
 	trace("XMLTV:\n%s\n", s);

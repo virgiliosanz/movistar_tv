@@ -90,7 +90,7 @@ test_create_programmes()
 
 	prog = epg_programme_alloc();
 	mu_assert(prog != NULL, "Error building Programme")
-	    prog->start.tm_year = 2014 - 1900;
+	prog->start.tm_year = 2014 - 1900;
 	prog->start.tm_mon = 11 - 1;
 	prog->start.tm_mday = 10;
 	prog->start.tm_hour = 21;
@@ -194,10 +194,10 @@ test_create_xml_and_validate()
 	mu_assert(xml != NULL, "Error creating xml");
 
 	trace("XMLTV:\n%s", xml);
-/*
-	int res = epg_validate(xml);
-	mu_assert(res == 1, "Invalid XML")
-*/
+	/*
+		int res = epg_validate(xml);
+		mu_assert(res == 1, "Invalid XML")
+	*/
 	trace("No validating against DTD");
 	return NULL;
 }

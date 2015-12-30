@@ -141,7 +141,7 @@ test_foreach()
 
 	size_t i = 0;
 	list_foreach(l, first, next, cur) {
-		printf("Valor: %s\n", cur->value);
+		printf("Valor: %s\n", (char *)cur->value);
 		i++;
 	}
 
@@ -248,6 +248,7 @@ test_concat()
 
 	size_t cnt = 0;
 	list_foreach(l3, first, next, cur) {
+		UNUSED(cur);
 		cnt ++;
 	}
 	mu_assert(total == cnt, "total should be same as counting elements");

@@ -30,7 +30,7 @@ char *
 test_rmrf()
 {
 	int ret = rmrf(strdup("esto"));
-	trace("Return val: %d", ret);
+	mu_assert(0 == ret, "Cannot delete dir")
 
 	return NULL;
 }

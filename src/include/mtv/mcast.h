@@ -1,18 +1,12 @@
 #ifndef __multicast_h__
 #define __multicast_h__
 
-// 3*4 + 3 + 1 = 16 -> 999.999.999.999\0
-#define MCAST_IP_CHARS (16)
-
-struct mcast {
-	char               ip[MCAST_IP_CHARS];
-	int                port;
-	int                socket;
-	struct sockaddr_in addr_in;
-	struct sockaddr   *addr;
-	socklen_t          addrlen;
-
-};
+// Para leer del multicast de movistar:
+// Hay que crear la estructura mcast y abrir el socket
+// Según se vayan leyendo ficheros se llamará al callback:
+// mcast_proccess_file_cb
+// Se recibirán los datos del espacio de memoria "ctx" que se pase a
+// mcast_process_files
 
 struct mcast_file {
 	uint8_t  type;
@@ -21,10 +15,13 @@ struct mcast_file {
 	char    *data;
 };
 
+struct mcast;
+
 struct mcast *mcast_alloc();
 void mcast_free(struct mcast *mcast);
 void mcast_open(struct mcast *mcast, const char *ip, const int port);
 void mcast_close(struct mcast *mcast);
+void mcast_debug(struct mcast *mcast);
 
 typedef bool (*mcast_proccess_file_cb) (const struct mcast_file *file, void *ctx);
 void mcast_proccess_files(struct mcast *mcast, mcast_proccess_file_cb cb, void *ctx);

@@ -18,17 +18,28 @@ typedef struct _conf_s conf_s;
 static conf_s *
 _conf_alloc()
 {
+	/*
 	conf_s *cnf = (conf_s *)malloc(sizeof(conf_s));
-	error_if(cnf == NULL, error, "Error Allocating Memory");
-
 	cnf->n_days_to_get = MTV_N_DAYS_TO_GET;
 	cnf->output_path   = strdup(MTV_OUTPUT_PATH);
 	cnf->images_path   = strdup(MTV_IMAGES_PATH);
 	cnf->tmp_path      = strdup(MTV_TMP_PATH);
+	*/
 
+	conf_s *cnf = ALLOC_INIT(conf_s, {
+		.n_days_to_get = MTV_N_DAYS_TO_GET,
+		.output_path   = strdup(MTV_OUTPUT_PATH),
+		.images_path   = strdup(MTV_IMAGES_PATH),
+		.tmp_path      = strdup(MTV_TMP_PATH),
+	});
+
+	error_if(cnf == NULL, error, "Error Allocating Memory");
 	return(cnf);
 
 error:
+	if (cnf->output_path) free(cnf->output_path);
+	if (cnf->images_path) free(cnf->images_path);
+	if (cnf->tmp_path) free(cnf->tmp_path);
 	if (cnf) free(cnf);
 
 	return NULL;
@@ -71,7 +82,7 @@ _conf_getopt(conf_s *cnf, int argc, char *argv[])
 			cnf->tmp_path = strdup(optarg);
 			break;
 		case 'v':
-			debug_set_level(debug_level_all);
+			debug_level_set(debug_level_all);
 		}
 
 	}
@@ -97,7 +108,7 @@ _configure_clean(conf_s *cnf)
 static conf_s *
 _configure(int argc, char *argv[])
 {
-	debug_set_level(debug_level_warn);
+	debug_level_set(debug_level_warn);
 
 	conf_s *cnf = _conf_alloc();
 	error_if(cnf == NULL, error, "Error Allocating Conf.");

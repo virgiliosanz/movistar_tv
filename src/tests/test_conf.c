@@ -11,6 +11,8 @@ test_conf()
 	mu_assert(cnf->mcast_port > 0, "Error reading port");
 	mu_assert(cnf->mcast_grp_start != NULL, "Error reading multicast gropu ip");
 
+	tva_conf_destroy(cnf);
+
 	return NULL;
 }
 

@@ -1,6 +1,8 @@
 #ifndef __core_all_h__
 #define __core_all_h__
 
+#define __USE_C99_MATH
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,6 +17,7 @@
 #include <netdb.h>
 #include <time.h>
 #include <locale.h>
+#include <ftw.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -24,7 +27,7 @@
 #include <netinet/tcp.h>
 #include <arpa/inet.h>
 
-#include <core/sglib.h>
+//#include <core/sglib.h>
 
 #include <core/dbg.h>
 #include <core/minunit.h>
@@ -35,6 +38,7 @@
 #include <core/url.h>
 #include <core/http_client.h>
 #include <core/files.h>
+#include <core/memory.h>
 
 #endif
 
